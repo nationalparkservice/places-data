@@ -1,0 +1,19 @@
+{
+  "name": "Tree",
+  "path": "Natural_Feature--Tree--Tree",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "tree"
+  },
+  "terms": [
+    "tree"
+  ],
+  "gisTags": {}
+}

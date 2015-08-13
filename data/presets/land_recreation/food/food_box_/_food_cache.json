@@ -1,0 +1,20 @@
+{
+  "name": "Food Box / Food Cache",
+  "path": "Land_Recreation--Food--Food_Box_/_Food_Cache",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "storage": "food"
+  },
+  "terms": [
+    "food cache",
+    "food box"
+  ],
+  "gisTags": {}
+}

@@ -1,0 +1,59 @@
+{
+  "name": "Peak",
+  "path": "Natural_Feature--Peak--Peak",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "ele"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "peak"
+  },
+  "terms": [
+    "peak",
+    "summit",
+    "ahu",
+    "berg",
+    "bald",
+    "butte",
+    "cerro",
+    "colina",
+    "cone",
+    "cumbre",
+    "dome",
+    "head",
+    "hill",
+    "horn",
+    "knob",
+    "knoll",
+    "mauna",
+    "mesa",
+    "mesita",
+    "mound",
+    "mount",
+    "mountain",
+    "puu",
+    "rock",
+    "sugarload",
+    "table",
+    "acme",
+    "aiguille",
+    "alp",
+    "climax",
+    "crest",
+    "crown",
+    "pinnacle",
+    "tip",
+    "top"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Peak\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

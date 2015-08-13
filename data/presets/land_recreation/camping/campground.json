@@ -1,0 +1,30 @@
+{
+  "name": "Campground",
+  "path": "Land_Recreation--Camping--Campground",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "capacity",
+    "fee"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "camp_site"
+  },
+  "terms": [
+    "campground"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Campground\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

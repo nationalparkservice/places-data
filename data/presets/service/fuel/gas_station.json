@@ -1,0 +1,38 @@
+{
+  "name": "Gas Station",
+  "path": "Service--Fuel--Gas_Station",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "fuel"
+  },
+  "terms": [
+    "gas station",
+    "fuel",
+    "petrol station",
+    "petrol",
+    "propane",
+    "diesel",
+    "lng",
+    "liquified natural gas",
+    "cng",
+    "compressed natural gas",
+    "biodiesel"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Gas Station\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

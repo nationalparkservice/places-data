@@ -1,0 +1,19 @@
+{
+  "name": "Museum",
+  "path": "Miscellaneous--Museum--Museum",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "museum"
+  },
+  "terms": [
+    "museum"
+  ],
+  "gisTags": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Lock",
+  "path": "Miscellaneous--Lock--Lock",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "lock": "yes"
+  },
+  "terms": [
+    "lock"
+  ],
+  "gisTags": {}
+}

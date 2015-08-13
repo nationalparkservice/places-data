@@ -1,0 +1,26 @@
+{
+  "name": "Wind Surfing Area",
+  "path": "Water_Recreation--Wind_Surfing--Wind_Surfing_Area",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "sport": "windsurfing"
+  },
+  "terms": [
+    "wind surfing area"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Wind Surfing Area\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

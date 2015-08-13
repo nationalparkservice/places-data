@@ -1,0 +1,16 @@
+{
+  "name": "Bulletin Board",
+  "path": "Service--Information--Bulletin_Board",
+  "fields": [],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "bulletin_board"
+  },
+  "terms": [
+    "bulletin board"
+  ],
+  "gisTags": {}
+}

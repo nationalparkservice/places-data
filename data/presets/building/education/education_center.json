@@ -1,0 +1,20 @@
+{
+  "name": "Education Center",
+  "path": "Building--Education--Education_Center",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "building": "yes",
+    "amenity": "education_centre"
+  },
+  "terms": [
+    "education center"
+  ],
+  "gisTags": {}
+}

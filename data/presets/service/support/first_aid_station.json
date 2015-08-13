@@ -1,0 +1,30 @@
+{
+  "name": "First Aid Station",
+  "path": "Service--Support--First_Aid_Station",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "first_aid"
+  },
+  "terms": [
+    "first aid station",
+    "first aid",
+    "medical",
+    "emergency"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"First Aid Station\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

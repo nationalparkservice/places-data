@@ -1,0 +1,32 @@
+{
+  "name": "Rapids",
+  "path": "Natural_Feature--Rapids--Rapids",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "whitewater",
+    "width",
+    "rapid_grade"
+  ],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "waterway": "rapids"
+  },
+  "terms": [
+    "rapids",
+    "riffle",
+    "ripple"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Rapids\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

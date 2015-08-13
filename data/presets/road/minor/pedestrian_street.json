@@ -1,0 +1,26 @@
+{
+  "name": "Pedestrian Street",
+  "path": "Road--Minor--Pedestrian_Street",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "surface",
+    "lit",
+    "width",
+    "oneway",
+    "structure",
+    "access"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "pedestrian"
+  },
+  "terms": [
+    "pedestrian road",
+    "pedestrian street"
+  ],
+  "gisTags": {}
+}

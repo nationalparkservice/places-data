@@ -1,0 +1,26 @@
+{
+  "name": "Spring",
+  "path": "Natural_Feature--Spring--Spring",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "drinking_water"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "spring"
+  },
+  "terms": [
+    "spring",
+    "seep"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Spring\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

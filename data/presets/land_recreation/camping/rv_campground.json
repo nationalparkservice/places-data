@@ -1,0 +1,34 @@
+{
+  "name": "RV Campground",
+  "path": "Land_Recreation--Camping--RV_Campground",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "capacity",
+    "fee"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "camp_site",
+    "caravans": "yes"
+  },
+  "terms": [
+    "rv campground",
+    "campsite",
+    "camp_site",
+    "motorhome park"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"RV Campground\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

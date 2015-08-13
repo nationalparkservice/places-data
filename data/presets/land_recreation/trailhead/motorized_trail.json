@@ -1,0 +1,44 @@
+{
+  "name": "Motorized Trail",
+  "path": "Land_Recreation--Trailhead--Motorized_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "track"
+  },
+  "terms": [
+    "track",
+    "trail",
+    "path"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-track",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Track\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\"}",
+    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
+  }
+}

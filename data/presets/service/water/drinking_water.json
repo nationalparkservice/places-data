@@ -1,0 +1,30 @@
+{
+  "name": "Drinking Water",
+  "path": "Service--Water--Drinking_Water",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "description",
+    "indoor",
+    "access"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "drinking_water"
+  },
+  "terms": [
+    "drinking water",
+    "fountain",
+    "potable"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Drinking Water\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

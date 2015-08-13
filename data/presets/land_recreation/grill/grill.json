@@ -1,0 +1,19 @@
+{
+  "name": "Grill",
+  "path": "Land_Recreation--Grill--Grill",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "barbecue_grill": "yes"
+  },
+  "terms": [
+    "grill"
+  ],
+  "gisTags": {}
+}

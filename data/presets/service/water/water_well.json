@@ -1,0 +1,28 @@
+{
+  "name": "Water Well",
+  "path": "Service--Water--Water_Well",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "drinking_water",
+    "pump"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "man_made": "water_well"
+  },
+  "terms": [
+    "water well"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Water Well\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Highway",
+  "path": "Road--Highway--Highway",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "motorway"
+  },
+  "terms": [
+    "highway"
+  ],
+  "gisTags": {}
+}

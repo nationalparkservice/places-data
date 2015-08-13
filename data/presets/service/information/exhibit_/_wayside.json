@@ -1,0 +1,34 @@
+{
+  "name": "Exhibit / Wayside",
+  "path": "Service--Information--Exhibit_/_Wayside",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "attraction"
+  },
+  "terms": [
+    "exhibit / wayside",
+    "exhibit",
+    "wayside",
+    "attraction",
+    "tourist attraction"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Exhibit / Wayside\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

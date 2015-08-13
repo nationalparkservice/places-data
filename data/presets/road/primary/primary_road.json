@@ -1,0 +1,40 @@
+{
+  "name": "Primary Road",
+  "path": "Road--Primary--Primary_Road",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "surface",
+    "width",
+    "maxspeed",
+    "oneway",
+    "lanes",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "primary"
+  },
+  "terms": [
+    "primary road",
+    "primary",
+    "road",
+    "highway",
+    "interstate",
+    "interstate highway"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-primary",
+    "Road": "Yes",
+    "Road_Values": "{\"RDSTATUS\":\"Existing\",\"RDMAINTAINER\":\"NPS\",\"RDCLASS\":\"Primary\"}",
+    "Road_Default": "Yes",
+    "Road_OSM_Tags": "{\"name\",\"surface\",\"oneway\",\"lanes\"}",
+    "Road_GIS_Tags": "{\"RDNAME\",\"RDSURFACE\",\"RDONEWAY\",\"RDLANES\"}"
+  }
+}

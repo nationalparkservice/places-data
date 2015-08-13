@@ -1,0 +1,21 @@
+{
+  "name": "Entrance/Exit",
+  "path": "Miscellaneous--Entrance--Entrance/Exit",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "building": "entrance"
+  },
+  "terms": [
+    "entrance"
+  ],
+  "gisTags": {
+    "POI": "Yes"
+  }
+}

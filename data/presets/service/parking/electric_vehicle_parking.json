@@ -1,0 +1,20 @@
+{
+  "name": "Electric Vehicle Parking",
+  "path": "Service--Parking--Electric_Vehicle_Parking",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "parking",
+    "capacity:charging": "yes"
+  },
+  "terms": [
+    "electric vehicle parking"
+  ],
+  "gisTags": {}
+}

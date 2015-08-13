@@ -1,0 +1,31 @@
+{
+  "name": "Airport",
+  "path": "Service--Airport--Airport",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "icao",
+    "iata"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "aeroway": "aerodrome"
+  },
+  "terms": [
+    "airport",
+    "aeroway",
+    "aerodrome"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Airport\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Stream",
+  "path": "Natural_Feature--Stream--Stream",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "waterway": "stream"
+  },
+  "terms": [
+    "beck",
+    "branch",
+    "brook",
+    "burn",
+    "course",
+    "creek",
+    "current",
+    "drift",
+    "flood",
+    "flow",
+    "freshet",
+    "race",
+    "rill",
+    "rindle",
+    "rivulet",
+    "run",
+    "runnel",
+    "rush",
+    "spate",
+    "spritz",
+    "surge",
+    "tide",
+    "torrent",
+    "tributary",
+    "watercourse"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "waterway-stream",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Stream\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

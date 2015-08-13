@@ -1,0 +1,31 @@
+{
+  "name": "Parking Aisle",
+  "path": "Road--Service--Parking_Aisle",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "surface",
+    "oneway",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "service",
+    "service": "parking_aisle"
+  },
+  "terms": [
+    "parking aisle"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-service",
+    "Road": "Yes",
+    "Road_Values": "{\"RDSTATUS\":\"Existing\",\"RDMAINTAINER\":\"NPS\",\"RDCLASS\":\"Service\"}",
+    "Road_OSM_Tags": "{\"name\",\"surface\",\"oneway\",\"lanes\"}",
+    "Road_GIS_Tags": "{\"RDNAME\",\"RDSURFACE\",\"RDONEWAY\",\"RDLANES\"}"
+  }
+}

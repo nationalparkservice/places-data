@@ -1,0 +1,29 @@
+{
+  "name": "Geyser",
+  "path": "Natural_Feature--Geyser--Geyser",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "geyser"
+  },
+  "terms": [
+    "geyser",
+    "gusher",
+    "spout",
+    "hot spring",
+    "thermal spring"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Geyser\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

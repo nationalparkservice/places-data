@@ -1,0 +1,20 @@
+{
+  "name": "Zebra Mussel Decontamination Station",
+  "path": "Water_Recreation--Boat--Zebra_Mussel_Decontamination_Station",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "boat_wash",
+    "type": "zebra_mussel"
+  },
+  "terms": [
+    "zebra mussel decontamination station"
+  ],
+  "gisTags": {}
+}

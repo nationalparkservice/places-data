@@ -1,0 +1,36 @@
+{
+  "name": "Parking Area",
+  "path": "Miscellaneous--Parking--Parking_Area",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "capacity",
+    "maxstay",
+    "fee",
+    "nps/trailuse"
+  ],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "parking"
+  },
+  "terms": [
+    "parking",
+    "car parking",
+    "vehicle parking",
+    "parking lot",
+    "car park"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Parking\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "All-terrain trail",
+  "path": "Land_Recreation--All-terrain_vehicle--All-terrain_trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "track",
+    "atv": "yes"
+  },
+  "terms": [
+    "atv trail",
+    "atv",
+    "all terrain vehicle",
+    "quad",
+    "4wd",
+    "4 wheeler",
+    "four-wheeler",
+    "off-road",
+    "off road",
+    "trail",
+    "track",
+    "structure"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-track",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"ATV Trail\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_ATV\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
+  }
+}

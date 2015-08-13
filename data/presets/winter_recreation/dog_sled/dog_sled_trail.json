@@ -1,0 +1,48 @@
+{
+  "name": "Dog Sled Trail",
+  "path": "Winter_Recreation--Dog_Sled--Dog_Sled_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "piste/difficulty"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "piste:type": "sleigh"
+  },
+  "terms": [
+    "dog sled trail",
+    "dog sled",
+    "mushing trail",
+    "mushing",
+    "winter track",
+    "trail",
+    "track"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-track",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Dog Sled Trail\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_DOGSLED\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
+  }
+}

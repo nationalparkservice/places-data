@@ -1,0 +1,20 @@
+{
+  "name": "Climbing Route",
+  "path": "Land_Recreation--Climbing--Climbing_Route",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "path",
+    "sport": "climbing"
+  },
+  "terms": [
+    "climbing route"
+  ],
+  "gisTags": {}
+}

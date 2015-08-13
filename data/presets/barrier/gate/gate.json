@@ -1,0 +1,19 @@
+{
+  "name": "Gate",
+  "path": "Barrier--Gate--Gate",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "barrier": "gate"
+  },
+  "terms": [
+    "gate"
+  ],
+  "gisTags": {}
+}

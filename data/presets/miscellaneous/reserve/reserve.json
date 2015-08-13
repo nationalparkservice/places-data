@@ -1,0 +1,31 @@
+{
+  "name": "Reserve",
+  "path": "Miscellaneous--Reserve--Reserve",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "leisure": "nature_reserve"
+  },
+  "terms": [
+    "reserve",
+    "nature reserve",
+    "wildlife reserve",
+    "wildlife",
+    "protected area",
+    "protected"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Reserve\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

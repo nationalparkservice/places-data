@@ -1,0 +1,33 @@
+{
+  "name": "Bus Stop / Shuttle Stop",
+  "path": "Service--Bus--Bus_Stop_/_Shuttle_Stop",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "public_transport",
+    "network",
+    "shelter",
+    "bench"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "bus_stop"
+  },
+  "terms": [
+    "bus stop / shuttle stop",
+    "bus stop",
+    "shuttle stop",
+    "bus station"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Bus Stop / Shuttle Stop\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

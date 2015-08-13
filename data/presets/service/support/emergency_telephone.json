@@ -1,0 +1,29 @@
+{
+  "name": "Emergency Telephone",
+  "path": "Service--Support--Emergency_Telephone",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "emergency": "phone"
+  },
+  "terms": [
+    "emergency telephone",
+    "emergency phone",
+    "phone",
+    "emergency"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Emergency Telephone\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

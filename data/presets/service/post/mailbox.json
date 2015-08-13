@@ -1,0 +1,17 @@
+{
+  "name": "Mailbox",
+  "path": "Service--Post--Mailbox",
+  "fields": [],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "post_box"
+  },
+  "terms": [
+    "mailbox"
+  ],
+  "gisTags": {}
+}

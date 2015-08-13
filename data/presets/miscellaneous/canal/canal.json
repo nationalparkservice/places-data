@@ -1,0 +1,28 @@
+{
+  "name": "Canal",
+  "path": "Miscellaneous--Canal--Canal",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "waterway": "canal"
+  },
+  "terms": [
+    "canal",
+    "ditch",
+    "lateal"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "waterway-canal",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Canal\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

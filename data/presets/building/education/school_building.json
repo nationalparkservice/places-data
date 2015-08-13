@@ -1,0 +1,35 @@
+{
+  "name": "School Building",
+  "path": "Building--Education--School_Building",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "address",
+    "levels"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "building": "school"
+  },
+  "terms": [
+    "school building",
+    "school",
+    "academy",
+    "elementary school",
+    "middle school",
+    "high school"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"School Building\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Building": "Yes",
+    "Building_OSM_Tags": "{\"name\"}",
+    "Building_GIS_Tags": "{\"Common_Name\"}"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Mountain Pass (Saddle / Gap)",
+  "path": "Natural_Feature--Pass--Mountain_Pass_(Saddle_/_Gap)",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "ele",
+    "direction"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "saddle"
+  },
+  "terms": [
+    "saddle",
+    "gap",
+    "col",
+    "notch",
+    "pass",
+    "water gap",
+    "wind gap"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Saddle (Gap)\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

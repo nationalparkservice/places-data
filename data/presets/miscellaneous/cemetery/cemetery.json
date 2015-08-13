@@ -1,0 +1,26 @@
+{
+  "name": "Cemetery",
+  "path": "Miscellaneous--Cemetery--Cemetery",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "landuse": "cemetery"
+  },
+  "terms": [
+    "cemetery",
+    "graveyard"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Cemetery\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Anchorage",
+  "path": "Water_Recreation--Boat--Anchorage",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "seamark:anchorage:category": "*"
+  },
+  "terms": [
+    "'anchorage"
+  ],
+  "gisTags": {}
+}

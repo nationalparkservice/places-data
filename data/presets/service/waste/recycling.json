@@ -1,0 +1,37 @@
+{
+  "name": "Recycling",
+  "path": "Service--Waste--Recycling",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "recycling/cans",
+    "recycling/glass",
+    "recycling/paper",
+    "recycling/clothes"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "recycling"
+  },
+  "terms": [
+    "recycling",
+    "salvage",
+    "garbage",
+    "trash",
+    "can",
+    "bottle",
+    "scrap"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Recycling\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Canyoneering Route",
+  "path": "Land_Recreation--Climbing--Canyoneering_Route",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "path",
+    "sport": "canyoning"
+  },
+  "terms": [
+    "canyoneering route"
+  ],
+  "gisTags": {}
+}

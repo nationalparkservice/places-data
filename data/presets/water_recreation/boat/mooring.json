@@ -1,0 +1,19 @@
+{
+  "name": "Mooring",
+  "path": "Water_Recreation--Boat--Mooring",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "mooring": "*"
+  },
+  "terms": [
+    "mooring"
+  ],
+  "gisTags": {}
+}

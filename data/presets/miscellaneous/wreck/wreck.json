@@ -1,0 +1,20 @@
+{
+  "name": "Wreck",
+  "path": "Miscellaneous--Wreck--Wreck",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "historic": "wreck"
+  },
+  "terms": [
+    "wreck",
+    "shipwreck"
+  ],
+  "gisTags": {}
+}

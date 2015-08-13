@@ -1,0 +1,27 @@
+{
+  "name": "Waterfall",
+  "path": "Natural_Feature--Waterfall--Waterfall",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "waterway": "waterfall"
+  },
+  "terms": [
+    "waterfall",
+    "falls",
+    "cascade",
+    "cataract"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Waterfall\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

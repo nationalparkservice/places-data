@@ -1,0 +1,30 @@
+{
+  "name": "Traffic Signals",
+  "path": "Road_Feature--Control--Traffic_Signals",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "traffic_signals"
+  },
+  "terms": [
+    "traffic signals",
+    "traffic signal",
+    "traffic light",
+    "stop light",
+    "stoplight"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Traffic Signals\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

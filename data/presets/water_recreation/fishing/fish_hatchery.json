@@ -1,0 +1,19 @@
+{
+  "name": "Fish Hatchery",
+  "path": "Water_Recreation--Fishing--Fish_Hatchery",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "landuse": "aquaculture"
+  },
+  "terms": [
+    "fish hatchery"
+  ],
+  "gisTags": {}
+}

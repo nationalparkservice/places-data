@@ -1,0 +1,35 @@
+{
+  "name": "Secondary Link",
+  "path": "Road--Secondary--Secondary_Link",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "surface",
+    "width",
+    "maxspeed",
+    "oneway",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "secondary_link"
+  },
+  "terms": [
+    "ramp",
+    "on ramp",
+    "off ramp"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-secondary-link",
+    "Road": "Yes",
+    "Road_Values": "{\"RDSTATUS\":\"Existing\",\"RDMAINTAINER\":\"NPS\",\"RDCLASS\":\"Secondary\"}",
+    "Road_OSM_Tags": "{\"name\",\"surface\",\"oneway\",\"lanes\"}",
+    "Road_GIS_Tags": "{\"RDNAME\",\"RDSURFACE\",\"RDONEWAY\",\"RDLANES\"}"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Food Service",
+  "path": "Service--Food--Food_Service",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "food_court"
+  },
+  "terms": [
+    "food service",
+    "food court",
+    "cafe",
+    "restaurant"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Food Service\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Building": "Yes",
+    "Building_OSM_Tags": "{\"name\"}",
+    "Building_GIS_Tags": "{\"Common_Name\"}"
+  }
+}

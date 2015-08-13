@@ -1,0 +1,49 @@
+{
+  "name": "Non-Motorized Trail",
+  "path": "Land_Recreation--Trail--Non-Motorized_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "path"
+  },
+  "terms": [
+    "trail",
+    "path",
+    "track",
+    "hike",
+    "hiking",
+    "trackway",
+    "walk",
+    "footpath"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-path",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Trail\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_FOOT\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Interpretive Sign",
+  "path": "Service--Information--Interpretive_Sign",
+  "fields": [],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "information",
+    "information": "sign"
+  },
+  "terms": [
+    "interpretive sign"
+  ],
+  "gisTags": {}
+}

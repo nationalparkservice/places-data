@@ -1,0 +1,32 @@
+{
+  "name": "Viewpoint",
+  "path": "Miscellaneous--View--Viewpoint",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "inCarto": true,
+  "tags": {
+    "tourism": "viewpoint"
+  },
+  "terms": [
+    "viewpoint",
+    "scenic viewpoint",
+    "scenic",
+    "scenery"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Viewpoint\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

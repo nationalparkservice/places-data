@@ -1,0 +1,31 @@
+{
+  "name": "Woods",
+  "path": "Natural_Feature--Forest--Woods",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "leaf_type",
+    "leaf_cycle",
+    "crop"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "wood"
+  },
+  "terms": [
+    "wood",
+    "forest",
+    "park",
+    "jungle"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Woods\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

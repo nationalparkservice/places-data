@@ -1,0 +1,19 @@
+{
+  "name": "Lighthouse",
+  "path": "Water_Recreation--Lighthouse--Lighthouse",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "man_made": "lighthouse"
+  },
+  "terms": [
+    "lighthouse"
+  ],
+  "gisTags": {}
+}

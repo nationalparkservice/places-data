@@ -1,0 +1,47 @@
+{
+  "name": "Snowmobile Trail",
+  "path": "Trail--Motorized--Snowmobile_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "track",
+    "snowmobile": "yes"
+  },
+  "terms": [
+    "snowmobile trail",
+    "snowmobile",
+    "snow machine",
+    "trail",
+    "track"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-track",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Snowmobile Trail\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_SNOWMOBILE\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
+  }
+}

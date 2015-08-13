@@ -1,0 +1,19 @@
+{
+  "name": "Fish Cleaning",
+  "path": "Water_Recreation--Fishing--Fish_Cleaning",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "fish_cleaning"
+  },
+  "terms": [
+    "fish cleaning"
+  ],
+  "gisTags": {}
+}

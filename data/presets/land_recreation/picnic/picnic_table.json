@@ -1,0 +1,19 @@
+{
+  "name": "Picnic Table",
+  "path": "Land_Recreation--Picnic--Picnic_Table",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "leisure": "picnic_table"
+  },
+  "terms": [
+    "picnic table"
+  ],
+  "gisTags": {}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Grave",
+  "path": "Miscellaneous--Cemetery--Grave",
+  "fields": [
+    "memo",
+    "nps/unitcoderial",
+    "subject/name",
+    "subject/species",
+    "subject/birth",
+    "subject/death",
+    "religion"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "cemetery": "grave"
+  },
+  "terms": [
+    "grave",
+    "tomb"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Grave\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

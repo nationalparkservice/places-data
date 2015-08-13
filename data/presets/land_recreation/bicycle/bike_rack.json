@@ -1,0 +1,20 @@
+{
+  "name": "Bike Rack",
+  "path": "Land_Recreation--Bicycle--Bike_Rack",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "rack"
+  },
+  "terms": [
+    "bike rack"
+  ],
+  "gisTags": {}
+}

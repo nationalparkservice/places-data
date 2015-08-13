@@ -1,0 +1,36 @@
+{
+  "name": "Valley",
+  "path": "Natural_Feature--Valley--Valley",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "valley"
+  },
+  "terms": [
+    "valley",
+    "barranca",
+    "canyon",
+    "chasm",
+    "cove",
+    "draw",
+    "glen",
+    "gorge",
+    "gulch",
+    "gulf",
+    "hollow",
+    "ravine"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Valley\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

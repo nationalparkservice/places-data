@@ -1,0 +1,20 @@
+{
+  "name": "Sculpture",
+  "path": "Miscellaneous--Art--Sculpture",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "artwork",
+    "artwork_type": "statue"
+  },
+  "terms": [
+    "sculpture"
+  ],
+  "gisTags": {}
+}

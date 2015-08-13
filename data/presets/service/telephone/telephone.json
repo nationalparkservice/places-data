@@ -1,0 +1,30 @@
+{
+  "name": "Telephone",
+  "path": "Service--Telephone--Telephone",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "indoor"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "telephone"
+  },
+  "terms": [
+    "telephone",
+    "phone",
+    "telephone box",
+    "phone booth"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Telephone\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

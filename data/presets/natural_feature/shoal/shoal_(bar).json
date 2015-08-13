@@ -1,0 +1,32 @@
+{
+  "name": "Shoal (Bar)",
+  "path": "Natural_Feature--Shoal--Shoal_(Bar)",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "tidal"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "shoal"
+  },
+  "terms": [
+    "shoal",
+    "bar",
+    "ledge",
+    "reef",
+    "sandbar",
+    "spit"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Shoal (Bar)\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

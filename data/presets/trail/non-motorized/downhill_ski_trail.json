@@ -1,0 +1,49 @@
+{
+  "name": "Downhill Ski Trail",
+  "path": "Trail--Non-Motorized--Downhill_Ski_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "piste/difficulty"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "piste:type": "downhill"
+  },
+  "terms": [
+    "downhill ski trail",
+    "downhill ski",
+    "downhill",
+    "alpine ski trail",
+    "alpine ski",
+    "alpine",
+    "trail",
+    "track"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-path",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Downhill Ski Trail\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_DOWNHILL\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
+  }
+}

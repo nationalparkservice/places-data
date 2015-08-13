@@ -1,0 +1,30 @@
+{
+  "name": "Fountain",
+  "path": "Service--Water--Fountain",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "drinking_water",
+    "lit"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "fountain"
+  },
+  "terms": [
+    "fountain",
+    "well"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Fountain\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

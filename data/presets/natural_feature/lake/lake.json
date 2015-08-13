@@ -1,0 +1,37 @@
+{
+  "name": "Lake",
+  "path": "Natural_Feature--Lake--Lake",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "water",
+    "water": "lake"
+  },
+  "terms": [
+    "lake",
+    "backwater",
+    "lac",
+    "lagoon",
+    "laguna",
+    "pond",
+    "pool",
+    "resaca",
+    "waterhole",
+    "lakelet",
+    "loch",
+    "mere"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Lake\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

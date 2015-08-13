@@ -1,0 +1,26 @@
+{
+  "name": "Bridge",
+  "path": "Road_Feature--Bridge--Bridge",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "bridge": "yes"
+  },
+  "terms": [
+    "bridge"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Bridge\"}",
+    "POI_OSM_Tags": "{\"name\".\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

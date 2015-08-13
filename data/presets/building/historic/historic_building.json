@@ -1,0 +1,30 @@
+{
+  "name": "Historic Building",
+  "path": "Building--Historic--Historic_Building",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "site_type"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "historic": "building",
+    "building": "yes"
+  },
+  "terms": [
+    "historic building"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Historic Building\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Building": "Yes",
+    "Building_OSM_Tags": "{\"name\"}",
+    "Building_GIS_Tags": "{\"Common_Name\"}"
+  }
+}

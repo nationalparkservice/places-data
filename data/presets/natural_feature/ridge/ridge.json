@@ -1,0 +1,32 @@
+{
+  "name": "Ridge",
+  "path": "Natural_Feature--Ridge--Ridge",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "ridge"
+  },
+  "terms": [
+    "ridge",
+    "crest",
+    "cuesta",
+    "escarpment",
+    "hogback",
+    "lae",
+    "rim",
+    "spur"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Ridge\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

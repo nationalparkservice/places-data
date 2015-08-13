@@ -1,0 +1,31 @@
+{
+  "name": "Fortification",
+  "path": "Miscellaneous--Fort--Fortification",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "site_type"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "historic": "archaeological_site",
+    "site_type": "fortification"
+  },
+  "terms": [
+    "fortification",
+    "fort",
+    "earthworks",
+    "hill fort",
+    "trench"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Fortification\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

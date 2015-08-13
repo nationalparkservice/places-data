@@ -1,0 +1,29 @@
+{
+  "name": "Turning Circle",
+  "path": "Road_Feature--No-outlet--Turning_Circle",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "turning_circle"
+  },
+  "terms": [
+    "turning circle",
+    "cul-de-sac",
+    "dead end street",
+    "blind alley"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Turning Circle\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

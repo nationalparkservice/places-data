@@ -1,0 +1,20 @@
+{
+  "name": "Tornado Shelter",
+  "path": "Building--Tornado_Shelter--Tornado_Shelter",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "shelter",
+    "shelter_type": "tornado"
+  },
+  "terms": [
+    "tornado shelter"
+  ],
+  "gisTags": {}
+}

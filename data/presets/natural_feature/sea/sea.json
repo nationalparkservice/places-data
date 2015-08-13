@@ -1,0 +1,26 @@
+{
+  "name": "Sea",
+  "path": "Natural_Feature--Sea--Sea",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "place": "sea"
+  },
+  "terms": [
+    "sea",
+    "gulf",
+    "ocean"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Sea\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

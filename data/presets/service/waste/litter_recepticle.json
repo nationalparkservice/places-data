@@ -1,0 +1,35 @@
+{
+  "name": "Litter recepticle",
+  "path": "Service--Waste--Litter_recepticle",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "waste",
+    "bin"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "waste_basket"
+  },
+  "terms": [
+    "waste basket",
+    "waste paper basket",
+    "trash bin",
+    "waste bin",
+    "trash",
+    "rubbish",
+    "litter",
+    "garbage"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Waste Basket\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

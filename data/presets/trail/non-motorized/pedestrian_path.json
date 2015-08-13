@@ -1,0 +1,26 @@
+{
+  "name": "Pedestrian Path",
+  "path": "Trail--Non-Motorized--Pedestrian_Path",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "surface",
+    "lit",
+    "width",
+    "structure",
+    "access"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "footway"
+  },
+  "terms": [
+    "footway",
+    "pedestrian path",
+    "pedestrian trail"
+  ],
+  "gisTags": {}
+}

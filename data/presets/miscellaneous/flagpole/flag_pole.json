@@ -1,0 +1,19 @@
+{
+  "name": "Flag Pole",
+  "path": "Miscellaneous--Flagpole--Flag_Pole",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "man_made": "flagpole"
+  },
+  "terms": [
+    "flagpole"
+  ],
+  "gisTags": {}
+}

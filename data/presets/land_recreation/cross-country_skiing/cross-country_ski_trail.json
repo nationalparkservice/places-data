@@ -1,0 +1,50 @@
+{
+  "name": "Cross-Country Ski Trail",
+  "path": "Land_Recreation--Cross-Country_Skiing--Cross-Country_Ski_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "piste/difficulty"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "piste:type": "nordic"
+  },
+  "terms": [
+    "cross-country ski trail",
+    "cross-country ski",
+    "cross-country",
+    "nordic ski trail",
+    "nordic ski",
+    "nordic",
+    "xcs",
+    "trail",
+    "track"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-path",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Cross-Country Ski Trail\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_NORDIC\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Ferry Terminal",
+  "path": "Service--Ferry--Ferry_Terminal",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "cargo"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "ferry_terminal"
+  },
+  "terms": [
+    "ferry terminal"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Ferry Terminal\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

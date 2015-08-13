@@ -1,0 +1,27 @@
+{
+  "name": "Metro Stop / Subway Entrance",
+  "path": "Service--Rail--Metro_Stop_/_Subway_Entrance",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "railway": "subway_entrance"
+  },
+  "terms": [
+    "metro stop / subway entrance",
+    "metro stop",
+    "subway entrance",
+    "subway exit"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Metro Stop / Subway Entrance\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Road",
+  "path": "Road--Minor--Road",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "*"
+  },
+  "terms": [
+    "minor road"
+  ],
+  "gisTags": {}
+}

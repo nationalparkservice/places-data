@@ -1,0 +1,31 @@
+{
+  "name": "Entrance Station",
+  "path": "Service--Entrance--Entrance_Station",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "barrier": "entrance"
+  },
+  "terms": [
+    "entrance station",
+    "entrance",
+    "entry",
+    "gateway",
+    "portal"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Entrance Station\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

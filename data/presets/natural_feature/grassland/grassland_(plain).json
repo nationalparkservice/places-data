@@ -1,0 +1,29 @@
+{
+  "name": "Grassland (Plain)",
+  "path": "Natural_Feature--Grassland--Grassland_(Plain)",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "grassland"
+  },
+  "terms": [
+    "grassland",
+    "plain",
+    "highland",
+    "kula",
+    "upland"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Grassland (Plain)\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

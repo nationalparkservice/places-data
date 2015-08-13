@@ -1,0 +1,19 @@
+{
+  "name": "Buoy",
+  "path": "Water_Recreation--Buoy--Buoy",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "man_made": "buoy"
+  },
+  "terms": [
+    "buoy"
+  ],
+  "gisTags": {}
+}

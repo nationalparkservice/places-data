@@ -1,0 +1,19 @@
+{
+  "name": "Ferry Route",
+  "path": "Trail--Water--Ferry_Route",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "route": "ferry"
+  },
+  "terms": [
+    "ferry"
+  ],
+  "gisTags": {}
+}

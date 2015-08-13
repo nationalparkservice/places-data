@@ -1,0 +1,30 @@
+{
+  "name": "Shaft (Mine)",
+  "path": "Miscellaneous--Mine--Shaft_(Mine)",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "resource"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "man_made": "mineshaft"
+  },
+  "terms": [
+    "shaft",
+    "mine",
+    "mineshaft",
+    "adit"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Shaft (Mine)\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

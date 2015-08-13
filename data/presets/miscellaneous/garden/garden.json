@@ -1,0 +1,19 @@
+{
+  "name": "Garden",
+  "path": "Miscellaneous--Garden--Garden",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "leisure": "garden"
+  },
+  "terms": [
+    "garden"
+  ],
+  "gisTags": {}
+}

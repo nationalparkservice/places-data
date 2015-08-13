@@ -1,0 +1,31 @@
+{
+  "name": "Bench",
+  "path": "Miscellaneous--Bench--Bench",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "backrest",
+    "direction",
+    "seats",
+    "material"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "bench"
+  },
+  "terms": [
+    "bench",
+    "seat"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Bench\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

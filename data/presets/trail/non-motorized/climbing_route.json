@@ -1,0 +1,20 @@
+{
+  "name": "Climbing Route",
+  "path": "Trail--Non-Motorized--Climbing_Route",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "path",
+    "sport": "climbing"
+  },
+  "terms": [
+    "climbing route"
+  ],
+  "gisTags": {}
+}

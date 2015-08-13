@@ -1,0 +1,29 @@
+{
+  "name": "Beach",
+  "path": "Natural_Feature--Beach--Beach",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "surface"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "beach"
+  },
+  "terms": [
+    "beach",
+    "coast",
+    "shore",
+    "strand"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Beach\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

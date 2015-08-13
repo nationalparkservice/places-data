@@ -1,0 +1,19 @@
+{
+  "name": "Battlefield",
+  "path": "Miscellaneous--Battlefield--Battlefield",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "historic": "battlefield"
+  },
+  "terms": [
+    "battlefield"
+  ],
+  "gisTags": {}
+}

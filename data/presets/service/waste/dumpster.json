@@ -1,0 +1,19 @@
+{
+  "name": "Dumpster",
+  "path": "Service--Waste--Dumpster",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "waste_disposal"
+  },
+  "terms": [
+    "dumpster"
+  ],
+  "gisTags": {}
+}

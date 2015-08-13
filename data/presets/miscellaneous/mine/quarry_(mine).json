@@ -1,0 +1,28 @@
+{
+  "name": "Quarry (Mine)",
+  "path": "Miscellaneous--Mine--Quarry_(Mine)",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "resource"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "landuse": "quarry"
+  },
+  "terms": [
+    "quarry",
+    "mine"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Quarry (Mine)\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

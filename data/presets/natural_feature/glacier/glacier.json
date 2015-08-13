@@ -1,0 +1,31 @@
+{
+  "name": "Glacier",
+  "path": "Natural_Feature--Glacier--Glacier",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "surface",
+    "direction"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "glacier"
+  },
+  "terms": [
+    "glacier",
+    "icefield",
+    "ice patch",
+    "snow patch"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Glacier\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

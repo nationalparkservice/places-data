@@ -1,0 +1,29 @@
+{
+  "name": "Reservoir",
+  "path": "Miscellaneous--Reservoir--Reservoir",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "natural": "water",
+    "water": "reservoir",
+    "landuse": "reservoir"
+  },
+  "terms": [
+    "reservoir",
+    "lake",
+    "tank"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Reservoir\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

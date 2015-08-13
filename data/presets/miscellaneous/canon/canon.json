@@ -1,0 +1,19 @@
+{
+  "name": "Canon",
+  "path": "Miscellaneous--Canon--Canon",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "historic": "canon"
+  },
+  "terms": [
+    "canon"
+  ],
+  "gisTags": {}
+}
