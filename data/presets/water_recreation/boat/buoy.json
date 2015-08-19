@@ -1,20 +1,19 @@
 {
-  "name": "Fence",
-  "path": "Miscellaneous--Fence--Fence",
+  "name": "Buoy",
+  "path": "Water_Recreation--Boat--Buoy",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point",
-    "vertex"
+    "point"
   ],
   "matchScore": 10,
   "tags": {
-    "barrier": "fence"
+    "man_made": "buoy"
   },
   "terms": [
-    "gate"
+    "buoy"
   ],
   "gisTags": {}
 }

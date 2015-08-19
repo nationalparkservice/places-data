@@ -1,0 +1,17 @@
+{
+  "name": "Information Board",
+  "path": "Service--Information--Information_Board",
+  "fields": [],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "information",
+    "information": "board"
+  },
+  "terms": [
+    "bulletin board"
+  ],
+  "gisTags": {}
+}

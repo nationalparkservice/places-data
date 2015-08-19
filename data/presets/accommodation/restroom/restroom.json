@@ -14,7 +14,8 @@
     "access"
   ],
   "geometry": [
-    "point"
+    "point",
+    "vertex"
   ],
   "matchScore": 10,
   "tags": {

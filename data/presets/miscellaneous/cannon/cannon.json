@@ -1,20 +1,19 @@
 {
-  "name": "Fence",
-  "path": "Miscellaneous--Fence--Fence",
+  "name": "Cannon",
+  "path": "Miscellaneous--Cannon--Cannon",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point",
-    "vertex"
+    "point"
   ],
   "matchScore": 10,
   "tags": {
-    "barrier": "fence"
+    "historic": "cannon"
   },
   "terms": [
-    "gate"
+    "cannon"
   ],
   "gisTags": {}
 }

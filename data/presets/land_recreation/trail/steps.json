@@ -1,0 +1,24 @@
+{
+  "name": "Steps",
+  "path": "Land_Recreation--Trail--Steps",
+  "fields": [
+    "surface",
+    "lit",
+    "width",
+    "incline_steps",
+    "access"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "steps"
+  },
+  "terms": [
+    "stairs",
+    "staircase",
+    "steps"
+  ],
+  "gisTags": {}
+}

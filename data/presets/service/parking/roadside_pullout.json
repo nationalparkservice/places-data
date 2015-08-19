@@ -1,0 +1,16 @@
+{
+  "name": "Roadside Pullout",
+  "path": "Service--Parking--Roadside_Pullout",
+  "fields": [],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "highway": "rest_area"
+  },
+  "terms": [
+    "roadside pullout"
+  ],
+  "gisTags": {}
+}

@@ -1,20 +1,19 @@
 {
-  "name": "Fence",
-  "path": "Miscellaneous--Fence--Fence",
+  "name": "Weather Shelter",
+  "path": "Building--Shelter--Weather_Shelter",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point",
-    "vertex"
+    "point"
   ],
   "matchScore": 10,
   "tags": {
-    "barrier": "fence"
+    "amenity": "shelter"
   },
   "terms": [
-    "gate"
+    "tornado shelter"
   ],
   "gisTags": {}
 }

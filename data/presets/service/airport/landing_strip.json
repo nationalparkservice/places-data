@@ -1,0 +1,29 @@
+{
+  "name": "Landing Strip",
+  "path": "Service--Airport--Landing_Strip",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "icao",
+    "iata"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "aeroway": "aerodrome",
+    "aerodrome": "airstrip",
+    "surface": "ground"
+  },
+  "terms": [
+    "aeroway",
+    "aerodrome",
+    "air field",
+    "landing strip",
+    "landing"
+  ],
+  "gisTags": {}
+}

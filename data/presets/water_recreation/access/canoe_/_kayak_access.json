@@ -1,0 +1,35 @@
+{
+  "name": "Canoe / Kayak Access",
+  "path": "Water_Recreation--Access--Canoe_/_Kayak_Access",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "whitewater",
+    "width",
+    "section_grade",
+    "nps/wateruse"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "leisure": "slipway",
+    "canoe": "yes"
+  },
+  "terms": [
+    "canoe access",
+    "canoe",
+    "kayak",
+    "raft",
+    "trail",
+    "track"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Canoe Access\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

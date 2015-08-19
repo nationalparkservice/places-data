@@ -1,20 +1,19 @@
 {
-  "name": "Fence",
-  "path": "Miscellaneous--Fence--Fence",
+  "name": "Grill",
+  "path": "Land_Recreation--Picnic--Grill",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point",
-    "vertex"
+    "point"
   ],
   "matchScore": 10,
   "tags": {
-    "barrier": "fence"
+    "barbecue_grill": "yes"
   },
   "terms": [
-    "gate"
+    "grill"
   ],
   "gisTags": {}
 }

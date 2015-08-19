@@ -1,0 +1,29 @@
+{
+  "name": "Dump Station",
+  "path": "Land_Recreation--Camping--Dump_Station",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "amenity": "sanitary_dump_station"
+  },
+  "terms": [
+    "sanitary disposal station",
+    "dumpstation",
+    "dump station"
+  ],
+  "gisTags": {
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Sanitary Disposal Station\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

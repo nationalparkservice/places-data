@@ -1,0 +1,35 @@
+{
+  "name": "Backcountry Campsite",
+  "path": "Land_Recreation--Camping--Backcountry_Campsite",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "capacity",
+    "fee"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "matchScore": 10,
+  "tags": {
+    "tourism": "camp_site",
+    "camp_site": "pitch",
+    "backcountry": "yes"
+  },
+  "terms": [
+    "campsite",
+    "camp site",
+    "backcountry",
+    "primitive"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Campsite\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
+}

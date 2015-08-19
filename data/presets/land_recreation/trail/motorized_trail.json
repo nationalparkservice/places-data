@@ -1,6 +1,6 @@
 {
-  "name": "Horseback Riding",
-  "path": "Trail--Non-Motorized--Horseback_Riding",
+  "name": "Motorized Trail",
+  "path": "Land_Recreation--Trail--Motorized_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -14,35 +14,30 @@
     "mtb/scale/imba",
     "sac_scale",
     "trail_visibility",
-    "nps/nonmotorizeduse",
+    "nps/trailuse",
     "nps/structure"
   ],
   "geometry": [
-    "line"
+    "point"
   ],
   "matchScore": 10,
   "tags": {
-    "highway": "path",
-    "horse": "yes"
+    "highway": "track"
   },
   "terms": [
-    "equestrian trail",
-    "equestrian",
-    "bridleway",
-    "horse riding",
-    "horse",
+    "track",
     "trail",
-    "track"
+    "path"
   ],
   "gisTags": {
     "OSM_Line": "x",
     "JSON_Icon_Line": "highway-track",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Equestrian Trail\"}",
+    "POI_Values": "{\"POITYPE\":\"Track\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_HORSE\":\"Yes\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\"}",
     "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
   }

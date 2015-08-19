@@ -1,0 +1,22 @@
+{
+  "name": "Trail Register",
+  "path": "Land_Recreation--Trail--Trail_Register",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "tags": {
+    "tourism": "register"
+  },
+  "terms": [
+    "register",
+    "trail head",
+    "trail",
+    "track"
+  ],
+  "gisTags": {}
+}
