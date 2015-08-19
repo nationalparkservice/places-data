@@ -76,7 +76,7 @@ var processPreset = function (preset) {
   var isValid = jsonschema.validate(newPreset, presetSchemaFile);
 
   // write new preset to file
-  var presetFile = (preset.category + '/' + preset.subcategory + '/' + preset.name + '.json').toLowerCase().replace(/\s/g, '_');
+  var presetFile = (preset.category + '/' + preset.subcategory + '/' + encodeURIComponent(preset.name).replace(/%20/g, ' ') + '.json').toLowerCase().replace(/\s/g, '_');
   var presetPath = path.join(presetPathRoot, presetFile);
   var presetDir = path.dirname(presetPath);
   var fileContent = JSON.stringify(newPreset, null, 2);
