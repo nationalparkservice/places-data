@@ -63,8 +63,13 @@
                 "type": "string"
             }
         },
-        "searchable": {
-            "description": "Whether or not the preset will be suggested via search",
+        "inCarto": {
+            "description": "Whether or not the preset can be rendered to Cartography",
+            "type": "boolean",
+            "default": true
+        },
+        "inEditor": {
+            "description": "Whether or not the preset is available in the editor",
             "type": "boolean",
             "default": true
         },
