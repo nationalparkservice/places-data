@@ -17,7 +17,10 @@
   "geometry": [
     "line"
   ],
-  "matchScore": 10,
+  "matchScore": 20,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "highway": "service"
   },

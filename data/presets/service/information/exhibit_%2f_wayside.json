@@ -12,7 +12,10 @@
     "point",
     "vertex"
   ],
-  "matchScore": 10,
+  "matchScore": 80,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "tourism": "attraction"
   },

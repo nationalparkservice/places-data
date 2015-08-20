@@ -1,11 +1,13 @@
 {
   "name": "Floating Restroom",
   "path": "Accommodation--Floating_Restroom--Floating_Restroom",
-  "fields": [],
   "geometry": [
     "point"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "amenity": "toilets",
     "type": "floating"

@@ -9,6 +9,9 @@
     "line"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "barrier": "gate"
   },

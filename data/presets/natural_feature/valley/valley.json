@@ -9,6 +9,9 @@
     "point"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "natural": "valley"
   },

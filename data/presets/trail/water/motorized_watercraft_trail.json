@@ -13,7 +13,10 @@
   "geometry": [
     "line"
   ],
-  "matchScore": 10,
+  "matchScore": 25,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "motorboat": "yes",
     "waterway": "yes"

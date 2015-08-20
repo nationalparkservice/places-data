@@ -1,11 +1,13 @@
 {
   "name": "ATM",
   "path": "Service--Bank--ATM",
-  "fields": [],
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 40,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "amenity": "atm"
   },

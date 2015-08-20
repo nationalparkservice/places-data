@@ -8,7 +8,10 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 50,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "highway": "path",
     "sport": "climbing"

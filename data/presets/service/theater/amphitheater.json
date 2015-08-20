@@ -10,7 +10,10 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 40,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "amenity": "theatre",
     "theatre:type": "amphi"

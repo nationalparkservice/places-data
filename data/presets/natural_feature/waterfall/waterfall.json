@@ -8,7 +8,10 @@
   "geometry": [
     "line"
   ],
-  "matchScore": 10,
+  "matchScore": 15,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "waterway": "waterfall"
   },

@@ -1,12 +1,14 @@
 {
   "name": "Interpretive Sign",
   "path": "Service--Information--Interpretive_Sign",
-  "fields": [],
   "geometry": [
     "point",
     "vertex"
   ],
-  "matchScore": 10,
+  "matchScore": 80,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "tourism": "information",
     "information": "sign"

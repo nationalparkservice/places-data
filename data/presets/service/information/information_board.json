@@ -1,11 +1,13 @@
 {
   "name": "Information Board",
   "path": "Service--Information--Information_Board",
-  "fields": [],
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 80,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "tourism": "information",
     "information": "board"

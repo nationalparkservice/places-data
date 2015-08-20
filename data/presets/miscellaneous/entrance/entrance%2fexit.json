@@ -9,6 +9,9 @@
     "vertex"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "building": "entrance"
   },

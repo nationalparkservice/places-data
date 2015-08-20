@@ -10,7 +10,10 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 70,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "building": "*"
   },

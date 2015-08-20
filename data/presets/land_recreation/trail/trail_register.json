@@ -9,6 +9,10 @@
     "point",
     "vertex"
   ],
+  "matchScore": 60,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "tourism": "register"
   },

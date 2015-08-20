@@ -12,7 +12,10 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 30,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "amenity": "shelter",
     "building": "hut"

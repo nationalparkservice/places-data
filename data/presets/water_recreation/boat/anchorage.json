@@ -9,11 +9,14 @@
     "point"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "seamark:anchorage:category": "*"
   },
   "terms": [
-    "'anchorage"
+    "anchorage"
   ],
   "gisTags": {}
 }

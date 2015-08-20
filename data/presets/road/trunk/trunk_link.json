@@ -16,6 +16,9 @@
     "line"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "highway": "trunk_link"
   },

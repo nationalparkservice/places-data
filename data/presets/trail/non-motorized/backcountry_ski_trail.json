@@ -20,7 +20,10 @@
   "geometry": [
     "line"
   ],
-  "matchScore": 10,
+  "matchScore": 12,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "piste:type": "skitour"
   },

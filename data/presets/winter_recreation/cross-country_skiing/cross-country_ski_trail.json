@@ -21,6 +21,9 @@
     "point"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "piste:type": "nordic"
   },

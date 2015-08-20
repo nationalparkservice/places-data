@@ -1,11 +1,13 @@
 {
   "name": "Roadside Pullout",
   "path": "Service--Parking--Roadside_Pullout",
-  "fields": [],
   "geometry": [
     "point"
   ],
   "matchScore": 10,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "highway": "rest_area"
   },

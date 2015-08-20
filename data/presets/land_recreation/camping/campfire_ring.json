@@ -8,7 +8,10 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "matchScore": 60,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
   "tags": {
     "leisure": "firepit"
   },
