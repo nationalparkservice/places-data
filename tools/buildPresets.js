@@ -69,7 +69,7 @@ var processPreset = function (preset) {
   };
   // remove empty properties
   Object.getOwnPropertyNames(newPreset).forEach(function (prop) {
-    if (!newPreset[prop]) delete newPreset[prop];
+    if (newPreset[prop] === null || newPreset[prop] === undefined || !newPreset[prop].toString || newPreset[prop].toString().length === 0) delete newPreset[prop];
   });
 
   // Validate the file against the schema
@@ -148,4 +148,3 @@ var makeMaki = function (preset) {
 };
 
 fs.createReadStream(csvPath).pipe(parser);
-

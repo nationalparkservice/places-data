@@ -2,7 +2,7 @@ var fs = require('fs');
 var getPresets = require('./compileFiles');
 var outputFilename = './presets.sql';
 var presetsPath = '../data/presets';
-var schemaFilename = './schemas/preset.json';
+var schemaFilename = './preset.json';
 var tableName = 'nps_presets';
 var format = function (dataType, data) {
   var returnValue;
@@ -35,7 +35,7 @@ var format = function (dataType, data) {
     },
     'object': function (data) {
       if (Object.prototype.toString.call(data) === '[object Object]') {
-        return "'" + JSON.stringify(data) + "'";
+        return "'" + JSON.stringify(data) + "'::json";
       } else {
         throw new Error("Object isn't really an object");
       }
@@ -60,21 +60,37 @@ var toSql = function () {
       getPresets(presetsPath, function (err, inputData) {
         if (!err) {
           var columns = [];
-          var inputJson = JSON.parse(inputData);
+          var inputJson = inputData;
           var values = [];
-          for (var key in inputJson) {
-            columns = ['pathname'];
-            values = [format({
-              'type': 'string',
-              'required': 'true'
-            }, key)];
-            for (var column in schema) {
-              if (inputJson[key][column] || inputJson[key][column] === false || schema[column] && typeof schema[column] === 'string' && schema[column].split(' ').indexOf('key') > -1) {
-                columns.push(column);
-                values.push(format(schema[column], (inputJson[key][column] === false ? false : inputJson[key][column] || column)));
+          var item;
+          for (var category in inputJson) {
+            for (var subcategory in inputJson[category].subcategories) {
+              for (var key in inputJson[category].subcategories[subcategory].tags) {
+                item = inputJson[category].subcategories[subcategory].tags[key];
+                columns = ['category', 'subcategory'];
+                values = [
+                  format({
+                    'type': 'string',
+                    'required': 'true'
+                  }, category),
+                  format({
+                    'type': 'string',
+                    'required': 'true'
+                  }, subcategory)
+                ];
+
+                for (var column in schema) {
+                  if (item[column] || item[column] === false || schema[column] && typeof schema[column] === 'string' && schema[column].split(' ').indexOf('key') > -1) {
+                    columns.push(column);
+                    values.push(format(schema[column], (item[column] === false ? false : item[column] || column)));
+                  }
+                }
+                columns = columns.map(function (d) {
+                  return '"' + d + '"';
+                });
+                inserts.push(['INSERT INTO', tableName, '(', columns.join(','), ') VALUES (', values.join(','), ');'].join(' '));
               }
             }
-            inserts.push(['INSERT INTO', tableName, '(', columns.join(','), ') VALUES (', values.join(','), ');'].join(' '));
           }
           fs.writeFile(outputFilename, inserts.join('\n'), function (err) {
             if (err) return console.log(err);
