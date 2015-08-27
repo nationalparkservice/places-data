@@ -19,7 +19,8 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "tourism": "attraction"
+    "tourism": "information",
+    "information": "exhibit"
   },
   "terms": [
     "exhibit / wayside",

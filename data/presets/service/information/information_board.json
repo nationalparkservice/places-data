@@ -1,6 +1,13 @@
 {
   "name": "Information Board",
   "path": "Service--Information--Information_Board",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
   "geometry": [
     "point"
   ],

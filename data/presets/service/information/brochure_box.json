@@ -1,6 +1,13 @@
 {
   "name": "Brochure Box",
   "path": "Service--Information--Brochure_Box",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
   "geometry": [
     "point"
   ],

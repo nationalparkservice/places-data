@@ -1,6 +1,18 @@
 {
   "name": "Floating Restroom",
   "path": "Accommodation--Floating_Restroom--Floating_Restroom",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "toilets/disposal",
+    "gender",
+    "indoor",
+    "fee",
+    "access"
+  ],
   "geometry": [
     "point"
   ],

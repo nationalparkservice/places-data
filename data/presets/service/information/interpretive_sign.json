@@ -1,6 +1,13 @@
 {
   "name": "Interpretive Sign",
   "path": "Service--Information--Interpretive_Sign",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
   "geometry": [
     "point",
     "vertex"

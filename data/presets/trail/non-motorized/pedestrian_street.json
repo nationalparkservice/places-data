@@ -1,0 +1,29 @@
+{
+  "name": "Pedestrian Street",
+  "path": "Trail--Non-Motorized--Pedestrian_Street",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "surface",
+    "lit",
+    "width",
+    "oneway",
+    "structure",
+    "access"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "matchScore": 30,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "highway": "pedestrian"
+  },
+  "terms": [
+    "pedestrian road",
+    "pedestrian street"
+  ],
+  "gisTags": {}
+}
