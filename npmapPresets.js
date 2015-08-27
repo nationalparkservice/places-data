@@ -3510,9 +3510,31 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-motorway",
+      "maki": "maki",
       "matchScore": 100,
       "tags": {
         "highway": "motorway"
+      },
+      "terms": [
+        "highway"
+      ],
+      "searchable": true
+    },
+    "road/highway/highway link": {
+      "name": "Highway Link",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-motorway-link",
+      "maki": "maki",
+      "matchScore": 100,
+      "tags": {
+        "highway": "motorway_link"
       },
       "terms": [
         "highway"
@@ -3536,6 +3558,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-unclassified",
+      "maki": "maki",
       "matchScore": 30,
       "tags": {
         "highway": "unclassified"
@@ -3589,6 +3613,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-road",
+      "maki": "maki",
       "matchScore": 30,
       "tags": {
         "highway": "road",
@@ -3618,6 +3644,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-residential",
+      "maki": "maki",
       "matchScore": 30,
       "tags": {
         "highway": "residential"
@@ -3638,6 +3666,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-road",
+      "maki": "maki",
       "matchScore": 30,
       "tags": {
         "highway": "*"
@@ -3664,6 +3694,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-unclassified",
+      "maki": "maki",
       "matchScore": 30,
       "tags": {
         "highway": "road"
@@ -3690,6 +3722,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-primary-link",
+      "maki": "maki",
       "matchScore": 53,
       "tags": {
         "highway": "primary_link"
@@ -3718,6 +3752,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-primary",
+      "maki": "maki",
       "matchScore": 55,
       "tags": {
         "highway": "primary"
@@ -3748,6 +3784,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-secondary",
+      "maki": "maki",
       "matchScore": 45,
       "tags": {
         "highway": "secondary_link"
@@ -3776,6 +3814,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-secondary-link",
+      "maki": "maki",
       "matchScore": 45,
       "tags": {
         "highway": "secondary"
@@ -3803,6 +3843,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-service",
+      "maki": "maki",
       "matchScore": 20,
       "tags": {
         "highway": "service",
@@ -3831,6 +3873,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-service",
+      "maki": "maki",
       "matchScore": 20,
       "tags": {
         "highway": "service"
@@ -3858,6 +3902,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-tertiary-link",
+      "maki": "maki",
       "matchScore": 35,
       "tags": {
         "highway": "tertiary_link"
@@ -3886,6 +3932,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-tertiary",
+      "maki": "maki",
       "matchScore": 35,
       "tags": {
         "highway": "tertiary"
@@ -5149,6 +5197,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "four-wheel-drive-road-black",
+      "maki": "npmap-symbol-library",
       "matchScore": 15,
       "tags": {
         "highway": "track",
@@ -5263,6 +5313,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "downhill-skiing-black",
+      "maki": "npmap-symbol-library",
       "matchScore": 12,
       "tags": {
         "piste:type": "skitour"
@@ -5558,6 +5610,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "canoe-access-black",
+      "maki": "npmap-symbol-library",
       "matchScore": 12,
       "tags": {
         "canoe": "yes",
@@ -5588,6 +5642,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-footway",
+      "maki": "maki",
       "matchScore": 12,
       "tags": {
         "highway": "footway"
@@ -5614,6 +5670,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-footway",
+      "maki": "maki",
       "matchScore": 30,
       "tags": {
         "highway": "pedestrian"
@@ -5695,6 +5753,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "highway-steps",
+      "maki": "maki",
       "matchScore": 12,
       "tags": {
         "highway": "steps"
