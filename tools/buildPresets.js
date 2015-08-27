@@ -44,7 +44,7 @@ var processPreset = function (preset) {
     name: preset.name,
     description: preset.description,
     howToMap: preset.howToMap,
-    path: [preset.category, preset.subcategory, preset.name].join('--').replace(/\s/g, '_'),
+    path: [preset.superclass, preset['class'], preset.name].join('--').replace(/\s/g, '_'),
     fields: makeFields(preset),
     geometry: makeGeometryList(preset),
     icon: makeIcon(preset),
@@ -76,7 +76,7 @@ var processPreset = function (preset) {
   var isValid = jsonschema.validate(newPreset, presetSchemaFile);
 
   // write new preset to file
-  var presetFile = (preset.category + '/' + preset.subcategory + '/' + encodeURIComponent(preset.name).replace(/%20/g, ' ') + '.json').toLowerCase().replace(/\s/g, '_');
+  var presetFile = (preset.superclass + '/' + preset['class'] + '/' + encodeURIComponent(preset.name).replace(/%20/g, ' ') + '.json').toLowerCase().replace(/\s/g, '_');
   var presetPath = path.join(presetPathRoot, presetFile);
   var presetDir = path.dirname(presetPath);
   var fileContent = JSON.stringify(newPreset, null, 2);
