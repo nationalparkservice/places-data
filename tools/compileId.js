@@ -52,7 +52,7 @@ var presets = function (callback) {
 };
 
 presets(function (e, r) {
-  console.log(JSON.stringify({
+  console.log('iD.data.npmapPresets = ' + JSON.stringify({
     presets: r
-  }, null, 2));
+  }, null, 2) + ';');
 });
