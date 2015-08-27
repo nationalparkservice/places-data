@@ -16,6 +16,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "highway-road",
+  "maki": "maki",
   "matchScore": 30,
   "inCarto": true,
   "inGuide": true,

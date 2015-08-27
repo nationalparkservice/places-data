@@ -11,6 +11,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "highway-steps",
+  "maki": "maki",
   "matchScore": 12,
   "inCarto": true,
   "inGuide": true,

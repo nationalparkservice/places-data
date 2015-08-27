@@ -1,6 +1,6 @@
 {
-  "name": "Road",
-  "path": "Road--Minor--Road",
+  "name": "Highway Link",
+  "path": "Road--Highway--Highway_Link",
   "fields": [
     "name",
     "nps/unitcode"
@@ -8,17 +8,17 @@
   "geometry": [
     "line"
   ],
-  "icon": "highway-road",
+  "icon": "highway-motorway-link",
   "maki": "maki",
-  "matchScore": 30,
+  "matchScore": 100,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "highway": "*"
+    "highway": "motorway_link"
   },
   "terms": [
-    "minor road"
+    "highway"
   ],
   "gisTags": {}
 }

@@ -17,6 +17,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "highway-service",
+  "maki": "maki",
   "matchScore": 20,
   "inCarto": true,
   "inGuide": true,

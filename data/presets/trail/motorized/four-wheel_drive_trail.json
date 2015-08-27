@@ -20,6 +20,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "four-wheel-drive-road-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 15,
   "inCarto": true,
   "inGuide": true,

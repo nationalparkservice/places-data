@@ -8,6 +8,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "highway-motorway",
+  "maki": "maki",
   "matchScore": 100,
   "inCarto": true,
   "inGuide": true,

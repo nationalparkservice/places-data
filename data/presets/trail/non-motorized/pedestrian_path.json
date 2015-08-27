@@ -13,6 +13,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "highway-footway",
+  "maki": "maki",
   "matchScore": 12,
   "inCarto": true,
   "inGuide": true,

@@ -20,6 +20,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "downhill-skiing-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 12,
   "inCarto": true,
   "inGuide": true,
