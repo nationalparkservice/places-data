@@ -10,6 +10,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "first-aid-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

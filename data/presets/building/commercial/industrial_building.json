@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "industrial",
+  "maki": "maki",
   "matchScore": 70,
   "inCarto": true,
   "inGuide": true,

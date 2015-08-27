@@ -12,6 +12,8 @@
     "point",
     "vertex"
   ],
+  "icon": "water",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

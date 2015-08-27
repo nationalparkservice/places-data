@@ -10,6 +10,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "amphitheater-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 40,
   "inCarto": true,
   "inGuide": true,

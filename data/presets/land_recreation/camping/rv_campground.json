@@ -13,6 +13,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "rv-campground-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 60,
   "inCarto": true,
   "inGuide": true,

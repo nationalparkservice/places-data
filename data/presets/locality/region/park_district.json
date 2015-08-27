@@ -9,6 +9,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "marker",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

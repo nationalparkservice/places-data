@@ -20,6 +20,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "bicycle-trail-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 30,
   "inCarto": true,
   "inGuide": true,

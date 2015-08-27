@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "food-service-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 50,
   "inCarto": true,
   "inGuide": true,

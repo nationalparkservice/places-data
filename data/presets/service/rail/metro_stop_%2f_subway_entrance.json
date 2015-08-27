@@ -8,6 +8,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "rail-metro",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

@@ -20,6 +20,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "cross-country-ski-trail-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 12,
   "inCarto": true,
   "inGuide": true,

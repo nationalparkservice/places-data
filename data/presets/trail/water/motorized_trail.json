@@ -20,6 +20,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "trailhead-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 25,
   "inCarto": true,
   "inGuide": true,

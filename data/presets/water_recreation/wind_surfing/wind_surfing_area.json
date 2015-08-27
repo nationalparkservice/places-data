@@ -8,6 +8,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "wind-surfing-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

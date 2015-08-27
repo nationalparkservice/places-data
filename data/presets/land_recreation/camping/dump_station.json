@@ -11,6 +11,8 @@
     "point",
     "vertex"
   ],
+  "icon": "sanitary-disposal-station-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 60,
   "inCarto": true,
   "inGuide": true,

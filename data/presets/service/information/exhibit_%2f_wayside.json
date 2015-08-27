@@ -12,6 +12,8 @@
     "point",
     "vertex"
   ],
+  "icon": "information-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 80,
   "inCarto": true,
   "inGuide": true,

@@ -12,6 +12,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "litter-receptacle-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

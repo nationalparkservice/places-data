@@ -10,6 +10,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "circle",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

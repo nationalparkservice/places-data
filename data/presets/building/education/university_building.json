@@ -10,6 +10,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "college",
+  "maki": "maki",
   "matchScore": 70,
   "inCarto": true,
   "inGuide": true,

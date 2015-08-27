@@ -10,6 +10,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "harbor",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

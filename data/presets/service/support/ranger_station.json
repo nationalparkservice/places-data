@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "ranger-station-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 95,
   "inCarto": true,
   "inGuide": true,

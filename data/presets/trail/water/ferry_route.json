@@ -8,6 +8,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "ferry",
+  "maki": "maki",
   "matchScore": 25,
   "inCarto": true,
   "inGuide": true,

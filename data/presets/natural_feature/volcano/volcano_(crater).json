@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "triangle",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

@@ -13,6 +13,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "canoe-access-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

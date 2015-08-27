@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "visitor-center-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 100,
   "inCarto": true,
   "inGuide": true,

@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "golfing-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 60,
   "inCarto": true,
   "inGuide": true,

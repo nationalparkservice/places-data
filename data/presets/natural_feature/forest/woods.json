@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "park2",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

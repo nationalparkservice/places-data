@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "farm",
+  "maki": "maki",
   "matchScore": 70,
   "inCarto": true,
   "inGuide": true,

@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "lodging-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 70,
   "inCarto": true,
   "inGuide": true,

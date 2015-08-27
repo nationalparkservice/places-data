@@ -11,6 +11,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "gas-station-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 40,
   "inCarto": true,
   "inGuide": true,

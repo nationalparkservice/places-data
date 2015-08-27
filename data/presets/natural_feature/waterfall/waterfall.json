@@ -8,6 +8,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "water",
+  "maki": "maki",
   "matchScore": 15,
   "inCarto": true,
   "inGuide": true,

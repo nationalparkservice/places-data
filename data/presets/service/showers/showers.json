@@ -13,6 +13,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "showers-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,

@@ -20,6 +20,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "snowmobile-trail-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 15,
   "inCarto": true,
   "inGuide": true,

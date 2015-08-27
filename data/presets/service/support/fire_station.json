@@ -10,6 +10,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "fire-station",
+  "maki": "maki",
   "matchScore": 10,
   "inCarto": true,
   "inGuide": true,
