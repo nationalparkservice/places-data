@@ -3784,7 +3784,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "highway-secondary",
+      "icon": "highway-secondary-link",
       "maki": "maki",
       "matchScore": 45,
       "tags": {
@@ -3814,7 +3814,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "highway-secondary-link",
+      "icon": "highway-secondary",
       "maki": "maki",
       "matchScore": 45,
       "tags": {
