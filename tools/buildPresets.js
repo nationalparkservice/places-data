@@ -133,17 +133,17 @@ var makeGeometryList = function (preset) {
   return list;
 };
 var makeIcon = function (preset) {
-  if (makis.indexOf(preset.JSON_Maki) >= 0) {
-    if (preset.Point || preset.Vertex) return preset.JSON_Icon;
+  if (makis.indexOf(preset.iconSource) >= 0) {
+    if (preset.point || preset.Vertex) return preset.makiIcon;
   }
-  if (preset.Line) return preset.JSON_Icon_Line;
-  if (preset.Poly) return preset.JSON_Icon_Poly || preset.JSON_Icon_Line;
+  if (preset.line) return preset.makiIcon;
+  if (preset.poly) return preset.makiIcon;
   return null;
 };
 var makeMaki = function (preset) {
-  if (preset.Point || preset.Vertex) return makis.indexOf(preset.JSON_Maki) >= 0 ? preset.JSON_Maki : null;
-  if (preset.Line) return preset.JSON_Maki_Line;
-  if (preset.Poly) return preset.JSON_Maki_Poly || preset.JSON_Maki_Line;
+  if (preset.point || preset.vertex) return makis.indexOf(preset.iconSource) >= 0 ? preset.iconSource : null;
+  if (preset.line) return preset.iconSource;
+  if (preset.poly) return preset.iconSource;
   return null;
 };
 
