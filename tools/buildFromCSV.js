@@ -53,6 +53,7 @@ var processPreset = function (preset) {
     inCarto: !!(preset.inCarto.length > 0 && preset.inCarto.toLowerCase() !== 'no'),
     inGuide: !!(preset.inGuide.length > 0 && preset.inGuide.toLowerCase() !== 'no'),
     inEditor: !!(preset.inEditor.length > 0 && preset.inEditor.toLowerCase() !== 'no'),
+    isDefault: !!(preset.isDefault.length > 0 && preset.isDefault.toLowerCase() !== 'no'),
     tags: preset.tags ? JSON.parse(preset.tags) : {
       'error': 'error'
     },
