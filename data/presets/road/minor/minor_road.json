@@ -1,5 +1,7 @@
 {
   "name": "Minor Road",
+  "description": "An minor road is a minor public road, typically at the lowest level of the interconnecting network. It is of lower importance than a secondary road and is not a residential street. If a road's classification is unknown, default to the \"Minor Road\" preset.",
+  "howToMap": "Add an unclassified road by tracing its centerline from beginning to end and selecting \"Unclassified Road\" from the \"Select feature type\" menu.",
   "path": "Road--Minor--Minor_Road",
   "fields": [
     "name",
@@ -22,6 +24,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "highway": "unclassified"
   },

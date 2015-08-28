@@ -19,6 +19,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "leisure": "ice_rink"
   },

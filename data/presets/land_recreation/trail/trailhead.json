@@ -1,5 +1,7 @@
 {
   "name": "Trailhead",
+  "description": "A trailhead is the point or area at which a trail begins.",
+  "howToMap": "Add a trailhead by creating a point at the start of the trail and selecting \"Trailhead\" from the \"Select feature type\" menu.",
   "path": "Land_Recreation--Trail--Trailhead",
   "fields": [
     "name",
@@ -26,6 +28,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "highway": "trailhead"
   },

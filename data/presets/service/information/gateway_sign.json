@@ -1,6 +1,6 @@
 {
-  "name": "Brochure Box",
-  "path": "Service--Information--Brochure_Box",
+  "name": "Gateway Sign",
+  "path": "Service--Information--Gateway_Sign",
   "fields": [
     "name",
     "nps/unitcode",
@@ -9,7 +9,8 @@
     "opening_hours"
   ],
   "geometry": [
-    "point"
+    "point",
+    "vertex"
   ],
   "matchScore": 80,
   "inCarto": true,
@@ -18,10 +19,12 @@
   "isDefault": true,
   "tags": {
     "tourism": "information",
-    "information": "brochure"
+    "information": "sign"
   },
   "terms": [
-    "brochure box"
+    "gateway sign",
+    "location",
+    "place name"
   ],
   "gisTags": {}
 }

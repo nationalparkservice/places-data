@@ -1,5 +1,7 @@
 {
   "name": "Park District",
+  "description": "A park district is, generally speaking, a region of a park that has a name. This can come in a variety of forms including an official park administrative unit, a named region of a park, or a city/town neighborhood.",
+  "howToMap": "Add a park district by creating a point in the middle of the associated area and selecting \"Park District\" from the \"Select feature type\" menu.",
   "path": "Locality--Region--Park_District",
   "fields": [
     "name",
@@ -15,6 +17,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "place": "locality"
   },

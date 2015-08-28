@@ -1,0 +1,44 @@
+{
+  "area": [
+    "building/building/building footprint",
+    "parking/parking/parking lot"
+  ],
+  "line": [
+    "road/primary/primary road",
+    "road/secondary/secondary road",
+    "road/service/service road",
+    "road/service/parking aisle",
+    "road/minor/minor road",
+    "trail/water/motorized trail",
+    "trail/non-motorized/non-motorized trail"
+  ],
+  "point": [
+    "land recreation/camping/campground",
+    "land recreation/picnic/picnic area",
+    "service/parking/parking lot",
+    "service/information/information",
+    "service/information/visitor center",
+    "service/support/ranger station",
+    "land recreation/trail/trailhead",
+    "accommodation/restroom/restroom",
+    "service/food/food service",
+    "building/commercial/hotel building",
+    "service/shopping/store",
+    "service/information/information map"
+  ],
+  "vertex": [
+    "land recreation/camping/campground",
+    "land recreation/picnic/picnic area",
+    "service/parking/parking lot",
+    "service/information/information",
+    "service/information/visitor center",
+    "service/support/ranger station",
+    "land recreation/trail/trailhead",
+    "accommodation/restroom/restroom",
+    "service/food/food service",
+    "building/commercial/hotel building",
+    "service/shopping/store",
+    "service/information/information map"
+  ],
+  "relation": []
+}

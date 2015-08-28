@@ -15,6 +15,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "natural": "peak"
   },

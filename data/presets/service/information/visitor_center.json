@@ -1,5 +1,7 @@
 {
   "name": "Visitor Center",
+  "description": "A visitor center is a building housing information for visitors, typically including some or all of the following: information resources, facilities (e.g. restrooms, drinking water), ranger staff, and exhibits.",
+  "howToMap": "Add a visitor center by creating a point on top of the associated building and selecting \"Visitor Center\" from the \"Select feature type\" menu. Additionally, trace the building footprint if it has not been added already.",
   "path": "Service--Information--Visitor_Center",
   "fields": [
     "name",
@@ -17,6 +19,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": true,
   "tags": {
     "tourism": "information",
     "information": "office"

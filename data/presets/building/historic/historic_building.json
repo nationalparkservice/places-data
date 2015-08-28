@@ -13,6 +13,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": true,
   "tags": {
     "historic": "building",
     "building": "yes"

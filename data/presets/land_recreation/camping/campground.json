@@ -1,5 +1,7 @@
 {
   "name": "Campground",
+  "description": "A campground is an area, usually divided into a number of pitches (or \"campsites\"), where people can camp overnight using tents or camper vans or caravans.",
+  "howToMap": "Add a campground by creating a point in the middle of the area and selecting \"Campground\" from the \"Select feature type\" menu.",
   "path": "Land_Recreation--Camping--Campground",
   "fields": [
     "name",
@@ -19,6 +21,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "tourism": "camp_site"
   },

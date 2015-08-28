@@ -12,6 +12,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "amenity": "bicycle_parking",
     "bicycle_parking": "rack"

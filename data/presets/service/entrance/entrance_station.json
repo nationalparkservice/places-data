@@ -1,5 +1,7 @@
 {
   "name": "Entrance Station",
+  "description": "An entrance station is an official entry point into a park.",
+  "howToMap": "Add an entrance station by creating a point on top of the entrance and selecting \"Entrance Station\" from the \"Select feature type\" menu.",
   "path": "Service--Entrance--Entrance_Station",
   "fields": [
     "name",
@@ -17,6 +19,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "barrier": "entrance"
   },

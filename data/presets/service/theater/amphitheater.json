@@ -16,6 +16,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "amenity": "theatre",
     "theatre:type": "amphi"

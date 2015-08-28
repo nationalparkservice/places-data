@@ -12,6 +12,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "amenity": "boat_wash",
     "type": "zebra_mussel"

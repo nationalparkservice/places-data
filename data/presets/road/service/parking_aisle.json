@@ -18,6 +18,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": true,
   "tags": {
     "highway": "service",
     "service": "parking_aisle"

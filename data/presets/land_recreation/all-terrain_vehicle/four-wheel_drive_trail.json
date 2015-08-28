@@ -24,6 +24,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "highway": "track",
     "4wd_only": "yes"

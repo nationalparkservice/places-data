@@ -16,6 +16,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": true,
   "tags": {
     "building": "detached"
   },

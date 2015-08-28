@@ -12,16 +12,31 @@
     "point",
     "vertex"
   ],
+  "icon": "information-black",
+  "maki": "npmap-symbol-library",
   "matchScore": 80,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": true,
   "tags": {
     "tourism": "information",
-    "information": "sign"
+    "information": "exhibit"
   },
   "terms": [
+    "exhibit / wayside",
+    "exhibit",
+    "wayside",
+    "attraction",
+    "tourist attraction",
     "interpretive sign"
   ],
-  "gisTags": {}
+  "gisTags": {
+    "OSM_Line": "x",
+    "OSM_Poly": "x",
+    "POI": "Yes",
+    "POI_Values": "{\"POITYPE\":\"Exhibit / Wayside\"}",
+    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
+    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
+  }
 }

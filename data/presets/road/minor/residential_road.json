@@ -1,5 +1,7 @@
 {
   "name": "Residential Road",
+  "description": "A residential road is a road accessing residential areas.",
+  "howToMap": "Add a residential road by tracing its centerline from beginning to end and selecting \"Residential Road\" from the \"Select feature type\" menu.",
   "path": "Road--Minor--Residential_Road",
   "fields": [
     "name",
@@ -22,6 +24,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "highway": "residential"
   },

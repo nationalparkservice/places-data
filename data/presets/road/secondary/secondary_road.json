@@ -1,5 +1,7 @@
 {
   "name": "Secondary Road",
+  "description": "A secondary road is a highway that is not part of a major route but forms a link in the national route network. It usually has two lanes, separated by a centerline.",
+  "howToMap": "Add a secondary road by tracing its centerline from beginning to end and selecting \"Secondary Road\" from the \"Select feature type\" menu.",
   "path": "Road--Secondary--Secondary_Road",
   "fields": [
     "name",
@@ -22,6 +24,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": true,
   "tags": {
     "highway": "secondary"
   },

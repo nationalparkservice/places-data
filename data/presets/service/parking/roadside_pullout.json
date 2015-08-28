@@ -8,6 +8,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "highway": "rest_area"
   },

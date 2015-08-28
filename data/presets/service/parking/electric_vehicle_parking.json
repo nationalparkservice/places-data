@@ -12,6 +12,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "amenity": "parking",
     "capacity:charging": "yes"

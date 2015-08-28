@@ -9,6 +9,7 @@
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
+  "isDefault": false,
   "tags": {
     "amenity": "post_box"
   },
