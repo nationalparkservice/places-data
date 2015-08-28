@@ -41,7 +41,9 @@ var categories = function (presets) {
           // Build a new category
           idCategories[category] = {
             'geometry': geometry,
-            'name': decodeURIComponent(presetId.split('/')[0]),
+            'displayName': decodeURIComponent(presetId.split('/')[0]).split(' ').map(function (w) {
+              return w.substr(0, 1).toUpperCase() + w.substr(1);
+            }).join(' '),
             'members': [
               presetId
             ]
@@ -52,8 +54,8 @@ var categories = function (presets) {
         idCategories[category].members = idCategories[category].members.sort(sortPreset(presets, {}, 'matchScore'));
 
         // Use the icon from the item with the highest MatchScore in the Category
-        idCategories[category].icon = idCategories[category].members[0].icon;
-        idCategories[category].maki = idCategories[category].members[0].maki;
+        idCategories[category].icon = presets[idCategories[category].members[0]].icon;
+        idCategories[category].maki = presets[idCategories[category].members[0]].maki;
       }
     });
   }
@@ -89,9 +91,20 @@ var defaults = function (presets, categories) {
 
   // Sort each of the array by matchCount
   for (var group in idDefaults) {
+    // Remove duplicated presets
     idDefaults[group] = idDefaults[group].filter(function (value, index, orig) {
       return orig.indexOf(value) === index;
     });
+
+    // Remove presets from categories that are available outside those categories
+    idDefaults[group].filter(function (d) {
+      return d.match(/^category-/);
+    }).forEach(function (d) {
+      categories[d].members = categories[d].members.filter(function (member) {
+        return idDefaults[group].indexOf(member) === -1;
+      });
+    });
+
     idDefaults[group] = idDefaults[group].sort(sortPreset(presets, categories, 'matchScore'));
   }
 
