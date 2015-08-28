@@ -6781,7 +6781,9 @@ iD.data.npmapPresets = {
       "members": [
         "land recreation/trail/motorized trail",
         "land recreation/trail/non-motorized trail"
-      ]
+      ],
+      "icon": "trailhead-black",
+      "maki": "npmap-symbol-library"
     },
     "category-area-parking": {
       "geometry": "area",
@@ -6801,7 +6803,9 @@ iD.data.npmapPresets = {
         "road/tertiary/tertiary road",
         "road/service/parking aisle",
         "road/service/service road"
-      ]
+      ],
+      "icon": "highway-motorway",
+      "maki": "maki"
     },
     "category-point-service": {
       "geometry": "point",
@@ -6816,7 +6820,9 @@ iD.data.npmapPresets = {
         "service/information/information map",
         "service/information/interpretive sign",
         "service/parking/parking lot"
-      ]
+      ],
+      "icon": "visitor-center-black",
+      "maki": "npmap-symbol-library"
     },
     "category-vertex-service": {
       "geometry": "vertex",
@@ -6835,7 +6841,9 @@ iD.data.npmapPresets = {
         "trail/non-motorized/horseback riding",
         "trail/non-motorized/non-motorized trail",
         "trail/non-motorized/sidewalk"
-      ]
+      ],
+      "icon": "trailhead-black",
+      "maki": "npmap-symbol-library"
     }
   },
   "defaults": {
