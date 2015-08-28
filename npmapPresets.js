@@ -6726,7 +6726,7 @@ iD.data.npmapPresets = {
   "categories": {
     "category-point-building": {
       "geometry": "point",
-      "name": "Building",
+      "displayName": "Building",
       "members": [
         "building/historic/historic building",
         "building/education/school building",
@@ -6770,14 +6770,14 @@ iD.data.npmapPresets = {
     },
     "category-area-building": {
       "geometry": "area",
-      "name": "Building",
+      "displayName": "Building",
       "members": [
         "building/building/building footprint"
       ]
     },
     "category-point-land recreation": {
       "geometry": "point",
-      "name": "Land Recreation",
+      "displayName": "Land Recreation",
       "members": [
         "land recreation/trail/motorized trail",
         "land recreation/trail/non-motorized trail"
@@ -6787,14 +6787,14 @@ iD.data.npmapPresets = {
     },
     "category-area-parking": {
       "geometry": "area",
-      "name": "Parking",
+      "displayName": "Parking",
       "members": [
         "parking/parking/parking lot"
       ]
     },
     "category-line-road": {
       "geometry": "line",
-      "name": "Road",
+      "displayName": "Road",
       "members": [
         "road/highway/highway",
         "road/highway/highway link",
@@ -6809,7 +6809,7 @@ iD.data.npmapPresets = {
     },
     "category-point-service": {
       "geometry": "point",
-      "name": "Service",
+      "displayName": "Service",
       "members": [
         "service/information/visitor center",
         "service/support/ranger station",
@@ -6826,7 +6826,7 @@ iD.data.npmapPresets = {
     },
     "category-vertex-service": {
       "geometry": "vertex",
-      "name": "Service",
+      "displayName": "Service",
       "members": [
         "service/information/gateway sign",
         "service/information/interpretive sign",
@@ -6835,7 +6835,7 @@ iD.data.npmapPresets = {
     },
     "category-line-trail": {
       "geometry": "line",
-      "name": "Trail",
+      "displayName": "Trail",
       "members": [
         "trail/water/motorized trail",
         "trail/non-motorized/horseback riding",
