@@ -6811,8 +6811,6 @@ iD.data.npmapPresets = {
       "geometry": "point",
       "displayName": "Service",
       "members": [
-        "service/information/visitor center",
-        "service/support/ranger station",
         "service/information/brochure box",
         "service/information/gateway sign",
         "service/information/information",
