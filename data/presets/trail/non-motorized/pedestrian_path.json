@@ -16,6 +16,7 @@
   "icon": "highway-footway",
   "maki": "maki",
   "layerIndex": 12,
+  "defaultOrder": 10,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

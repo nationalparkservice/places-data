@@ -23,6 +23,7 @@
   "icon": "trailhead-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

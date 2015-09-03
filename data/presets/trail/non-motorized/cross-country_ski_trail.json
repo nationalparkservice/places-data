@@ -23,6 +23,7 @@
   "icon": "cross-country-ski-trail-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 12,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

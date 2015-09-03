@@ -14,6 +14,7 @@
   "icon": "food-service-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 50,
+  "defaultOrder": 19,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

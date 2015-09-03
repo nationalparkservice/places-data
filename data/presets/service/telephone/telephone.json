@@ -14,6 +14,7 @@
   "icon": "telephone-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
+  "defaultOrder": 22,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

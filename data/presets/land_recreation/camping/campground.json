@@ -18,6 +18,7 @@
   "icon": "campground-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
+  "defaultOrder": -3,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

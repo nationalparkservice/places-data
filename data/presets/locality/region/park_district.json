@@ -14,6 +14,7 @@
   "icon": "marker",
   "maki": "maki",
   "layerIndex": 10,
+  "defaultOrder": -4,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

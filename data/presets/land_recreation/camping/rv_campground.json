@@ -16,6 +16,7 @@
   "icon": "rv-campground-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
+  "defaultOrder": 16,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

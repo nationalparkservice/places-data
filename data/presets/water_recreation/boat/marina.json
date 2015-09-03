@@ -15,6 +15,7 @@
   "icon": "marina-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
+  "defaultOrder": 27,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

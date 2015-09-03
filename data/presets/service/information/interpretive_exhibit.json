@@ -1,6 +1,6 @@
 {
-  "name": "Interpretive Sign",
-  "path": "Service--Information--Interpretive_Sign",
+  "name": "Interpretive Exhibit",
+  "path": "Service--Information--Interpretive_Exhibit",
   "fields": [
     "name",
     "nps/unitcode",
@@ -15,6 +15,7 @@
   "icon": "information-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 80,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

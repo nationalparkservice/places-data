@@ -11,6 +11,7 @@
   "icon": "fishing-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
+  "defaultOrder": 26,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

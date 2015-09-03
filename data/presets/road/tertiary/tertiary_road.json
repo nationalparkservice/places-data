@@ -19,6 +19,7 @@
   "icon": "highway-tertiary",
   "maki": "maki",
   "layerIndex": 35,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

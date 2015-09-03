@@ -23,6 +23,7 @@
   "icon": "bicycle-trail-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 30,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

@@ -21,6 +21,7 @@
   "icon": "highway-primary",
   "maki": "maki",
   "layerIndex": 55,
+  "defaultOrder": 3,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

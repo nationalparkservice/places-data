@@ -13,6 +13,7 @@
   "icon": "building",
   "maki": "maki",
   "layerIndex": 70,
+  "defaultOrder": null,
   "matchScore": 0.75,
   "inCarto": true,
   "inGuide": true,

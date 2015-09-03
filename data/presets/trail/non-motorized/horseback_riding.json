@@ -23,6 +23,7 @@
   "icon": "horseback-riding-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 12,
+  "defaultOrder": 11,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

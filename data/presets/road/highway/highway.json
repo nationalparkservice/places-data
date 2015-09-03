@@ -11,6 +11,7 @@
   "icon": "highway-motorway",
   "maki": "maki",
   "layerIndex": 94,
+  "defaultOrder": 2,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

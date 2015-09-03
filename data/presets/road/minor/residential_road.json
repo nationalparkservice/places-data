@@ -21,6 +21,7 @@
   "icon": "highway-residential",
   "maki": "maki",
   "layerIndex": 30,
+  "defaultOrder": 6,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

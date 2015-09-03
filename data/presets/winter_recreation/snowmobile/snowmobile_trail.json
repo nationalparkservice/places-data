@@ -23,6 +23,7 @@
   "icon": "snowmobile-trail-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

@@ -16,6 +16,7 @@
   "icon": "water",
   "maki": "maki",
   "layerIndex": 25,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
