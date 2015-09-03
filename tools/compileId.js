@@ -9,7 +9,7 @@ var sortPreset = function(presets, categories, sortField, desc) {
   return function(a, b) {
     var AField = (a.match(/^category-/) ? presets[categories[a].members[0]] : presets[a])[sortField];
     var BField = (b.match(/^category-/) ? presets[categories[b].members[0]] : presets[b])[sortField];
-    var descValue = desc === true ? -1 : 1;
+    var descValue = desc === true ? 1 : -1;
 
     // Prioritize Presets
     AField = a.match(/^category-/) ? AField / 2 : AField;

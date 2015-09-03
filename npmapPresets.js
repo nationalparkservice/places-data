@@ -6562,23 +6562,25 @@ iD.data.npmapPresets = {
       "geometry": "point",
       "displayName": "Building",
       "members": [
-        "building/historic/historic building",
-        "building/commercial/office",
+        "building/commercial/headquarters",
         "building/residential/lodging",
-        "building/commercial/headquarters"
-      ]
+        "building/commercial/office",
+        "building/historic/historic building"
+      ],
+      "icon": "commercial",
+      "maki": "maki"
     },
     "category-point-land recreation": {
       "geometry": "point",
       "displayName": "Land Recreation",
       "members": [
-        "land recreation/trail/self guiding trail",
-        "land recreation/camping/rv campground",
-        "land recreation/picnic/picnic table",
+        "land recreation/camping/campsite",
         "land recreation/picnic/picnic area",
-        "land recreation/camping/campsite"
+        "land recreation/picnic/picnic table",
+        "land recreation/camping/rv campground",
+        "land recreation/trail/self guiding trail"
       ],
-      "icon": "self-guiding-trail-black",
+      "icon": "trailhead-black",
       "maki": "npmap-symbol-library"
     },
     "category-vertex-land recreation": {
@@ -6610,32 +6612,32 @@ iD.data.npmapPresets = {
       "geometry": "line",
       "displayName": "Road",
       "members": [
-        "road/minor/private road",
-        "road/service/parking aisle",
-        "road/service/service road",
-        "road/minor/residential road",
-        "road/minor/minor road",
-        "road/secondary/secondary road",
-        "road/primary/primary road",
+        "road/minor/unknown road",
         "road/highway/highway",
-        "road/minor/unknown road"
+        "road/primary/primary road",
+        "road/secondary/secondary road",
+        "road/minor/minor road",
+        "road/minor/residential road",
+        "road/service/service road",
+        "road/service/parking aisle",
+        "road/minor/private road"
       ],
-      "icon": "highway-road",
+      "icon": "highway-unclassified",
       "maki": "maki"
     },
     "category-point-service": {
       "geometry": "point",
       "displayName": "Service",
       "members": [
-        "service/waste/litter receptacle",
-        "service/water/drinking water",
-        "service/telephone/telephone",
-        "service/fuel/gas station",
-        "service/shopping/store",
+        "service/information/information",
         "service/food/food service",
-        "service/information/information"
+        "service/shopping/store",
+        "service/fuel/gas station",
+        "service/telephone/telephone",
+        "service/water/drinking water",
+        "service/waste/litter receptacle"
       ],
-      "icon": "litter-receptacle-black",
+      "icon": "ranger-station-black",
       "maki": "npmap-symbol-library"
     },
     "category-vertex-service": {
@@ -6651,53 +6653,53 @@ iD.data.npmapPresets = {
       "geometry": "line",
       "displayName": "Trail",
       "members": [
-        "trail/water/motorized trail",
-        "trail/non-motorized/bicycle trail",
+        "trail/non-motorized/pedestrian path",
         "trail/non-motorized/horseback riding",
-        "trail/non-motorized/pedestrian path"
+        "trail/non-motorized/bicycle trail",
+        "trail/water/motorized trail"
       ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library"
+      "icon": "highway-footway",
+      "maki": "maki"
     },
     "category-point-water recreation": {
       "geometry": "point",
       "displayName": "Water Recreation",
       "members": [
-        "water recreation/boat/marina",
+        "water recreation/access/boat launch",
         "water recreation/fishing/fishing",
-        "water recreation/access/boat launch"
+        "water recreation/boat/marina"
       ],
-      "icon": "marina-black",
+      "icon": "boat-launch-black",
       "maki": "npmap-symbol-library"
     }
   },
   "defaults": {
     "point": [
-      "category-point-water recreation",
-      "category-point-service",
-      "category-point-land recreation",
-      "category-point-building",
-      "service/information/visitor center",
-      "service/entrance/entrance station",
-      "land recreation/camping/campground",
-      "locality/region/park district",
-      "land recreation/trail/trailhead",
-      "service/parking/parking lot",
+      "accommodation/restroom/restroom",
       "service/support/ranger station",
-      "accommodation/restroom/restroom"
+      "service/parking/parking lot",
+      "land recreation/trail/trailhead",
+      "locality/region/park district",
+      "land recreation/camping/campground",
+      "service/entrance/entrance station",
+      "service/information/visitor center",
+      "category-point-building",
+      "category-point-land recreation",
+      "category-point-service",
+      "category-point-water recreation"
     ],
     "vertex": [
-      "land recreation/trail/trailhead",
+      "accommodation/restroom/restroom",
       "service/parking/parking lot",
-      "accommodation/restroom/restroom"
+      "land recreation/trail/trailhead"
     ],
     "area": [
-      "parking/parking/parking lot",
-      "building/building/building footprint"
+      "building/building/building footprint",
+      "parking/parking/parking lot"
     ],
     "line": [
-      "category-line-trail",
-      "category-line-road"
+      "category-line-road",
+      "category-line-trail"
     ]
   }
 };
