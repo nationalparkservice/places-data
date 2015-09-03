@@ -86,7 +86,7 @@ var defaults = function(presets, categories) {
 
   // Add all of the defaults with a defaultOrder < 0
   for (var presetId in presets) {
-    if (presets[presetId].defaultOrder < && isDefault(presets[presetId].defaultOrder)) {
+    if (presets[presetId].defaultOrder < 0 && isDefault(presets[presetId].defaultOrder)) {
       presets[presetId].geometry.forEach(function(geometry) {
         idDefaults[geometry] = idDefaults[geometry] || [];
         idDefaults[geometry].push(presetId);
