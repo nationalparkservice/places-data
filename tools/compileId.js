@@ -3,21 +3,22 @@ var compileFiles = require('./compileFiles');
 var presetSchema = require('./preset.json');
 
 // TODO: Pull these from this document: https://github.com/nationalparkservice/places-editor/blob/master/data/presets/schema/preset.json
-var acceptableFields = ['name', 'geometry', 'tags', 'addTags', 'removeTags', 'fields', 'icon', 'maki', 'terms', 'searchable', 'matchScore', 'isDefault'];
+var acceptableFields = ['name', 'geometry', 'tags', 'addTags', 'removeTags', 'fields', 'icon', 'maki', 'terms', 'searchable', 'matchScore', 'defaultOrder', 'isDefault'];
 
-var sortPreset = function (presets, categories, sortField) {
+var sortPreset = function (presets, categories, sortField, desc) {
   return function (a, b) {
     var AField = (a.match(/^category-/) ? presets[categories[a].members[0]] : presets[a])[sortField];
     var BField = (b.match(/^category-/) ? presets[categories[b].members[0]] : presets[b])[sortField];
+    var descValue = desc === true ? -1 : 1;
 
     // Prioritize Presets
     AField = a.match(/^category-/) ? AField / 2 : AField;
     BField = b.match(/^category-/) ? BField / 2 : BField;
 
     if (AField < BField) {
-      return 1;
+      return 1 * descValue;
     } else if (AField > BField) {
-      return -1;
+      return -1 * descValue;
     } else {
       return 0;
     }
@@ -50,8 +51,8 @@ var categories = function (presets) {
           };
         }
 
-        // The members need to be ordered by MatchScore
-        idCategories[category].members = idCategories[category].members.sort(sortPreset(presets, {}, 'matchScore'));
+        // The members need to be ordered by defaultOrder
+        idCategories[category].members = idCategories[category].members.sort(sortPreset(presets, {}, 'defaultOrder', false));
 
         // Use the icon from the item with the highest MatchScore in the Category
         idCategories[category].icon = presets[idCategories[category].members[0]].icon;
@@ -79,9 +80,9 @@ var defaults = function (presets, categories) {
     }
   }
 
-  // Add all of the defaults with a match score of 95 or over
+  // Add all of the defaults with a defaultOrder < 0
   for (var presetId in presets) {
-    if (presets[presetId].matchScore >= 95 && presets[presetId].isDefault) {
+    if (presets[presetId].defaultOrder < && presets[presetId].isDefault) {
       presets[presetId].geometry.forEach(function (geometry) {
         idDefaults[geometry] = idDefaults[geometry] || [];
         idDefaults[geometry].push(presetId);
@@ -105,7 +106,7 @@ var defaults = function (presets, categories) {
       });
     });
 
-    idDefaults[group] = idDefaults[group].sort(sortPreset(presets, categories, 'matchScore'));
+    idDefaults[group] = idDefaults[group].sort(sortPreset(presets, categories, 'defaultOrder', false));
   }
 
   return idDefaults;
