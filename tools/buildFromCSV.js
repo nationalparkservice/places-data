@@ -160,11 +160,16 @@ var makeMatchScore = function (preset) {
     'vertex': 0.1
   };
   matchScore = hardcodedScores[preset.name.toLowerCase()] || 1;
+
+  // certain tags get a better matchScore
+  var specialTags = {
+    'horse': 0.02,
+    'bicycle': 0.01
+  };
+
   for (var tag in preset.tags) {
-    if (preset.tags[tag] === '*') {
-      // If a preset contains a wildcard, lower its matchscore
-      matchScore = matchScore * 0.75;
-      break;
+    if (specialTags[tag]) {
+      matchScore += specialTags[tag];
     }
   }
   return matchScore;
