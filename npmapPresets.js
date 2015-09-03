@@ -218,7 +218,7 @@ iD.data.npmapPresets = {
       "icon": "building",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "building": "*"
       },
@@ -240,7 +240,7 @@ iD.data.npmapPresets = {
         "area"
       ],
       "defaultOrder": 1,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "building": "*"
       },
@@ -2493,7 +2493,7 @@ iD.data.npmapPresets = {
         "point"
       ],
       "defaultOrder": null,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "historic": "*"
       },
@@ -2897,7 +2897,7 @@ iD.data.npmapPresets = {
       "icon": "harbor",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "harbour": "*"
       },
@@ -3710,7 +3710,7 @@ iD.data.npmapPresets = {
       "icon": "highway-road",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "highway": "*"
       },
@@ -5986,7 +5986,7 @@ iD.data.npmapPresets = {
         "point"
       ],
       "defaultOrder": null,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "seamark:anchorage:category": "*"
       },
@@ -6051,7 +6051,7 @@ iD.data.npmapPresets = {
         "point"
       ],
       "defaultOrder": null,
-      "matchScore": 0.75,
+      "matchScore": 1,
       "tags": {
         "mooring": "*"
       },
