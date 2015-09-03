@@ -49,7 +49,9 @@ var processPreset = function (preset) {
     geometry: makeGeometryList(preset),
     icon: makeIcon(preset),
     maki: makeMaki(preset),
-    matchScore: parseFloat(preset.layerIndex),
+    layerIndex: parseFloat(preset.layerIndex),
+    defaultOrder: parseFloat(preset.defaultOrder),
+    matchScore: makeMatchScore(preset),
     inCarto: !!(preset.inCarto.length > 0 && preset.inCarto.toLowerCase() !== 'no'),
     inGuide: !!(preset.inGuide.length > 0 && preset.inGuide.toLowerCase() !== 'no'),
     inEditor: !!(preset.inEditor.length > 0 && preset.inEditor.toLowerCase() !== 'no'),
@@ -146,6 +148,27 @@ var makeMaki = function (preset) {
   if (preset.line) return preset.iconSource;
   if (preset.poly) return preset.iconSource;
   return null;
+};
+var makeMatchScore = function (preset) {
+  var matchScore;
+  var hardcodedScores = {
+    'area': 0.1,
+    'line': 0.1,
+    'embankment': 0.2,
+    'address': 0.2,
+    'multipolygon': 0.1,
+    'point': 0.1,
+    'vertex': 0.1
+  };
+  matchScore = hardcodedScores[preset.name.toLowerCase()] || 1;
+  for (var tag in preset.tags) {
+    if (preset.tags[tag] === '*') {
+      // If a preset contains a wildcard, lower its matchscore
+      matchScore = matchScore * 0.75;
+      break;
+    }
+  }
+  return matchScore;
 };
 
 fs.createReadStream(csvPath).pipe(parser);
