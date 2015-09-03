@@ -1182,7 +1182,7 @@ iD.data.npmapPresets = {
       "icon": "bicycle-trail-black",
       "maki": "npmap-symbol-library",
       "defaultOrder": null,
-      "matchScore": 1,
+      "matchScore": 1.01,
       "tags": {
         "highway": "path",
         "bicycle": "yes"
@@ -5402,7 +5402,7 @@ iD.data.npmapPresets = {
       "icon": "bicycle-trail-black",
       "maki": "npmap-symbol-library",
       "defaultOrder": 12,
-      "matchScore": 1,
+      "matchScore": 1.01,
       "tags": {
         "highway": "path",
         "bicycle": "yes"
@@ -5597,7 +5597,7 @@ iD.data.npmapPresets = {
       "icon": "horseback-riding-black",
       "maki": "npmap-symbol-library",
       "defaultOrder": 11,
-      "matchScore": 1,
+      "matchScore": 1.02,
       "tags": {
         "highway": "path",
         "horse": "yes"
