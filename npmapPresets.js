@@ -11,8 +11,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "wheelchair-accessible-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "wheelchair": "yes"
       },
@@ -42,8 +41,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "restrooms-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "toilets",
         "type": "floating"
@@ -73,8 +71,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "restrooms-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "toilets"
       },
@@ -102,8 +99,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "barrier": "fence"
       },
@@ -121,8 +117,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "barrier": "gate"
       },
@@ -145,8 +140,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "farm",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "barn"
       },
@@ -168,8 +162,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "garden",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "greenhouse"
       },
@@ -194,8 +187,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "stable-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "stable"
       },
@@ -217,8 +209,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 0.75,
       "tags": {
         "building": "*"
       },
@@ -239,8 +230,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 0.75,
       "tags": {
         "building": "*"
       },
@@ -263,8 +253,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "construction"
       },
@@ -289,8 +278,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "bunker"
       },
@@ -313,8 +301,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "cabin"
       },
@@ -337,8 +324,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "public"
       },
@@ -387,8 +373,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "office": "government"
       },
@@ -414,8 +399,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "commercial"
       },
@@ -439,8 +423,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "office",
         "office": "government",
@@ -469,8 +452,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "hospital-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "hospital"
       },
@@ -505,8 +487,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "hotel"
       },
@@ -529,8 +510,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "industrial",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "industrial"
       },
@@ -554,8 +534,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "office"
       },
@@ -579,8 +558,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "retail"
       },
@@ -599,8 +577,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "yes",
         "amenity": "education_centre"
@@ -623,8 +600,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "school",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "school"
       },
@@ -651,8 +627,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "college",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "university"
       },
@@ -673,8 +648,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "historic": "building",
         "building": "yes"
@@ -697,8 +671,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "cabin",
         "historic": "yes"
@@ -723,8 +696,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "place-of-worship",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "cathedral"
       },
@@ -747,8 +719,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "place-of-worship",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "chapel"
       },
@@ -771,8 +742,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "place-of-worship",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "church"
       },
@@ -794,8 +764,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "shelter-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "hut"
       },
@@ -819,8 +788,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "shelter-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "shelter",
         "building": "hut"
@@ -849,8 +817,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "apartments"
       },
@@ -874,8 +841,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "detached"
       },
@@ -899,8 +865,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "dormitory"
       },
@@ -925,8 +890,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "house"
       },
@@ -949,8 +913,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "alpine_hut"
       },
@@ -976,8 +939,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "hotel"
       },
@@ -1002,8 +964,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "residential"
       },
@@ -1026,8 +987,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "terrace"
       },
@@ -1051,8 +1011,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "static_caravan"
       },
@@ -1072,8 +1031,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "amenity": "shelter"
       },
@@ -1096,8 +1054,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "warehouse",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "garage"
       },
@@ -1119,8 +1076,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "shed"
       },
@@ -1142,8 +1098,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "warehouse",
       "maki": "maki",
-      "matchScore": 70,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "building": "warehouse"
       },
@@ -1176,8 +1131,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "All-terrain trail",
       "maki": "npmap-symbol-library",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "atv": "yes"
@@ -1219,8 +1173,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "4wd_only": "yes"
@@ -1263,8 +1216,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "bicycle-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "bicycle": "yes"
@@ -1286,8 +1238,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack"
@@ -1313,8 +1264,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campsite-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
         "camp_site": "pitch",
@@ -1339,8 +1289,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campfire-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "firepit"
       },
@@ -1369,8 +1318,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campground-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "camp_site"
       },
@@ -1395,8 +1343,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campsite-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
         "camp_site": "pitch"
@@ -1421,8 +1368,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "sanitary-disposal-station-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "sanitary_dump_station"
       },
@@ -1449,8 +1395,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rv-campground-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
         "caravans": "yes"
@@ -1472,8 +1417,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 50,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "sport": "canyoning"
@@ -1492,8 +1436,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 50,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "sport": "climbing"
@@ -1512,8 +1455,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "storage": "food"
       },
@@ -1537,8 +1479,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "golfing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "golf_course"
       },
@@ -1571,8 +1512,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "horseback-riding-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "horse_riding"
       },
@@ -1611,8 +1551,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "motor-bike-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "motorcycle": "yes"
@@ -1634,8 +1573,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "barbecue_grill": "yes"
       },
@@ -1659,8 +1597,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "picnic-area-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "picnic_site"
       },
@@ -1680,8 +1617,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "picnic_table"
       },
@@ -1713,8 +1649,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "track"
       },
@@ -1748,8 +1683,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "path"
       },
@@ -1779,8 +1713,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "self-guiding-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "guidepost"
@@ -1804,8 +1737,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "steps"
       },
@@ -1828,8 +1760,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "register"
       },
@@ -1864,8 +1795,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "trailhead"
       },
@@ -1889,8 +1819,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "park"
       },
@@ -1918,8 +1847,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marker",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "place": "locality"
       },
@@ -1942,8 +1870,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "artwork",
         "artwork_type": "statue"
@@ -1962,8 +1889,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "battlefield"
       },
@@ -1986,8 +1912,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "bench"
       },
@@ -2008,8 +1933,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "waterway": "canal"
       },
@@ -2029,8 +1953,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "cannon"
       },
@@ -2050,8 +1973,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cemetary",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "landuse": "cemetery"
       },
@@ -2077,8 +1999,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cemetery",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "cemetery": "grave"
       },
@@ -2099,8 +2020,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "dam",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "waterway": "dam"
       },
@@ -2122,8 +2042,7 @@ iD.data.npmapPresets = {
         "vertex"
       ],
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "building": "entrance"
       },
@@ -2142,8 +2061,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "barrier": "fence"
       },
@@ -2161,8 +2079,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "flagpole"
       },
@@ -2181,8 +2098,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "archaeological_site",
         "site_type": "fortification"
@@ -2205,8 +2121,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "garden"
       },
@@ -2225,8 +2140,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "barrier": "gate"
       },
@@ -2245,8 +2159,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "dyke"
       },
@@ -2265,8 +2178,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "lock": "yes"
       },
@@ -2286,8 +2198,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "tower"
       },
@@ -2307,8 +2218,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "landuse": "military"
       },
@@ -2328,8 +2238,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "mine"
       },
@@ -2349,8 +2258,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "landuse": "quarry"
       },
@@ -2371,8 +2279,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "mineshaft"
       },
@@ -2395,8 +2302,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "monument",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "monument"
       },
@@ -2415,8 +2321,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "museum"
       },
@@ -2438,8 +2343,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "oil-well",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "oilfield"
       },
@@ -2461,8 +2365,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "yes"
       },
@@ -2484,8 +2387,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "nature_reserve"
       },
@@ -2510,8 +2412,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "water",
         "water": "reservoir",
@@ -2533,8 +2434,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "ruins"
       },
@@ -2553,8 +2453,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "ship"
       },
@@ -2574,8 +2473,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 0.75,
       "tags": {
         "historic": "*"
       },
@@ -2598,8 +2496,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tourism": "viewpoint"
       },
@@ -2620,8 +2517,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "historic": "wreck"
       },
@@ -2640,8 +2536,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "arch"
       },
@@ -2664,8 +2559,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "waterway": "drain",
         "intermittent": "yes"
@@ -2688,8 +2582,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "landuse": "basin"
       },
@@ -2707,8 +2600,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "bay"
       },
@@ -2734,8 +2626,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "beach"
       },
@@ -2756,8 +2647,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "cape"
       },
@@ -2779,8 +2669,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "cave_entrance"
       },
@@ -2801,8 +2690,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "cliff"
       },
@@ -2830,8 +2718,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "dune"
       },
@@ -2855,8 +2742,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "landuse": "forest"
       },
@@ -2882,8 +2768,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park2",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "wood"
       },
@@ -2904,8 +2789,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "geyser"
       },
@@ -2929,8 +2813,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "glacier"
       },
@@ -2951,8 +2834,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "grassland"
       },
@@ -2978,8 +2860,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "harbor",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 0.75,
       "tags": {
         "harbour": "*"
       },
@@ -2999,8 +2880,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "place": "island"
       },
@@ -3029,8 +2909,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "isthmus"
       },
@@ -3050,8 +2929,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "water",
         "water": "lake"
@@ -3081,8 +2959,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "lava"
       },
@@ -3104,8 +2981,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "saddle"
       },
@@ -3132,8 +3008,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "triangle",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "peak"
       },
@@ -3185,8 +3060,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "landform",
         "landform": "plateau"
@@ -3205,8 +3079,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "grassland",
         "grassland": "prarie"
@@ -3232,8 +3105,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "waterway": "rapids"
       },
@@ -3253,8 +3125,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "reef"
       },
@@ -3277,8 +3148,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "ridge"
       },
@@ -3305,8 +3175,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "place": "sea"
       },
@@ -3327,8 +3196,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "shoal"
       },
@@ -3352,8 +3220,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "spring"
       },
@@ -3372,8 +3239,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "strait"
       },
@@ -3398,8 +3264,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "waterway": "stream"
       },
@@ -3443,8 +3308,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "wetland",
         "wetland": "swamp"
@@ -3469,8 +3333,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "tree"
       },
@@ -3488,8 +3351,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "valley"
       },
@@ -3523,8 +3385,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "triangle",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "volcano"
       },
@@ -3546,8 +3407,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 15,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "waterway": "waterfall"
       },
@@ -3570,8 +3430,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "wetland",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "natural": "wetland"
       },
@@ -3595,8 +3454,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "matchScore": 10,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "amenity": "parking"
       },
@@ -3628,8 +3486,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "four-wheel-drive-road-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 15,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "road",
         "4wd_only": "yes"
@@ -3655,8 +3512,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-motorway",
       "maki": "maki",
-      "matchScore": 94,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "motorway"
       },
@@ -3676,8 +3532,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-motorway-link",
       "maki": "maki",
-      "matchScore": 94,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "motorway_link"
       },
@@ -3705,8 +3560,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-unclassified",
       "maki": "maki",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "unclassified"
       },
@@ -3761,8 +3615,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-road",
       "maki": "maki",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "road",
         "access": "private"
@@ -3793,8 +3646,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-residential",
       "maki": "maki",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "residential"
       },
@@ -3816,8 +3668,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-road",
       "maki": "maki",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 0.75,
       "tags": {
         "highway": "*"
       },
@@ -3845,8 +3696,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-unclassified",
       "maki": "maki",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "road"
       },
@@ -3874,8 +3724,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-primary-link",
       "maki": "maki",
-      "matchScore": 53,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "primary_link"
       },
@@ -3905,8 +3754,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-primary",
       "maki": "maki",
-      "matchScore": 55,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "primary"
       },
@@ -3938,8 +3786,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-secondary-link",
       "maki": "maki",
-      "matchScore": 45,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "secondary_link"
       },
@@ -3969,8 +3816,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-secondary",
       "maki": "maki",
-      "matchScore": 45,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "secondary"
       },
@@ -3999,8 +3845,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-service",
       "maki": "maki",
-      "matchScore": 20,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "service",
         "service": "parking_aisle"
@@ -4030,8 +3875,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-service",
       "maki": "maki",
-      "matchScore": 20,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "service"
       },
@@ -4060,8 +3904,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-tertiary-link",
       "maki": "maki",
-      "matchScore": 35,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "tertiary_link"
       },
@@ -4091,8 +3934,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-tertiary",
       "maki": "maki",
-      "matchScore": 35,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "tertiary"
       },
@@ -4169,8 +4011,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "bridge": "yes"
       },
@@ -4192,8 +4033,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "circle",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "traffic_signals"
       },
@@ -4219,8 +4059,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "circle",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "turning_circle"
       },
@@ -4243,8 +4082,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "tunnel": "yes"
       },
@@ -4268,8 +4106,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "airport-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "aeroway": "aerodrome"
       },
@@ -4295,8 +4132,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "airfield",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "aeroway": "aerodrome",
         "aerodrome": "airstrip"
@@ -4325,8 +4161,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "airfield",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "aeroway": "aerodrome",
         "aerodrome": "airstrip",
@@ -4346,8 +4181,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 40,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "atm"
       },
@@ -4375,8 +4209,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "bus-stop-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "bus_stop"
       },
@@ -4402,8 +4235,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ranger-station-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "barrier": "entrance"
       },
@@ -4430,8 +4262,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ferry",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "ferry_terminal"
       },
@@ -4454,8 +4285,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "food-service-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 50,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "food_court"
       },
@@ -4481,8 +4311,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "gas-station-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 40,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "fuel"
       },
@@ -4513,8 +4342,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 80,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "brochure"
@@ -4566,8 +4394,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
-      "matchScore": 80,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "sign"
@@ -4593,8 +4420,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 80,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information"
       },
@@ -4616,8 +4442,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 80,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "board"
@@ -4641,8 +4466,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 80,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "map"
@@ -4669,8 +4493,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 80,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "exhibit"
@@ -4699,8 +4522,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "visitor-center-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 100,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "tourism": "information",
         "information": "office"
@@ -4722,8 +4544,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "wifi": "yes"
       },
@@ -4743,8 +4564,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "parking",
         "capacity:charging": "yes"
@@ -4772,8 +4592,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "parking-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 60,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "amenity": "parking"
       },
@@ -4791,8 +4610,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "rest_area"
       },
@@ -4807,8 +4625,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "post_box"
       },
@@ -4831,8 +4648,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "post-office-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "post_office"
       },
@@ -4858,8 +4674,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rail-metro",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "railway": "subway_entrance"
       },
@@ -4885,8 +4700,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rail",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "building": "train_station"
       },
@@ -4910,8 +4724,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 40,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "shop": "general"
       },
@@ -4938,8 +4751,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "showers-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "shower"
       },
@@ -4963,8 +4775,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "emergency": "phone"
       },
@@ -4989,8 +4800,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fire-station",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "fire_station"
       },
@@ -5014,8 +4824,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "first-aid-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "first_aid"
       },
@@ -5042,8 +4851,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "hospital-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "hospital"
       },
@@ -5078,8 +4886,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "police",
       "maki": "maki",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "police"
       },
@@ -5113,8 +4920,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ranger-station-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 95,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "amenity": "ranger_station"
       },
@@ -5142,8 +4948,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "telephone"
       },
@@ -5168,8 +4973,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "amphitheater-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 40,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "theatre",
         "theatre:type": "amphi"
@@ -5195,8 +4999,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "waste_disposal"
       },
@@ -5220,8 +5023,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "litter-receptacle-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "waste_basket"
       },
@@ -5254,8 +5056,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "recycling-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "recycling"
       },
@@ -5285,8 +5086,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "drinking-water-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "drinking_water"
       },
@@ -5310,8 +5110,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "fountain"
       },
@@ -5334,8 +5133,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "radiator-water-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "emergency": "water_tank"
       },
@@ -5357,8 +5155,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "water_well"
       },
@@ -5390,8 +5187,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "All-terrain trail",
       "maki": "npmap-symbol-library",
-      "matchScore": 15,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "atv": "yes"
@@ -5435,8 +5231,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "four-wheel-drive-road-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 15,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "4wd_only": "yes"
@@ -5479,8 +5274,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "motor-bike-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 15,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "motorcycle": "yes"
@@ -5516,8 +5310,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "snowmobile-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 15,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "snowmobile": "yes"
@@ -5554,8 +5347,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "downhill-skiing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "skitour"
       },
@@ -5592,8 +5384,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "bicycle-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "bicycle": "yes"
@@ -5615,8 +5406,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "sport": "canyoning"
@@ -5635,8 +5425,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "sport": "climbing"
@@ -5669,8 +5458,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cross-country-ski-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "nordic"
       },
@@ -5708,8 +5496,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "sleigh"
       },
@@ -5747,8 +5534,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "downhill-skiing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "downhill"
       },
@@ -5787,8 +5573,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "horseback-riding-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "path",
         "horse": "yes"
@@ -5827,8 +5612,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "path"
       },
@@ -5860,8 +5644,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "canoe-access-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "canoe": "yes",
         "waterway": "yes"
@@ -5893,8 +5676,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-footway",
       "maki": "maki",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "footway"
       },
@@ -5922,8 +5704,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-footway",
       "maki": "maki",
-      "matchScore": 30,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "pedestrian"
       },
@@ -5948,8 +5729,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 12,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "footway",
         "footway": "sidewalk"
@@ -5981,8 +5761,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "hike"
       },
@@ -6008,8 +5787,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-steps",
       "maki": "maki",
-      "matchScore": 12,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "steps"
       },
@@ -6031,8 +5809,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ferry",
       "maki": "maki",
-      "matchScore": 25,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "route": "ferry"
       },
@@ -6064,8 +5841,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 25,
-      "isDefault": true,
+      "matchScore": 1,
       "tags": {
         "highway": "track"
       },
@@ -6092,8 +5868,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
-      "matchScore": 25,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "motorboat": "yes",
         "waterway": "yes"
@@ -6123,8 +5898,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "slipway"
       },
@@ -6151,8 +5925,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "canoe-access-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "slipway",
         "canoe": "yes"
@@ -6176,8 +5949,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 0.75,
       "tags": {
         "seamark:anchorage:category": "*"
       },
@@ -6195,8 +5967,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "buoy"
       },
@@ -6220,8 +5991,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "marina"
       },
@@ -6241,8 +6011,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 0.75,
       "tags": {
         "mooring": "*"
       },
@@ -6262,8 +6031,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "sailing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "sport": "sailing"
       },
@@ -6281,8 +6049,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "boat_wash",
         "type": "zebra_mussel"
@@ -6301,8 +6068,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "amenity": "fish_cleaning"
       },
@@ -6320,8 +6086,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "landuse": "aquaculture"
       },
@@ -6341,8 +6106,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "fishing"
       },
@@ -6360,8 +6124,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "man_made": "lighthouse"
       },
@@ -6381,8 +6144,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "scuba-diving-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "sport": "scuba_diving"
       },
@@ -6402,8 +6164,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "swimming-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "sport": "swimming"
       },
@@ -6423,8 +6184,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "wind-surfing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "sport": "windsurfing"
       },
@@ -6456,8 +6216,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cross-country-ski-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "nordic"
       },
@@ -6495,8 +6254,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "sleigh"
       },
@@ -6532,8 +6290,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "skitour"
       },
@@ -6570,8 +6327,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "downhill-skiing-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "downhill"
       },
@@ -6603,8 +6359,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ice-skating-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "leisure": "ice_rink"
       },
@@ -6639,8 +6394,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "sledding-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "sled"
       },
@@ -6673,8 +6427,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "snowmobile-trail-black",
       "maki": "npmap-symbol-library",
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "highway": "track",
         "snowmobile": "yes"
@@ -6709,8 +6462,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "matchScore": 10,
-      "isDefault": false,
+      "matchScore": 1,
       "tags": {
         "piste:type": "hike"
       },
@@ -6723,146 +6475,6 @@ iD.data.npmapPresets = {
       "searchable": true
     }
   },
-  "categories": {
-    "category-point-building": {
-      "geometry": "point",
-      "displayName": "Building",
-      "members": [
-        "building/historic/historic building",
-        "building/education/school building",
-        "building/agricultural/stable",
-        "building/building/building",
-        "building/building/building under construction",
-        "building/agricultural/greenhouse",
-        "building/building/bunker",
-        "building/agricultural/barn",
-        "building/building/cabin",
-        "building/building/public building",
-        "building/commercial/administrative office",
-        "building/commercial/commercial building",
-        "building/commercial/headquarters",
-        "building/commercial/hospital building",
-        "building/commercial/hotel building",
-        "building/commercial/industrial building",
-        "building/commercial/office",
-        "building/commercial/retail building",
-        "building/education/education center",
-        "building/education/university building",
-        "building/historic/historic cabin",
-        "building/place of worship/cathedral",
-        "building/place of worship/chapel",
-        "building/place of worship/church",
-        "building/primitive/hut",
-        "building/residential/apartments",
-        "building/residential/detached home",
-        "building/residential/dormitory",
-        "building/residential/house",
-        "building/residential/lodge",
-        "building/residential/lodging",
-        "building/residential/residential building",
-        "building/residential/row house",
-        "building/residential/static mobile home",
-        "building/shelter/weather shelter",
-        "building/storage/garage",
-        "building/storage/shed",
-        "building/storage/warehouse"
-      ]
-    },
-    "category-area-building": {
-      "geometry": "area",
-      "displayName": "Building",
-      "members": [
-        "building/building/building footprint"
-      ]
-    },
-    "category-point-land recreation": {
-      "geometry": "point",
-      "displayName": "Land Recreation",
-      "members": [
-        "land recreation/trail/motorized trail",
-        "land recreation/trail/non-motorized trail"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-area-parking": {
-      "geometry": "area",
-      "displayName": "Parking",
-      "members": [
-        "parking/parking/parking lot"
-      ]
-    },
-    "category-line-road": {
-      "geometry": "line",
-      "displayName": "Road",
-      "members": [
-        "road/highway/highway",
-        "road/highway/highway link",
-        "road/primary/primary road",
-        "road/secondary/secondary road",
-        "road/tertiary/tertiary road",
-        "road/service/parking aisle",
-        "road/service/service road"
-      ],
-      "icon": "highway-motorway",
-      "maki": "maki"
-    },
-    "category-point-service": {
-      "geometry": "point",
-      "displayName": "Service",
-      "members": [
-        "service/information/brochure box",
-        "service/information/gateway sign",
-        "service/information/information",
-        "service/information/information board",
-        "service/information/information map",
-        "service/information/interpretive sign",
-        "service/parking/parking lot",
-        "category-point-building"
-      ],
-      "icon": "visitor-center-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-service": {
-      "geometry": "vertex",
-      "displayName": "Service",
-      "members": [
-        "service/information/gateway sign",
-        "service/information/interpretive sign",
-        "service/parking/parking lot"
-      ]
-    },
-    "category-line-trail": {
-      "geometry": "line",
-      "displayName": "Trail",
-      "members": [
-        "trail/water/motorized trail",
-        "trail/non-motorized/horseback riding",
-        "trail/non-motorized/non-motorized trail",
-        "trail/non-motorized/sidewalk"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library"
-    }
-  },
-  "defaults": {
-    "point": [
-      "service/information/visitor center",
-      "service/support/ranger station",
-      "category-point-service",
-      "category-point-building",
-      "category-point-land recreation"
-    ],
-    "area": [
-      "building/building/building footprint",
-      "parking/parking/parking lot"
-    ],
-    "line": [
-      "category-line-road",
-      "category-line-trail"
-    ],
-    "vertex": [
-      "category-vertex-service"
-    ]
-  }
+  "categories": {},
+  "defaults": {}
 };
