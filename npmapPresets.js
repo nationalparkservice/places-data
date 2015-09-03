@@ -6817,7 +6817,8 @@ iD.data.npmapPresets = {
         "service/information/information board",
         "service/information/information map",
         "service/information/interpretive sign",
-        "service/parking/parking lot"
+        "service/parking/parking lot",
+        "category-point-building"
       ],
       "icon": "visitor-center-black",
       "maki": "npmap-symbol-library"
