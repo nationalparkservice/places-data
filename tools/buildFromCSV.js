@@ -167,7 +167,8 @@ var makeMatchScore = function (preset) {
     'bicycle': 0.01
   };
 
-  for (var tag in preset.tags) {
+  var tags = preset.tags ? JSON.parse(preset.tags) : {};
+  for (var tag in tags) {
     if (specialTags[tag]) {
       matchScore += specialTags[tag];
     }
