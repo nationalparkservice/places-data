@@ -21,11 +21,11 @@
   ],
   "icon": "highway-service",
   "maki": "maki",
-  "matchScore": 20,
+  "layerIndex": 20,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "highway": "service"
   },

@@ -10,11 +10,11 @@
   ],
   "icon": "water",
   "maki": "maki",
-  "matchScore": 15,
+  "layerIndex": 15,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "waterway": "waterfall"
   },

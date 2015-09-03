@@ -12,11 +12,11 @@
   ],
   "icon": "building",
   "maki": "maki",
-  "matchScore": 70,
+  "layerIndex": 70,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "building": "residential"
   },

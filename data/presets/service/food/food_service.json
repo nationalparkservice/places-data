@@ -13,11 +13,11 @@
   ],
   "icon": "food-service-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 50,
+  "layerIndex": 50,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "amenity": "food_court"
   },

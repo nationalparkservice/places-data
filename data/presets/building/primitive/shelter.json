@@ -14,11 +14,11 @@
   ],
   "icon": "shelter-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 30,
+  "layerIndex": 30,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "amenity": "shelter",
     "building": "hut"

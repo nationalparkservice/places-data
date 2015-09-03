@@ -15,11 +15,11 @@
   ],
   "icon": "water",
   "maki": "maki",
-  "matchScore": 25,
+  "layerIndex": 25,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "motorboat": "yes",
     "waterway": "yes"

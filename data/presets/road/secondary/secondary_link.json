@@ -17,11 +17,11 @@
   ],
   "icon": "highway-secondary-link",
   "maki": "maki",
-  "matchScore": 45,
+  "layerIndex": 45,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "highway": "secondary_link"
   },

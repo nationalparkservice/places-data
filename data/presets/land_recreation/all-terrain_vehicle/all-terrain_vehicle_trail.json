@@ -22,11 +22,11 @@
   ],
   "icon": "All-terrain trail",
   "maki": "npmap-symbol-library",
-  "matchScore": 30,
+  "layerIndex": 30,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "highway": "track",
     "atv": "yes"

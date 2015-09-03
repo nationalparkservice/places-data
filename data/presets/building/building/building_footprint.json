@@ -10,11 +10,11 @@
   "geometry": [
     "area"
   ],
-  "matchScore": 70,
+  "layerIndex": 70,
+  "matchScore": 0.75,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "building": "*"
   },

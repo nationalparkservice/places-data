@@ -22,11 +22,11 @@
   ],
   "icon": "snowmobile-trail-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 15,
+  "layerIndex": 15,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "highway": "track",
     "snowmobile": "yes"

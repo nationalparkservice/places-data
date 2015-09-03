@@ -10,11 +10,11 @@
   ],
   "icon": "highway-motorway-link",
   "maki": "maki",
-  "matchScore": 94,
+  "layerIndex": 94,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "highway": "motorway_link"
   },

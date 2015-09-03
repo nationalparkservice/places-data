@@ -9,11 +9,11 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 10,
+  "layerIndex": 10,
+  "matchScore": 0.75,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "historic": "*"
   },

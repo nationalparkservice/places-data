@@ -8,11 +8,11 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 60,
+  "layerIndex": 60,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "storage": "food"
   },

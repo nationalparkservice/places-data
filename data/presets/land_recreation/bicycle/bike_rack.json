@@ -8,11 +8,11 @@
   "geometry": [
     "point"
   ],
-  "matchScore": 30,
+  "layerIndex": 30,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "amenity": "bicycle_parking",
     "bicycle_parking": "rack"

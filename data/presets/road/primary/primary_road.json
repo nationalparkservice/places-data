@@ -20,11 +20,11 @@
   ],
   "icon": "highway-primary",
   "maki": "maki",
-  "matchScore": 55,
+  "layerIndex": 55,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "highway": "primary"
   },

@@ -10,11 +10,11 @@
   ],
   "icon": "highway-road",
   "maki": "maki",
-  "matchScore": 30,
+  "layerIndex": 30,
+  "matchScore": 0.75,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "highway": "*"
   },

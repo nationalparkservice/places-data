@@ -13,11 +13,11 @@
   ],
   "icon": "gas-station-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 40,
+  "layerIndex": 40,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "amenity": "fuel"
   },

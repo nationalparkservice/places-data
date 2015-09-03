@@ -20,11 +20,11 @@
   ],
   "icon": "highway-unclassified",
   "maki": "maki",
-  "matchScore": 30,
+  "layerIndex": 30,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "highway": "unclassified"
   },

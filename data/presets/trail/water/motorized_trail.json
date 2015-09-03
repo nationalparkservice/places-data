@@ -22,11 +22,11 @@
   ],
   "icon": "trailhead-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 25,
+  "layerIndex": 25,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "highway": "track"
   },

@@ -15,11 +15,11 @@
   ],
   "icon": "visitor-center-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 100,
+  "layerIndex": 100,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "tourism": "information",
     "information": "office"

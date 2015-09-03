@@ -13,11 +13,11 @@
   ],
   "icon": "lodging-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 70,
+  "layerIndex": 70,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "tourism": "hotel"
   },

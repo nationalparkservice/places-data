@@ -22,11 +22,11 @@
   ],
   "icon": "downhill-skiing-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 12,
+  "layerIndex": 12,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "piste:type": "downhill"
   },

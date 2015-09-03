@@ -20,11 +20,11 @@
   ],
   "icon": "highway-secondary",
   "maki": "maki",
-  "matchScore": 45,
+  "layerIndex": 45,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "highway": "secondary"
   },

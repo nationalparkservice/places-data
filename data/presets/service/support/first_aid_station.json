@@ -12,11 +12,11 @@
   ],
   "icon": "first-aid-black",
   "maki": "npmap-symbol-library",
-  "matchScore": 10,
+  "layerIndex": 10,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "amenity": "first_aid"
   },

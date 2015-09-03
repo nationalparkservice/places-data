@@ -17,11 +17,11 @@
   ],
   "icon": "highway-tertiary-link",
   "maki": "maki",
-  "matchScore": 35,
+  "layerIndex": 35,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": false,
   "tags": {
     "highway": "tertiary_link"
   },

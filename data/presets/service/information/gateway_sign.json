@@ -12,11 +12,11 @@
     "point",
     "vertex"
   ],
-  "matchScore": 80,
+  "layerIndex": 80,
+  "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
-  "isDefault": true,
   "tags": {
     "tourism": "information",
     "information": "sign"
