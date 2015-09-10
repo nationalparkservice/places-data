@@ -1,8 +1,8 @@
 {
-  "name": "Service Road",
+  "name": "Access Road",
   "description": "A service road is a road accessing a building, service station, beach, campsite, business park, parking lot, driveway, or other services.",
   "howToMap": "Add a service road by tracing its centerline from beginning to end and selecting \"Service Road\" from the \"Select feature type\" menu.",
-  "path": "Road--Service--Service_Road",
+  "path": "Road--Service--Access_Road",
   "fields": [
     "name",
     "nps/unitcode",
@@ -31,6 +31,7 @@
     "highway": "service"
   },
   "terms": [
+    "access road",
     "service road",
     "service",
     "road"

@@ -1,6 +1,6 @@
 {
-  "name": "Horseback Riding",
-  "path": "Trail--Non-Motorized--Horseback_Riding",
+  "name": "Horseback Riding Trail",
+  "path": "Trail--Non-Motorized--Horseback_Riding_Trail",
   "fields": [
     "name",
     "nps/unitcode",
