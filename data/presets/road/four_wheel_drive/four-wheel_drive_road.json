@@ -23,7 +23,7 @@
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
-  "inEditor": false,
+  "inEditor": true,
   "tags": {
     "highway": "road",
     "4wd_only": "yes"
