@@ -1,6 +1,6 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Historic Ruins",
+  "path": "Historic--Ruin--Historic_Ruins",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,17 +15,17 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
+    "historic": "ruins"
   },
   "terms": [
-    "arch",
-    "sea arch"
+    "historic ruins",
+    "ruins"
   ],
   "gisTags": {
     "OSM_Line": "x",
     "OSM_Poly": "x",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Arch\"}",
+    "POI_Values": "{\"POITYPE\":\"Historic Ruins\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
   }

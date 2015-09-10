@@ -1,0 +1,27 @@
+{
+  "name": "Memorial",
+  "path": "Historic--Monument--Memorial",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "monument",
+  "maki": "maki",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "historic": "memorial"
+  },
+  "terms": [
+    "memorial",
+    "historic memorial"
+  ],
+  "gisTags": {}
+}

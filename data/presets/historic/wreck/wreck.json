@@ -1,22 +1,25 @@
 {
-  "name": "ATM",
-  "path": "Service--Bank--ATM",
+  "name": "Wreck",
+  "path": "Historic--Wreck--Wreck",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
   "geometry": [
     "point"
   ],
-  "layerIndex": 40,
+  "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "atm"
+    "historic": "wreck"
   },
   "terms": [
-    "atm",
-    "automated teller machine",
-    "cash dispenser"
+    "wreck",
+    "shipwreck"
   ],
   "gisTags": {}
 }

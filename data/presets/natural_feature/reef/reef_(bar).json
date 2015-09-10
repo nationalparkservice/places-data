@@ -1,6 +1,6 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Reef (Bar)",
+  "path": "Natural_Feature--Reef--Reef_(Bar)",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,17 +15,20 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
+    "natural": "reef"
   },
   "terms": [
-    "arch",
-    "sea arch"
+    "reef",
+    "bar",
+    "ledge",
+    "sandbar",
+    "shoal",
+    "spit"
   ],
   "gisTags": {
-    "OSM_Line": "x",
     "OSM_Poly": "x",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Arch\"}",
+    "POI_Values": "{\"POITYPE\":\"Reef (Bar)\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
   }

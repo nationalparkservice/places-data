@@ -1,9 +1,10 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Historic Site",
+  "path": "Historic--Site--Historic_Site",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "site_type"
   ],
   "geometry": [
     "point"
@@ -15,17 +16,18 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
+    "historic": "*"
   },
   "terms": [
-    "arch",
-    "sea arch"
+    "historic site",
+    "historic",
+    "site"
   ],
   "gisTags": {
     "OSM_Line": "x",
     "OSM_Poly": "x",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Arch\"}",
+    "POI_Values": "{\"POITYPE\":\"Historic Site\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
   }

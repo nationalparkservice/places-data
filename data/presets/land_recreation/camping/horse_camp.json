@@ -1,0 +1,36 @@
+{
+  "name": "Horse Camp",
+  "path": "Land_Recreation--Camping--Horse_Camp",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "capacity",
+    "fee",
+    "nps/nonmotorizeduse"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "campground-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 60,
+  "defaultOrder": null,
+  "matchScore": 1.02,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "tourism": "camp_site",
+    "horse": "yes"
+  },
+  "terms": [
+    "horse camp",
+    "horse campground"
+  ],
+  "gisTags": {
+    "OSM_Poly": "x"
+  }
+}

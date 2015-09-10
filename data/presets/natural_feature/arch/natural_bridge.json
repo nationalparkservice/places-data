@@ -1,6 +1,6 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Natural Bridge",
+  "path": "Natural_Feature--Arch--Natural_Bridge",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,11 +15,13 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
+    "natural": "arch",
+    "arch_type": "Natural Bridge"
   },
   "terms": [
-    "arch",
-    "sea arch"
+    "bridge",
+    "natural bridge",
+    "land bridge"
   ],
   "gisTags": {
     "OSM_Line": "x",

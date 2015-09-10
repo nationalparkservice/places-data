@@ -1,22 +1,24 @@
 {
-  "name": "ATM",
-  "path": "Service--Bank--ATM",
+  "name": "Cannon",
+  "path": "Historic--Cannon--Cannon",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
   "geometry": [
     "point"
   ],
-  "layerIndex": 40,
+  "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "atm"
+    "historic": "cannon"
   },
   "terms": [
-    "atm",
-    "automated teller machine",
-    "cash dispenser"
+    "cannon"
   ],
   "gisTags": {}
 }

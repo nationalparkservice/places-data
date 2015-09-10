@@ -1,0 +1,25 @@
+{
+  "name": "Battlefield Marker",
+  "path": "Historic--Marker--Battlefield_Marker",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "historic": "marker",
+    "marker_type": "battlefield"
+  },
+  "terms": [
+    "battlefield marker"
+  ],
+  "gisTags": {}
+}

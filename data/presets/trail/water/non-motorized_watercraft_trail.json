@@ -1,0 +1,45 @@
+{
+  "name": "Non-Motorized Watercraft Trail",
+  "path": "Trail--Water--Non-Motorized_Watercraft_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "whitewater",
+    "width",
+    "section_grade",
+    "nps/wateruse"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "icon": "canoe-access-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 12,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "canoe": "yes",
+    "waterway": "yes"
+  },
+  "terms": [
+    "non-motorized watercraft trail",
+    "non-motorized watercraft",
+    "canoe",
+    "kayak",
+    "raft",
+    "trail",
+    "track"
+  ],
+  "gisTags": {
+    "OSM_Line": "x",
+    "JSON_Icon_Line": "highway-track",
+    "Trail": "Yes",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_CANOE\":\"Yes\"}",
+    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
+    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
+  }
+}

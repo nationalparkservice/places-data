@@ -1,0 +1,24 @@
+{
+  "name": "Playground",
+  "path": "Land_Recreation--Playground--Playground",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 60,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "leisure": "playground"
+  },
+  "terms": [
+    "playground"
+  ],
+  "gisTags": {}
+}

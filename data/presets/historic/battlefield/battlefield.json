@@ -1,0 +1,24 @@
+{
+  "name": "Battlefield",
+  "path": "Historic--Battlefield--Battlefield",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "historic": "battlefield"
+  },
+  "terms": [
+    "battlefield"
+  ],
+  "gisTags": {}
+}

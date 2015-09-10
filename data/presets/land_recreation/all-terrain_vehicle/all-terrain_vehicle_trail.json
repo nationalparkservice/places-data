@@ -1,6 +1,6 @@
 {
-  "name": "All-terrain Vehicle Trail",
-  "path": "Land_Recreation--All-terrain_vehicle--All-terrain_Vehicle_Trail",
+  "name": "All-Terrain Vehicle Trail",
+  "path": "Land_Recreation--All-terrain_vehicle--All-Terrain_Vehicle_Trail",
   "fields": [
     "name",
     "nps/unitcode",

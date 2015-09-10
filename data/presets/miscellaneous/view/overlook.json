@@ -1,9 +1,13 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Overlook",
+  "path": "Miscellaneous--View--Overlook",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "direction",
+    "operator",
+    "address",
+    "opening_hours"
   ],
   "geometry": [
     "point"
@@ -15,17 +19,17 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
+    "tourism": "viewpoint",
+    "viewpoint_type": "overlook"
   },
   "terms": [
-    "arch",
-    "sea arch"
+    "overlook",
+    "scenic overlook"
   ],
   "gisTags": {
-    "OSM_Line": "x",
     "OSM_Poly": "x",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Arch\"}",
+    "POI_Values": "{\"POITYPE\":\"Viewpoint\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
   }

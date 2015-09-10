@@ -1,6 +1,6 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Cemetery / Graveyard",
+  "path": "Miscellaneous--Cemetery--Cemetery_/_Graveyard",
   "fields": [
     "name",
     "nps/unitcode"
@@ -8,6 +8,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "cemetery",
+  "maki": "maki",
   "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
@@ -15,17 +17,16 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
+    "landuse": "cemetery"
   },
   "terms": [
-    "arch",
-    "sea arch"
+    "cemetery",
+    "graveyard"
   ],
   "gisTags": {
-    "OSM_Line": "x",
     "OSM_Poly": "x",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Arch\"}",
+    "POI_Values": "{\"POITYPE\":\"Cemetery\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
   }

@@ -1,0 +1,27 @@
+{
+  "name": "Entrance / Exit",
+  "path": "Building--Entrance--Entrance_/_Exit",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "vertex"
+  ],
+  "maki": "maki",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "building": "entrance"
+  },
+  "terms": [
+    "entrance"
+  ],
+  "gisTags": {
+    "POI": "Yes"
+  }
+}

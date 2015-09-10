@@ -1,0 +1,25 @@
+{
+  "name": "Historic Ship",
+  "path": "Historic--Ship--Historic_Ship",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "historic": "ship"
+  },
+  "terms": [
+    "ship",
+    "historic"
+  ],
+  "gisTags": {}
+}

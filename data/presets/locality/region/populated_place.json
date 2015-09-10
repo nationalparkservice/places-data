@@ -1,0 +1,25 @@
+{
+  "name": "Populated Place",
+  "path": "Locality--Region--Populated_Place",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "population"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "place": "hamlet"
+  },
+  "terms": [
+    "hamlet"
+  ],
+  "gisTags": {}
+}
