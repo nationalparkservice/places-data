@@ -20,8 +20,8 @@
   "geometry": [
     "line"
   ],
-  "icon": "snowmobile-trail-black",
-  "maki": "npmap-symbol-library",
+  "icon": "highway-track",
+  "maki": "maki",
   "layerIndex": 15,
   "defaultOrder": null,
   "matchScore": 1,

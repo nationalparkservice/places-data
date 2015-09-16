@@ -13,8 +13,8 @@
   "geometry": [
     "line"
   ],
-  "icon": "canoe-access-black",
-  "maki": "npmap-symbol-library",
+  "icon": "other-line",
+  "maki": "maki",
   "layerIndex": 12,
   "defaultOrder": null,
   "matchScore": 1,

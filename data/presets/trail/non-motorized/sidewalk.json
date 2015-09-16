@@ -14,6 +14,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "other-line",
+  "maki": "maki",
   "layerIndex": 12,
   "defaultOrder": 14,
   "matchScore": 1,

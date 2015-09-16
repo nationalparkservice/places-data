@@ -20,8 +20,8 @@
   "geometry": [
     "line"
   ],
-  "icon": "bicycle-trail-black",
-  "maki": "npmap-symbol-library",
+  "icon": "highway-cycleway",
+  "maki": "maki",
   "layerIndex": 12,
   "defaultOrder": 12,
   "matchScore": 1.01,

@@ -20,10 +20,10 @@
   "geometry": [
     "line"
   ],
-  "icon": "horseback-riding-black",
-  "maki": "npmap-symbol-library",
+  "icon": "highway-bridleway",
+  "maki": "maki",
   "layerIndex": 12,
-  "defaultOrder": 11,
+  "defaultOrder": null,
   "matchScore": 1.02,
   "inCarto": true,
   "inGuide": true,
