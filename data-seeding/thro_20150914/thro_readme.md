@@ -1,3 +1,5 @@
+Data seeded 9/14/15. Issue [here](https://github.com/nationalparkservice/places-data/issues/121).
+
 ### North half
 
 https://api.tiles.mapbox.com/v4/nps.dd9c9778,nps.816a5255,nps.9546ad31/-103.36984634399414,47.579652317657434,12/900x900.png?access_token=pk.eyJ1IjoibnBzIiwiYSI6IkdfeS1OY1UifQ.K8Qn5ojTw4RV1GwBlsci-Q
