@@ -14,7 +14,7 @@
   "icon": "self-guiding-trail-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
-  "defaultOrder": 17,
+  "defaultOrder": 18,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -28,10 +28,5 @@
     "guide post",
     "information"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Guidepost\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

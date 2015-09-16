@@ -16,7 +16,7 @@
   "icon": "boat-launch-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": 25,
+  "defaultOrder": 26,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -29,11 +29,5 @@
     "slipway",
     "boat ramp"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Boat Launch\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

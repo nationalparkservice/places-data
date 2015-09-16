@@ -15,7 +15,7 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "seamark:anchorage:category": "*"
+    "seamark:type": "anchorage"
   },
   "terms": [
     "anchorage"

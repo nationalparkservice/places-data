@@ -1,6 +1,6 @@
 {
   "name": "Chapel",
-  "path": "Building--Place_of_worship--Chapel",
+  "path": "Building--Place_of_Worship--Chapel",
   "fields": [
     "name",
     "nps/unitcode",
@@ -25,14 +25,5 @@
   "terms": [
     "chapel"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Chapel\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
-    "Building": "Yes",
-    "Building_OSM_Tags": "{\"name\"}",
-    "Building_GIS_Tags": "{\"Common_Name\"}"
-  }
+  "gisTags": {}
 }

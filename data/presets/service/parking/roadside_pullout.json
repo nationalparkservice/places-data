@@ -1,6 +1,12 @@
 {
   "name": "Roadside Pullout",
   "path": "Service--Parking--Roadside_Pullout",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address"
+  ],
   "geometry": [
     "point"
   ],

@@ -24,7 +24,7 @@
   "tags": {
     "tourism": "camp_site",
     "camp_site": "pitch",
-    "backcountry": "yes"
+    "backcountry": "*"
   },
   "terms": [
     "campsite",
@@ -32,11 +32,5 @@
     "backcountry",
     "primitive"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Campsite\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

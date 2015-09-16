@@ -1,0 +1,28 @@
+{
+  "name": "Brochure Box",
+  "path": "Information--Information--Brochure_Box",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 80,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "tourism": "information",
+    "information": "brochure"
+  },
+  "terms": [
+    "brochure box"
+  ],
+  "gisTags": {}
+}

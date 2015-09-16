@@ -26,11 +26,5 @@
     "bench",
     "seat"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Bench\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

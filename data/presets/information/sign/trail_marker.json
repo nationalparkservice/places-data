@@ -1,0 +1,29 @@
+{
+  "name": "Trail Marker",
+  "path": "Information--Sign--Trail_Marker",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": null,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "tourism": "information",
+    "information": "guidepost"
+  },
+  "terms": [
+    "trail marker",
+    "trail",
+    "marker",
+    "sign"
+  ],
+  "gisTags": {}
+}

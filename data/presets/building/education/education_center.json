@@ -15,7 +15,7 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "building": "yes",
+    "building": "*",
     "amenity": "education_centre"
   },
   "terms": [

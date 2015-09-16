@@ -1,6 +1,6 @@
 iD.data.npmapPresets = {
   "presets": {
-    "accessibility/wheelchair-accessible/wheelchair accessible": {
+    "accessibility/wheelchair accessible/wheelchair accessible": {
       "name": "Wheelchair Accessible",
       "fields": [
         "name",
@@ -14,7 +14,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "wheelchair": "yes"
+        "wheelchair": "*"
       },
       "terms": [
         "wheelchair accessible",
@@ -300,29 +300,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "building/building/cabin": {
-      "name": "Cabin",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "cabin"
-      },
-      "terms": [
-        "cabin"
-      ],
-      "searchable": true
-    },
     "building/building/public building": {
       "name": "Public Building",
       "fields": [
@@ -348,6 +325,29 @@ iD.data.npmapPresets = {
         "civic",
         "town hall",
         "court house"
+      ],
+      "searchable": true
+    },
+    "building/cabin/cabin": {
+      "name": "Cabin",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "building",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "cabin"
+      },
+      "terms": [
+        "cabin"
       ],
       "searchable": true
     },
@@ -520,7 +520,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "building": "yes",
+        "building": "*",
         "amenity": "education_centre"
       },
       "terms": [
@@ -581,6 +581,26 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "building/entrance/entrance %2f exit": {
+      "name": "Entrance / Exit",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "vertex"
+      ],
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "entrance"
+      },
+      "terms": [
+        "entrance"
+      ],
+      "searchable": true
+    },
     "building/historic/historic building": {
       "name": "Historic Building",
       "fields": [
@@ -595,7 +615,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "historic": "building",
-        "building": "yes"
+        "building": "*"
       },
       "terms": [
         "historic building"
@@ -619,7 +639,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "building": "cabin",
-        "historic": "yes"
+        "historic": "*"
       },
       "terms": [
         "historic",
@@ -696,61 +716,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "church"
-      ],
-      "searchable": true
-    },
-    "building/primitive/hut": {
-      "name": "Hut",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "shelter-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "hut"
-      },
-      "terms": [
-        "hut"
-      ],
-      "searchable": true
-    },
-    "building/primitive/shelter": {
-      "name": "Shelter",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "shelter_type",
-        "drinking_water"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "shelter-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "shelter",
-        "building": "hut"
-      },
-      "terms": [
-        "shelter",
-        "sanctuary",
-        "cover",
-        "hide",
-        "lean-to",
-        "gazebo",
-        "picnic"
       ],
       "searchable": true
     },
@@ -981,6 +946,122 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "building/shelter/gazebo": {
+      "name": "Gazebo",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "drinking_water"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "shelter-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "shelter",
+        "building": "pavilion",
+        "pavilion_type": "gazebo"
+      },
+      "terms": [
+        "shelter",
+        "sanctuary",
+        "cover",
+        "hide",
+        "lean-to",
+        "gazebo",
+        "picnic"
+      ],
+      "searchable": true
+    },
+    "building/shelter/hut": {
+      "name": "Hut",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "shelter-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "hut"
+      },
+      "terms": [
+        "hut"
+      ],
+      "searchable": true
+    },
+    "building/shelter/pavilion": {
+      "name": "Pavilion",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "drinking_water"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "shelter-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "shelter",
+        "building": "pavilion"
+      },
+      "terms": [
+        "shelter",
+        "sanctuary",
+        "cover",
+        "hide",
+        "lean-to",
+        "pavilion",
+        "picnic"
+      ],
+      "searchable": true
+    },
+    "building/shelter/shelter": {
+      "name": "Shelter",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "drinking_water"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "shelter-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "shelter",
+        "building": "hut"
+      },
+      "terms": [
+        "shelter",
+        "sanctuary",
+        "cover",
+        "hide",
+        "lean-to",
+        "picnic"
+      ],
+      "searchable": true
+    },
     "building/shelter/weather shelter": {
       "name": "Weather Shelter",
       "fields": [
@@ -1071,8 +1152,508 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "historic/battlefield/battlefield": {
+      "name": "Battlefield",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "battlefield"
+      },
+      "terms": [
+        "battlefield"
+      ],
+      "searchable": true
+    },
+    "historic/cannon/cannon": {
+      "name": "Cannon",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "cannon"
+      },
+      "terms": [
+        "cannon"
+      ],
+      "searchable": true
+    },
+    "historic/marker/battlefield marker": {
+      "name": "Battlefield Marker",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "marker",
+        "marker_type": "battlefield"
+      },
+      "terms": [
+        "battlefield marker"
+      ],
+      "searchable": true
+    },
+    "historic/marker/historic marker": {
+      "name": "Historic Marker",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "marker"
+      },
+      "terms": [
+        "historic marker"
+      ],
+      "searchable": true
+    },
+    "historic/monument/memorial": {
+      "name": "Memorial",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "monument",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "memorial"
+      },
+      "terms": [
+        "memorial",
+        "historic memorial"
+      ],
+      "searchable": true
+    },
+    "historic/monument/monument": {
+      "name": "Monument",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "monument",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "monument"
+      },
+      "terms": [
+        "monument",
+        "historic monument"
+      ],
+      "searchable": true
+    },
+    "historic/ruin/historic ruins": {
+      "name": "Historic Ruins",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "ruins"
+      },
+      "terms": [
+        "historic ruins",
+        "ruins"
+      ],
+      "searchable": true
+    },
+    "historic/ship/historic ship": {
+      "name": "Historic Ship",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "ship"
+      },
+      "terms": [
+        "ship",
+        "historic"
+      ],
+      "searchable": true
+    },
+    "historic/site/historic site": {
+      "name": "Historic Site",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "site_type"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "*"
+      },
+      "terms": [
+        "historic site",
+        "historic",
+        "site"
+      ],
+      "searchable": true
+    },
+    "historic/wreck/wreck": {
+      "name": "Wreck",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "wreck"
+      },
+      "terms": [
+        "wreck",
+        "shipwreck"
+      ],
+      "searchable": true
+    },
+    "information/information/brochure box": {
+      "name": "Brochure Box",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "brochure"
+      },
+      "terms": [
+        "brochure box"
+      ],
+      "searchable": true
+    },
+    "information/information/information": {
+      "name": "Information",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 19,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information"
+      },
+      "terms": [
+        "information",
+        "tourist information"
+      ],
+      "searchable": true
+    },
+    "information/information/information board": {
+      "name": "Information Board",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "board"
+      },
+      "terms": [
+        "bulletin board"
+      ],
+      "searchable": true
+    },
+    "information/information/information map": {
+      "name": "Information Map",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "map"
+      },
+      "terms": [
+        "information map",
+        "information",
+        "map"
+      ],
+      "searchable": true
+    },
+    "information/information/interpretive exhibit": {
+      "name": "Interpretive Exhibit",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "exhibit"
+      },
+      "terms": [
+        "exhibit / wayside",
+        "exhibit",
+        "wayside",
+        "attraction",
+        "tourist attraction",
+        "interpretive sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/directional sign": {
+      "name": "Directional Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "directional"
+      },
+      "terms": [
+        "directional sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/gateway sign": {
+      "name": "Gateway Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign"
+      },
+      "terms": [
+        "gateway sign",
+        "location",
+        "place name"
+      ],
+      "searchable": true
+    },
+    "information/sign/mile marker": {
+      "name": "Mile Marker",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "milestone"
+      },
+      "terms": [
+        "mile marker"
+      ],
+      "searchable": true
+    },
+    "information/sign/regulatory sign": {
+      "name": "Regulatory Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "regulatory"
+      },
+      "terms": [
+        "regulatory sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/trail marker": {
+      "name": "Trail Marker",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "guidepost"
+      },
+      "terms": [
+        "trail marker",
+        "trail",
+        "marker",
+        "sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/trail sign": {
+      "name": "Trail Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "trail_sign"
+      },
+      "terms": [
+        "trail sign",
+        "trail",
+        "sign"
+      ],
+      "searchable": true
+    },
+    "information/visitor center/visitor center": {
+      "name": "Visitor Center",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "visitor-center-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -1,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "office"
+      },
+      "terms": [
+        "visitor center",
+        "visitor centre",
+        "visitor information",
+        "information"
+      ],
+      "searchable": true
+    },
     "land recreation/all-terrain vehicle/all-terrain vehicle trail": {
-      "name": "All-terrain Vehicle Trail",
+      "name": "All-Terrain Vehicle Trail",
       "fields": [
         "name",
         "nps/unitcode",
@@ -1090,7 +1671,8 @@ iD.data.npmapPresets = {
         "nps/structure"
       ],
       "geometry": [
-        "point"
+        "point",
+        "line"
       ],
       "icon": "All-terrain trail",
       "maki": "npmap-symbol-library",
@@ -1098,7 +1680,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "atv": "yes"
+        "atv": "*"
       },
       "terms": [
         "atv trail",
@@ -1141,7 +1723,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "4wd_only": "yes"
+        "4wd_only": "*"
       },
       "terms": [
         "four-wheel drive trail",
@@ -1185,7 +1767,7 @@ iD.data.npmapPresets = {
       "matchScore": 1.01,
       "tags": {
         "highway": "path",
-        "bicycle": "yes"
+        "bicycle": "*"
       },
       "terms": [
         "bicycle trail",
@@ -1236,7 +1818,7 @@ iD.data.npmapPresets = {
       "tags": {
         "tourism": "camp_site",
         "camp_site": "pitch",
-        "backcountry": "yes"
+        "backcountry": "*"
       },
       "terms": [
         "campsite",
@@ -1351,6 +1933,35 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "land recreation/camping/horse camp": {
+      "name": "Horse Camp",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "capacity",
+        "fee",
+        "nps/nonmotorizeduse"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "campground-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1.02,
+      "tags": {
+        "tourism": "camp_site",
+        "horse": "*"
+      },
+      "terms": [
+        "horse camp",
+        "horse campground"
+      ],
+      "searchable": true
+    },
     "land recreation/camping/rv campground": {
       "name": "RV Campground",
       "fields": [
@@ -1367,11 +1978,11 @@ iD.data.npmapPresets = {
       ],
       "icon": "rv-campground-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 16,
+      "defaultOrder": 17,
       "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
-        "caravans": "yes"
+        "caravans": "*"
       },
       "terms": [
         "rv campground",
@@ -1533,7 +2144,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "motorcycle": "yes"
+        "motorcycle": "*"
       },
       "terms": [
         "motorcycle trail",
@@ -1555,7 +2166,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "barbecue_grill": "yes"
+        "barbecue_grill": "*"
       },
       "terms": [
         "grill"
@@ -1577,7 +2188,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "picnic-area-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 14,
+      "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
         "tourism": "picnic_site"
@@ -1598,13 +2209,32 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "defaultOrder": 15,
+      "defaultOrder": 16,
       "matchScore": 1,
       "tags": {
         "leisure": "picnic_table"
       },
       "terms": [
         "picnic table"
+      ],
+      "searchable": true
+    },
+    "land recreation/playground/playground": {
+      "name": "Playground",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "leisure": "playground"
+      },
+      "terms": [
+        "playground"
       ],
       "searchable": true
     },
@@ -1697,7 +2327,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "self-guiding-trail-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 17,
+      "defaultOrder": 18,
       "matchScore": 1,
       "tags": {
         "tourism": "information",
@@ -1795,35 +2425,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "locality/boundary/park": {
-      "name": "Park",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "park",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "leisure": "park"
-      },
-      "terms": [
-        "park",
-        "green area",
-        "national park",
-        "state park",
-        "city park",
-        "recreation area",
-        "woodland",
-        "parkland"
-      ],
-      "searchable": true
-    },
     "locality/region/park district": {
       "name": "Park District",
       "fields": [
@@ -1851,6 +2452,26 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "locality/region/populated place": {
+      "name": "Populated Place",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "population"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "hamlet"
+      },
+      "terms": [
+        "hamlet"
+      ],
+      "searchable": true
+    },
     "miscellaneous/art/sculpture": {
       "name": "Sculpture",
       "fields": [
@@ -1868,25 +2489,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "sculpture"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/battlefield/battlefield": {
-      "name": "Battlefield",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "battlefield"
-      },
-      "terms": [
-        "battlefield"
       ],
       "searchable": true
     },
@@ -1938,8 +2540,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/cannon/cannon": {
-      "name": "Cannon",
+    "miscellaneous/cemetery/cemetery %2f graveyard": {
+      "name": "Cemetery / Graveyard",
       "fields": [
         "name",
         "nps/unitcode"
@@ -1947,26 +2549,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "cannon"
-      },
-      "terms": [
-        "cannon"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/cemetery/cemetery": {
-      "name": "Cemetery",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "cemetary",
+      "icon": "cemetery",
       "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
@@ -2030,26 +2613,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/entrance/entrance%2fexit": {
-      "name": "Entrance/Exit",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "vertex"
-      ],
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "entrance"
-      },
-      "terms": [
-        "entrance"
-      ],
-      "searchable": true
-    },
     "miscellaneous/fence/fence": {
       "name": "Fence",
       "fields": [
@@ -2070,7 +2633,7 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/flagpole/flag pole": {
+    "miscellaneous/flag pole/flag pole": {
       "name": "Flag Pole",
       "fields": [
         "name",
@@ -2086,31 +2649,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "flagpole"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/fort/fortification": {
-      "name": "Fortification",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "site_type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "archaeological_site",
-        "site_type": "fortification"
-      },
-      "terms": [
-        "fortification",
-        "fort",
-        "earthworks",
-        "hill fort",
-        "trench"
       ],
       "searchable": true
     },
@@ -2186,33 +2724,10 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "lock": "yes"
+        "lock": "*"
       },
       "terms": [
         "lock"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/manmade/tower": {
-      "name": "Tower",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "tower/type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "tower"
-      },
-      "terms": [
-        "tower",
-        "castle",
-        "overlook"
       ],
       "searchable": true
     },
@@ -2302,28 +2817,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/monument/monument": {
-      "name": "Monument",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "monument",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "monument"
-      },
-      "terms": [
-        "monument",
-        "historic monument"
-      ],
-      "searchable": true
-    },
     "miscellaneous/museum/museum": {
       "name": "Museum",
       "fields": [
@@ -2382,7 +2875,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "tourism": "yes"
+        "tourism": "*"
       },
       "terms": [
         "point of interest",
@@ -2442,48 +2935,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/ruin/historic ruins": {
-      "name": "Historic Ruins",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "ruins"
-      },
-      "terms": [
-        "historic ruins",
-        "ruins"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/ship/historic ship": {
-      "name": "Historic Ship",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "ship"
-      },
-      "terms": [
-        "ship",
-        "historic"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/site/historic site": {
-      "name": "Historic Site",
+    "miscellaneous/structure/fortification": {
+      "name": "Fortification",
       "fields": [
         "name",
         "nps/unitcode",
@@ -2495,12 +2948,83 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "historic": "*"
+        "historic": "archaeological_site",
+        "site_type": "fortification"
       },
       "terms": [
-        "historic site",
-        "historic",
-        "site"
+        "fortification",
+        "fort",
+        "earthworks",
+        "hill fort",
+        "trench"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/structure/tower": {
+      "name": "Tower",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tower/type"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "tower"
+      },
+      "terms": [
+        "tower",
+        "castle",
+        "overlook"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/structure/windmill": {
+      "name": "Windmill",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "windmill"
+      },
+      "terms": [
+        "windmill"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/view/overlook": {
+      "name": "Overlook",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "direction",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "viewpoint",
+        "viewpoint_type": "overlook"
+      },
+      "terms": [
+        "overlook",
+        "scenic overlook"
       ],
       "searchable": true
     },
@@ -2529,26 +3053,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/wreck/wreck": {
-      "name": "Wreck",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "wreck"
-      },
-      "terms": [
-        "wreck",
-        "shipwreck"
-      ],
-      "searchable": true
-    },
     "natural feature/arch/arch": {
       "name": "Arch",
       "fields": [
@@ -2565,9 +3069,29 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "arch",
+        "sea arch"
+      ],
+      "searchable": true
+    },
+    "natural feature/arch/natural bridge": {
+      "name": "Natural Bridge",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "arch",
+        "arch_type": "Natural Bridge"
+      },
+      "terms": [
         "bridge",
         "natural bridge",
-        "sea arch"
+        "land bridge"
       ],
       "searchable": true
     },
@@ -2586,7 +3110,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "waterway": "drain",
-        "intermittent": "yes"
+        "intermittent": "*"
       },
       "terms": [
         "arroyo",
@@ -3162,7 +3686,7 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "natural feature/reef (bar)/reef (bar)": {
+    "natural feature/reef/reef (bar)": {
       "name": "Reef (Bar)",
       "fields": [
         "name",
@@ -3460,7 +3984,7 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "line"
+        "point"
       ],
       "icon": "water",
       "maki": "maki",
@@ -3527,8 +4051,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "road/four wheel drive/four wheel drive road": {
-      "name": "Four Wheel Drive Road",
+    "road/four-wheel drive/four-wheel drive road": {
+      "name": "Four-Wheel Drive Road",
       "fields": [
         "name",
         "nps/unitcode",
@@ -3550,7 +4074,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "highway": "road",
-        "4wd_only": "yes"
+        "4wd_only": "*"
       },
       "terms": [
         "four-wheel drive road",
@@ -3632,6 +4156,34 @@ iD.data.npmapPresets = {
         "unclassified road",
         "unclassified",
         "road"
+      ],
+      "searchable": true
+    },
+    "road/minor/pedestrian street": {
+      "name": "Pedestrian Street",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface",
+        "lit",
+        "width",
+        "oneway",
+        "structure",
+        "access"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-footway",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "pedestrian"
+      },
+      "terms": [
+        "pedestrian road",
+        "pedestrian street"
       ],
       "searchable": true
     },
@@ -3877,34 +4429,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "road/service/parking aisle": {
-      "name": "Parking Aisle",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface",
-        "oneway",
-        "nps/trailuse",
-        "nps/structure"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "highway-service",
-      "maki": "maki",
-      "defaultOrder": 8,
-      "matchScore": 1,
-      "tags": {
-        "highway": "service",
-        "service": "parking_aisle"
-      },
-      "terms": [
-        "parking aisle"
-      ],
-      "searchable": true
-    },
-    "road/service/service road": {
-      "name": "Service Road",
+    "road/service/access road": {
+      "name": "Access Road",
       "fields": [
         "name",
         "nps/unitcode",
@@ -3929,9 +4455,36 @@ iD.data.npmapPresets = {
         "highway": "service"
       },
       "terms": [
+        "access road",
         "service road",
         "service",
         "road"
+      ],
+      "searchable": true
+    },
+    "road/service/parking aisle": {
+      "name": "Parking Aisle",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface",
+        "oneway",
+        "nps/trailuse",
+        "nps/structure"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-service",
+      "maki": "maki",
+      "defaultOrder": 8,
+      "matchScore": 1,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "terms": [
+        "parking aisle"
       ],
       "searchable": true
     },
@@ -4010,7 +4563,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "bridge": "yes"
+        "bridge": "*"
       },
       "terms": [
         "bridge"
@@ -4084,7 +4637,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "tunnel": "yes"
+        "tunnel": "*"
       },
       "terms": [
         "tunnel"
@@ -4181,6 +4734,12 @@ iD.data.npmapPresets = {
     },
     "service/bank/atm": {
       "name": "ATM",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "fee"
+      ],
       "geometry": [
         "point"
       ],
@@ -4191,8 +4750,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "atm",
-        "Automated teller Machine",
-        "Cash Dispenser"
+        "automated teller machine",
+        "cash dispenser"
       ],
       "searchable": true
     },
@@ -4292,7 +4851,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "food-service-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 19,
+      "defaultOrder": 20,
       "matchScore": 1,
       "tags": {
         "amenity": "food_court"
@@ -4319,7 +4878,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "gas-station-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 21,
+      "defaultOrder": 22,
       "matchScore": 1,
       "tags": {
         "amenity": "fuel"
@@ -4339,189 +4898,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "service/information/brochure box": {
-      "name": "Brochure Box",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "brochure"
-      },
-      "terms": [
-        "brochure box"
-      ],
-      "searchable": true
-    },
-    "service/information/gateway sign": {
-      "name": "Gateway Sign",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "sign"
-      },
-      "terms": [
-        "gateway sign",
-        "location",
-        "place name"
-      ],
-      "searchable": true
-    },
-    "service/information/information": {
-      "name": "Information",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 18,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information"
-      },
-      "terms": [
-        "information",
-        "tourist information"
-      ],
-      "searchable": true
-    },
-    "service/information/information board": {
-      "name": "Information Board",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "board"
-      },
-      "terms": [
-        "bulletin board"
-      ],
-      "searchable": true
-    },
-    "service/information/information map": {
-      "name": "Information Map",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "map"
-      },
-      "terms": [
-        "information map",
-        "information",
-        "map"
-      ],
-      "searchable": true
-    },
-    "service/information/interpretive exhibit": {
-      "name": "Interpretive Exhibit",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "exhibit"
-      },
-      "terms": [
-        "exhibit / wayside",
-        "exhibit",
-        "wayside",
-        "attraction",
-        "tourist attraction",
-        "interpretive sign"
-      ],
-      "searchable": true
-    },
-    "service/information/visitor center": {
-      "name": "Visitor Center",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "visitor-center-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -1,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "office"
-      },
-      "terms": [
-        "visitor center",
-        "visitor centre",
-        "visitor information",
-        "information"
-      ],
-      "searchable": true
-    },
     "service/internet/wi-fi": {
       "name": "Wi-Fi",
       "fields": [
@@ -4534,7 +4910,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "wifi": "yes"
+        "wifi": "*"
       },
       "terms": [
         "wifi",
@@ -4556,7 +4932,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "amenity": "parking",
-        "capacity:charging": "yes"
+        "capacity:charging": "*"
       },
       "terms": [
         "electric vehicle parking"
@@ -4597,6 +4973,12 @@ iD.data.npmapPresets = {
     },
     "service/parking/roadside pullout": {
       "name": "Roadside Pullout",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
       "geometry": [
         "point"
       ],
@@ -4612,6 +4994,11 @@ iD.data.npmapPresets = {
     },
     "service/post/mailbox": {
       "name": "Mailbox",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
       "geometry": [
         "point",
         "vertex"
@@ -4719,7 +5106,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 20,
+      "defaultOrder": 21,
       "matchScore": 1,
       "tags": {
         "shop": "general"
@@ -4873,6 +5260,29 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/support/patrol cabin": {
+      "name": "Patrol Cabin",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "patrol_cabin"
+      },
+      "terms": [
+        "patrol cabin",
+        "cabin",
+        "patrol"
+      ],
+      "searchable": true
+    },
     "service/support/police": {
       "name": "Police",
       "fields": [
@@ -4951,7 +5361,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 22,
+      "defaultOrder": 23,
       "matchScore": 1,
       "tags": {
         "amenity": "telephone"
@@ -5029,7 +5439,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "litter-receptacle-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 24,
+      "defaultOrder": 25,
       "matchScore": 1,
       "tags": {
         "amenity": "waste_basket"
@@ -5094,7 +5504,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "drinking-water-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 23,
+      "defaultOrder": 24,
       "matchScore": 1,
       "tags": {
         "amenity": "drinking_water"
@@ -5176,8 +5586,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "trail/motorized/all-terrain trail": {
-      "name": "All-terrain trail",
+    "trail/motorized/all-terrain vehicle trail": {
+      "name": "All-Terrain Vehicle Trail",
       "fields": [
         "name",
         "nps/unitcode",
@@ -5197,13 +5607,13 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "All-terrain trail",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "atv": "yes"
+        "atv": "*"
       },
       "terms": [
         "atv trail",
@@ -5242,13 +5652,13 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "four-wheel-drive-road-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "4wd_only": "yes"
+        "4wd_only": "*"
       },
       "terms": [
         "four-wheel drive trail",
@@ -5286,19 +5696,54 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "motor-bike-trail-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "motorcycle": "yes"
+        "motorcycle": "*"
       },
       "terms": [
         "motorcycle trail",
         "motorcycle",
         "trail",
         "track"
+      ],
+      "searchable": true
+    },
+    "trail/motorized/motorized trail": {
+      "name": "Motorized Trail",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "nps/trailuse",
+        "nps/structure"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-track",
+      "maki": "maki",
+      "defaultOrder": 12,
+      "matchScore": 1,
+      "tags": {
+        "highway": "track"
+      },
+      "terms": [
+        "track",
+        "trail",
+        "path"
       ],
       "searchable": true
     },
@@ -5323,13 +5768,13 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "snowmobile-trail-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "snowmobile": "yes"
+        "snowmobile": "*"
       },
       "terms": [
         "snowmobile trail",
@@ -5399,13 +5844,13 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "bicycle-trail-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 12,
+      "icon": "highway-cycleway",
+      "maki": "maki",
+      "defaultOrder": null,
       "matchScore": 1.01,
       "tags": {
         "highway": "path",
-        "bicycle": "yes"
+        "bicycle": "*"
       },
       "terms": [
         "bicycle trail",
@@ -5424,6 +5869,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5444,6 +5891,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5517,6 +5966,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5573,8 +6024,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "trail/non-motorized/horseback riding": {
-      "name": "Horseback Riding",
+    "trail/non-motorized/horseback riding trail": {
+      "name": "Horseback Riding Trail",
       "fields": [
         "name",
         "nps/unitcode",
@@ -5594,13 +6045,13 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "horseback-riding-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 11,
+      "icon": "highway-bridleway",
+      "maki": "maki",
+      "defaultOrder": null,
       "matchScore": 1.02,
       "tags": {
         "highway": "path",
-        "horse": "yes"
+        "horse": "*"
       },
       "terms": [
         "equestrian trail",
@@ -5613,81 +6064,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "trail/non-motorized/non-motorized trail": {
-      "name": "Non-Motorized Trail",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "tracktype",
-        "surface",
-        "width",
-        "incline",
-        "mtb/scale",
-        "mtb/scale/uphill",
-        "mtb/scale/imba",
-        "sac_scale",
-        "trail_visibility",
-        "nps/nonmotorizeduse",
-        "nps/structure"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "path"
-      },
-      "terms": [
-        "trail",
-        "path",
-        "track",
-        "hike",
-        "hiking",
-        "trackway",
-        "walk",
-        "footpath"
-      ],
-      "searchable": true
-    },
-    "trail/non-motorized/non-motorized watercraft trail": {
-      "name": "Non-Motorized Watercraft Trail",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "whitewater",
-        "width",
-        "section_grade",
-        "nps/wateruse"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "canoe-access-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "canoe": "yes",
-        "waterway": "yes"
-      },
-      "terms": [
-        "non-motorized watercraft trail",
-        "non-motorized watercraft",
-        "canoe",
-        "kayak",
-        "raft",
-        "trail",
-        "track"
-      ],
-      "searchable": true
-    },
-    "trail/non-motorized/pedestrian path": {
-      "name": "Pedestrian Path",
+    "trail/non-motorized/path": {
+      "name": "Path",
       "fields": [
         "name",
         "nps/unitcode",
@@ -5702,7 +6080,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-footway",
       "maki": "maki",
-      "defaultOrder": 10,
+      "defaultOrder": 13,
       "matchScore": 1,
       "tags": {
         "highway": "footway"
@@ -5711,34 +6089,6 @@ iD.data.npmapPresets = {
         "footway",
         "pedestrian path",
         "pedestrian trail"
-      ],
-      "searchable": true
-    },
-    "trail/non-motorized/pedestrian street": {
-      "name": "Pedestrian Street",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface",
-        "lit",
-        "width",
-        "oneway",
-        "structure",
-        "access"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "highway-footway",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "pedestrian"
-      },
-      "terms": [
-        "pedestrian road",
-        "pedestrian street"
       ],
       "searchable": true
     },
@@ -5757,7 +6107,9 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "defaultOrder": null,
+      "icon": "other-line",
+      "maki": "maki",
+      "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
         "highway": "footway",
@@ -5790,6 +6142,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5817,7 +6171,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-steps",
       "maki": "maki",
-      "defaultOrder": null,
+      "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
         "highway": "steps"
@@ -5826,6 +6180,46 @@ iD.data.npmapPresets = {
         "stairs",
         "staircase",
         "steps"
+      ],
+      "searchable": true
+    },
+    "trail/non-motorized/trail": {
+      "name": "Trail",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "nps/nonmotorizeduse",
+        "nps/structure"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-path",
+      "maki": "maki",
+      "defaultOrder": 10,
+      "matchScore": 1,
+      "tags": {
+        "highway": "path"
+      },
+      "terms": [
+        "trail",
+        "path",
+        "track",
+        "hike",
+        "hiking",
+        "trackway",
+        "walk",
+        "footpath"
       ],
       "searchable": true
     },
@@ -5850,41 +6244,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "trail/water/motorized trail": {
-      "name": "Motorized Trail",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "tracktype",
-        "surface",
-        "width",
-        "incline",
-        "mtb/scale",
-        "mtb/scale/uphill",
-        "mtb/scale/imba",
-        "sac_scale",
-        "trail_visibility",
-        "nps/trailuse",
-        "nps/structure"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 13,
-      "matchScore": 1,
-      "tags": {
-        "highway": "track"
-      },
-      "terms": [
-        "track",
-        "trail",
-        "path"
-      ],
-      "searchable": true
-    },
     "trail/water/motorized watercraft trail": {
       "name": "Motorized Watercraft Trail",
       "fields": [
@@ -5904,13 +6263,46 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "motorboat": "yes",
-        "waterway": "yes"
+        "motorboat": "*",
+        "waterway": "*"
       },
       "terms": [
         "motorized watercraft trail",
         "motorized watercraft",
         "motorboat",
+        "trail",
+        "track"
+      ],
+      "searchable": true
+    },
+    "trail/water/non-motorized watercraft trail": {
+      "name": "Non-Motorized Watercraft Trail",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "whitewater",
+        "width",
+        "section_grade",
+        "nps/wateruse"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "other-line",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "canoe": "*",
+        "waterway": "*"
+      },
+      "terms": [
+        "non-motorized watercraft trail",
+        "non-motorized watercraft",
+        "canoe",
+        "kayak",
+        "raft",
         "trail",
         "track"
       ],
@@ -5932,7 +6324,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 25,
+      "defaultOrder": 26,
       "matchScore": 1,
       "tags": {
         "leisure": "slipway"
@@ -5964,7 +6356,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "leisure": "slipway",
-        "canoe": "yes"
+        "canoe": "*"
       },
       "terms": [
         "canoe access",
@@ -5988,7 +6380,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "seamark:anchorage:category": "*"
+        "seamark:type": "anchorage"
       },
       "terms": [
         "anchorage"
@@ -6029,7 +6421,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 27,
+      "defaultOrder": 28,
       "matchScore": 1,
       "tags": {
         "leisure": "marina"
@@ -6150,7 +6542,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 26,
+      "defaultOrder": 27,
       "matchScore": 1,
       "tags": {
         "leisure": "fishing"
@@ -6221,8 +6613,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "water recreation/wind surfing/wind surfing area": {
-      "name": "Wind Surfing Area",
+    "water recreation/windsurfing/windsurfing area": {
+      "name": "Windsurfing Area",
       "fields": [
         "name",
         "nps/unitcode"
@@ -6486,7 +6878,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "highway": "track",
-        "snowmobile": "yes"
+        "snowmobile": "*"
       },
       "terms": [
         "snowmobile trail",
@@ -6570,6 +6962,15 @@ iD.data.npmapPresets = {
       "icon": "commercial",
       "maki": "maki"
     },
+    "category-point-information": {
+      "geometry": "point",
+      "displayName": "Information",
+      "members": [
+        "information/information/information"
+      ],
+      "icon": "visitor-center-black",
+      "maki": "npmap-symbol-library"
+    },
     "category-point-land recreation": {
       "geometry": "point",
       "displayName": "Land Recreation",
@@ -6618,7 +7019,7 @@ iD.data.npmapPresets = {
         "road/secondary/secondary road",
         "road/minor/minor road",
         "road/minor/residential road",
-        "road/service/service road",
+        "road/service/access road",
         "road/service/parking aisle",
         "road/minor/private road"
       ],
@@ -6629,7 +7030,6 @@ iD.data.npmapPresets = {
       "geometry": "point",
       "displayName": "Service",
       "members": [
-        "service/information/information",
         "service/food/food service",
         "service/shopping/store",
         "service/fuel/gas station",
@@ -6653,12 +7053,13 @@ iD.data.npmapPresets = {
       "geometry": "line",
       "displayName": "Trail",
       "members": [
-        "trail/non-motorized/pedestrian path",
-        "trail/non-motorized/horseback riding",
-        "trail/non-motorized/bicycle trail",
-        "trail/water/motorized trail"
+        "trail/non-motorized/trail",
+        "trail/motorized/motorized trail",
+        "trail/non-motorized/path",
+        "trail/non-motorized/sidewalk",
+        "trail/non-motorized/steps"
       ],
-      "icon": "highway-footway",
+      "icon": "highway-path",
       "maki": "maki"
     },
     "category-point-water recreation": {
@@ -6682,9 +7083,10 @@ iD.data.npmapPresets = {
       "locality/region/park district",
       "land recreation/camping/campground",
       "service/entrance/entrance station",
-      "service/information/visitor center",
+      "information/visitor center/visitor center",
       "category-point-building",
       "category-point-land recreation",
+      "category-point-information",
       "category-point-service",
       "category-point-water recreation"
     ],

@@ -15,7 +15,7 @@
   "icon": "picnic-area-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
-  "defaultOrder": 14,
+  "defaultOrder": 15,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -28,11 +28,5 @@
     "picnic site",
     "picnic"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Picnic Area\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

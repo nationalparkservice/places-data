@@ -1,24 +1,28 @@
 {
-  "name": "Flag Pole",
-  "path": "Miscellaneous--Flagpole--Flag_Pole",
+  "name": "Patrol Cabin",
+  "path": "Service--Support--Patrol_Cabin",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator",
+    "address"
   ],
   "geometry": [
     "point"
   ],
-  "layerIndex": 10,
+  "layerIndex": null,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "man_made": "flagpole"
+    "amenity": "patrol_cabin"
   },
   "terms": [
-    "flagpole"
+    "patrol cabin",
+    "cabin",
+    "patrol"
   ],
   "gisTags": {}
 }

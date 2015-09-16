@@ -1,0 +1,25 @@
+{
+  "name": "Mile Marker",
+  "path": "Information--Sign--Mile_Marker",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": null,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "highway": "milestone"
+  },
+  "terms": [
+    "mile marker"
+  ],
+  "gisTags": {}
+}

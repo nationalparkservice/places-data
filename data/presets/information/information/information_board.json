@@ -1,6 +1,6 @@
 {
-  "name": "Information Map",
-  "path": "Service--Information--Information_Map",
+  "name": "Information Board",
+  "path": "Information--Information--Information_Board",
   "fields": [
     "name",
     "nps/unitcode",
@@ -21,17 +21,10 @@
   "inEditor": true,
   "tags": {
     "tourism": "information",
-    "information": "map"
+    "information": "board"
   },
   "terms": [
-    "information map",
-    "information",
-    "map"
+    "bulletin board"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Information Map\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

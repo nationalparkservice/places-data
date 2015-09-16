@@ -20,17 +20,17 @@
   "geometry": [
     "line"
   ],
-  "icon": "horseback-riding-black",
-  "maki": "npmap-symbol-library",
+  "icon": "highway-bridleway",
+  "maki": "maki",
   "layerIndex": 12,
-  "defaultOrder": 11,
+  "defaultOrder": null,
   "matchScore": 1.02,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
     "highway": "path",
-    "horse": "yes"
+    "horse": "*"
   },
   "terms": [
     "equestrian trail",
@@ -41,16 +41,5 @@
     "trail",
     "track"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-track",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Equestrian Trail\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
-    "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_HORSE\":\"Yes\"}",
-    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
-    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
-  }
+  "gisTags": {}
 }

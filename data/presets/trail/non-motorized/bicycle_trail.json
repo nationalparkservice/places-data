@@ -20,17 +20,17 @@
   "geometry": [
     "line"
   ],
-  "icon": "bicycle-trail-black",
-  "maki": "npmap-symbol-library",
+  "icon": "highway-cycleway",
+  "maki": "maki",
   "layerIndex": 12,
-  "defaultOrder": 12,
+  "defaultOrder": null,
   "matchScore": 1.01,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
     "highway": "path",
-    "bicycle": "yes"
+    "bicycle": "*"
   },
   "terms": [
     "bicycle trail",
@@ -38,16 +38,5 @@
     "trail",
     "track"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-track",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Bicycle Trail\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
-    "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_BICYCLE\":\"Yes\"}",
-    "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
-    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
-  }
+  "gisTags": {}
 }

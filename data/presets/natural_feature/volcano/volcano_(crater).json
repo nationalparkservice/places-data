@@ -27,10 +27,5 @@
     "crater",
     "caldera"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Volcano (Crater)\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

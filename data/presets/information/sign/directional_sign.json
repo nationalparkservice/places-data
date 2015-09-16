@@ -1,17 +1,15 @@
 {
-  "name": "Brochure Box",
-  "path": "Service--Information--Brochure_Box",
+  "name": "Directional Sign",
+  "path": "Information--Sign--Directional_Sign",
   "fields": [
     "name",
     "nps/unitcode",
-    "operator",
-    "address",
-    "opening_hours"
+    "operator"
   ],
   "geometry": [
     "point"
   ],
-  "layerIndex": 80,
+  "layerIndex": null,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
@@ -19,10 +17,11 @@
   "inEditor": true,
   "tags": {
     "tourism": "information",
-    "information": "brochure"
+    "information": "sign",
+    "sign:type": "directional"
   },
   "terms": [
-    "brochure box"
+    "directional sign"
   ],
   "gisTags": {}
 }

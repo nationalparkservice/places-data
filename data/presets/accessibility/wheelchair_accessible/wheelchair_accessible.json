@@ -1,6 +1,6 @@
 {
   "name": "Wheelchair Accessible",
-  "path": "Accessibility--Wheelchair-accessible--Wheelchair_Accessible",
+  "path": "Accessibility--Wheelchair_Accessible--Wheelchair_Accessible",
   "fields": [
     "name",
     "nps/unitcode"
@@ -17,19 +17,12 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "wheelchair": "yes"
+    "wheelchair": "*"
   },
   "terms": [
     "wheelchair accessible",
     "wheelchair",
     "accessible"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Wheelchair Accessible\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

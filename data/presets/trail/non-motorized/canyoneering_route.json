@@ -8,6 +8,8 @@
   "geometry": [
     "line"
   ],
+  "icon": "other-line",
+  "maki": "maki",
   "layerIndex": 12,
   "defaultOrder": null,
   "matchScore": 1,

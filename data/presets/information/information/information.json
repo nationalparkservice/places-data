@@ -1,6 +1,6 @@
 {
   "name": "Information",
-  "path": "Service--Information--Information",
+  "path": "Information--Information--Information",
   "fields": [
     "name",
     "nps/unitcode",
@@ -14,7 +14,7 @@
   "icon": "information-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 80,
-  "defaultOrder": 18,
+  "defaultOrder": 19,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -26,11 +26,5 @@
     "information",
     "tourist information"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Information\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

@@ -1,0 +1,25 @@
+{
+  "name": "Windmill",
+  "path": "Miscellaneous--Structure--Windmill",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": null,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "man_made": "windmill"
+  },
+  "terms": [
+    "windmill"
+  ],
+  "gisTags": {}
+}

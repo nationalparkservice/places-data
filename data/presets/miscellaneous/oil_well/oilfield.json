@@ -1,6 +1,6 @@
 {
   "name": "Oilfield",
-  "path": "Miscellaneous--Oil_well--Oilfield",
+  "path": "Miscellaneous--Oil_Well--Oilfield",
   "fields": [
     "name",
     "nps/unitcode",
@@ -24,11 +24,5 @@
   "terms": [
     "oilfield"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Oilfield\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

@@ -42,16 +42,5 @@
     "trail",
     "track"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-path",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Cross-Country Ski Trail\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
-    "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_NORDIC\":\"Yes\"}",
-    "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
-    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
-  }
+  "gisTags": {}
 }

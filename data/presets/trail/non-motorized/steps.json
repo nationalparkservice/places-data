@@ -14,7 +14,7 @@
   "icon": "highway-steps",
   "maki": "maki",
   "layerIndex": 12,
-  "defaultOrder": null,
+  "defaultOrder": 15,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
