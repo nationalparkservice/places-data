@@ -6,7 +6,7 @@
     "nps/unitcode"
   ],
   "geometry": [
-    "line"
+    "point"
   ],
   "icon": "water",
   "maki": "maki",

@@ -18,7 +18,7 @@
   "inEditor": true,
   "tags": {
     "waterway": "drain",
-    "intermittent": "yes"
+    "intermittent": "*"
   },
   "terms": [
     "arroyo",

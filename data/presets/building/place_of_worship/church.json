@@ -1,6 +1,6 @@
 {
   "name": "Church",
-  "path": "Building--Place_of_worship--Church",
+  "path": "Building--Place_of_Worship--Church",
   "fields": [
     "name",
     "nps/unitcode",

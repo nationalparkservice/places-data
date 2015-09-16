@@ -1,6 +1,6 @@
 {
-  "name": "Wind Surfing Area",
-  "path": "Water_Recreation--Wind_Surfing--Wind_Surfing_Area",
+  "name": "Wheelchair Accessible",
+  "path": "Accessibility--Wheelchair_Accessible--Wheelchair_Accessible",
   "fields": [
     "name",
     "nps/unitcode"
@@ -8,7 +8,7 @@
   "geometry": [
     "point"
   ],
-  "icon": "wind-surfing-black",
+  "icon": "wheelchair-accessible-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": null,
@@ -17,16 +17,18 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "sport": "windsurfing"
+    "wheelchair": "*"
   },
   "terms": [
-    "wind surfing area"
+    "wheelchair accessible",
+    "wheelchair",
+    "accessible"
   ],
   "gisTags": {
     "OSM_Line": "x",
     "OSM_Poly": "x",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Wind Surfing Area\"}",
+    "POI_Values": "{\"POITYPE\":\"Wheelchair Accessible\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
   }

@@ -24,7 +24,7 @@
   "tags": {
     "tourism": "camp_site",
     "camp_site": "pitch",
-    "backcountry": "yes"
+    "backcountry": "*"
   },
   "terms": [
     "campsite",

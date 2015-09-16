@@ -23,7 +23,7 @@
   "inEditor": true,
   "tags": {
     "tourism": "camp_site",
-    "caravans": "yes"
+    "caravans": "*"
   },
   "terms": [
     "rv campground",

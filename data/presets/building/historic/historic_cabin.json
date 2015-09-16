@@ -20,7 +20,7 @@
   "inEditor": true,
   "tags": {
     "building": "cabin",
-    "historic": "yes"
+    "historic": "*"
   },
   "terms": [
     "historic",

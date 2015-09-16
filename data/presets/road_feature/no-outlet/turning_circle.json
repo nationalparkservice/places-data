@@ -1,6 +1,6 @@
 {
   "name": "Turning Circle",
-  "path": "Road_Feature--No-outlet--Turning_Circle",
+  "path": "Road_Feature--No-Outlet--Turning_Circle",
   "fields": [
     "name",
     "nps/unitcode",

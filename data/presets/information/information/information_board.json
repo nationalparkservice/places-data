@@ -1,6 +1,6 @@
 {
-  "name": "Gateway Sign",
-  "path": "Service--Information--Gateway_Sign",
+  "name": "Information Board",
+  "path": "Information--Information--Information_Board",
   "fields": [
     "name",
     "nps/unitcode",
@@ -9,9 +9,10 @@
     "opening_hours"
   ],
   "geometry": [
-    "point",
-    "vertex"
+    "point"
   ],
+  "icon": "information-black",
+  "maki": "npmap-symbol-library",
   "layerIndex": 80,
   "defaultOrder": null,
   "matchScore": 1,
@@ -20,12 +21,10 @@
   "inEditor": true,
   "tags": {
     "tourism": "information",
-    "information": "sign"
+    "information": "board"
   },
   "terms": [
-    "gateway sign",
-    "location",
-    "place name"
+    "bulletin board"
   ],
   "gisTags": {}
 }

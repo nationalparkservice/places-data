@@ -15,7 +15,7 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "wifi": "yes"
+    "wifi": "*"
   },
   "terms": [
     "wifi",

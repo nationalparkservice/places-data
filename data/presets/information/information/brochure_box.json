@@ -1,6 +1,6 @@
 {
   "name": "Brochure Box",
-  "path": "Service--Information--Brochure_Box",
+  "path": "Information--Information--Brochure_Box",
   "fields": [
     "name",
     "nps/unitcode",

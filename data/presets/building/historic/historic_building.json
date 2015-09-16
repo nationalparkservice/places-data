@@ -17,7 +17,7 @@
   "inEditor": true,
   "tags": {
     "historic": "building",
-    "building": "yes"
+    "building": "*"
   },
   "terms": [
     "historic building"

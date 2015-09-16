@@ -1,6 +1,6 @@
 {
   "name": "Four-Wheel Drive Road",
-  "path": "Road--Four_Wheel_Drive--Four-Wheel_Drive_Road",
+  "path": "Road--Four-Wheel_Drive--Four-Wheel_Drive_Road",
   "fields": [
     "name",
     "nps/unitcode",
@@ -26,7 +26,7 @@
   "inEditor": true,
   "tags": {
     "highway": "road",
-    "4wd_only": "yes"
+    "4wd_only": "*"
   },
   "terms": [
     "four-wheel drive road",

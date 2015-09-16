@@ -16,7 +16,7 @@
   "inEditor": true,
   "tags": {
     "amenity": "parking",
-    "capacity:charging": "yes"
+    "capacity:charging": "*"
   },
   "terms": [
     "electric vehicle parking"

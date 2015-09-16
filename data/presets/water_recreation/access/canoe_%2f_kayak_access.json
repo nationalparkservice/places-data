@@ -23,7 +23,7 @@
   "inEditor": true,
   "tags": {
     "leisure": "slipway",
-    "canoe": "yes"
+    "canoe": "*"
   },
   "terms": [
     "canoe access",

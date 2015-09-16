@@ -30,7 +30,7 @@
   "inEditor": true,
   "tags": {
     "highway": "path",
-    "bicycle": "yes"
+    "bicycle": "*"
   },
   "terms": [
     "bicycle trail",
@@ -46,7 +46,7 @@
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_BICYCLE\":\"Yes\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_BICYCLE\":\"*\"}",
     "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
   }

@@ -24,7 +24,7 @@
   "inEditor": true,
   "tags": {
     "tourism": "camp_site",
-    "horse": "yes"
+    "horse": "*"
   },
   "terms": [
     "horse camp",

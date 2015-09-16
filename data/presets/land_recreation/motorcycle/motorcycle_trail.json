@@ -30,7 +30,7 @@
   "inEditor": true,
   "tags": {
     "highway": "track",
-    "motorcycle": "yes"
+    "motorcycle": "*"
   },
   "terms": [
     "motorcycle trail",
@@ -46,7 +46,7 @@
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_MOTORCYCLE\":\"Yes\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_MOTORCYCLE\":\"*\"}",
     "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
   }

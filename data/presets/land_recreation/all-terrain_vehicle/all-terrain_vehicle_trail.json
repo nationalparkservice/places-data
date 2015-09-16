@@ -1,6 +1,6 @@
 {
   "name": "All-Terrain Vehicle Trail",
-  "path": "Land_Recreation--All-terrain_vehicle--All-Terrain_Vehicle_Trail",
+  "path": "Land_Recreation--All-Terrain_Vehicle--All-Terrain_Vehicle_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -18,7 +18,8 @@
     "nps/structure"
   ],
   "geometry": [
-    "point"
+    "point",
+    "line"
   ],
   "icon": "All-terrain trail",
   "maki": "npmap-symbol-library",
@@ -30,7 +31,7 @@
   "inEditor": true,
   "tags": {
     "highway": "track",
-    "atv": "yes"
+    "atv": "*"
   },
   "terms": [
     "atv trail",
@@ -54,7 +55,7 @@
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_ATV\":\"Yes\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_ATV\":\"*\"}",
     "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
   }

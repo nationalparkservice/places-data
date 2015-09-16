@@ -17,7 +17,7 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "tunnel": "yes"
+    "tunnel": "*"
   },
   "terms": [
     "tunnel"

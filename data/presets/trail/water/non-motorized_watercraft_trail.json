@@ -22,8 +22,8 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "canoe": "yes",
-    "waterway": "yes"
+    "canoe": "*",
+    "waterway": "*"
   },
   "terms": [
     "non-motorized watercraft trail",
@@ -38,7 +38,7 @@
     "OSM_Line": "x",
     "JSON_Icon_Line": "highway-track",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_CANOE\":\"Yes\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_CANOE\":\"*\"}",
     "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
   }

@@ -1,6 +1,6 @@
 {
-  "name": "Backcountry Ski Trail",
-  "path": "Winter_Recreation--Downing_Skiing--Backcountry_Ski_Trail",
+  "name": "All-Terrain Vehicle Trail",
+  "path": "Trail--Motorized--All-Terrain_Vehicle_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -14,38 +14,47 @@
     "mtb/scale/imba",
     "sac_scale",
     "trail_visibility",
-    "nps/nonmotorizeduse",
-    "piste/difficulty"
+    "nps/trailuse",
+    "nps/structure"
   ],
   "geometry": [
-    "point"
+    "line"
   ],
-  "layerIndex": 10,
+  "icon": "All-terrain trail",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 30,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "piste:type": "skitour"
+    "highway": "track",
+    "atv": "*"
   },
   "terms": [
-    "backcountry ski trail",
-    "backcountry ski",
-    "backcountry",
+    "atv trail",
+    "atv",
+    "all terrain vehicle",
+    "quad",
+    "4wd",
+    "4 wheeler",
+    "four-wheeler",
+    "off-road",
+    "off road",
     "trail",
     "track",
     "structure"
   ],
   "gisTags": {
     "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-path",
+    "JSON_Icon_Line": "highway-track",
     "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Backcountry Ski Trail\"}",
+    "POI_Values": "{\"POITYPE\":\"ATV Trail\"}",
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_SKITOUR\":\"*\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_ATV\":\"*\"}",
     "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
   }

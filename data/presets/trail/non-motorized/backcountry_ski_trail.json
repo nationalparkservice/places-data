@@ -47,7 +47,7 @@
     "POI_OSM_Tags": "{\"name\",\"entrance\"}",
     "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
     "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_SKITOUR\":\"Yes\"}",
+    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_SKITOUR\":\"*\"}",
     "Trail_OSM_Tags": "{\"name\",\"tracktype\"}",
     "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLCLASS\"}"
   }
