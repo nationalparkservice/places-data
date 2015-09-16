@@ -1,0 +1,14 @@
+{
+  "name": "Regulatory Sign",
+  "path": "Information--Sign--Regulatory_Sign",
+  "layerIndex": null,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": false,
+  "inGuide": false,
+  "inEditor": false,
+  "tags": {
+    "error": "error"
+  },
+  "gisTags": {}
+}

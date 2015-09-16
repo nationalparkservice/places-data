@@ -1,0 +1,14 @@
+{
+  "name": "Trail Sign",
+  "path": "Information--Sign--Trail_Sign",
+  "layerIndex": null,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": false,
+  "inGuide": false,
+  "inEditor": false,
+  "tags": {
+    "error": "error"
+  },
+  "gisTags": {}
+}

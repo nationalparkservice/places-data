@@ -1,0 +1,45 @@
+{
+  "name": "Trail",
+  "path": "Trail--Non-Motorized--Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "icon": "trailhead-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 12,
+  "defaultOrder": 10,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "highway": "path"
+  },
+  "terms": [
+    "trail",
+    "path",
+    "track",
+    "hike",
+    "hiking",
+    "trackway",
+    "walk",
+    "footpath"
+  ],
+  "gisTags": {}
+}
