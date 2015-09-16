@@ -27,10 +27,5 @@
     "dumpstation",
     "dump station"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Sanitary Disposal Station\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

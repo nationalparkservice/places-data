@@ -27,10 +27,5 @@
     "phone",
     "emergency"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Emergency Telephone\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

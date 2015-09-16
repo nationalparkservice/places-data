@@ -27,12 +27,5 @@
   "terms": [
     "parking aisle"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-service",
-    "Road": "Yes",
-    "Road_Values": "{\"RDSTATUS\":\"Existing\",\"RDMAINTAINER\":\"NPS\",\"RDCLASS\":\"Service\"}",
-    "Road_OSM_Tags": "{\"name\",\"surface\",\"oneway\",\"lanes\"}",
-    "Road_GIS_Tags": "{\"RDNAME\",\"RDSURFACE\",\"RDONEWAY\",\"RDLANES\"}"
-  }
+  "gisTags": {}
 }

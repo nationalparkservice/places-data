@@ -15,7 +15,7 @@
   "icon": "drinking-water-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": 23,
+  "defaultOrder": 24,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -28,10 +28,5 @@
     "fountain",
     "potable"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Drinking Water\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

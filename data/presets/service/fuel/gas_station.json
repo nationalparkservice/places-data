@@ -14,7 +14,7 @@
   "icon": "gas-station-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 40,
-  "defaultOrder": 21,
+  "defaultOrder": 22,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -35,11 +35,5 @@
     "compressed natural gas",
     "biodiesel"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Gas Station\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

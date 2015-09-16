@@ -22,10 +22,5 @@
   "terms": [
     "tunnel"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Tunnel\"}",
-    "POI_OSM_Tags": "{\"name\".\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

@@ -16,7 +16,7 @@
   "icon": "rv-campground-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
-  "defaultOrder": 16,
+  "defaultOrder": 17,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -31,11 +31,5 @@
     "camp_site",
     "motorhome park"
   ],
-  "gisTags": {
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"RV Campground\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

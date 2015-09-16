@@ -15,7 +15,7 @@
     "line"
   ],
   "layerIndex": 12,
-  "defaultOrder": null,
+  "defaultOrder": 14,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -28,15 +28,5 @@
     "sidewalk",
     "footway"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Sidewalk\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
-    "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Sidewalk\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\"}",
-    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
-    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
-  }
+  "gisTags": {}
 }

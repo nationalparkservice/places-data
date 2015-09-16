@@ -22,12 +22,5 @@
     "dyke",
     "levee"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "OSM_Poly": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Dyke (Levee)\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

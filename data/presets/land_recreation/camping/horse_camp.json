@@ -30,7 +30,5 @@
     "horse camp",
     "horse campground"
   ],
-  "gisTags": {
-    "OSM_Poly": "x"
-  }
+  "gisTags": {}
 }

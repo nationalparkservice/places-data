@@ -31,11 +31,5 @@
     "hollow",
     "ravine"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Valley\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }
