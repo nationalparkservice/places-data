@@ -520,7 +520,7 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "building": "yes",
+        "building": "*",
         "amenity": "education_centre"
       },
       "terms": [
@@ -595,7 +595,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "historic": "building",
-        "building": "yes"
+        "building": "*"
       },
       "terms": [
         "historic building"
@@ -619,7 +619,7 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "building": "cabin",
-        "historic": "yes"
+        "historic": "*"
       },
       "terms": [
         "historic",
