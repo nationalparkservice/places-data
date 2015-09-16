@@ -1392,7 +1392,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 18,
+      "defaultOrder": 19,
       "matchScore": 1,
       "tags": {
         "tourism": "information"
@@ -1483,32 +1483,6 @@ iD.data.npmapPresets = {
         "attraction",
         "tourist attraction",
         "interpretive sign"
-      ],
-      "searchable": true
-    },
-    "information/sign/gateway sign": {
-      "name": "Gateway Sign",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "sign"
-      },
-      "terms": [
-        "gateway sign",
-        "location",
-        "place name"
       ],
       "searchable": true
     },
@@ -1866,7 +1840,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rv-campground-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 16,
+      "defaultOrder": 17,
       "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
@@ -2076,7 +2050,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "picnic-area-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 14,
+      "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
         "tourism": "picnic_site"
@@ -2097,7 +2071,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "defaultOrder": 15,
+      "defaultOrder": 16,
       "matchScore": 1,
       "tags": {
         "leisure": "picnic_table"
@@ -2215,7 +2189,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "self-guiding-trail-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 17,
+      "defaultOrder": 18,
       "matchScore": 1,
       "tags": {
         "tourism": "information",
@@ -2870,6 +2844,15 @@ iD.data.npmapPresets = {
         "overlook"
       ],
       "searchable": true
+    },
+    "miscellaneous/structure/windmill": {
+      "name": "Windmill",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "error": "error"
+      },
+      "searchable": false
     },
     "miscellaneous/view/overlook": {
       "name": "Overlook",
@@ -4713,7 +4696,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "food-service-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 19,
+      "defaultOrder": 20,
       "matchScore": 1,
       "tags": {
         "amenity": "food_court"
@@ -4740,7 +4723,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "gas-station-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 21,
+      "defaultOrder": 22,
       "matchScore": 1,
       "tags": {
         "amenity": "fuel"
@@ -4957,7 +4940,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 20,
+      "defaultOrder": 21,
       "matchScore": 1,
       "tags": {
         "shop": "general"
@@ -5111,6 +5094,15 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/support/patrol cabin": {
+      "name": "Patrol Cabin",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "error": "error"
+      },
+      "searchable": false
+    },
     "service/support/police": {
       "name": "Police",
       "fields": [
@@ -5189,7 +5181,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 22,
+      "defaultOrder": 23,
       "matchScore": 1,
       "tags": {
         "amenity": "telephone"
@@ -5267,7 +5259,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "litter-receptacle-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 24,
+      "defaultOrder": 25,
       "matchScore": 1,
       "tags": {
         "amenity": "waste_basket"
@@ -5332,7 +5324,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "drinking-water-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 23,
+      "defaultOrder": 24,
       "matchScore": 1,
       "tags": {
         "amenity": "drinking_water"
@@ -5926,6 +5918,34 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "trail/non-motorized/path": {
+      "name": "Path",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface",
+        "lit",
+        "width",
+        "structure",
+        "access"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-footway",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "footway"
+      },
+      "terms": [
+        "footway",
+        "pedestrian path",
+        "pedestrian trail"
+      ],
+      "searchable": true
+    },
     "trail/non-motorized/pedestrian path": {
       "name": "Pedestrian Path",
       "fields": [
@@ -5969,7 +5989,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "defaultOrder": null,
+      "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
         "highway": "footway",
@@ -6038,6 +6058,46 @@ iD.data.npmapPresets = {
         "stairs",
         "staircase",
         "steps"
+      ],
+      "searchable": true
+    },
+    "trail/non-motorized/trail": {
+      "name": "Trail",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "nps/nonmotorizeduse",
+        "nps/structure"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "trailhead-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 10,
+      "matchScore": 1,
+      "tags": {
+        "highway": "path"
+      },
+      "terms": [
+        "trail",
+        "path",
+        "track",
+        "hike",
+        "hiking",
+        "trackway",
+        "walk",
+        "footpath"
       ],
       "searchable": true
     },
@@ -6142,7 +6202,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 25,
+      "defaultOrder": 26,
       "matchScore": 1,
       "tags": {
         "leisure": "slipway"
@@ -6239,7 +6299,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 27,
+      "defaultOrder": 28,
       "matchScore": 1,
       "tags": {
         "leisure": "marina"
@@ -6360,7 +6420,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 26,
+      "defaultOrder": 27,
       "matchScore": 1,
       "tags": {
         "leisure": "fishing"
@@ -6742,155 +6802,7 @@ iD.data.npmapPresets = {
       "searchable": true
     }
   },
-  "categories": {
-    "category-point-accommodation": {
-      "geometry": "point",
-      "displayName": "Accommodation",
-      "members": [
-        "accommodation/restroom/restroom"
-      ],
-      "icon": "restrooms-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-accommodation": {
-      "geometry": "vertex",
-      "displayName": "Accommodation",
-      "members": [
-        "accommodation/restroom/restroom"
-      ],
-      "icon": "restrooms-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-area-building": {
-      "geometry": "area",
-      "displayName": "Building",
-      "members": [
-        "building/building/building footprint"
-      ]
-    },
-    "category-point-building": {
-      "geometry": "point",
-      "displayName": "Building",
-      "members": [
-        "building/commercial/headquarters",
-        "building/residential/lodging",
-        "building/commercial/office",
-        "building/historic/historic building"
-      ],
-      "icon": "commercial",
-      "maki": "maki"
-    },
-    "category-point-information": {
-      "geometry": "point",
-      "displayName": "Information",
-      "members": [
-        "information/information/information"
-      ],
-      "icon": "visitor-center-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-point-land recreation": {
-      "geometry": "point",
-      "displayName": "Land Recreation",
-      "members": [
-        "land recreation/camping/campsite",
-        "land recreation/picnic/picnic area",
-        "land recreation/picnic/picnic table",
-        "land recreation/camping/rv campground",
-        "land recreation/trail/self guiding trail"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-land recreation": {
-      "geometry": "vertex",
-      "displayName": "Land Recreation",
-      "members": [
-        "land recreation/trail/trailhead"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-point-locality": {
-      "geometry": "point",
-      "displayName": "Locality",
-      "members": [
-        "locality/region/park district"
-      ],
-      "icon": "marker",
-      "maki": "maki"
-    },
-    "category-area-parking": {
-      "geometry": "area",
-      "displayName": "Parking",
-      "members": [
-        "parking/parking/parking lot"
-      ]
-    },
-    "category-line-road": {
-      "geometry": "line",
-      "displayName": "Road",
-      "members": [
-        "road/minor/unknown road",
-        "road/highway/highway",
-        "road/primary/primary road",
-        "road/secondary/secondary road",
-        "road/minor/minor road",
-        "road/minor/residential road",
-        "road/service/access road",
-        "road/service/parking aisle",
-        "road/minor/private road"
-      ],
-      "icon": "highway-unclassified",
-      "maki": "maki"
-    },
-    "category-point-service": {
-      "geometry": "point",
-      "displayName": "Service",
-      "members": [
-        "service/food/food service",
-        "service/shopping/store",
-        "service/fuel/gas station",
-        "service/telephone/telephone",
-        "service/water/drinking water",
-        "service/waste/litter receptacle"
-      ],
-      "icon": "ranger-station-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-service": {
-      "geometry": "vertex",
-      "displayName": "Service",
-      "members": [
-        "service/parking/parking lot"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-line-trail": {
-      "geometry": "line",
-      "displayName": "Trail",
-      "members": [
-        "trail/non-motorized/pedestrian path",
-        "trail/non-motorized/horseback riding trail",
-        "trail/non-motorized/bicycle trail",
-        "trail/motorized/motorized trail"
-      ],
-      "icon": "highway-footway",
-      "maki": "maki"
-    },
-    "category-point-water recreation": {
-      "geometry": "point",
-      "displayName": "Water Recreation",
-      "members": [
-        "water recreation/access/boat launch",
-        "water recreation/fishing/fishing",
-        "water recreation/boat/marina"
-      ],
-      "icon": "boat-launch-black",
-      "maki": "npmap-symbol-library"
-    }
-  },
+  "categories": {},
   "defaults": {
     "point": [
       "accommodation/restroom/restroom",
@@ -6900,25 +6812,12 @@ iD.data.npmapPresets = {
       "locality/region/park district",
       "land recreation/camping/campground",
       "service/entrance/entrance station",
-      "information/visitor center/visitor center",
-      "category-point-building",
-      "category-point-land recreation",
-      "category-point-information",
-      "category-point-service",
-      "category-point-water recreation"
+      "information/visitor center/visitor center"
     ],
     "vertex": [
       "accommodation/restroom/restroom",
       "service/parking/parking lot",
       "land recreation/trail/trailhead"
-    ],
-    "area": [
-      "building/building/building footprint",
-      "parking/parking/parking lot"
-    ],
-    "line": [
-      "category-line-road",
-      "category-line-trail"
     ]
   }
 };
