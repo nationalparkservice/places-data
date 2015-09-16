@@ -6914,7 +6914,156 @@ iD.data.npmapPresets = {
       "searchable": true
     }
   },
-  "categories": {},
+  "categories": {
+    "category-point-accommodation": {
+      "geometry": "point",
+      "displayName": "Accommodation",
+      "members": [
+        "accommodation/restroom/restroom"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-vertex-accommodation": {
+      "geometry": "vertex",
+      "displayName": "Accommodation",
+      "members": [
+        "accommodation/restroom/restroom"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-area-building": {
+      "geometry": "area",
+      "displayName": "Building",
+      "members": [
+        "building/building/building footprint"
+      ]
+    },
+    "category-point-building": {
+      "geometry": "point",
+      "displayName": "Building",
+      "members": [
+        "building/commercial/headquarters",
+        "building/residential/lodging",
+        "building/commercial/office",
+        "building/historic/historic building"
+      ],
+      "icon": "commercial",
+      "maki": "maki"
+    },
+    "category-point-information": {
+      "geometry": "point",
+      "displayName": "Information",
+      "members": [
+        "information/information/information"
+      ],
+      "icon": "visitor-center-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-point-land recreation": {
+      "geometry": "point",
+      "displayName": "Land Recreation",
+      "members": [
+        "land recreation/camping/campsite",
+        "land recreation/picnic/picnic area",
+        "land recreation/picnic/picnic table",
+        "land recreation/camping/rv campground",
+        "land recreation/trail/self guiding trail"
+      ],
+      "icon": "trailhead-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-vertex-land recreation": {
+      "geometry": "vertex",
+      "displayName": "Land Recreation",
+      "members": [
+        "land recreation/trail/trailhead"
+      ],
+      "icon": "trailhead-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-point-locality": {
+      "geometry": "point",
+      "displayName": "Locality",
+      "members": [
+        "locality/region/park district"
+      ],
+      "icon": "marker",
+      "maki": "maki"
+    },
+    "category-area-parking": {
+      "geometry": "area",
+      "displayName": "Parking",
+      "members": [
+        "parking/parking/parking lot"
+      ]
+    },
+    "category-line-road": {
+      "geometry": "line",
+      "displayName": "Road",
+      "members": [
+        "road/minor/unknown road",
+        "road/highway/highway",
+        "road/primary/primary road",
+        "road/secondary/secondary road",
+        "road/minor/minor road",
+        "road/minor/residential road",
+        "road/service/access road",
+        "road/service/parking aisle",
+        "road/minor/private road"
+      ],
+      "icon": "highway-unclassified",
+      "maki": "maki"
+    },
+    "category-point-service": {
+      "geometry": "point",
+      "displayName": "Service",
+      "members": [
+        "service/food/food service",
+        "service/shopping/store",
+        "service/fuel/gas station",
+        "service/telephone/telephone",
+        "service/water/drinking water",
+        "service/waste/litter receptacle"
+      ],
+      "icon": "ranger-station-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-vertex-service": {
+      "geometry": "vertex",
+      "displayName": "Service",
+      "members": [
+        "service/parking/parking lot"
+      ],
+      "icon": "parking-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-line-trail": {
+      "geometry": "line",
+      "displayName": "Trail",
+      "members": [
+        "trail/non-motorized/trail",
+        "trail/non-motorized/horseback riding trail",
+        "trail/non-motorized/bicycle trail",
+        "trail/motorized/motorized trail",
+        "trail/non-motorized/sidewalk"
+      ],
+      "icon": "trailhead-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-point-water recreation": {
+      "geometry": "point",
+      "displayName": "Water Recreation",
+      "members": [
+        "water recreation/access/boat launch",
+        "water recreation/fishing/fishing",
+        "water recreation/boat/marina"
+      ],
+      "icon": "boat-launch-black",
+      "maki": "npmap-symbol-library"
+    }
+  },
   "defaults": {
     "point": [
       "accommodation/restroom/restroom",
@@ -6924,12 +7073,25 @@ iD.data.npmapPresets = {
       "locality/region/park district",
       "land recreation/camping/campground",
       "service/entrance/entrance station",
-      "information/visitor center/visitor center"
+      "information/visitor center/visitor center",
+      "category-point-building",
+      "category-point-land recreation",
+      "category-point-information",
+      "category-point-service",
+      "category-point-water recreation"
     ],
     "vertex": [
       "accommodation/restroom/restroom",
       "service/parking/parking lot",
       "land recreation/trail/trailhead"
+    ],
+    "area": [
+      "building/building/building footprint",
+      "parking/parking/parking lot"
+    ],
+    "line": [
+      "category-line-road",
+      "category-line-trail"
     ]
   }
 };
