@@ -5607,8 +5607,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "All-terrain trail",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5652,8 +5652,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "four-wheel-drive-road-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5696,8 +5696,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "motor-bike-trail-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5733,8 +5733,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": 13,
       "matchScore": 1,
       "tags": {
@@ -5768,8 +5768,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "snowmobile-trail-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-track",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5844,8 +5844,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "bicycle-trail-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-cycleway",
+      "maki": "maki",
       "defaultOrder": 12,
       "matchScore": 1.01,
       "tags": {
@@ -5869,6 +5869,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5889,6 +5891,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5962,6 +5966,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6039,9 +6045,9 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "horseback-riding-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 11,
+      "icon": "highway-bridleway",
+      "maki": "maki",
+      "defaultOrder": null,
       "matchScore": 1.02,
       "tags": {
         "highway": "path",
@@ -6101,6 +6107,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
@@ -6134,6 +6142,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6194,8 +6204,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library",
+      "icon": "highway-path",
+      "maki": "maki",
       "defaultOrder": 10,
       "matchScore": 1,
       "tags": {
@@ -6279,8 +6289,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
-      "icon": "canoe-access-black",
-      "maki": "npmap-symbol-library",
+      "icon": "other-line",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7044,13 +7054,12 @@ iD.data.npmapPresets = {
       "displayName": "Trail",
       "members": [
         "trail/non-motorized/trail",
-        "trail/non-motorized/horseback riding trail",
         "trail/non-motorized/bicycle trail",
         "trail/motorized/motorized trail",
         "trail/non-motorized/sidewalk"
       ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library"
+      "icon": "highway-path",
+      "maki": "maki"
     },
     "category-point-water recreation": {
       "geometry": "point",
