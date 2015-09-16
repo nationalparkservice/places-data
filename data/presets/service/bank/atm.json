@@ -1,6 +1,12 @@
 {
   "name": "ATM",
   "path": "Service--Bank--ATM",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "fee"
+  ],
   "geometry": [
     "point"
   ],

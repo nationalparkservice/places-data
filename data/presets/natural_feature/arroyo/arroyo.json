@@ -18,7 +18,7 @@
   "inEditor": true,
   "tags": {
     "waterway": "drain",
-    "intermittent": "yes"
+    "intermittent": "*"
   },
   "terms": [
     "arroyo",
@@ -27,11 +27,5 @@
     "gully",
     "wash"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Arroyo\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

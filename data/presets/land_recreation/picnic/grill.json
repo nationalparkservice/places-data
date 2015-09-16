@@ -15,7 +15,7 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "barbecue_grill": "yes"
+    "barbecue_grill": "*"
   },
   "terms": [
     "grill"

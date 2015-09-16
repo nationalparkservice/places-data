@@ -24,13 +24,11 @@
   "inEditor": true,
   "tags": {
     "tourism": "camp_site",
-    "horse": "yes"
+    "horse": "*"
   },
   "terms": [
     "horse camp",
     "horse campground"
   ],
-  "gisTags": {
-    "OSM_Poly": "x"
-  }
+  "gisTags": {}
 }

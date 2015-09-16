@@ -1,6 +1,6 @@
 {
   "name": "Four-Wheel Drive Trail",
-  "path": "Land_Recreation--All-terrain_vehicle--Four-Wheel_Drive_Trail",
+  "path": "Land_Recreation--All-Terrain_Vehicle--Four-Wheel_Drive_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -28,7 +28,7 @@
   "inEditor": true,
   "tags": {
     "highway": "track",
-    "4wd_only": "yes"
+    "4wd_only": "*"
   },
   "terms": [
     "four-wheel drive trail",
@@ -43,16 +43,5 @@
     "trail",
     "track"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-track",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Four-Wheel Drive Trail\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}",
-    "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_4WD\":\"Yes\"}",
-    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
-    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
-  }
+  "gisTags": {}
 }

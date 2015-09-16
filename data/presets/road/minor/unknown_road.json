@@ -31,12 +31,5 @@
     "unknown road",
     "road"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-road",
-    "Road": "Yes",
-    "Road_Values": "{\"RDSTATUS\":\"Existing\",\"RDMAINTAINER\":\"NPS\",\"RDCLASS\":\"Unknown\"}",
-    "Road_OSM_Tags": "{\"name\",\"surface\",\"oneway\",\"lanes\"}",
-    "Road_GIS_Tags": "{\"RDNAME\",\"RDSURFACE\",\"RDONEWAY\",\"RDLANES\"}"
-  }
+  "gisTags": {}
 }

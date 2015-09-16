@@ -14,7 +14,7 @@
   "icon": "telephone-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": 22,
+  "defaultOrder": 23,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -28,10 +28,5 @@
     "telephone box",
     "phone booth"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Telephone\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

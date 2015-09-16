@@ -15,7 +15,7 @@
   "icon": "litter-receptacle-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": 24,
+  "defaultOrder": 25,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
@@ -33,10 +33,5 @@
     "litter",
     "garbage"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Waste Basket\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Pedestrian Path",
-  "path": "Trail--Non-Motorized--Pedestrian_Path",
+  "name": "Path",
+  "path": "Trail--Non-Motorized--Path",
   "fields": [
     "name",
     "nps/unitcode",
@@ -16,7 +16,7 @@
   "icon": "highway-footway",
   "maki": "maki",
   "layerIndex": 12,
-  "defaultOrder": 10,
+  "defaultOrder": 13,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

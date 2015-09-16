@@ -1,6 +1,6 @@
 {
   "name": "Turning Circle",
-  "path": "Road_Feature--No-outlet--Turning_Circle",
+  "path": "Road_Feature--No-Outlet--Turning_Circle",
   "fields": [
     "name",
     "nps/unitcode",
@@ -27,10 +27,5 @@
     "dead end street",
     "blind alley"
   ],
-  "gisTags": {
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Turning Circle\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

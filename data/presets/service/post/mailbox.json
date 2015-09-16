@@ -1,6 +1,11 @@
 {
   "name": "Mailbox",
   "path": "Service--Post--Mailbox",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
   "geometry": [
     "point",
     "vertex"

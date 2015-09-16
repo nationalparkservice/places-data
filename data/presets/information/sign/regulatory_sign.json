@@ -1,18 +1,15 @@
 {
-  "name": "Gateway Sign",
-  "path": "Service--Information--Gateway_Sign",
+  "name": "Regulatory Sign",
+  "path": "Information--Sign--Regulatory_Sign",
   "fields": [
     "name",
     "nps/unitcode",
-    "operator",
-    "address",
-    "opening_hours"
+    "operator"
   ],
   "geometry": [
-    "point",
-    "vertex"
+    "point"
   ],
-  "layerIndex": 80,
+  "layerIndex": null,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
@@ -20,12 +17,11 @@
   "inEditor": true,
   "tags": {
     "tourism": "information",
-    "information": "sign"
+    "information": "sign",
+    "sign:type": "regulatory"
   },
   "terms": [
-    "gateway sign",
-    "location",
-    "place name"
+    "regulatory sign"
   ],
   "gisTags": {}
 }

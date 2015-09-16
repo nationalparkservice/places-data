@@ -24,12 +24,5 @@
     "ditch",
     "lateal"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "waterway-canal",
-    "POI": "Yes",
-    "POI_Values": "{\"POITYPE\":\"Canal\"}",
-    "POI_OSM_Tags": "{\"name\",\"entrance\"}",
-    "POI_GIS_Tags": "{\"POINAME\",\"POIFEATTYPE\"}"
-  }
+  "gisTags": {}
 }

@@ -1,6 +1,6 @@
 {
   "name": "Four-Wheel Drive Road",
-  "path": "Road--Four_Wheel_Drive--Four-Wheel_Drive_Road",
+  "path": "Road--Four-Wheel_Drive--Four-Wheel_Drive_Road",
   "fields": [
     "name",
     "nps/unitcode",
@@ -26,7 +26,7 @@
   "inEditor": true,
   "tags": {
     "highway": "road",
-    "4wd_only": "yes"
+    "4wd_only": "*"
   },
   "terms": [
     "four-wheel drive road",
@@ -36,12 +36,5 @@
     "four wheeler",
     "four-wheeler"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-road",
-    "Road": "Yes",
-    "Road_Values": "{\"RDSTATUS\":\"Existing\",\"RDMAINTAINER\":\"NPS\",\"RDCLASS\":\"4WD\"}",
-    "Road_OSM_Tags": "{\"name\",\"surface\",\"oneway\",\"lanes\"}",
-    "Road_GIS_Tags": "{\"RDNAME\",\"RDSURFACE\",\"RDONEWAY\",\"RDLANES\"}"
-  }
+  "gisTags": {}
 }

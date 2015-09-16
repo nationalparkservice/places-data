@@ -22,8 +22,8 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "motorboat": "yes",
-    "waterway": "yes"
+    "motorboat": "*",
+    "waterway": "*"
   },
   "terms": [
     "motorized watercraft trail",
@@ -32,12 +32,5 @@
     "trail",
     "track"
   ],
-  "gisTags": {
-    "OSM_Line": "x",
-    "JSON_Icon_Line": "highway-track",
-    "Trail": "Yes",
-    "Trail_Values": "{\"TRLFEATTYPE\":\"Park Trail\",\"TRLSTATUS\":\"Existing\",\"TRLTYPE\":\"Unknown\",\"TRLUSE_MOTORBOAT\":\"Yes\"}",
-    "Trail_OSM_Tags": "{\"name\",\"surface\",\"tracktype\"}",
-    "Trail_GIS_Tags": "{\"TRLNAME\",\"TRLSURFACE\",\"TRLCLASS\"}"
-  }
+  "gisTags": {}
 }
