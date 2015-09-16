@@ -5735,7 +5735,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
-      "defaultOrder": 13,
+      "defaultOrder": 12,
       "matchScore": 1,
       "tags": {
         "highway": "track"
@@ -5846,7 +5846,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-cycleway",
       "maki": "maki",
-      "defaultOrder": 12,
+      "defaultOrder": null,
       "matchScore": 1.01,
       "tags": {
         "highway": "path",
@@ -6080,7 +6080,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-footway",
       "maki": "maki",
-      "defaultOrder": null,
+      "defaultOrder": 13,
       "matchScore": 1,
       "tags": {
         "highway": "footway"
@@ -6171,7 +6171,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-steps",
       "maki": "maki",
-      "defaultOrder": null,
+      "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
         "highway": "steps"
@@ -7054,9 +7054,10 @@ iD.data.npmapPresets = {
       "displayName": "Trail",
       "members": [
         "trail/non-motorized/trail",
-        "trail/non-motorized/bicycle trail",
         "trail/motorized/motorized trail",
-        "trail/non-motorized/sidewalk"
+        "trail/non-motorized/path",
+        "trail/non-motorized/sidewalk",
+        "trail/non-motorized/steps"
       ],
       "icon": "highway-path",
       "maki": "maki"
