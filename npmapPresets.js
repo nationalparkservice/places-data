@@ -1486,6 +1486,144 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "information/sign/directional sign": {
+      "name": "Directional Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "directional"
+      },
+      "terms": [
+        "directional sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/gateway sign": {
+      "name": "Gateway Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign"
+      },
+      "terms": [
+        "gateway sign",
+        "location",
+        "place name"
+      ],
+      "searchable": true
+    },
+    "information/sign/mile marker": {
+      "name": "Mile Marker",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "milestone"
+      },
+      "terms": [
+        "mile marker"
+      ],
+      "searchable": true
+    },
+    "information/sign/regulatory sign": {
+      "name": "Regulatory Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "regulatory"
+      },
+      "terms": [
+        "regulatory sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/trail marker": {
+      "name": "Trail Marker",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "guidepost"
+      },
+      "terms": [
+        "trail marker",
+        "trail",
+        "marker",
+        "sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/trail sign": {
+      "name": "Trail Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "trail_sign"
+      },
+      "terms": [
+        "trail sign",
+        "trail",
+        "sign"
+      ],
+      "searchable": true
+    },
     "information/visitor center/visitor center": {
       "name": "Visitor Center",
       "fields": [
@@ -2847,12 +2985,23 @@ iD.data.npmapPresets = {
     },
     "miscellaneous/structure/windmill": {
       "name": "Windmill",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "error": "error"
+        "man_made": "windmill"
       },
-      "searchable": false
+      "terms": [
+        "windmill"
+      ],
+      "searchable": true
     },
     "miscellaneous/view/overlook": {
       "name": "Overlook",
@@ -4585,6 +4734,12 @@ iD.data.npmapPresets = {
     },
     "service/bank/atm": {
       "name": "ATM",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "fee"
+      ],
       "geometry": [
         "point"
       ],
@@ -4818,6 +4973,12 @@ iD.data.npmapPresets = {
     },
     "service/parking/roadside pullout": {
       "name": "Roadside Pullout",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
       "geometry": [
         "point"
       ],
@@ -4833,6 +4994,11 @@ iD.data.npmapPresets = {
     },
     "service/post/mailbox": {
       "name": "Mailbox",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
       "geometry": [
         "point",
         "vertex"
@@ -5096,12 +5262,26 @@ iD.data.npmapPresets = {
     },
     "service/support/patrol cabin": {
       "name": "Patrol Cabin",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "error": "error"
+        "amenity": "patrol_cabin"
       },
-      "searchable": false
+      "terms": [
+        "patrol cabin",
+        "cabin",
+        "patrol"
+      ],
+      "searchable": true
     },
     "service/support/police": {
       "name": "Police",
@@ -5878,46 +6058,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "trail/non-motorized/non-motorized trail": {
-      "name": "Non-Motorized Trail",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "tracktype",
-        "surface",
-        "width",
-        "incline",
-        "mtb/scale",
-        "mtb/scale/uphill",
-        "mtb/scale/imba",
-        "sac_scale",
-        "trail_visibility",
-        "nps/nonmotorizeduse",
-        "nps/structure"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "trailhead-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "path"
-      },
-      "terms": [
-        "trail",
-        "path",
-        "track",
-        "hike",
-        "hiking",
-        "trackway",
-        "walk",
-        "footpath"
-      ],
-      "searchable": true
-    },
     "trail/non-motorized/path": {
       "name": "Path",
       "fields": [
@@ -5935,34 +6075,6 @@ iD.data.npmapPresets = {
       "icon": "highway-footway",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "footway"
-      },
-      "terms": [
-        "footway",
-        "pedestrian path",
-        "pedestrian trail"
-      ],
-      "searchable": true
-    },
-    "trail/non-motorized/pedestrian path": {
-      "name": "Pedestrian Path",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface",
-        "lit",
-        "width",
-        "structure",
-        "access"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "highway-footway",
-      "maki": "maki",
-      "defaultOrder": 10,
       "matchScore": 1,
       "tags": {
         "highway": "footway"
