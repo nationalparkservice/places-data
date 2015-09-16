@@ -1,11 +1,10 @@
 {
-  "name": "Patrol Cabin",
-  "path": "Service--Support--Patrol_Cabin",
+  "name": "Mile Marker",
+  "path": "Information--Sign--Mile_Marker",
   "fields": [
     "name",
     "nps/unitcode",
-    "operator",
-    "address"
+    "operator"
   ],
   "geometry": [
     "point"
@@ -17,12 +16,10 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "patrol_cabin"
+    "highway": "milestone"
   },
   "terms": [
-    "patrol cabin",
-    "cabin",
-    "patrol"
+    "mile marker"
   ],
   "gisTags": {}
 }

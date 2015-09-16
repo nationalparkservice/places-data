@@ -1,26 +1,31 @@
 {
-  "name": "Mailbox",
-  "path": "Service--Post--Mailbox",
+  "name": "Gateway Sign",
+  "path": "Information--Sign--Gateway_Sign",
   "fields": [
     "name",
     "nps/unitcode",
-    "operator"
+    "operator",
+    "address",
+    "opening_hours"
   ],
   "geometry": [
     "point",
     "vertex"
   ],
-  "layerIndex": 10,
+  "layerIndex": 80,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "post_box"
+    "tourism": "information",
+    "information": "sign"
   },
   "terms": [
-    "mailbox"
+    "gateway sign",
+    "location",
+    "place name"
   ],
   "gisTags": {}
 }

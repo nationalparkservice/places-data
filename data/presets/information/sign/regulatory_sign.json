@@ -1,11 +1,10 @@
 {
-  "name": "Patrol Cabin",
-  "path": "Service--Support--Patrol_Cabin",
+  "name": "Regulatory Sign",
+  "path": "Information--Sign--Regulatory_Sign",
   "fields": [
     "name",
     "nps/unitcode",
-    "operator",
-    "address"
+    "operator"
   ],
   "geometry": [
     "point"
@@ -17,12 +16,12 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "patrol_cabin"
+    "tourism": "information",
+    "information": "sign",
+    "sign:type": "regulatory"
   },
   "terms": [
-    "patrol cabin",
-    "cabin",
-    "patrol"
+    "regulatory sign"
   ],
   "gisTags": {}
 }

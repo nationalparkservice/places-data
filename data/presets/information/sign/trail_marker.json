@@ -1,11 +1,10 @@
 {
-  "name": "Patrol Cabin",
-  "path": "Service--Support--Patrol_Cabin",
+  "name": "Trail Marker",
+  "path": "Information--Sign--Trail_Marker",
   "fields": [
     "name",
     "nps/unitcode",
-    "operator",
-    "address"
+    "operator"
   ],
   "geometry": [
     "point"
@@ -17,12 +16,14 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "patrol_cabin"
+    "tourism": "information",
+    "information": "guidepost"
   },
   "terms": [
-    "patrol cabin",
-    "cabin",
-    "patrol"
+    "trail marker",
+    "trail",
+    "marker",
+    "sign"
   ],
   "gisTags": {}
 }
