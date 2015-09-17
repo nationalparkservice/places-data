@@ -590,6 +590,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "vertex"
       ],
+      "icon": "entrance",
       "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
