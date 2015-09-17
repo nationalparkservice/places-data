@@ -8,6 +8,7 @@
   "geometry": [
     "vertex"
   ],
+  "icon": "entrance",
   "maki": "maki",
   "layerIndex": 10,
   "defaultOrder": null,
@@ -20,6 +21,5 @@
   },
   "terms": [
     "entrance"
-  ],
-  "gisTags": {}
+  ]
 }
