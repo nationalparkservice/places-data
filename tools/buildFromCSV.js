@@ -36,7 +36,7 @@ var parser = csvParse(parserOptions, function (err, presetList) {
   }
 });
 
-var gisFields = ['OSM_Line', 'OSM_Poly', 'JSON_Maki_Line', 'JSON_Icon_Line', 'JSON_Maki_Poly', 'JSON_Icon_Poly', 'POI', 'POI_Values', 'POI_Default', 'POI_OSM_Tags', 'POI_GIS_Tags', 'Road', 'Road_Values', 'Road_Default', 'Road_OSM_Tags', 'Road_GIS_Tags', 'Trail', 'Trail_Values', 'Trail_Default', 'Trail_OSM_Tags', 'Trail_GIS_Tags', 'Building', 'Building_Values', 'Building_Default', 'Building_OSM_Tags', 'Building_GIS_Tags'];
+// var gisFields = ['OSM_Line', 'OSM_Poly', 'JSON_Maki_Line', 'JSON_Icon_Line', 'JSON_Maki_Poly', 'JSON_Icon_Poly', 'POI', 'POI_Values', 'POI_Default', 'POI_OSM_Tags', 'POI_GIS_Tags', 'Road', 'Road_Values', 'Road_Default', 'Road_OSM_Tags', 'Road_GIS_Tags', 'Trail', 'Trail_Values', 'Trail_Default', 'Trail_OSM_Tags', 'Trail_GIS_Tags', 'Building', 'Building_Values', 'Building_Default', 'Building_OSM_Tags', 'Building_GIS_Tags'];
 
 var processPreset = function (preset) {
   // try {
@@ -58,16 +58,16 @@ var processPreset = function (preset) {
     tags: preset.tags ? JSON.parse(preset.tags) : {
       'error': 'error'
     },
-    terms: preset.altNames ? preset.altNames.slice(1, -1).replace(/"/g, '').split(',') : [],
-    gisTags: (function () {
-      var returnValue = {};
-      gisFields.forEach(function (d) {
-        if (preset[d]) {
-          returnValue[d] = preset[d];
-        }
-      });
-      return returnValue;
-    }())
+    terms: preset.altNames ? preset.altNames.slice(1, -1).replace(/"/g, '').split(',') : []//,
+    // gisTags: (function () {
+    //   var returnValue = {};
+    //   gisFields.forEach(function (d) {
+    //     if (preset[d]) {
+    //       returnValue[d] = preset[d];
+    //     }
+    //   });
+    //   return returnValue;
+    // }())
   };
   // remove empty properties
   Object.getOwnPropertyNames(newPreset).forEach(function (prop) {
@@ -136,7 +136,7 @@ var makeGeometryList = function (preset) {
 };
 var makeIcon = function (preset) {
   if (makis.indexOf(preset.iconSource) >= 0) {
-    if (preset.point || preset.Vertex) return preset.makiIcon;
+    if (preset.point || preset.vertex) return preset.makiIcon;
   }
   if (preset.line) return preset.makiIcon;
   if (preset.poly) return preset.makiIcon;
