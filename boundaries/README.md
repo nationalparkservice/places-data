@@ -24,12 +24,62 @@ With well over 400 properties under NPS management, manually setting all of the 
 
 Why not handle this minimum zoom logic in our CartoCSS? Our CartoCSS styles are restricted by file size to keep the tile rendering fast. By hard-coding the minimum zoom logic into our data source, we can write much simpler CartoCSS that says what a park should look like whenever its unique min zoom is triggered. This way, our CartoCSS doesn't have to sort through the logic of *why* certain parks show up before others – all of that logic is determined before the data source is published.
 
+## Boundaries Update Workflow
+
+<img src="img/boundaries-flow-diagram.png" alt="Boundaries Workflow Diagram" width="100%">
+
+## Connecting to our PostGIS database
+
+The `places_boundaries` database lives on internal NPS servers. To connect to this database from Terminal or PGAdmin, follow the steps below. Note that you will need to tunnel into the database, which you can do through Terminal or through PGAdmin. If you wish to connect to the database using QGIS, you must tunnel in through terminal.
+
+### Terminal
+
+- Enter `ssh -nNT -L 5432:localhost:5432 <username>@10.147.153.191`
+  - Replace `<username>` with your active directory login
+  - Remove `-nNT` if you wish to connect only through Terminal
+- `Are you sure you want to continue?` answer `yes`
+  - You'll only have to do this once.
+- Enter your password: `Web mapping for <your first name>!`
+- Once you click `enter`, the tunnel will be open
+- To close the tunnel, use `ctrl+c`
+
+### PGAdmin
+- If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
+- Open PGAdmin and find the button for *Add a connection to a server* (top left)
+- **New Server Registration** window > **Properties** tab
+  - Name: `places_boundaries`
+  - Host: `localhost`
+  - Port: `5432`
+  - Service: *leave blank*
+  - Maintenance DB: `postgres`
+  - Username: `postgres`
+  - Password: `postgres`
+  - Store password: *check (optional)*
+  - Group: `Servers`  
+
+
+- **New Server Registration** window > **SSH Tunnel** tab  
+  Note: If you already tunneled in through Terminal, entering this info under the **Properties** tab is all you need. If you'd like to tunnel in with PGAdmin, follow these additional steps.
+  - Use SSH tunneling: *check*
+  - Tunnel host: `10.147.153.191`
+  - Tunnel port: 22
+  - Username: `<your username>` (active directory login)
+  - Authentication: *check the box for Password*
+  - Identity file: *leave blank*
+  - Password/Passphrase: `Web mapping for <your first name>!`
+
+
+- Click `OK` – you're in!
+- Next time you want to connect, the server settings will be saved in your account. You'll simply have to enter your database password (`postgres`) and your tunneling password (`Web mapping for <your first name>!`).
+- Under `Databases` you'll find the `places_boundaries` database.
+- Under `Schemas > public > Tables` you'll find our `boundaries` table that holds all the information used to style NPS boundaries in Park Tiles.
+
 ### PostGIS Table: `boundaries`
 
 Our `places-boundaries` database holds a master table, `boundaries`, from which our boundaries data source is published. The `boundaries` table stores the following fields:
 
-- `cartodb_id`  
-Description: mandatory.
+- `unit_id`  
+Description: A numeric primary key for Mapbox Studio, and potentially useful if/when we decide to support park sub-units.
 
 - `unit_name_short`    
 Description: The simplest version of a park name (without designation). Example: Shenandoah, Grand Canyon, Crater Lake.
@@ -216,7 +266,3 @@ FROM   render_park_labels
                     ON Lower(render_park_labels.unit_code) = Lower(
                        render_park_lines.unit_code);
 ```
-
-## Boundaries Update Workflow
-
-<img src="img/boundaries-flow-diagram.png" alt="Boundaries Workflow Diagram" width="100%">
