@@ -266,3 +266,34 @@ FROM   render_park_labels
                     ON Lower(render_park_labels.unit_code) = Lower(
                        render_park_lines.unit_code);
 ```
+
+#### Creating a view to store simplified geometries
+
+Many of our park polygons are far more complex than is necessary at small zoom levels. Writing all these complicated shapes into vector tiles at small scales would make these tiles unnecessarily large – because of this, we use a function to create a view that renders different geometries for each park based on each zoom level. The function ensures that details smaller than 1 pixel for a particular zoom will be simplified.
+
+To add our simplification function:
+```sql
+insert function
+```
+
+To create the simplified view:
+```sql
+insert sql
+```
+
+To update the simplified view (in case a geometry is updated):
+```sql
+insert sql
+```
+
+### Publishing a Mapbox Data Source
+
+To publish a Mapbox data source directly from our `places_boundaries` database, you can connect directly to an instance of Mapbox Studio running on the server from your browser window.
+
+- Connect to Mapbox Studio running on our server here: http://10.147.153.191:3000/
+  Note: This will only work if you're on the NPS network.
+
+To publish a data source, we need to add a few names and add a bit more SQL to incorporate our zoom-dependent simplified geometries.
+
+- Add more directions...
+
