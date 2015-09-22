@@ -6859,7 +6859,8 @@ iD.data.npmapPresets = {
       "category-point-land recreation",
       "category-point-information",
       "category-point-service",
-      "category-point-water recreation"
+      "category-point-water recreation",
+      "information/information/information"
     ],
     "vertex": [
       "accommodation/restroom/restroom",
