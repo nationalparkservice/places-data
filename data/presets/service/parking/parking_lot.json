@@ -13,7 +13,6 @@
   ],
   "geometry": [
     "point",
-    "area",
     "vertex"
   ],
   "icon": "parking-black",

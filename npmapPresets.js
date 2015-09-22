@@ -4808,7 +4808,6 @@ iD.data.npmapPresets = {
       ],
       "geometry": [
         "point",
-        "area",
         "vertex"
       ],
       "icon": "parking-black",
@@ -6812,15 +6811,6 @@ iD.data.npmapPresets = {
       "icon": "ranger-station-black",
       "maki": "npmap-symbol-library"
     },
-    "category-area-service": {
-      "geometry": "area",
-      "displayName": "Service",
-      "members": [
-        "service/parking/parking lot"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library"
-    },
     "category-vertex-service": {
       "geometry": "vertex",
       "displayName": "Service",
@@ -6877,7 +6867,6 @@ iD.data.npmapPresets = {
       "land recreation/trail/trailhead"
     ],
     "area": [
-      "service/parking/parking lot",
       "building/building/building footprint",
       "parking/parking/parking lot"
     ],
