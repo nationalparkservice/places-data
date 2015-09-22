@@ -77,13 +77,10 @@ var defaults = function (presets, categories) {
     geography = categoryId.split('-')[1];
     idDefaults[geography] = idDefaults[geography] || [];
     if (categories[categoryId].members.length === 1) {
-      console.log('one record cat found', categoryId);
       // One preset categories are a pain for the user, so just add the preset directly
       idDefaults[geography].push(categories[categoryId].members[0]);
     } else {
-      console.log(categoryId, ' has ', categories[categoryId].members.length, 'presets');
       if (categoryId === 'category-point-information') {
-        console.log(categories[categoryId].members);
       }
       idDefaults[geography].push(categoryId);
     }
@@ -168,7 +165,7 @@ var compileNpmapPresets = function () {
       outputFile.categories = categories(outputFile.presets);
       outputFile.defaults = defaults(outputFile.presets, outputFile.categories);
 
-    // console.log('iD.data.npmapPresets = ' + JSON.stringify(outputFile, null, 2) + ';');
+    console.log('iD.data.npmapPresets = ' + JSON.stringify(outputFile, null, 2) + ';');
     } else {
       console.log('Error: ', e);
     }
