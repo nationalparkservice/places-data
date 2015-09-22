@@ -5,8 +5,8 @@ var presetSchema = require('./preset.json');
 // TODO: Pull these from this document: https://github.com/nationalparkservice/places-editor/blob/master/data/presets/schema/preset.json
 var acceptableFields = ['name', 'geometry', 'tags', 'addTags', 'removeTags', 'fields', 'icon', 'maki', 'terms', 'searchable', 'matchScore', 'defaultOrder'];
 
-var sortPreset = function(presets, categories, sortField, desc) {
-  return function(a, b) {
+var sortPreset = function (presets, categories, sortField, desc) {
+  return function (a, b) {
     var AField = (a.match(/^category-/) ? presets[categories[a].members[0]] : presets[a])[sortField];
     var BField = (b.match(/^category-/) ? presets[categories[b].members[0]] : presets[b])[sortField];
     var descValue = desc === true ? 1 : -1;
@@ -25,17 +25,17 @@ var sortPreset = function(presets, categories, sortField, desc) {
   };
 };
 
-var isDefault = function(d, base) {
+var isDefault = function (d, base) {
   return !!d && !isNaN(d) && parseFloat(d, 10).toString() === d.toString();
-}
+};
 
-var categories = function(presets) {
+var categories = function (presets) {
   var idCategories = {};
   var preset;
 
   for (var presetId in presets) {
     preset = presets[presetId];
-    preset.geometry.forEach(function(geometry) {
+    preset.geometry.forEach(function (geometry) {
       // Loop through all possible geometries
       var category = 'category-' + geometry + '-' + presetId.split('/')[0];
       if (isDefault(preset.defaultOrder)) {
@@ -46,7 +46,7 @@ var categories = function(presets) {
           // Build a new category
           idCategories[category] = {
             'geometry': geometry,
-            'displayName': decodeURIComponent(presetId.split('/')[0]).split(' ').map(function(w) {
+            'displayName': decodeURIComponent(presetId.split('/')[0]).split(' ').map(function (w) {
               return w.substr(0, 1).toUpperCase() + w.substr(1);
             }).join(' '),
             'members': [
@@ -68,7 +68,7 @@ var categories = function(presets) {
   return idCategories;
 };
 
-var defaults = function(presets, categories) {
+var defaults = function (presets, categories) {
   var idDefaults = {};
   var geography;
 
@@ -77,9 +77,14 @@ var defaults = function(presets, categories) {
     geography = categoryId.split('-')[1];
     idDefaults[geography] = idDefaults[geography] || [];
     if (categories[categoryId].members.length === 1) {
+      console.log('one record cat found', categoryId);
       // One preset categories are a pain for the user, so just add the preset directly
       idDefaults[geography].push(categories[categoryId].members[0]);
     } else {
+      console.log(categoryId, ' has ', categories[categoryId].members.length, 'presets');
+      if (categoryId === 'category-point-information') {
+        console.log(categories[categoryId].members);
+      }
       idDefaults[geography].push(categoryId);
     }
   }
@@ -87,7 +92,7 @@ var defaults = function(presets, categories) {
   // Add all of the defaults with a defaultOrder < 0
   for (var presetId in presets) {
     if (presets[presetId].defaultOrder < 0 && isDefault(presets[presetId].defaultOrder)) {
-      presets[presetId].geometry.forEach(function(geometry) {
+      presets[presetId].geometry.forEach(function (geometry) {
         idDefaults[geometry] = idDefaults[geometry] || [];
         idDefaults[geometry].push(presetId);
       });
@@ -97,17 +102,23 @@ var defaults = function(presets, categories) {
   // Sort each of the array by matchCount
   for (var group in idDefaults) {
     // Remove duplicated presets
-    idDefaults[group] = idDefaults[group].filter(function(value, index, orig) {
+    idDefaults[group] = idDefaults[group].filter(function (value, index, orig) {
       return orig.indexOf(value) === index;
     });
 
     // Remove presets from categories that are available outside those categories
-    idDefaults[group].filter(function(d) {
+    idDefaults[group].filter(function (d) {
       return d.match(/^category-/);
-    }).forEach(function(d) {
-      categories[d].members = categories[d].members.filter(function(member) {
+    }).forEach(function (d) {
+      categories[d].members = categories[d].members.filter(function (member) {
         return idDefaults[group].indexOf(member) === -1;
       });
+
+      // If taking the default out the category turns it into a one preset category, add that preset directly and remove the category
+      if (categories[d].members.length === 1) {
+        idDefaults[group].push(categories[d].members[0]);
+        delete categories[d];
+      }
     });
 
     idDefaults[group] = idDefaults[group].sort(sortPreset(presets, categories, 'defaultOrder', false));
@@ -116,7 +127,7 @@ var defaults = function(presets, categories) {
   return idDefaults;
 };
 
-var presets = function(rawPresets) {
+var presets = function (rawPresets) {
   var idPresets = {};
   for (var category in rawPresets) {
     for (var subcategory in rawPresets[category].subcategories) {
@@ -124,7 +135,7 @@ var presets = function(rawPresets) {
         var isValid = jsonschema.validate(rawPresets[category].subcategories[subcategory].tags[preset], presetSchema);
         if (isValid.length) {
           console.error(category + '/' + subcategory + '/' + preset + ': ');
-          isValid.forEach(function(error) {
+          isValid.forEach(function (error) {
             if (error.property) {
               console.error(error.property + ' ' + error.message);
             } else {
@@ -149,15 +160,15 @@ var presets = function(rawPresets) {
   return idPresets;
 };
 
-var compileNpmapPresets = function() {
+var compileNpmapPresets = function () {
   var outputFile = {};
-  compileFiles('../data/presets', function(e, rawPresets) {
+  compileFiles('../data/presets', function (e, rawPresets) {
     if (!e) {
       outputFile.presets = presets(rawPresets);
       outputFile.categories = categories(outputFile.presets);
       outputFile.defaults = defaults(outputFile.presets, outputFile.categories);
 
-      console.log('iD.data.npmapPresets = ' + JSON.stringify(outputFile, null, 2) + ';');
+    // console.log('iD.data.npmapPresets = ' + JSON.stringify(outputFile, null, 2) + ';');
     } else {
       console.log('Error: ', e);
     }
