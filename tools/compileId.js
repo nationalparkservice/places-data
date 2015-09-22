@@ -80,8 +80,6 @@ var defaults = function (presets, categories) {
       // One preset categories are a pain for the user, so just add the preset directly
       idDefaults[geography].push(categories[categoryId].members[0]);
     } else {
-      if (categoryId === 'category-point-information') {
-      }
       idDefaults[geography].push(categoryId);
     }
   }
@@ -114,7 +112,6 @@ var defaults = function (presets, categories) {
       // If taking the default out the category turns it into a one preset category, add that preset directly and remove the category
       if (categories[d].members.length === 1) {
         idDefaults[group].push(categories[d].members[0]);
-        delete categories[d];
       }
     });
 
