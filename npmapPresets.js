@@ -17,7 +17,6 @@ iD.data.npmapPresets = {
         "wheelchair": "*"
       },
       "terms": [
-        "wheelchair accessible",
         "wheelchair",
         "accessible"
       ],
@@ -48,9 +47,6 @@ iD.data.npmapPresets = {
         "amenity": "toilets",
         "type": "floating"
       },
-      "terms": [
-        "floating restroom"
-      ],
       "searchable": true
     },
     "accommodation/restroom/restroom": {
@@ -79,7 +75,6 @@ iD.data.npmapPresets = {
         "amenity": "toilets"
       },
       "terms": [
-        "restroom",
         "toilets",
         "toilet",
         "privy",
@@ -107,9 +102,6 @@ iD.data.npmapPresets = {
       "tags": {
         "barrier": "fence"
       },
-      "terms": [
-        "fence"
-      ],
       "searchable": true
     },
     "barrier/gate/gate": {
@@ -126,9 +118,6 @@ iD.data.npmapPresets = {
       "tags": {
         "barrier": "gate"
       },
-      "terms": [
-        "gate"
-      ],
       "searchable": true
     },
     "building/agricultural/barn": {
@@ -150,9 +139,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "barn"
       },
-      "terms": [
-        "barn"
-      ],
       "searchable": true
     },
     "building/agricultural/greenhouse": {
@@ -174,7 +160,6 @@ iD.data.npmapPresets = {
         "building": "greenhouse"
       },
       "terms": [
-        "greenhouse",
         "glasshouse",
         "garden"
       ],
@@ -199,9 +184,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "stable"
       },
-      "terms": [
-        "stable"
-      ],
       "searchable": true
     },
     "building/building/building": {
@@ -223,7 +205,6 @@ iD.data.npmapPresets = {
         "building": "*"
       },
       "terms": [
-        "building",
         "structure"
       ],
       "searchable": true
@@ -269,7 +250,6 @@ iD.data.npmapPresets = {
         "building": "construction"
       },
       "terms": [
-        "building under construction",
         "construction",
         "under construction"
       ],
@@ -295,7 +275,6 @@ iD.data.npmapPresets = {
         "building": "bunker"
       },
       "terms": [
-        "bunker",
         "military bunker"
       ],
       "searchable": true
@@ -320,7 +299,6 @@ iD.data.npmapPresets = {
         "building": "public"
       },
       "terms": [
-        "public building",
         "public",
         "civic",
         "town hall",
@@ -346,9 +324,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "cabin"
       },
-      "terms": [
-        "cabin"
-      ],
       "searchable": true
     },
     "building/commercial/administrative office": {
@@ -371,7 +346,6 @@ iD.data.npmapPresets = {
         "office": "government"
       },
       "terms": [
-        "administrative office",
         "admin office",
         "government",
         "civil service"
@@ -398,7 +372,6 @@ iD.data.npmapPresets = {
         "building": "commercial"
       },
       "terms": [
-        "commercial building",
         "commercial"
       ],
       "searchable": true
@@ -425,7 +398,6 @@ iD.data.npmapPresets = {
         "function": "headquarters"
       },
       "terms": [
-        "headquarters",
         "office",
         "government headquarters",
         "government office",
@@ -453,7 +425,6 @@ iD.data.npmapPresets = {
         "building": "industrial"
       },
       "terms": [
-        "industrial building",
         "industrial"
       ],
       "searchable": true
@@ -478,7 +449,6 @@ iD.data.npmapPresets = {
         "building": "office"
       },
       "terms": [
-        "office",
         "office building"
       ],
       "searchable": true
@@ -503,7 +473,6 @@ iD.data.npmapPresets = {
         "building": "retail"
       },
       "terms": [
-        "retail building",
         "retail"
       ],
       "searchable": true
@@ -523,9 +492,6 @@ iD.data.npmapPresets = {
         "building": "*",
         "amenity": "education_centre"
       },
-      "terms": [
-        "education center"
-      ],
       "searchable": true
     },
     "building/education/school building": {
@@ -547,7 +513,6 @@ iD.data.npmapPresets = {
         "building": "school"
       },
       "terms": [
-        "school building",
         "school",
         "academy",
         "elementary school",
@@ -575,7 +540,6 @@ iD.data.npmapPresets = {
         "building": "university"
       },
       "terms": [
-        "university building",
         "university",
         "college"
       ],
@@ -618,9 +582,6 @@ iD.data.npmapPresets = {
         "historic": "building",
         "building": "*"
       },
-      "terms": [
-        "historic building"
-      ],
       "searchable": true
     },
     "building/historic/historic cabin": {
@@ -667,9 +628,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "cathedral"
       },
-      "terms": [
-        "cathedral"
-      ],
       "searchable": true
     },
     "building/place of worship/chapel": {
@@ -691,9 +649,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "chapel"
       },
-      "terms": [
-        "chapel"
-      ],
       "searchable": true
     },
     "building/place of worship/church": {
@@ -715,9 +670,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "church"
       },
-      "terms": [
-        "church"
-      ],
       "searchable": true
     },
     "building/residential/apartments": {
@@ -739,7 +691,6 @@ iD.data.npmapPresets = {
         "building": "apartments"
       },
       "terms": [
-        "apartments",
         "apartment",
         "apartment building"
       ],
@@ -764,7 +715,6 @@ iD.data.npmapPresets = {
         "building": "detached"
       },
       "terms": [
-        "detached home",
         "detached",
         "detached building"
       ],
@@ -789,7 +739,6 @@ iD.data.npmapPresets = {
         "building": "dormitory"
       },
       "terms": [
-        "dormitory",
         "residence hall",
         "dormatorium",
         "dorm"
@@ -814,9 +763,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "house"
       },
-      "terms": [
-        "house"
-      ],
       "searchable": true
     },
     "building/residential/lodge": {
@@ -839,7 +785,6 @@ iD.data.npmapPresets = {
         "tourism": "alpine_hut"
       },
       "terms": [
-        "lodge",
         "alpine hut",
         "wilderness hut",
         "hut"
@@ -866,7 +811,6 @@ iD.data.npmapPresets = {
         "tourism": "hotel"
       },
       "terms": [
-        "lodging",
         "hotel",
         "motel",
         "resort"
@@ -892,7 +836,6 @@ iD.data.npmapPresets = {
         "building": "residential"
       },
       "terms": [
-        "residential building",
         "residential"
       ],
       "searchable": true
@@ -916,7 +859,6 @@ iD.data.npmapPresets = {
         "building": "terrace"
       },
       "terms": [
-        "row house",
         "terrace",
         "townhouse"
       ],
@@ -941,7 +883,6 @@ iD.data.npmapPresets = {
         "building": "static_caravan"
       },
       "terms": [
-        "static mobile home",
         "static caravan",
         "mobile home"
       ],
@@ -974,7 +915,6 @@ iD.data.npmapPresets = {
         "cover",
         "hide",
         "lean-to",
-        "gazebo",
         "picnic"
       ],
       "searchable": true
@@ -997,9 +937,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "hut"
       },
-      "terms": [
-        "hut"
-      ],
       "searchable": true
     },
     "building/shelter/pavilion": {
@@ -1028,7 +965,6 @@ iD.data.npmapPresets = {
         "cover",
         "hide",
         "lean-to",
-        "pavilion",
         "picnic"
       ],
       "searchable": true
@@ -1054,7 +990,6 @@ iD.data.npmapPresets = {
         "building": "hut"
       },
       "terms": [
-        "shelter",
         "sanctuary",
         "cover",
         "hide",
@@ -1101,9 +1036,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "garage"
       },
-      "terms": [
-        "garage"
-      ],
       "searchable": true
     },
     "building/storage/shed": {
@@ -1124,9 +1056,6 @@ iD.data.npmapPresets = {
       "tags": {
         "building": "shed"
       },
-      "terms": [
-        "shed"
-      ],
       "searchable": true
     },
     "building/storage/warehouse": {
@@ -1148,7 +1077,6 @@ iD.data.npmapPresets = {
         "building": "warehouse"
       },
       "terms": [
-        "warehouse",
         "storage"
       ],
       "searchable": true
@@ -1167,9 +1095,6 @@ iD.data.npmapPresets = {
       "tags": {
         "historic": "battlefield"
       },
-      "terms": [
-        "battlefield"
-      ],
       "searchable": true
     },
     "historic/cannon/cannon": {
@@ -1186,9 +1111,6 @@ iD.data.npmapPresets = {
       "tags": {
         "historic": "cannon"
       },
-      "terms": [
-        "cannon"
-      ],
       "searchable": true
     },
     "historic/marker/battlefield marker": {
@@ -1206,9 +1128,6 @@ iD.data.npmapPresets = {
         "historic": "marker",
         "marker_type": "battlefield"
       },
-      "terms": [
-        "battlefield marker"
-      ],
       "searchable": true
     },
     "historic/marker/historic marker": {
@@ -1225,9 +1144,6 @@ iD.data.npmapPresets = {
       "tags": {
         "historic": "marker"
       },
-      "terms": [
-        "historic marker"
-      ],
       "searchable": true
     },
     "historic/monument/memorial": {
@@ -1247,7 +1163,6 @@ iD.data.npmapPresets = {
         "historic": "memorial"
       },
       "terms": [
-        "memorial",
         "historic memorial"
       ],
       "searchable": true
@@ -1269,7 +1184,6 @@ iD.data.npmapPresets = {
         "historic": "monument"
       },
       "terms": [
-        "monument",
         "historic monument"
       ],
       "searchable": true
@@ -1289,7 +1203,6 @@ iD.data.npmapPresets = {
         "historic": "ruins"
       },
       "terms": [
-        "historic ruins",
         "ruins"
       ],
       "searchable": true
@@ -1330,7 +1243,6 @@ iD.data.npmapPresets = {
         "historic": "*"
       },
       "terms": [
-        "historic site",
         "historic",
         "site"
       ],
@@ -1351,7 +1263,6 @@ iD.data.npmapPresets = {
         "historic": "wreck"
       },
       "terms": [
-        "wreck",
         "shipwreck"
       ],
       "searchable": true
@@ -1374,9 +1285,6 @@ iD.data.npmapPresets = {
         "tourism": "information",
         "information": "brochure"
       },
-      "terms": [
-        "brochure box"
-      ],
       "searchable": true
     },
     "information/information/information": {
@@ -1399,7 +1307,6 @@ iD.data.npmapPresets = {
         "tourism": "information"
       },
       "terms": [
-        "information",
         "tourist information"
       ],
       "searchable": true
@@ -1450,7 +1357,6 @@ iD.data.npmapPresets = {
         "information": "map"
       },
       "terms": [
-        "information map",
         "information",
         "map"
       ],
@@ -1504,9 +1410,6 @@ iD.data.npmapPresets = {
         "information": "sign",
         "sign:type": "directional"
       },
-      "terms": [
-        "directional sign"
-      ],
       "searchable": true
     },
     "information/sign/gateway sign": {
@@ -1529,7 +1432,6 @@ iD.data.npmapPresets = {
         "information": "sign"
       },
       "terms": [
-        "gateway sign",
         "location",
         "place name"
       ],
@@ -1550,9 +1452,6 @@ iD.data.npmapPresets = {
       "tags": {
         "highway": "milestone"
       },
-      "terms": [
-        "mile marker"
-      ],
       "searchable": true
     },
     "information/sign/regulatory sign": {
@@ -1572,9 +1471,6 @@ iD.data.npmapPresets = {
         "information": "sign",
         "sign:type": "regulatory"
       },
-      "terms": [
-        "regulatory sign"
-      ],
       "searchable": true
     },
     "information/sign/trail marker": {
@@ -1594,7 +1490,6 @@ iD.data.npmapPresets = {
         "information": "guidepost"
       },
       "terms": [
-        "trail marker",
         "trail",
         "marker",
         "sign"
@@ -1619,7 +1514,6 @@ iD.data.npmapPresets = {
         "sign:type": "trail_sign"
       },
       "terms": [
-        "trail sign",
         "trail",
         "sign"
       ],
@@ -1646,7 +1540,6 @@ iD.data.npmapPresets = {
         "information": "office"
       },
       "terms": [
-        "visitor center",
         "visitor centre",
         "visitor information",
         "information"
@@ -1672,8 +1565,7 @@ iD.data.npmapPresets = {
         "nps/structure"
       ],
       "geometry": [
-        "point",
-        "line"
+        "point"
       ],
       "icon": "All-terrain trail",
       "maki": "npmap-symbol-library",
@@ -1727,7 +1619,6 @@ iD.data.npmapPresets = {
         "4wd_only": "*"
       },
       "terms": [
-        "four-wheel drive trail",
         "atv",
         "all terrain vehicle",
         "quad",
@@ -1771,7 +1662,6 @@ iD.data.npmapPresets = {
         "bicycle": "*"
       },
       "terms": [
-        "bicycle trail",
         "bicycle",
         "trail",
         "track"
@@ -1793,13 +1683,137 @@ iD.data.npmapPresets = {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack"
       },
+      "searchable": true
+    },
+    "land recreation/camping/campfire ring": {
+      "name": "Campfire Ring",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "campfire-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "leisure": "firepit"
+      },
       "terms": [
-        "bike rack"
+        "campfire",
+        "firepit",
+        "fireplace",
+        "fire ring"
       ],
       "searchable": true
     },
-    "land recreation/camping/backcountry campsite": {
-      "name": "Backcountry Campsite",
+    "land recreation/camping/campground": {
+      "name": "Campground",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "capacity",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "campground-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -3,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "camp_site"
+      },
+      "searchable": true
+    },
+    "land recreation/camping/campsite": {
+      "name": "Campsite",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "capacity",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "campsite-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 13,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "camp_site",
+        "camp_site": "pitch"
+      },
+      "terms": [
+        "camp site"
+      ],
+      "searchable": true
+    },
+    "land recreation/camping/dump station": {
+      "name": "Dump Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "sanitary-disposal-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "sanitary_dump_station"
+      },
+      "terms": [
+        "sanitary disposal station",
+        "dumpstation"
+      ],
+      "searchable": true
+    },
+    "land recreation/camping/horse camp": {
+      "name": "Horse Camp",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "capacity",
+        "fee",
+        "nps/nonmotorizeduse"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "campground-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1.02,
+      "tags": {
+        "tourism": "camp_site",
+        "horse": "*"
+      },
+      "terms": [
+        "horse campground"
+      ],
+      "searchable": true
+    },
+    "land recreation/camping/primitive camping": {
+      "name": "Primitive Camping",
       "fields": [
         "name",
         "nps/unitcode",
@@ -1829,140 +1843,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "land recreation/camping/campfire ring": {
-      "name": "Campfire Ring",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "campfire-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "leisure": "firepit"
-      },
-      "terms": [
-        "campfire",
-        "firepit",
-        "fireplace",
-        "fire ring",
-        "campfire ring"
-      ],
-      "searchable": true
-    },
-    "land recreation/camping/campground": {
-      "name": "Campground",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "capacity",
-        "fee"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "campground-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -3,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "camp_site"
-      },
-      "terms": [
-        "campground"
-      ],
-      "searchable": true
-    },
-    "land recreation/camping/campsite": {
-      "name": "Campsite",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "capacity",
-        "fee"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "campsite-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 13,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "camp_site",
-        "camp_site": "pitch"
-      },
-      "terms": [
-        "campsite",
-        "camp site"
-      ],
-      "searchable": true
-    },
-    "land recreation/camping/dump station": {
-      "name": "Dump Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "sanitary-disposal-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "sanitary_dump_station"
-      },
-      "terms": [
-        "sanitary disposal station",
-        "dumpstation",
-        "dump station"
-      ],
-      "searchable": true
-    },
-    "land recreation/camping/horse camp": {
-      "name": "Horse Camp",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "capacity",
-        "fee",
-        "nps/nonmotorizeduse"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "campground-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1.02,
-      "tags": {
-        "tourism": "camp_site",
-        "horse": "*"
-      },
-      "terms": [
-        "horse camp",
-        "horse campground"
-      ],
-      "searchable": true
-    },
     "land recreation/camping/rv campground": {
       "name": "RV Campground",
       "fields": [
@@ -1986,7 +1866,6 @@ iD.data.npmapPresets = {
         "caravans": "*"
       },
       "terms": [
-        "rv campground",
         "campsite",
         "camp_site",
         "motorhome park"
@@ -2008,9 +1887,6 @@ iD.data.npmapPresets = {
         "highway": "path",
         "sport": "canyoning"
       },
-      "terms": [
-        "canyoneering route"
-      ],
       "searchable": true
     },
     "land recreation/climbing/climbing route": {
@@ -2028,9 +1904,6 @@ iD.data.npmapPresets = {
         "highway": "path",
         "sport": "climbing"
       },
-      "terms": [
-        "climbing route"
-      ],
       "searchable": true
     },
     "land recreation/food/food box %2f food cache": {
@@ -2072,9 +1945,6 @@ iD.data.npmapPresets = {
       "tags": {
         "leisure": "golf_course"
       },
-      "terms": [
-        "golf course"
-      ],
       "searchable": true
     },
     "land recreation/horse/horseback riding": {
@@ -2148,7 +2018,6 @@ iD.data.npmapPresets = {
         "motorcycle": "*"
       },
       "terms": [
-        "motorcycle trail",
         "motorcycle",
         "trail",
         "track"
@@ -2169,9 +2038,6 @@ iD.data.npmapPresets = {
       "tags": {
         "barbecue_grill": "*"
       },
-      "terms": [
-        "grill"
-      ],
       "searchable": true
     },
     "land recreation/picnic/picnic area": {
@@ -2195,7 +2061,6 @@ iD.data.npmapPresets = {
         "tourism": "picnic_site"
       },
       "terms": [
-        "picnic area",
         "picnic site",
         "picnic"
       ],
@@ -2215,9 +2080,6 @@ iD.data.npmapPresets = {
       "tags": {
         "leisure": "picnic_table"
       },
-      "terms": [
-        "picnic table"
-      ],
       "searchable": true
     },
     "land recreation/playground/playground": {
@@ -2234,9 +2096,6 @@ iD.data.npmapPresets = {
       "tags": {
         "leisure": "playground"
       },
-      "terms": [
-        "playground"
-      ],
       "searchable": true
     },
     "land recreation/trail/motorized trail": {
@@ -2360,8 +2219,7 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "stairs",
-        "staircase",
-        "steps"
+        "staircase"
       ],
       "searchable": true
     },
@@ -2419,7 +2277,6 @@ iD.data.npmapPresets = {
         "highway": "trailhead"
       },
       "terms": [
-        "trailhead",
         "trail head",
         "trail",
         "track"
@@ -2488,9 +2345,6 @@ iD.data.npmapPresets = {
         "tourism": "artwork",
         "artwork_type": "statue"
       },
-      "terms": [
-        "sculpture"
-      ],
       "searchable": true
     },
     "miscellaneous/bench/bench": {
@@ -2513,7 +2367,6 @@ iD.data.npmapPresets = {
         "amenity": "bench"
       },
       "terms": [
-        "bench",
         "seat"
       ],
       "searchable": true
@@ -2535,7 +2388,6 @@ iD.data.npmapPresets = {
         "waterway": "canal"
       },
       "terms": [
-        "canal",
         "ditch",
         "lateal"
       ],
@@ -2585,7 +2437,6 @@ iD.data.npmapPresets = {
         "cemetery": "grave"
       },
       "terms": [
-        "grave",
         "tomb"
       ],
       "searchable": true
@@ -2607,7 +2458,6 @@ iD.data.npmapPresets = {
         "waterway": "dam"
       },
       "terms": [
-        "dam",
         "breakwater",
         "dike",
         "jetty"
@@ -2667,9 +2517,6 @@ iD.data.npmapPresets = {
       "tags": {
         "leisure": "garden"
       },
-      "terms": [
-        "garden"
-      ],
       "searchable": true
     },
     "miscellaneous/gate/gate": {
@@ -2687,9 +2534,6 @@ iD.data.npmapPresets = {
       "tags": {
         "barrier": "gate"
       },
-      "terms": [
-        "gate"
-      ],
       "searchable": true
     },
     "miscellaneous/levee/dyke (levee)": {
@@ -2727,9 +2571,6 @@ iD.data.npmapPresets = {
       "tags": {
         "lock": "*"
       },
-      "terms": [
-        "lock"
-      ],
       "searchable": true
     },
     "miscellaneous/military area/military area": {
@@ -2746,9 +2587,6 @@ iD.data.npmapPresets = {
       "tags": {
         "landuse": "military"
       },
-      "terms": [
-        "military area"
-      ],
       "searchable": true
     },
     "miscellaneous/mine/historic mine": {
@@ -2767,9 +2605,6 @@ iD.data.npmapPresets = {
       "tags": {
         "historic": "mine"
       },
-      "terms": [
-        "historic mine"
-      ],
       "searchable": true
     },
     "miscellaneous/mine/quarry (mine)": {
@@ -2832,9 +2667,6 @@ iD.data.npmapPresets = {
       "tags": {
         "tourism": "museum"
       },
-      "terms": [
-        "museum"
-      ],
       "searchable": true
     },
     "miscellaneous/oil well/oilfield": {
@@ -2855,9 +2687,6 @@ iD.data.npmapPresets = {
       "tags": {
         "man_made": "oilfield"
       },
-      "terms": [
-        "oilfield"
-      ],
       "searchable": true
     },
     "miscellaneous/point of interest/point of interest": {
@@ -2879,7 +2708,6 @@ iD.data.npmapPresets = {
         "tourism": "*"
       },
       "terms": [
-        "point of interest",
         "poi"
       ],
       "searchable": true
@@ -2902,7 +2730,6 @@ iD.data.npmapPresets = {
         "leisure": "nature_reserve"
       },
       "terms": [
-        "reserve",
         "nature reserve",
         "wildlife reserve",
         "wildlife",
@@ -2930,7 +2757,6 @@ iD.data.npmapPresets = {
         "landuse": "reservoir"
       },
       "terms": [
-        "reservoir",
         "lake",
         "tank"
       ],
@@ -2953,7 +2779,6 @@ iD.data.npmapPresets = {
         "site_type": "fortification"
       },
       "terms": [
-        "fortification",
         "fort",
         "earthworks",
         "hill fort",
@@ -2978,7 +2803,6 @@ iD.data.npmapPresets = {
         "man_made": "tower"
       },
       "terms": [
-        "tower",
         "castle",
         "overlook"
       ],
@@ -2999,9 +2823,6 @@ iD.data.npmapPresets = {
       "tags": {
         "man_made": "windmill"
       },
-      "terms": [
-        "windmill"
-      ],
       "searchable": true
     },
     "miscellaneous/view/overlook": {
@@ -3024,7 +2845,6 @@ iD.data.npmapPresets = {
         "viewpoint_type": "overlook"
       },
       "terms": [
-        "overlook",
         "scenic overlook"
       ],
       "searchable": true
@@ -3047,52 +2867,9 @@ iD.data.npmapPresets = {
         "tourism": "viewpoint"
       },
       "terms": [
-        "viewpoint",
         "scenic viewpoint",
         "scenic",
         "scenery"
-      ],
-      "searchable": true
-    },
-    "natural feature/arch/arch": {
-      "name": "Arch",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "arch"
-      },
-      "terms": [
-        "arch",
-        "sea arch"
-      ],
-      "searchable": true
-    },
-    "natural feature/arch/natural bridge": {
-      "name": "Natural Bridge",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "arch",
-        "arch_type": "Natural Bridge"
-      },
-      "terms": [
-        "bridge",
-        "natural bridge",
-        "land bridge"
       ],
       "searchable": true
     },
@@ -3114,7 +2891,6 @@ iD.data.npmapPresets = {
         "intermittent": "*"
       },
       "terms": [
-        "arroyo",
         "coulee",
         "draw",
         "gully",
@@ -3136,9 +2912,6 @@ iD.data.npmapPresets = {
       "tags": {
         "landuse": "basin"
       },
-      "terms": [
-        "basin"
-      ],
       "searchable": true
     },
     "natural feature/bay/bay": {
@@ -3156,7 +2929,6 @@ iD.data.npmapPresets = {
         "natural": "bay"
       },
       "terms": [
-        "bay",
         "arm",
         "bight",
         "cove",
@@ -3183,7 +2955,6 @@ iD.data.npmapPresets = {
         "natural": "beach"
       },
       "terms": [
-        "beach",
         "coast",
         "shore",
         "strand"
@@ -3205,7 +2976,6 @@ iD.data.npmapPresets = {
         "natural": "cape"
       },
       "terms": [
-        "cape",
         "lea",
         "neck",
         "peninsula",
@@ -3250,7 +3020,6 @@ iD.data.npmapPresets = {
         "natural": "cliff"
       },
       "terms": [
-        "cliff",
         "bluff",
         "crag",
         "head",
@@ -3279,7 +3048,6 @@ iD.data.npmapPresets = {
         "natural": "dune"
       },
       "terms": [
-        "dune",
         "sand dune"
       ],
       "searchable": true
@@ -3304,7 +3072,6 @@ iD.data.npmapPresets = {
         "landuse": "forest"
       },
       "terms": [
-        "forest",
         "wood",
         "park",
         "jungle"
@@ -3353,7 +3120,6 @@ iD.data.npmapPresets = {
         "natural": "geyser"
       },
       "terms": [
-        "geyser",
         "gusher",
         "spout",
         "hot spring",
@@ -3378,7 +3144,6 @@ iD.data.npmapPresets = {
         "natural": "glacier"
       },
       "terms": [
-        "glacier",
         "icefield",
         "ice patch",
         "snow patch"
@@ -3428,7 +3193,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "harbour",
-        "harbor",
         "marina"
       ],
       "searchable": true
@@ -3448,7 +3212,6 @@ iD.data.npmapPresets = {
         "place": "island"
       },
       "terms": [
-        "island",
         "archipelago",
         "atoll",
         "cay",
@@ -3477,9 +3240,6 @@ iD.data.npmapPresets = {
       "tags": {
         "natural": "isthmus"
       },
-      "terms": [
-        "isthmus"
-      ],
       "searchable": true
     },
     "natural feature/lake/lake": {
@@ -3500,7 +3260,6 @@ iD.data.npmapPresets = {
         "water": "lake"
       },
       "terms": [
-        "lake",
         "backwater",
         "lac",
         "lagoon",
@@ -3530,7 +3289,6 @@ iD.data.npmapPresets = {
         "natural": "lava"
       },
       "terms": [
-        "lava",
         "kepula",
         "lava flow"
       ],
@@ -3563,6 +3321,26 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "natural feature/peak/knoll": {
+      "name": "Knoll",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "ele"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "triangle",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "peak",
+        "peak": "knoll"
+      },
+      "searchable": true
+    },
     "natural feature/peak/peak": {
       "name": "Peak",
       "fields": [
@@ -3581,7 +3359,6 @@ iD.data.npmapPresets = {
         "natural": "peak"
       },
       "terms": [
-        "peak",
         "summit",
         "ahu",
         "berg",
@@ -3596,7 +3373,6 @@ iD.data.npmapPresets = {
         "hill",
         "horn",
         "knob",
-        "knoll",
         "mauna",
         "mesa",
         "mesita",
@@ -3634,9 +3410,6 @@ iD.data.npmapPresets = {
         "natural": "landform",
         "landform": "plateau"
       },
-      "terms": [
-        "plateau"
-      ],
       "searchable": true
     },
     "natural feature/prairie/prairie": {
@@ -3681,7 +3454,6 @@ iD.data.npmapPresets = {
         "waterway": "rapids"
       },
       "terms": [
-        "rapids",
         "riffle",
         "ripple"
       ],
@@ -3726,7 +3498,6 @@ iD.data.npmapPresets = {
         "natural": "ridge"
       },
       "terms": [
-        "ridge",
         "crest",
         "cuesta",
         "escarpment",
@@ -3734,6 +3505,82 @@ iD.data.npmapPresets = {
         "lae",
         "rim",
         "spur"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/arch": {
+      "name": "Arch",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "arch"
+      },
+      "terms": [
+        "sea arch"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/hoodoo": {
+      "name": "Hoodoo",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "error": "error"
+      },
+      "searchable": true
+    },
+    "natural feature/rock formation/natural bridge": {
+      "name": "Natural Bridge",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "arch",
+        "arch_type": "natural_bridge"
+      },
+      "terms": [
+        "bridge",
+        "land bridge"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/rock formation": {
+      "name": "Rock Formation",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "rock"
+      },
+      "terms": [
+        "rock",
+        "formation"
       ],
       "searchable": true
     },
@@ -3754,7 +3601,6 @@ iD.data.npmapPresets = {
         "place": "sea"
       },
       "terms": [
-        "sea",
         "gulf",
         "ocean"
       ],
@@ -3801,7 +3647,6 @@ iD.data.npmapPresets = {
         "natural": "spring"
       },
       "terms": [
-        "spring",
         "seep"
       ],
       "searchable": true
@@ -3893,7 +3738,6 @@ iD.data.npmapPresets = {
         "wetland": "swamp"
       },
       "terms": [
-        "swamp",
         "wetland",
         "bog",
         "cienega",
@@ -3917,9 +3761,6 @@ iD.data.npmapPresets = {
       "tags": {
         "natural": "tree"
       },
-      "terms": [
-        "tree"
-      ],
       "searchable": true
     },
     "natural feature/valley/valley": {
@@ -3937,7 +3778,6 @@ iD.data.npmapPresets = {
         "natural": "valley"
       },
       "terms": [
-        "valley",
         "barranca",
         "canyon",
         "chasm",
@@ -3995,7 +3835,6 @@ iD.data.npmapPresets = {
         "waterway": "waterfall"
       },
       "terms": [
-        "waterfall",
         "falls",
         "cascade",
         "cataract"
@@ -4018,9 +3857,6 @@ iD.data.npmapPresets = {
       "tags": {
         "natural": "wetland"
       },
-      "terms": [
-        "wetland"
-      ],
       "searchable": true
     },
     "parking/parking/parking lot": {
@@ -4047,7 +3883,6 @@ iD.data.npmapPresets = {
         "parking",
         "car parking",
         "vehicle parking",
-        "parking lot",
         "car park"
       ],
       "searchable": true
@@ -4078,7 +3913,6 @@ iD.data.npmapPresets = {
         "4wd_only": "*"
       },
       "terms": [
-        "four-wheel drive road",
         "4wd",
         "4 wheeler",
         "4-wheeler",
@@ -4104,7 +3938,11 @@ iD.data.npmapPresets = {
         "highway": "motorway"
       },
       "terms": [
-        "highway"
+        "freeway",
+        "turnpike",
+        "motorway",
+        "interstate",
+        "interstate highway"
       ],
       "searchable": true
     },
@@ -4125,7 +3963,11 @@ iD.data.npmapPresets = {
         "highway": "motorway_link"
       },
       "terms": [
-        "highway"
+        "freeway ramp",
+        "highway ramp",
+        "ramp",
+        "on ramp",
+        "off ramp"
       ],
       "searchable": true
     },
@@ -4183,8 +4025,7 @@ iD.data.npmapPresets = {
         "highway": "pedestrian"
       },
       "terms": [
-        "pedestrian road",
-        "pedestrian street"
+        "pedestrian road"
       ],
       "searchable": true
     },
@@ -4214,7 +4055,6 @@ iD.data.npmapPresets = {
         "access": "private"
       },
       "terms": [
-        "private road",
         "private",
         "road"
       ],
@@ -4245,8 +4085,8 @@ iD.data.npmapPresets = {
         "highway": "residential"
       },
       "terms": [
-        "residential road",
         "residential",
+        "local",
         "road"
       ],
       "searchable": true
@@ -4297,7 +4137,6 @@ iD.data.npmapPresets = {
         "highway": "road"
       },
       "terms": [
-        "unknown road",
         "road"
       ],
       "searchable": true
@@ -4326,7 +4165,7 @@ iD.data.npmapPresets = {
         "highway": "primary_link"
       },
       "terms": [
-        "ramp",
+        "primary ramp",
         "on ramp",
         "off ramp"
       ],
@@ -4357,12 +4196,12 @@ iD.data.npmapPresets = {
         "highway": "primary"
       },
       "terms": [
-        "primary road",
         "primary",
         "road",
         "highway",
-        "interstate",
-        "interstate highway"
+        "us highway",
+        "state highway",
+        "state route"
       ],
       "searchable": true
     },
@@ -4390,6 +4229,7 @@ iD.data.npmapPresets = {
         "highway": "secondary_link"
       },
       "terms": [
+        "secondary ramp",
         "ramp",
         "on ramp",
         "off ramp"
@@ -4421,11 +4261,8 @@ iD.data.npmapPresets = {
         "highway": "secondary"
       },
       "terms": [
-        "secondary road",
         "secondary",
         "road",
-        "us highway",
-        "state highway",
         "county highway"
       ],
       "searchable": true
@@ -4456,7 +4293,6 @@ iD.data.npmapPresets = {
         "highway": "service"
       },
       "terms": [
-        "access road",
         "service road",
         "service",
         "road"
@@ -4484,9 +4320,6 @@ iD.data.npmapPresets = {
         "highway": "service",
         "service": "parking_aisle"
       },
-      "terms": [
-        "parking aisle"
-      ],
       "searchable": true
     },
     "road/tertiary/tertiary link": {
@@ -4513,6 +4346,7 @@ iD.data.npmapPresets = {
         "highway": "tertiary_link"
       },
       "terms": [
+        "tertiary ramp",
         "ramp",
         "on ramp",
         "off ramp"
@@ -4544,7 +4378,6 @@ iD.data.npmapPresets = {
         "highway": "tertiary"
       },
       "terms": [
-        "tertiary road",
         "tertiary",
         "road"
       ],
@@ -4566,9 +4399,6 @@ iD.data.npmapPresets = {
       "tags": {
         "bridge": "*"
       },
-      "terms": [
-        "bridge"
-      ],
       "searchable": true
     },
     "road feature/control/traffic signals": {
@@ -4590,7 +4420,6 @@ iD.data.npmapPresets = {
         "highway": "traffic_signals"
       },
       "terms": [
-        "traffic signals",
         "traffic signal",
         "traffic light",
         "stop light",
@@ -4617,7 +4446,6 @@ iD.data.npmapPresets = {
         "highway": "turning_circle"
       },
       "terms": [
-        "turning circle",
         "cul-de-sac",
         "dead end street",
         "blind alley"
@@ -4640,9 +4468,6 @@ iD.data.npmapPresets = {
       "tags": {
         "tunnel": "*"
       },
-      "terms": [
-        "tunnel"
-      ],
       "searchable": true
     },
     "service/airport/airport": {
@@ -4666,7 +4491,6 @@ iD.data.npmapPresets = {
         "aeroway": "aerodrome"
       },
       "terms": [
-        "airport",
         "aeroway",
         "aerodrome"
       ],
@@ -4694,7 +4518,6 @@ iD.data.npmapPresets = {
         "aerodrome": "airstrip"
       },
       "terms": [
-        "airstrip",
         "aeroway",
         "aerodrome",
         "air field",
@@ -4728,7 +4551,6 @@ iD.data.npmapPresets = {
         "aeroway",
         "aerodrome",
         "air field",
-        "landing strip",
         "landing"
       ],
       "searchable": true
@@ -4750,7 +4572,6 @@ iD.data.npmapPresets = {
         "amenity": "atm"
       },
       "terms": [
-        "atm",
         "automated teller machine",
         "cash dispenser"
       ],
@@ -4779,7 +4600,6 @@ iD.data.npmapPresets = {
         "highway": "bus_stop"
       },
       "terms": [
-        "bus stop / shuttle stop",
         "bus stop",
         "shuttle stop",
         "bus station"
@@ -4806,11 +4626,34 @@ iD.data.npmapPresets = {
         "barrier": "entrance"
       },
       "terms": [
-        "entrance station",
         "entrance",
         "entry",
         "gateway",
         "portal"
+      ],
+      "searchable": true
+    },
+    "service/entrance/fee booth": {
+      "name": "Fee Booth",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "toll_booth"
+      },
+      "terms": [
+        "fee",
+        "toll",
+        "toll booth"
       ],
       "searchable": true
     },
@@ -4833,9 +4676,6 @@ iD.data.npmapPresets = {
       "tags": {
         "amenity": "ferry_terminal"
       },
-      "terms": [
-        "ferry terminal"
-      ],
       "searchable": true
     },
     "service/food/food service": {
@@ -4858,7 +4698,6 @@ iD.data.npmapPresets = {
         "amenity": "food_court"
       },
       "terms": [
-        "food service",
         "food court",
         "cafe",
         "restaurant"
@@ -4885,7 +4724,6 @@ iD.data.npmapPresets = {
         "amenity": "fuel"
       },
       "terms": [
-        "gas station",
         "fuel",
         "petrol station",
         "petrol",
@@ -4920,6 +4758,25 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/laundry/laundry": {
+      "name": "Laundry",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "shop": "laundry"
+      },
+      "searchable": true
+    },
     "service/parking/electric vehicle parking": {
       "name": "Electric Vehicle Parking",
       "fields": [
@@ -4935,9 +4792,6 @@ iD.data.npmapPresets = {
         "amenity": "parking",
         "capacity:charging": "*"
       },
-      "terms": [
-        "electric vehicle parking"
-      ],
       "searchable": true
     },
     "service/parking/parking lot": {
@@ -4954,6 +4808,7 @@ iD.data.npmapPresets = {
       ],
       "geometry": [
         "point",
+        "area",
         "vertex"
       ],
       "icon": "parking-black",
@@ -4967,7 +4822,6 @@ iD.data.npmapPresets = {
         "parking",
         "car parking",
         "vehicle parking",
-        "parking lot",
         "car park"
       ],
       "searchable": true
@@ -4988,9 +4842,6 @@ iD.data.npmapPresets = {
       "tags": {
         "highway": "rest_area"
       },
-      "terms": [
-        "roadside pullout"
-      ],
       "searchable": true
     },
     "service/post/mailbox": {
@@ -5009,9 +4860,6 @@ iD.data.npmapPresets = {
       "tags": {
         "amenity": "post_box"
       },
-      "terms": [
-        "mailbox"
-      ],
       "searchable": true
     },
     "service/post/post office": {
@@ -5034,7 +4882,6 @@ iD.data.npmapPresets = {
         "amenity": "post_office"
       },
       "terms": [
-        "post office",
         "mail office",
         "post",
         "mail",
@@ -5061,7 +4908,6 @@ iD.data.npmapPresets = {
         "railway": "subway_entrance"
       },
       "terms": [
-        "metro stop / subway entrance",
         "metro stop",
         "subway entrance",
         "subway exit"
@@ -5088,7 +4934,6 @@ iD.data.npmapPresets = {
         "building": "train_station"
       },
       "terms": [
-        "train station",
         "railway station"
       ],
       "searchable": true
@@ -5113,7 +4958,6 @@ iD.data.npmapPresets = {
         "shop": "general"
       },
       "terms": [
-        "store",
         "shop",
         "general store"
       ],
@@ -5141,7 +4985,6 @@ iD.data.npmapPresets = {
         "amenity": "shower"
       },
       "terms": [
-        "showers",
         "shower",
         "bath"
       ],
@@ -5166,7 +5009,6 @@ iD.data.npmapPresets = {
         "emergency": "phone"
       },
       "terms": [
-        "emergency telephone",
         "emergency phone",
         "phone",
         "emergency"
@@ -5192,7 +5034,6 @@ iD.data.npmapPresets = {
         "amenity": "fire_station"
       },
       "terms": [
-        "fire station",
         "fire department",
         "emergency"
       ],
@@ -5217,7 +5058,6 @@ iD.data.npmapPresets = {
         "amenity": "first_aid"
       },
       "terms": [
-        "first aid station",
         "first aid",
         "medical",
         "emergency"
@@ -5246,7 +5086,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "hospital grounds",
-        "hospital",
         "ward",
         "institution",
         "infirmary",
@@ -5278,7 +5117,6 @@ iD.data.npmapPresets = {
         "amenity": "patrol_cabin"
       },
       "terms": [
-        "patrol cabin",
         "cabin",
         "patrol"
       ],
@@ -5304,7 +5142,6 @@ iD.data.npmapPresets = {
         "amenity": "police"
       },
       "terms": [
-        "police",
         "police station",
         "cops",
         "police force",
@@ -5339,7 +5176,6 @@ iD.data.npmapPresets = {
         "amenity": "ranger_station"
       },
       "terms": [
-        "ranger station",
         "permit center",
         "permit centre",
         "backcountry office",
@@ -5368,7 +5204,6 @@ iD.data.npmapPresets = {
         "amenity": "telephone"
       },
       "terms": [
-        "telephone",
         "phone",
         "telephone box",
         "phone booth"
@@ -5395,7 +5230,6 @@ iD.data.npmapPresets = {
         "theatre:type": "amphi"
       },
       "terms": [
-        "amphitheater",
         "theatre",
         "theater",
         "opera house",
@@ -5420,9 +5254,6 @@ iD.data.npmapPresets = {
       "tags": {
         "amenity": "waste_disposal"
       },
-      "terms": [
-        "dumpster"
-      ],
       "searchable": true
     },
     "service/waste/litter receptacle": {
@@ -5480,7 +5311,6 @@ iD.data.npmapPresets = {
         "amenity": "recycling"
       },
       "terms": [
-        "recycling",
         "salvage",
         "garbage",
         "trash",
@@ -5490,8 +5320,31 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "service/water/drinking water": {
-      "name": "Drinking Water",
+    "service/water/fountain": {
+      "name": "Fountain",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "drinking_water",
+        "lit"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fountain"
+      },
+      "terms": [
+        "well"
+      ],
+      "searchable": true
+    },
+    "service/water/potable water": {
+      "name": "Potable Water",
       "fields": [
         "name",
         "nps/unitcode",
@@ -5517,30 +5370,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "service/water/fountain": {
-      "name": "Fountain",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "drinking_water",
-        "lit"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fountain"
-      },
-      "terms": [
-        "fountain",
-        "well"
-      ],
-      "searchable": true
-    },
     "service/water/radiator water": {
       "name": "Radiator Water",
       "fields": [
@@ -5560,7 +5389,6 @@ iD.data.npmapPresets = {
         "emergency": "water_tank"
       },
       "terms": [
-        "radiator water",
         "water tank"
       ],
       "searchable": true
@@ -5582,9 +5410,6 @@ iD.data.npmapPresets = {
       "tags": {
         "man_made": "water_well"
       },
-      "terms": [
-        "water well"
-      ],
       "searchable": true
     },
     "trail/motorized/all-terrain vehicle trail": {
@@ -5621,14 +5446,10 @@ iD.data.npmapPresets = {
         "atv",
         "all terrain vehicle",
         "quad",
-        "4wd",
-        "4 wheeler",
-        "four-wheeler",
         "off-road",
         "off road",
         "trail",
-        "track",
-        "structure"
+        "track"
       ],
       "searchable": true
     },
@@ -5662,17 +5483,14 @@ iD.data.npmapPresets = {
         "4wd_only": "*"
       },
       "terms": [
-        "four-wheel drive trail",
-        "atv",
-        "all terrain vehicle",
-        "quad",
         "4wd",
         "4 wheeler",
         "four-wheeler",
         "off-road",
         "off road",
         "trail",
-        "track"
+        "track",
+        "four-wheel drive vehicle > 50\" in tread width"
       ],
       "searchable": true
     },
@@ -5706,7 +5524,6 @@ iD.data.npmapPresets = {
         "motorcycle": "*"
       },
       "terms": [
-        "motorcycle trail",
         "motorcycle",
         "trail",
         "track"
@@ -5744,7 +5561,8 @@ iD.data.npmapPresets = {
       "terms": [
         "track",
         "trail",
-        "path"
+        "path",
+        "motorized"
       ],
       "searchable": true
     },
@@ -5778,7 +5596,6 @@ iD.data.npmapPresets = {
         "snowmobile": "*"
       },
       "terms": [
-        "snowmobile trail",
         "snowmobile",
         "snow machine",
         "trail",
@@ -5815,12 +5632,10 @@ iD.data.npmapPresets = {
         "piste:type": "skitour"
       },
       "terms": [
-        "backcountry ski trail",
         "backcountry ski",
         "backcountry",
         "trail",
-        "track",
-        "structure"
+        "track"
       ],
       "searchable": true
     },
@@ -5854,7 +5669,6 @@ iD.data.npmapPresets = {
         "bicycle": "*"
       },
       "terms": [
-        "bicycle trail",
         "bicycle",
         "trail",
         "track"
@@ -5879,7 +5693,7 @@ iD.data.npmapPresets = {
         "sport": "canyoning"
       },
       "terms": [
-        "canyoneering route"
+        "canyoneering"
       ],
       "searchable": true
     },
@@ -5901,7 +5715,9 @@ iD.data.npmapPresets = {
         "sport": "climbing"
       },
       "terms": [
-        "climbing route"
+        "climing",
+        "mountain climbing",
+        "mountain climbing route"
       ],
       "searchable": true
     },
@@ -5934,7 +5750,6 @@ iD.data.npmapPresets = {
         "piste:type": "nordic"
       },
       "terms": [
-        "cross-country ski trail",
         "cross-country ski",
         "cross-country",
         "nordic ski trail",
@@ -5975,7 +5790,6 @@ iD.data.npmapPresets = {
         "piste:type": "sleigh"
       },
       "terms": [
-        "dog sled trail",
         "dog sled",
         "mushing trail",
         "mushing",
@@ -6014,7 +5828,6 @@ iD.data.npmapPresets = {
         "piste:type": "downhill"
       },
       "terms": [
-        "downhill ski trail",
         "downhill ski",
         "downhill",
         "alpine ski trail",
@@ -6061,12 +5874,13 @@ iD.data.npmapPresets = {
         "horse riding",
         "horse",
         "trail",
-        "track"
+        "track",
+        "pack and saddle"
       ],
       "searchable": true
     },
-    "trail/non-motorized/path": {
-      "name": "Path",
+    "trail/non-motorized/pedestrian path": {
+      "name": "Pedestrian Path",
       "fields": [
         "name",
         "nps/unitcode",
@@ -6088,7 +5902,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "footway",
-        "pedestrian path",
         "pedestrian trail"
       ],
       "searchable": true
@@ -6117,7 +5930,6 @@ iD.data.npmapPresets = {
         "footway": "sidewalk"
       },
       "terms": [
-        "sidewalk",
         "footway"
       ],
       "searchable": true
@@ -6151,7 +5963,6 @@ iD.data.npmapPresets = {
         "piste:type": "hike"
       },
       "terms": [
-        "snowshoe trail",
         "snowshoe",
         "trail",
         "track"
@@ -6179,8 +5990,7 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "stairs",
-        "staircase",
-        "steps"
+        "staircase"
       ],
       "searchable": true
     },
@@ -6213,14 +6023,20 @@ iD.data.npmapPresets = {
         "highway": "path"
       },
       "terms": [
-        "trail",
         "path",
         "track",
         "hike",
         "hiking",
         "trackway",
         "walk",
-        "footpath"
+        "foot",
+        "footpath",
+        "hiker/pedestrian",
+        "non-motorized",
+        "social trail",
+        "animal trail",
+        "human use (social)",
+        "non-human use (animal)"
       ],
       "searchable": true
     },
@@ -6268,7 +6084,6 @@ iD.data.npmapPresets = {
         "waterway": "*"
       },
       "terms": [
-        "motorized watercraft trail",
         "motorized watercraft",
         "motorboat",
         "trail",
@@ -6299,7 +6114,6 @@ iD.data.npmapPresets = {
         "waterway": "*"
       },
       "terms": [
-        "non-motorized watercraft trail",
         "non-motorized watercraft",
         "canoe",
         "kayak",
@@ -6331,7 +6145,6 @@ iD.data.npmapPresets = {
         "leisure": "slipway"
       },
       "terms": [
-        "boat launch",
         "slipway",
         "boat ramp"
       ],
@@ -6383,9 +6196,6 @@ iD.data.npmapPresets = {
       "tags": {
         "seamark:type": "anchorage"
       },
-      "terms": [
-        "anchorage"
-      ],
       "searchable": true
     },
     "water recreation/boat/buoy": {
@@ -6402,9 +6212,6 @@ iD.data.npmapPresets = {
       "tags": {
         "man_made": "buoy"
       },
-      "terms": [
-        "buoy"
-      ],
       "searchable": true
     },
     "water recreation/boat/marina": {
@@ -6428,7 +6235,6 @@ iD.data.npmapPresets = {
         "leisure": "marina"
       },
       "terms": [
-        "marina",
         "harbour",
         "harbor"
       ],
@@ -6448,9 +6254,6 @@ iD.data.npmapPresets = {
       "tags": {
         "mooring": "*"
       },
-      "terms": [
-        "mooring"
-      ],
       "searchable": true
     },
     "water recreation/boat/sailing": {
@@ -6469,9 +6272,6 @@ iD.data.npmapPresets = {
       "tags": {
         "sport": "sailing"
       },
-      "terms": [
-        "sailing"
-      ],
       "searchable": true
     },
     "water recreation/boat/zebra mussel decontamination station": {
@@ -6489,9 +6289,6 @@ iD.data.npmapPresets = {
         "amenity": "boat_wash",
         "type": "zebra_mussel"
       },
-      "terms": [
-        "zebra mussel decontamination station"
-      ],
       "searchable": true
     },
     "water recreation/fishing/fish cleaning": {
@@ -6508,9 +6305,6 @@ iD.data.npmapPresets = {
       "tags": {
         "amenity": "fish_cleaning"
       },
-      "terms": [
-        "fish cleaning"
-      ],
       "searchable": true
     },
     "water recreation/fishing/fish hatchery": {
@@ -6527,9 +6321,6 @@ iD.data.npmapPresets = {
       "tags": {
         "landuse": "aquaculture"
       },
-      "terms": [
-        "fish hatchery"
-      ],
       "searchable": true
     },
     "water recreation/fishing/fishing": {
@@ -6548,9 +6339,6 @@ iD.data.npmapPresets = {
       "tags": {
         "leisure": "fishing"
       },
-      "terms": [
-        "fishing"
-      ],
       "searchable": true
     },
     "water recreation/lighthouse/lighthouse": {
@@ -6567,9 +6355,6 @@ iD.data.npmapPresets = {
       "tags": {
         "man_made": "lighthouse"
       },
-      "terms": [
-        "lighthouse"
-      ],
       "searchable": true
     },
     "water recreation/scuba/scuba diving": {
@@ -6588,9 +6373,6 @@ iD.data.npmapPresets = {
       "tags": {
         "sport": "scuba_diving"
       },
-      "terms": [
-        "scuba diving"
-      ],
       "searchable": true
     },
     "water recreation/swimming/swimming area": {
@@ -6609,9 +6391,6 @@ iD.data.npmapPresets = {
       "tags": {
         "sport": "swimming"
       },
-      "terms": [
-        "swimming area"
-      ],
       "searchable": true
     },
     "water recreation/windsurfing/windsurfing area": {
@@ -6664,7 +6443,6 @@ iD.data.npmapPresets = {
         "piste:type": "nordic"
       },
       "terms": [
-        "cross-country ski trail",
         "cross-country ski",
         "cross-country",
         "nordic ski trail",
@@ -6703,7 +6481,6 @@ iD.data.npmapPresets = {
         "piste:type": "sleigh"
       },
       "terms": [
-        "dog sled trail",
         "dog sled",
         "mushing trail",
         "mushing",
@@ -6740,7 +6517,6 @@ iD.data.npmapPresets = {
         "piste:type": "skitour"
       },
       "terms": [
-        "backcountry ski trail",
         "backcountry ski",
         "backcountry",
         "trail",
@@ -6778,7 +6554,6 @@ iD.data.npmapPresets = {
         "piste:type": "downhill"
       },
       "terms": [
-        "downhill ski trail",
         "downhill ski",
         "downhill",
         "alpine ski trail",
@@ -6811,7 +6586,6 @@ iD.data.npmapPresets = {
         "leisure": "ice_rink"
       },
       "terms": [
-        "ice rink",
         "hockey",
         "skating",
         "curling"
@@ -6847,7 +6621,6 @@ iD.data.npmapPresets = {
         "piste:type": "sled"
       },
       "terms": [
-        "sledding",
         "sled"
       ],
       "searchable": true
@@ -6882,7 +6655,6 @@ iD.data.npmapPresets = {
         "snowmobile": "*"
       },
       "terms": [
-        "snowmobile trail",
         "snowmobile",
         "snow machine",
         "trail",
@@ -6917,7 +6689,6 @@ iD.data.npmapPresets = {
         "piste:type": "hike"
       },
       "terms": [
-        "snowshoe trail",
         "snowshoe",
         "trail",
         "track"
@@ -7035,10 +6806,19 @@ iD.data.npmapPresets = {
         "service/shopping/store",
         "service/fuel/gas station",
         "service/telephone/telephone",
-        "service/water/drinking water",
+        "service/water/potable water",
         "service/waste/litter receptacle"
       ],
       "icon": "ranger-station-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-area-service": {
+      "geometry": "area",
+      "displayName": "Service",
+      "members": [
+        "service/parking/parking lot"
+      ],
+      "icon": "parking-black",
       "maki": "npmap-symbol-library"
     },
     "category-vertex-service": {
@@ -7056,7 +6836,7 @@ iD.data.npmapPresets = {
       "members": [
         "trail/non-motorized/trail",
         "trail/motorized/motorized trail",
-        "trail/non-motorized/path",
+        "trail/non-motorized/pedestrian path",
         "trail/non-motorized/sidewalk",
         "trail/non-motorized/steps"
       ],
@@ -7097,6 +6877,7 @@ iD.data.npmapPresets = {
       "land recreation/trail/trailhead"
     ],
     "area": [
+      "service/parking/parking lot",
       "building/building/building footprint",
       "parking/parking/parking lot"
     ],
