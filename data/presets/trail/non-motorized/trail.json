@@ -32,13 +32,19 @@
     "highway": "path"
   },
   "terms": [
-    "trail",
     "path",
     "track",
     "hike",
     "hiking",
     "trackway",
     "walk",
-    "footpath"
+    "foot",
+    "footpath",
+    "hiker/pedestrian",
+    "non-motorized",
+    "social trail",
+    "animal trail",
+    "human use (social)",
+    "non-human use (animal)"
   ]
 }

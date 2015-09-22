@@ -18,8 +18,7 @@
     "nps/structure"
   ],
   "geometry": [
-    "point",
-    "line"
+    "point"
   ],
   "icon": "All-terrain trail",
   "maki": "npmap-symbol-library",

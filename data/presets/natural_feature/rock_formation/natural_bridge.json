@@ -1,6 +1,6 @@
 {
   "name": "Natural Bridge",
-  "path": "Natural_Feature--Arch--Natural_Bridge",
+  "path": "Natural_Feature--Rock_Formation--Natural_Bridge",
   "fields": [
     "name",
     "nps/unitcode"
@@ -16,11 +16,10 @@
   "inEditor": true,
   "tags": {
     "natural": "arch",
-    "arch_type": "Natural Bridge"
+    "arch_type": "natural_bridge"
   },
   "terms": [
     "bridge",
-    "natural bridge",
     "land bridge"
   ]
 }

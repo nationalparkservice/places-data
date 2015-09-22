@@ -19,8 +19,5 @@
     "tourism": "information",
     "information": "sign",
     "sign:type": "directional"
-  },
-  "terms": [
-    "directional sign"
-  ]
+  }
 }
