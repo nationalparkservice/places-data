@@ -67,7 +67,7 @@ var toSql = function () {
             for (var subcategory in inputJson[category].subcategories) {
               for (var key in inputJson[category].subcategories[subcategory].tags) {
                 item = inputJson[category].subcategories[subcategory].tags[key];
-                columns = ['category', 'subcategory'];
+                columns = ['superclass', 'class'];
                 values = [
                   format({
                     'type': 'string',
