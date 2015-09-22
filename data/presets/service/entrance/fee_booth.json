@@ -1,0 +1,28 @@
+{
+  "name": "Fee Booth",
+  "path": "Service--Entrance--Fee_Booth",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "barrier": "toll_booth"
+  },
+  "terms": [
+    "fee",
+    "toll",
+    "toll booth"
+  ]
+}

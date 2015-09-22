@@ -1,9 +1,12 @@
 {
-  "name": "Arch",
-  "path": "Natural_Feature--Arch--Arch",
+  "name": "Laundry",
+  "path": "Service--Laundry--Laundry",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
   ],
   "geometry": [
     "point"
@@ -15,10 +18,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch"
-  },
-  "terms": [
-    "arch",
-    "sea arch"
-  ]
+    "shop": "laundry"
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Backcountry Campsite",
-  "path": "Land_Recreation--Camping--Backcountry_Campsite",
+  "name": "Primitive Camping",
+  "path": "Land_Recreation--Camping--Primitive_Camping",
   "fields": [
     "name",
     "nps/unitcode",

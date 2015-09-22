@@ -17,8 +17,5 @@
   "tags": {
     "amenity": "parking",
     "capacity:charging": "*"
-  },
-  "terms": [
-    "electric vehicle parking"
-  ]
+  }
 }

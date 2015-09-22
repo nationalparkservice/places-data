@@ -1,6 +1,6 @@
 {
-  "name": "Drinking Water",
-  "path": "Service--Water--Drinking_Water",
+  "name": "Potable Water",
+  "path": "Service--Water--Potable_Water",
   "fields": [
     "name",
     "nps/unitcode",

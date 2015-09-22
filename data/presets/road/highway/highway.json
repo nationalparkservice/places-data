@@ -20,6 +20,10 @@
     "highway": "motorway"
   },
   "terms": [
-    "highway"
+    "freeway",
+    "turnpike",
+    "motorway",
+    "interstate",
+    "interstate highway"
   ]
 }

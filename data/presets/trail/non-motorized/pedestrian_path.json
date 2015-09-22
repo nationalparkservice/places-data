@@ -1,6 +1,6 @@
 {
-  "name": "Path",
-  "path": "Trail--Non-Motorized--Path",
+  "name": "Pedestrian Path",
+  "path": "Trail--Non-Motorized--Pedestrian_Path",
   "fields": [
     "name",
     "nps/unitcode",
@@ -26,7 +26,6 @@
   },
   "terms": [
     "footway",
-    "pedestrian path",
     "pedestrian trail"
   ]
 }

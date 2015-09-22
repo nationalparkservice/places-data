@@ -20,6 +20,10 @@
     "highway": "motorway_link"
   },
   "terms": [
-    "highway"
+    "freeway ramp",
+    "highway ramp",
+    "ramp",
+    "on ramp",
+    "off ramp"
   ]
 }

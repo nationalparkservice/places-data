@@ -30,11 +30,11 @@
     "highway": "primary"
   },
   "terms": [
-    "primary road",
     "primary",
     "road",
     "highway",
-    "interstate",
-    "interstate highway"
+    "us highway",
+    "state highway",
+    "state route"
   ]
 }

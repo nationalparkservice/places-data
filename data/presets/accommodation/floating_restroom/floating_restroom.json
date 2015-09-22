@@ -27,8 +27,5 @@
   "tags": {
     "amenity": "toilets",
     "type": "floating"
-  },
-  "terms": [
-    "floating restroom"
-  ]
+  }
 }

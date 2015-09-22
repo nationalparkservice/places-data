@@ -23,8 +23,5 @@
   "tags": {
     "highway": "service",
     "service": "parking_aisle"
-  },
-  "terms": [
-    "parking aisle"
-  ]
+  }
 }

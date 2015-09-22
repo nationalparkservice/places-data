@@ -1,0 +1,20 @@
+{
+  "name": "Hoodoo",
+  "path": "Natural_Feature--Rock_Formation--Hoodoo",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "error": "error"
+  }
+}
