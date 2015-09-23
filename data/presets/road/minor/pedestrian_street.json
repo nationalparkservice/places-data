@@ -8,7 +8,7 @@
     "lit",
     "width",
     "oneway",
-    "structure",
+    "nps/structure",
     "access"
   ],
   "geometry": [

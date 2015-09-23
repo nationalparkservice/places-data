@@ -7,7 +7,7 @@
     "surface",
     "lit",
     "width",
-    "structure",
+    "nps/structure",
     "access"
   ],
   "geometry": [
