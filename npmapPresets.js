@@ -4011,7 +4011,7 @@ iD.data.npmapPresets = {
         "lit",
         "width",
         "oneway",
-        "structure",
+        "nps/structure",
         "access"
       ],
       "geometry": [
@@ -5886,7 +5886,7 @@ iD.data.npmapPresets = {
         "surface",
         "lit",
         "width",
-        "structure",
+        "nps/structure",
         "access"
       ],
       "geometry": [
