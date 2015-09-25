@@ -14,7 +14,7 @@
   "icon": "self-guiding-trail-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 60,
-  "defaultOrder": 18,
+  "defaultOrder": 10,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
