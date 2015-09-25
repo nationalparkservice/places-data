@@ -390,7 +390,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "defaultOrder": 9,
+      "defaultOrder": 1,
       "matchScore": 1,
       "tags": {
         "building": "office",
@@ -443,7 +443,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
-      "defaultOrder": 11,
+      "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
         "building": "office"
@@ -576,7 +576,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "defaultOrder": 12,
+      "defaultOrder": 5,
       "matchScore": 1,
       "tags": {
         "historic": "building",
@@ -779,7 +779,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": null,
+      "defaultOrder": 2,
       "matchScore": 1,
       "tags": {
         "tourism": "alpine_hut"
@@ -805,7 +805,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 10,
+      "defaultOrder": 3,
       "matchScore": 1,
       "tags": {
         "tourism": "hotel"
@@ -1301,7 +1301,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 19,
+      "defaultOrder": 11,
       "matchScore": 1,
       "tags": {
         "tourism": "information"
@@ -1748,7 +1748,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campsite-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 13,
+      "defaultOrder": 6,
       "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
@@ -1859,7 +1859,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rv-campground-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 17,
+      "defaultOrder": 9,
       "matchScore": 1,
       "tags": {
         "tourism": "camp_site",
@@ -2055,7 +2055,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "picnic-area-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 15,
+      "defaultOrder": 7,
       "matchScore": 1,
       "tags": {
         "tourism": "picnic_site"
@@ -2075,7 +2075,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "defaultOrder": 16,
+      "defaultOrder": 8,
       "matchScore": 1,
       "tags": {
         "leisure": "picnic_table"
@@ -2187,7 +2187,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "self-guiding-trail-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 18,
+      "defaultOrder": 10,
       "matchScore": 1,
       "tags": {
         "tourism": "information",
@@ -3925,7 +3925,15 @@ iD.data.npmapPresets = {
       "name": "Highway",
       "fields": [
         "name",
-        "nps/unitcode"
+        "nps/unitcode",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "nps/trailuse",
+        "nps/structure"
       ],
       "geometry": [
         "line"
@@ -3950,7 +3958,14 @@ iD.data.npmapPresets = {
       "name": "Highway Link",
       "fields": [
         "name",
-        "nps/unitcode"
+        "nps/unitcode",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "nps/trailuse",
+        "nps/structure"
       ],
       "geometry": [
         "line"
@@ -4692,7 +4707,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "food-service-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 20,
+      "defaultOrder": 12,
       "matchScore": 1,
       "tags": {
         "amenity": "food_court"
@@ -4718,7 +4733,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "gas-station-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 22,
+      "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
         "amenity": "fuel"
@@ -4951,7 +4966,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 21,
+      "defaultOrder": 13,
       "matchScore": 1,
       "tags": {
         "shop": "general"
@@ -5197,7 +5212,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 23,
+      "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
         "amenity": "telephone"
@@ -5270,7 +5285,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "litter-receptacle-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 25,
+      "defaultOrder": 17,
       "matchScore": 1,
       "tags": {
         "amenity": "waste_basket"
@@ -5357,7 +5372,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "drinking-water-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 24,
+      "defaultOrder": 16,
       "matchScore": 1,
       "tags": {
         "amenity": "drinking_water"
@@ -6138,7 +6153,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 26,
+      "defaultOrder": 18,
       "matchScore": 1,
       "tags": {
         "leisure": "slipway"
@@ -6228,7 +6243,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 28,
+      "defaultOrder": 20,
       "matchScore": 1,
       "tags": {
         "leisure": "marina"
@@ -6333,7 +6348,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 27,
+      "defaultOrder": 19,
       "matchScore": 1,
       "tags": {
         "leisure": "fishing"
@@ -6726,6 +6741,7 @@ iD.data.npmapPresets = {
       "displayName": "Building",
       "members": [
         "building/commercial/headquarters",
+        "building/residential/lodge",
         "building/residential/lodging",
         "building/commercial/office",
         "building/historic/historic building"
