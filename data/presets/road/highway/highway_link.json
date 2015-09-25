@@ -3,7 +3,14 @@
   "path": "Road--Highway--Highway_Link",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator",
+    "surface",
+    "width",
+    "maxspeed",
+    "oneway",
+    "nps/trailuse",
+    "nps/structure"
   ],
   "geometry": [
     "line"

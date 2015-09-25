@@ -3,7 +3,15 @@
   "path": "Road--Highway--Highway",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator",
+    "surface",
+    "width",
+    "maxspeed",
+    "oneway",
+    "lanes",
+    "nps/trailuse",
+    "nps/structure"
   ],
   "geometry": [
     "line"

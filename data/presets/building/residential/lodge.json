@@ -14,7 +14,7 @@
   "icon": "lodging-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 70,
-  "defaultOrder": null,
+  "defaultOrder": 2,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
