@@ -20,7 +20,7 @@
   "icon": "restrooms-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": -8,
+  "defaultOrder": -1,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
