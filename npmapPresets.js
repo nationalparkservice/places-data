@@ -69,7 +69,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "restrooms-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -8,
+      "defaultOrder": -1,
       "matchScore": 1,
       "tags": {
         "amenity": "toilets"
@@ -1533,7 +1533,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "visitor-center-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -1,
+      "defaultOrder": -8,
       "matchScore": 1,
       "tags": {
         "tourism": "information",
@@ -1725,7 +1725,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campground-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -3,
+      "defaultOrder": -6,
       "matchScore": 1,
       "tags": {
         "tourism": "camp_site"
@@ -2271,7 +2271,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -5,
+      "defaultOrder": -4,
       "matchScore": 1,
       "tags": {
         "highway": "trailhead"
@@ -2295,7 +2295,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marker",
       "maki": "maki",
-      "defaultOrder": -4,
+      "defaultOrder": -5,
       "matchScore": 1,
       "tags": {
         "place": "locality"
@@ -4635,7 +4635,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ranger-station-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -2,
+      "defaultOrder": -7,
       "matchScore": 1,
       "tags": {
         "barrier": "entrance"
@@ -4827,7 +4827,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "parking-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -6,
+      "defaultOrder": -3,
       "matchScore": 1,
       "tags": {
         "amenity": "parking"
@@ -5184,7 +5184,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ranger-station-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": -7,
+      "defaultOrder": -2,
       "matchScore": 1,
       "tags": {
         "amenity": "ranger_station"
@@ -6768,7 +6768,7 @@ iD.data.npmapPresets = {
         "land recreation/camping/rv campground",
         "land recreation/trail/self guiding trail"
       ],
-      "icon": "trailhead-black",
+      "icon": "campground-black",
       "maki": "npmap-symbol-library"
     },
     "category-vertex-land recreation": {
@@ -6863,14 +6863,14 @@ iD.data.npmapPresets = {
   },
   "defaults": {
     "point": [
-      "accommodation/restroom/restroom",
-      "service/support/ranger station",
-      "service/parking/parking lot",
-      "land recreation/trail/trailhead",
-      "locality/region/park district",
-      "land recreation/camping/campground",
-      "service/entrance/entrance station",
       "information/visitor center/visitor center",
+      "service/entrance/entrance station",
+      "land recreation/camping/campground",
+      "locality/region/park district",
+      "land recreation/trail/trailhead",
+      "service/parking/parking lot",
+      "service/support/ranger station",
+      "accommodation/restroom/restroom",
       "category-point-building",
       "category-point-land recreation",
       "category-point-information",
@@ -6879,9 +6879,9 @@ iD.data.npmapPresets = {
       "information/information/information"
     ],
     "vertex": [
-      "accommodation/restroom/restroom",
+      "land recreation/trail/trailhead",
       "service/parking/parking lot",
-      "land recreation/trail/trailhead"
+      "accommodation/restroom/restroom"
     ],
     "area": [
       "building/building/building footprint",
