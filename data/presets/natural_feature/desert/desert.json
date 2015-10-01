@@ -1,6 +1,6 @@
 {
-  "name": "Grassland (Plain)",
-  "path": "Natural_Feature--Grassland--Grassland_(Plain)",
+  "name": "Desert",
+  "path": "Natural_Feature--Desert--Desert",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,13 +15,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "grassland"
-  },
-  "terms": [
-    "grassland",
-    "plain",
-    "highland",
-    "kula",
-    "upland"
-  ]
+    "natural": "desert"
+  }
 }

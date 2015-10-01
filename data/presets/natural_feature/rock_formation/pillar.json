@@ -1,10 +1,9 @@
 {
-  "name": "Populated Place",
-  "path": "Locality--Region--Populated_Place",
+  "name": "Pillar",
+  "path": "Natural_Feature--Rock_Formation--Pillar",
   "fields": [
     "name",
-    "nps/unitcode",
-    "population"
+    "nps/unitcode"
   ],
   "geometry": [
     "point"
@@ -16,13 +15,13 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "place": "hamlet"
+    "error": "error"
   },
   "terms": [
-    "city",
-    "hamlet",
-    "neighborhood",
-    "place",
-    "town"
+    "chimney",
+    "monument",
+    "pinnacle",
+    "pohaku",
+    "rock tower"
   ]
 }

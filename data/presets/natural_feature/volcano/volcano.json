@@ -1,6 +1,6 @@
 {
-  "name": "Volcano (Crater)",
-  "path": "Natural_Feature--Volcano--Volcano_(Crater)",
+  "name": "Volcano",
+  "path": "Natural_Feature--Volcano--Volcano",
   "fields": [
     "name",
     "nps/unitcode",
@@ -23,8 +23,13 @@
     "natural": "volcano"
   },
   "terms": [
-    "volcano",
+    "caldera",
+    "cinder cone",
+    "composite",
+    "composite volcano",
     "crater",
-    "caldera"
+    "fumarole",
+    "shield",
+    "shield volcano"
   ]
 }
