@@ -1,10 +1,9 @@
 {
-  "name": "Windmill",
-  "path": "Miscellaneous--Structure--Windmill",
+  "name": "Canyon",
+  "path": "Natural_Feature--Valley--Canyon",
   "fields": [
     "name",
-    "nps/unitcode",
-    "operator"
+    "nps/unitcode"
   ],
   "geometry": [
     "point"
@@ -16,6 +15,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "man_made": "windmill"
+    "error": "error"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "Natural Bridge",
-  "path": "Natural_Feature--Rock_Formation--Natural_Bridge",
+  "name": "Locale",
+  "path": "Locality--Region--Locale",
   "fields": [
     "name",
     "nps/unitcode"
@@ -8,18 +8,22 @@
   "geometry": [
     "point"
   ],
+  "icon": "marker",
+  "maki": "maki",
   "layerIndex": 10,
-  "defaultOrder": null,
+  "defaultOrder": -5,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "arch",
-    "arch_type": "natural_bridge"
+    "place": "locality"
   },
   "terms": [
-    "bridge",
-    "land bridge"
+    "locale",
+    "locality",
+    "location",
+    "place",
+    "area"
   ]
 }

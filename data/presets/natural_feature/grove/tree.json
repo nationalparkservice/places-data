@@ -1,6 +1,6 @@
 {
-  "name": "Hoodoo",
-  "path": "Natural_Feature--Rock_Formation--Hoodoo",
+  "name": "Tree",
+  "path": "Natural_Feature--Grove--Tree",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,6 +15,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "error": "error"
+    "natural": "tree"
   }
 }

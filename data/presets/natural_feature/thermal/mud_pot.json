@@ -1,6 +1,6 @@
 {
-  "name": "Tree",
-  "path": "Natural_Feature--Tree--Tree",
+  "name": "Mud Pot",
+  "path": "Natural_Feature--Thermal--Mud_Pot",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,6 +15,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "tree"
+    "error": "error"
   }
 }

@@ -16,5 +16,12 @@
   "inEditor": true,
   "tags": {
     "landuse": "basin"
-  }
+  },
+  "terms": [
+    "cirque",
+    "hole",
+    "pit",
+    "sink",
+    "sinkhole"
+  ]
 }
