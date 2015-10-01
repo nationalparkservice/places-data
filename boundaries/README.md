@@ -74,7 +74,25 @@ The `places_boundaries` database lives on internal NPS servers. To connect to th
 - Under `Databases` you'll find the `places_boundaries` database.
 - Under `Schemas > public > Tables` you'll find our `boundaries` table that holds all the information used to style NPS boundaries in Park Tiles.
 
-### PostGIS Table: `boundaries`
+### QGIS
+It can be helpful to look at our PostGIS tables through QGIS to see what these geometries look like on a map. To connect to our database through QGIS follow these steps:
+
+- Tunnel into our server (see steps above)
+- Open QGIS
+- Click the "Add PostGIS Layers" button on the left tool panel (elephant icon)
+- In the **Add PostGIS Tables(s)** window, click the **New** button.
+  - Name: places_boundaries
+  - Service: *leave blank*
+  - Host: localhost
+  - Port: 5432
+  - Database: postgres
+  - SSL mode: *leave as 'disable'*
+  - Username: postgres
+  - Password: postgres
+
+- Connect, find table, point to geometry column, add (flush out these instructions a bit more)
+
+### PostGIS Table: `places_boundaries`
 
 Our `places-boundaries` database holds a master table, `boundaries`, from which our boundaries data source is published. The `boundaries` table stores the following fields:
 
