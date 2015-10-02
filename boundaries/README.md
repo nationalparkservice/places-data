@@ -85,12 +85,16 @@ It can be helpful to look at our PostGIS tables through QGIS to see what these g
   - Service: *leave blank*
   - Host: localhost
   - Port: 5432
-  - Database: postgres
+  - Database: places_boundaries
   - SSL mode: *leave as 'disable'*
   - Username: postgres
   - Password: postgres
 
-- Connect, find table, point to geometry column, add (flush out these instructions a bit more)
+- Click **Connect** to see the contents of the DB (you'll have to expand `public` to see your list of connection options.
+- Note: QGIS may show different version of the same table if it thinks there are different geometry columns. You'll need to be pretty particular in your selection here. In this example, we'll select the boundaries table using `geom_point` as it's geometry field.
+- Select the record `boundaries` table with Column:`geom_point` and Spatial Type:`Multipolygon`.
+- With the record selected, click the **Add** button at the bottom left of the window.
+- The added layer works like any other. You can toggle Edit mode to move geometries and change attributes. Note: To edit a PostGIS layer, the original table must have a primary key set. Also, QGIS does not support tracking multi-user editing – whoever saves first wins.
 
 ### PostGIS Table: `places_boundaries`
 
