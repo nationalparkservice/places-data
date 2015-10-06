@@ -29,15 +29,15 @@
     "amenity": "toilets"
   },
   "terms": [
-    "toilets",
-    "toilet",
-    "privy",
-    "head",
     "bathroom",
-    "lavatory",
-    "wc",
-    "water closet",
+    "head",
     "latrine",
-    "outhouse"
+    "lavatory",
+    "outhouse",
+    "privy",
+    "toilet",
+    "toilets",
+    "water closet",
+    "wc"
   ]
 }
