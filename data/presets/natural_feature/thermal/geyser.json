@@ -1,6 +1,6 @@
 {
-  "name": "Zebra Mussel Decontamination Station",
-  "path": "Water_Recreation--Boat--Zebra_Mussel_Decontamination_Station",
+  "name": "Geyser",
+  "path": "Natural_Feature--Thermal--Geyser",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,7 +15,13 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "boat_wash",
-    "type": "zebra_mussel"
-  }
+    "natural": "geyser"
+  },
+  "terms": [
+    "gusher",
+    "spout",
+    "hot spring",
+    "thermal geyser",
+    "thermal spring"
+  ]
 }

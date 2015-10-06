@@ -17,5 +17,10 @@
   "tags": {
     "building": "*",
     "amenity": "education_centre"
-  }
+  },
+  "terms": [
+    "education",
+    "learning",
+    "learning center"
+  ]
 }
