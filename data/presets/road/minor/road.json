@@ -20,6 +20,7 @@
     "highway": "*"
   },
   "terms": [
-    "minor road"
+    "minor road",
+    "street"
   ]
 }

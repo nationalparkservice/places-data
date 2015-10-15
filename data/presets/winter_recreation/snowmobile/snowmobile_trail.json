@@ -1,0 +1,44 @@
+{
+  "name": "Snowmobile Trail",
+  "path": "Winter_Recreation--Snowmobile--Snowmobile_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/trailuse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "snowmobile-trail-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "highway": "track",
+    "snowmobile": "*"
+  },
+  "terms": [
+    "snowmachine",
+    "snowmachine trail",
+    "snowmobile",
+    "snow machine",
+    "snow machine trail",
+    "trail",
+    "track"
+  ]
+}

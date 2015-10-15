@@ -1,0 +1,27 @@
+{
+  "name": "Plain",
+  "path": "Natural_Feature--Plain--Plain",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "grassland",
+    "grassland_type": "plain"
+  },
+  "terms": [
+    "highland",
+    "kula",
+    "meadow",
+    "upland"
+  ]
+}

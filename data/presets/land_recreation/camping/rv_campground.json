@@ -26,8 +26,12 @@
     "caravans": "*"
   },
   "terms": [
-    "campsite",
-    "camp_site",
-    "motorhome park"
+    "campground",
+    "campervan park",
+    "motorcoach park",
+    "motorhome park",
+    "rv",
+    "rv pad",
+    "rv park"
   ]
 }

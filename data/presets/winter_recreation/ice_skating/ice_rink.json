@@ -1,0 +1,36 @@
+{
+  "name": "Ice Rink",
+  "path": "Winter_Recreation--Ice_Skating--Ice_Rink",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "seasonal",
+    "sport"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "ice-skating-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "leisure": "ice_rink"
+  },
+  "terms": [
+    "curling",
+    "hockey",
+    "hockey rink",
+    "ice skating",
+    "ice skating area",
+    "rink",
+    "skating"
+  ]
+}

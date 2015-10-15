@@ -1,0 +1,39 @@
+{
+  "name": "Unmaintained Route",
+  "path": "Trail--Unmaintained--Unmaintained_Route",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "highway": "path",
+    "mainenance": "no"
+  },
+  "terms": [
+    "unmaintained",
+    "path",
+    "trail",
+    "route"
+  ]
+}

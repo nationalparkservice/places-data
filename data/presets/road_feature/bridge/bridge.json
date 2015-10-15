@@ -18,5 +18,10 @@
   "inEditor": true,
   "tags": {
     "bridge": "*"
-  }
+  },
+  "terms": [
+    "aqueduct",
+    "overpass",
+    "viaduct"
+  ]
 }

@@ -23,9 +23,15 @@
     "tourism": "hotel"
   },
   "terms": [
+    "guest house",
+    "guesthouse",
+    "hostel",
     "hotel",
+    "inn",
     "motel",
+    "public cabin",
     "public use cabin",
+    "puc",
     "resort"
   ]
 }

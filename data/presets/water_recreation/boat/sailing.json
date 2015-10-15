@@ -1,0 +1,27 @@
+{
+  "name": "Sailing",
+  "path": "Water_Recreation--Boat--Sailing",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "sailing-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "sport": "sailing"
+  },
+  "terms": [
+    "sail",
+    "sailing area",
+    "sail area"
+  ]
+}

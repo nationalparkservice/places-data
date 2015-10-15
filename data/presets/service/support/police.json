@@ -23,16 +23,16 @@
     "amenity": "police"
   },
   "terms": [
-    "police station",
-    "cops",
-    "police force",
     "badge",
     "constable",
+    "cops",
     "detective",
     "fed",
     "law enforcement",
     "officer",
     "patrol",
+    "police force",
+    "police station",
     "emergency"
   ]
 }

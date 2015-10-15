@@ -1,0 +1,24 @@
+{
+  "name": "Buoy",
+  "path": "Water_Recreation--Boat--Buoy",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "man_made": "buoy"
+  },
+  "terms": [
+    "float",
+    "navigation aid"
+  ]
+}

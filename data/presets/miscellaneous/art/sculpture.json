@@ -17,5 +17,8 @@
   "tags": {
     "tourism": "artwork",
     "artwork_type": "statue"
-  }
+  },
+  "terms": [
+    "art"
+  ]
 }

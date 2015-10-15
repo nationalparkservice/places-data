@@ -1,0 +1,25 @@
+{
+  "name": "Railroad",
+  "path": "Railroad--Railroad--Railroad",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "railway": "rail"
+  },
+  "terms": [
+    "rail",
+    "train"
+  ]
+}

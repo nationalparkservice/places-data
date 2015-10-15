@@ -26,6 +26,8 @@
     "highway": "pedestrian"
   },
   "terms": [
-    "pedestrian road"
+    "pedestrian road",
+    "road",
+    "street"
   ]
 }

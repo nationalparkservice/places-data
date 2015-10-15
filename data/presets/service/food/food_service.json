@@ -23,9 +23,11 @@
     "amenity": "food_court"
   },
   "terms": [
-    "food court",
     "cafe",
+    "food",
+    "food court",
     "restaurant",
+    "snacks",
     "snack bar"
   ]
 }

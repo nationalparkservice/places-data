@@ -1,0 +1,23 @@
+{
+  "name": "Totem Pole",
+  "path": "Miscellaneous--Art--Totem_Pole",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "man_made": "totem_pole"
+  },
+  "terms": [
+    "totem"
+  ]
+}

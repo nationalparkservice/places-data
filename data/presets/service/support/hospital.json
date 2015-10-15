@@ -24,17 +24,16 @@
     "amenity": "hospital"
   },
   "terms": [
+    "doctor",
+    "emergency room",
+    "health service",
     "hospital grounds",
-    "ward",
     "institution",
     "infirmary",
-    "clinic",
-    "emergency room",
-    "doctor",
-    "health service",
+    "medical",
     "sick",
     "surgery",
-    "medical",
+    "ward",
     "emergency"
   ]
 }

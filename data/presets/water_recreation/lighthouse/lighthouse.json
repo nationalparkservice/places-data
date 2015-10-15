@@ -1,6 +1,6 @@
 {
-  "name": "Prairie",
-  "path": "Natural_Feature--Prairie--Prairie",
+  "name": "Lighthouse",
+  "path": "Water_Recreation--Lighthouse--Lighthouse",
   "fields": [
     "name",
     "nps/unitcode"
@@ -15,11 +15,9 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "grassland",
-    "grassland": "prarie"
+    "man_made": "lighthouse"
   },
   "terms": [
-    "prarie",
-    "grassland"
+    "beacon"
   ]
 }

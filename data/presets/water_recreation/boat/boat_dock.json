@@ -1,0 +1,26 @@
+{
+  "name": "Boat Dock",
+  "path": "Water_Recreation--Boat--Boat_Dock",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "area"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "man_made": "pier",
+    "mooring": "yes"
+  },
+  "terms": [
+    "boat",
+    "dock",
+    "pier"
+  ]
+}}

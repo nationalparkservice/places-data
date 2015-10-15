@@ -21,5 +21,10 @@
   "inEditor": true,
   "tags": {
     "amenity": "ferry_terminal"
-  }
+  },
+  "terms": [
+    "ferry",
+    "terminal",
+    "boat terminal"
+  ]
 }

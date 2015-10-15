@@ -7,7 +7,7 @@
     "site_type"
   ],
   "geometry": [
-    "point"
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -25,4 +25,4 @@
     "hill fort",
     "trench"
   ]
-}
+}}

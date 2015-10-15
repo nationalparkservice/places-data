@@ -1,0 +1,25 @@
+{
+  "name": "Prairie",
+  "path": "Natural_Feature--Plain--Prairie",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "grassland",
+    "grassland": "prarie"
+  },
+  "terms": [
+    "savanna",
+    "steppe"
+  ]
+}

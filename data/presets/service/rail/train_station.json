@@ -23,6 +23,9 @@
     "building": "train_station"
   },
   "terms": [
-    "railway station"
+    "depot",
+    "railroad station",
+    "railway station",
+    "station"
   ]
 }

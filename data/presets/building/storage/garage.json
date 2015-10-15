@@ -21,5 +21,19 @@
   "inEditor": true,
   "tags": {
     "building": "garage"
-  }
+  },
+  "terms": [
+    "auto shop",
+    "boat house",
+    "bus barn",
+    "maintenance",
+    "maintenance barn",
+    "maintenance building",
+    "maintenance shop",
+    "mechanic shop",
+    "shop",
+    "utility",
+    "utility building",
+    "workshop"
+  ]
 }

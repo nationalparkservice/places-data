@@ -1,0 +1,27 @@
+{
+  "name": "Windsurfing Area",
+  "path": "Water_Recreation--Windsurfing--Windsurfing_Area",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "wind-surfing-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "sport": "windsurfing"
+  },
+  "terms": [
+    "windsurfing",
+    "wind surfing",
+    "wind surfing area"
+  ]
+}
