@@ -17,5 +17,12 @@
   "tags": {
     "amenity": "bicycle_parking",
     "bicycle_parking": "rack"
-  }
+  },
+  "terms": [
+    "bicycle parking",
+    "bicycle rack",
+    "bicycle stand",
+    "bike parking",
+    "bike stand"
+  ]
 }

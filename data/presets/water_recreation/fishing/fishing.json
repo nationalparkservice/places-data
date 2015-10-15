@@ -1,0 +1,22 @@
+{
+  "name": "Fishing",
+  "path": "Water_Recreation--Fishing--Fishing",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "fishing-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": 19,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "leisure": "fishing"
+  }
+}

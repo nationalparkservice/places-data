@@ -32,13 +32,14 @@
     "highway": "path"
   },
   "terms": [
-    "trail",
-    "path",
-    "track",
+    "footpath",
+    "footway",
     "hike",
     "hiking",
     "trackway",
     "walk",
-    "footpath"
+    "walkway",
+    "trail",
+    "path"
   ]
 }

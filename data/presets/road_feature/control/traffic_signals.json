@@ -22,9 +22,9 @@
     "highway": "traffic_signals"
   },
   "terms": [
-    "traffic signal",
-    "traffic light",
+    "stoplight",
     "stop light",
-    "stoplight"
+    "traffic light",
+    "traffic signal"
   ]
 }

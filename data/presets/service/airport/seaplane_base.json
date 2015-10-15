@@ -1,0 +1,29 @@
+{
+  "name": "Seaplane Base",
+  "path": "Service--Airport--Seaplane_Base",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "icao",
+    "iata"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "seamark:type": "seaplane_landing_area"
+  },
+  "terms": [
+    "airport",
+    "float landing",
+    "float plane"
+  ]
+}

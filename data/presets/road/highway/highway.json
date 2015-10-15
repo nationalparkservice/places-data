@@ -32,6 +32,7 @@
     "turnpike",
     "motorway",
     "interstate",
-    "interstate highway"
+    "interstate highway",
+    "road"
   ]
 }

@@ -19,5 +19,9 @@
     "tourism": "information",
     "information": "sign",
     "sign:type": "regulatory"
-  }
+  },
+  "terms": [
+    "sign",
+    "traffic law"
+  ]
 }

@@ -1,0 +1,38 @@
+{
+  "name": "Backcountry Ski Trail",
+  "path": "Winter_Recreation--Downing_Skiing--Backcountry_Ski_Trail",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "piste/difficulty"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "piste:type": "skitour"
+  },
+  "terms": [
+    "backcountry",
+    "backcountry ski",
+    "trail",
+    "track"
+  ]
+}

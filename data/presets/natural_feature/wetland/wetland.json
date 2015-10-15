@@ -18,5 +18,15 @@
   "inEditor": true,
   "tags": {
     "natural": "wetland"
-  }
+  },
+  "terms": [
+    "bayou",
+    "bogland",
+    "fen",
+    "fenland",
+    "morass",
+    "muskeg",
+    "quagmire",
+    "slough"
+  ]
 }

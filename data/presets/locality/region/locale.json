@@ -8,8 +8,6 @@
   "geometry": [
     "point"
   ],
-  "icon": "marker",
-  "maki": "maki",
   "layerIndex": 10,
   "defaultOrder": -5,
   "matchScore": 1,
@@ -20,10 +18,12 @@
     "place": "locality"
   },
   "terms": [
-    "locale",
+    "area",
+    "junction",
     "locality",
     "location",
     "place",
-    "area"
+    "placename",
+    "place name"
   ]
 }

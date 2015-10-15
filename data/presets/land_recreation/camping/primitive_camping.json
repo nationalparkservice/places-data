@@ -27,9 +27,11 @@
     "backcountry": "*"
   },
   "terms": [
-    "campsite",
-    "camp site",
+    "campground",
     "backcountry",
-    "primitive"
+    "backcountry camping",
+    "backcountry campsite",
+    "primitive",
+    "primitive campsite"
   ]
 }

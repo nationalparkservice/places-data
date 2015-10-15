@@ -1,0 +1,30 @@
+{
+  "name": "Gift Shop",
+  "path": "Service--Shopping--Gift_Shop",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "store-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "shop": "gift"
+  },
+  "terms": [
+    "gift",
+    "shop",
+    "shopping"
+  ]
+}

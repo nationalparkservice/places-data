@@ -22,8 +22,10 @@
     "amenity": "first_aid"
   },
   "terms": [
+    "clinic",
     "first aid",
     "medical",
+    "medical clinic",
     "emergency"
   ]
 }

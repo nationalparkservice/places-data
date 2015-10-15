@@ -1,0 +1,29 @@
+{
+  "name": "Water Access",
+  "path": "Water_Recreation--Access--Water_Access",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "whitewater",
+    "width",
+    "section_grade",
+    "nps/wateruse"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "water"
+  },
+  "terms": [
+    "water",
+    "access"
+  ]
+}

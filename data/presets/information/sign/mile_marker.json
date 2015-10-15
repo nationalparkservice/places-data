@@ -17,5 +17,9 @@
   "inEditor": true,
   "tags": {
     "highway": "milestone"
-  }
+  },
+  "terms": [
+    "marker",
+    "milepost"
+  ]
 }

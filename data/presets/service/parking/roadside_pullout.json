@@ -18,5 +18,15 @@
   "inEditor": true,
   "tags": {
     "highway": "rest_area"
-  }
+  },
+  "terms": [
+    "passing place",
+    "pullout",
+    "pull off",
+    "pull-off",
+    "roadside pull off",
+    "roadside pull-off",
+    "roadside turnout",
+    "turnout"
+  ]
 }

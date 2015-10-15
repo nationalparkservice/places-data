@@ -21,5 +21,9 @@
   "tags": {
     "building": "cabin",
     "historic": "*"
-  }
+  },
+  "terms": [
+    "historic",
+    "cabin"
+  ]
 }

@@ -1,0 +1,24 @@
+{
+  "name": "Fish Cleaning",
+  "path": "Water_Recreation--Fishing--Fish_Cleaning",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "amenity": "fish_cleaning"
+  },
+  "terms": [
+    "fish cleaning station",
+    "fish cleaning table"
+  ]
+}

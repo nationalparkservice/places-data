@@ -31,10 +31,10 @@
   },
   "terms": [
     "primary",
-    "road",
     "highway",
     "us highway",
     "state highway",
-    "state route"
+    "state route",
+    "road"
   ]
 }

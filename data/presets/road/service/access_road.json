@@ -31,8 +31,10 @@
     "highway": "service"
   },
   "terms": [
-    "service road",
+    "campground road",
     "service",
-    "road"
+    "service road",
+    "road",
+    "street"
   ]
 }

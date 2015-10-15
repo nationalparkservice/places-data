@@ -1,0 +1,27 @@
+{
+  "name": "Swimming Area",
+  "path": "Water_Recreation--Swimming--Swimming_Area",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "swimming-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "sport": "swimming"
+  },
+  "terms": [
+    "pool",
+    "swimming",
+    "swimming pool"
+  ]
+}

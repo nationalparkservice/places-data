@@ -17,5 +17,10 @@
   "tags": {
     "historic": "marker",
     "marker_type": "battlefield"
-  }
+  },
+  "terms": [
+    "historic",
+    "battlefield",
+    "marker"
+  ]
 }

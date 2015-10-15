@@ -26,11 +26,15 @@
     "amenity": "recycling"
   },
   "terms": [
-    "salvage",
-    "garbage",
-    "trash",
     "can",
     "bottle",
+    "glass",
+    "recycle",
+    "recycle center",
+    "recycle station",
+    "recycling center",
+    "recycling station",
+    "salvage",
     "scrap"
   ]
 }

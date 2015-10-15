@@ -1,0 +1,25 @@
+{
+  "name": "Zebra Mussel Decontamination Station",
+  "path": "Water_Recreation--Boat--Zebra_Mussel_Decontamination_Station",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "amenity": "boat_wash",
+    "type": "zebra_mussel"
+  },
+  "terms": [
+    "decontamination",
+    "decontamination station"
+  ]
+}

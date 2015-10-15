@@ -23,11 +23,11 @@
     "amenity": "post_office"
   },
   "terms": [
-    "mail office",
-    "post",
-    "mail",
     "letter",
+    "mail",
+    "mail office",
+    "package",
     "parcel",
-    "package"
+    "post"
   ]
 }

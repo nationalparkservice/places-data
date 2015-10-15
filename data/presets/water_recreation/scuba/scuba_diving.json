@@ -1,0 +1,26 @@
+{
+  "name": "Scuba Diving",
+  "path": "Water_Recreation--Scuba--Scuba_Diving",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "scuba-diving-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "sport": "scuba_diving"
+  },
+  "terms": [
+    "scuba",
+    "scuba diving area"
+  ]
+}

@@ -19,5 +19,8 @@
   "inEditor": true,
   "tags": {
     "man_made": "water_well"
-  }
+  },
+  "terms": [
+    "well"
+  ]
 }
