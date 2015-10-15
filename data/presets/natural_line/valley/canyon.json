@@ -1,0 +1,20 @@
+{
+  "name": "Canyon",
+  "path": "Natural_Line--Valley--Canyon",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "area"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "canyon"
+  }
+}
