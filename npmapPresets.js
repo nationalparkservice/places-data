@@ -265,7 +265,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "defaultOrder": -1,
+      "defaultOrder": 1,
       "matchScore": 1,
       "tags": {
         "building": "*"
@@ -703,7 +703,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "defaultOrder": 2,
+      "defaultOrder": 3,
       "matchScore": 1,
       "tags": {
         "historic": "archaeological_site",
@@ -4404,7 +4404,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "defaultOrder": 1,
+      "defaultOrder": 2,
       "matchScore": 1,
       "tags": {
         "amenity": "parking"
@@ -6116,7 +6116,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "defaultOrder": 3,
+      "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
         "man_made": "pier",
@@ -7599,6 +7599,7 @@ iD.data.npmapPresets = {
       "geometry": "area",
       "displayName": "Building",
       "members": [
+        "building/building/building footprint",
         "building/miscellaneous/fortification"
       ]
     },
@@ -7756,10 +7757,8 @@ iD.data.npmapPresets = {
       "accommodation/restroom/restroom"
     ],
     "area": [
-      "building/building/building footprint",
       "category-area-building",
       "parking/parking/parking lot",
-      "building/miscellaneous/fortification",
       "structure/recreation/boat dock"
     ],
     "line": [
