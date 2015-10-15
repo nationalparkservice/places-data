@@ -6,7 +6,7 @@
     "nps/unitcode"
   ],
   "geometry": [
-    "area"
+    "point"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -17,4 +17,4 @@
   "tags": {
     "natural": "canyon"
   }
-}}
+}
