@@ -1,0 +1,28 @@
+{
+  "name": "Fortification",
+  "path": "Building--Miscellaneous--Fortification",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "site_type"
+  ],
+  "geometry": [
+    "area"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "historic": "archaeological_site",
+    "site_type": "fortification"
+  },
+  "terms": [
+    "fort",
+    "earthworks",
+    "hill fort",
+    "trench"
+  ]
+}
