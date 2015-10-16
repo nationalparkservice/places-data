@@ -703,7 +703,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "defaultOrder": null,
+      "defaultOrder": 3,
       "matchScore": 1,
       "tags": {
         "historic": "archaeological_site",
@@ -4380,7 +4380,7 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "area"
+        "line"
       ],
       "defaultOrder": null,
       "matchScore": 1,
@@ -5340,7 +5340,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "gas-station-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 14,
+      "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
         "amenity": "fuel"
@@ -5604,7 +5604,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": null,
+      "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
         "shop": "gift"
@@ -5886,7 +5886,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 15,
+      "defaultOrder": 16,
       "matchScore": 1,
       "tags": {
         "amenity": "telephone"
@@ -5959,7 +5959,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "litter-receptacle-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 17,
+      "defaultOrder": 18,
       "matchScore": 1,
       "tags": {
         "amenity": "waste_basket"
@@ -6050,7 +6050,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "drinking-water-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 16,
+      "defaultOrder": 17,
       "matchScore": 1,
       "tags": {
         "amenity": "drinking_water"
@@ -6116,7 +6116,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
-      "defaultOrder": null,
+      "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
         "man_made": "pier",
@@ -6912,7 +6912,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 18,
+      "defaultOrder": 19,
       "matchScore": 1,
       "tags": {
         "leisure": "slipway"
@@ -7073,7 +7073,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 20,
+      "defaultOrder": 21,
       "matchScore": 1,
       "tags": {
         "leisure": "marina"
@@ -7190,7 +7190,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 19,
+      "defaultOrder": 20,
       "matchScore": 1,
       "tags": {
         "leisure": "fishing"
@@ -7599,7 +7599,8 @@ iD.data.npmapPresets = {
       "geometry": "area",
       "displayName": "Building",
       "members": [
-        "building/building/building footprint"
+        "building/building/building footprint",
+        "building/miscellaneous/fortification"
       ]
     },
     "category-point-building": {
@@ -7683,6 +7684,7 @@ iD.data.npmapPresets = {
       "members": [
         "service/food/food service",
         "service/shopping/store",
+        "service/shopping/gift shop",
         "service/fuel/gas station",
         "service/telephone/telephone",
         "service/water/potable water",
@@ -7699,6 +7701,13 @@ iD.data.npmapPresets = {
       ],
       "icon": "parking-black",
       "maki": "npmap-symbol-library"
+    },
+    "category-area-structure": {
+      "geometry": "area",
+      "displayName": "Structure",
+      "members": [
+        "structure/recreation/boat dock"
+      ]
     },
     "category-line-trail": {
       "geometry": "line",
@@ -7748,8 +7757,9 @@ iD.data.npmapPresets = {
       "accommodation/restroom/restroom"
     ],
     "area": [
-      "building/building/building footprint",
-      "parking/parking/parking lot"
+      "category-area-building",
+      "parking/parking/parking lot",
+      "structure/recreation/boat dock"
     ],
     "line": [
       "category-line-road",
