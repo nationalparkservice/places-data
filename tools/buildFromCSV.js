@@ -7,7 +7,7 @@
 //   npm install mkdirp  # recursive mkdir that does not fail if directory exists
 
 // Configuration variables
-var csvFilename = 'original.csv';
+var csvFilename = process.argv[2] || 'original.csv';
 var presetFoldername = '../data/presets/';
 
 var csvParse = require('csv-parse');
@@ -15,7 +15,7 @@ var fs = require('fs');
 var mkdirp = require('mkdirp');
 var path = require('path');
 
-var csvPath = path.join(__dirname, csvFilename);
+var csvPath = path.join(__dirname, '..', csvFilename);
 var presetPathRoot = path.join(__dirname, presetFoldername);
 var makis = ['maki', 'npmap-symbol-library'];
 
