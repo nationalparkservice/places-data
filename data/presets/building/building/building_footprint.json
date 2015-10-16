@@ -10,6 +10,8 @@
   "geometry": [
     "area"
   ],
+  "icon": "building",
+  "maki": "maki",
   "layerIndex": 70,
   "defaultOrder": 1,
   "matchScore": 1,
