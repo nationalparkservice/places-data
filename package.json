@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "csv-parse": "1.0.0",
-    "glob": "5.0.14",
+    "glob": "5.0.15",
     "jsonschema": "1.0.2",
     "mkdirp": "0.5.1"
   }
