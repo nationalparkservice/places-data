@@ -128,13 +128,13 @@ var makeIcon = function (preset) {
     if (preset.point || preset.vertex) return preset.makiIcon;
   }
   if (preset.line) return preset.makiIcon;
-  if (preset.poly) return preset.makiIcon;
+  if (preset.polygon) return preset.makiIcon;
   return null;
 };
 var makeMaki = function (preset) {
   if (preset.point || preset.vertex) return makis.indexOf(preset.iconSource) >= 0 ? preset.iconSource : null;
   if (preset.line) return preset.iconSource;
-  if (preset.poly) return preset.iconSource;
+  if (preset.polygon) return preset.iconSource;
   return null;
 };
 var makeMatchScore = function (preset) {
