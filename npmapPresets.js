@@ -265,6 +265,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
+      "icon": "building",
+      "maki": "maki",
       "defaultOrder": 1,
       "matchScore": 1,
       "tags": {
@@ -4404,6 +4406,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
+      "icon": "parking-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": 2,
       "matchScore": 1,
       "tags": {
@@ -7601,7 +7605,9 @@ iD.data.npmapPresets = {
       "members": [
         "building/building/building footprint",
         "building/miscellaneous/fortification"
-      ]
+      ],
+      "icon": "building",
+      "maki": "maki"
     },
     "category-point-building": {
       "geometry": "point",
@@ -7659,7 +7665,9 @@ iD.data.npmapPresets = {
       "displayName": "Parking",
       "members": [
         "parking/parking/parking lot"
-      ]
+      ],
+      "icon": "parking-black",
+      "maki": "npmap-symbol-library"
     },
     "category-line-road": {
       "geometry": "line",
