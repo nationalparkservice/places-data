@@ -8,8 +8,8 @@
   "geometry": [
     "vertex"
   ],
-  "icon": "entrance",
-  "maki": "maki",
+  "icon": "entrance-black",
+  "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
