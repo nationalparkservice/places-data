@@ -634,8 +634,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "vertex"
       ],
-      "icon": "entrance",
-      "maki": "maki",
+      "icon": "entrance-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2169,6 +2169,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "icon": "food-cache-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2684,6 +2686,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "icon": "statue-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2869,6 +2873,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "icon": "flagpole-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4101,6 +4107,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "icon": "spring-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5235,7 +5243,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "icon": "ranger-station-black",
+      "icon": "entrance-station-black",
       "maki": "npmap-symbol-library",
       "defaultOrder": -7,
       "matchScore": 1,
@@ -5397,6 +5405,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "icon": "laundry-black",
+      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7698,7 +7708,7 @@ iD.data.npmapPresets = {
         "service/water/potable water",
         "service/waste/litter receptacle"
       ],
-      "icon": "ranger-station-black",
+      "icon": "entrance-station-black",
       "maki": "npmap-symbol-library"
     },
     "category-vertex-service": {
