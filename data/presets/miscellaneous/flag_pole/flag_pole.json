@@ -8,6 +8,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "flagpole-black",
+  "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
