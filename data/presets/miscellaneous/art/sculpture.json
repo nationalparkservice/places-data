@@ -8,6 +8,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "statue-black",
+  "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
