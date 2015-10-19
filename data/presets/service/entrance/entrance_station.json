@@ -13,7 +13,7 @@
   "geometry": [
     "point"
   ],
-  "icon": "ranger-station-black",
+  "icon": "entrance-station-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": -7,
