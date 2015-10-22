@@ -1,0 +1,255 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: nps.nps-places-reference
+  rev: s-faaf800c
+  saveCenter: true
+attribution: National Park Service
+center: 
+  - -125.1563
+  - 54.1624
+  - 2
+description: Boundaries of the National Parks
+Layer: 
+  - id: nps_places_reference_polygons
+    Datasource: 
+      dbname: places_boundaries
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: geom_poly
+      geometry_table: boundaries
+      host: localhost
+      key_field: unit_id
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        ( 
+        SELECT   "boundaries"."unit_id",
+                 CASE WHEN
+                   z(!scale_denominator!) >= "boundaries"."min_zoom_poly"
+                 THEN
+                   CASE
+                     WHEN  z(!scale_denominator!) = 0 THEN "geom_poly_simp"."geom_poly_0"
+                     WHEN  z(!scale_denominator!) = 1 THEN "geom_poly_simp"."geom_poly_1"
+                     WHEN  z(!scale_denominator!) = 2 THEN "geom_poly_simp"."geom_poly_2"
+                     WHEN  z(!scale_denominator!) = 3 THEN "geom_poly_simp"."geom_poly_3"
+                     WHEN  z(!scale_denominator!) = 4 THEN "geom_poly_simp"."geom_poly_4"
+                     WHEN  z(!scale_denominator!) = 5 THEN "geom_poly_simp"."geom_poly_5"
+                     WHEN  z(!scale_denominator!) = 6 THEN "geom_poly_simp"."geom_poly_6"
+                     WHEN  z(!scale_denominator!) = 7 THEN "geom_poly_simp"."geom_poly_7"
+                     WHEN  z(!scale_denominator!) = 8 THEN "geom_poly_simp"."geom_poly_8"
+                     WHEN  z(!scale_denominator!) = 9 THEN "geom_poly_simp"."geom_poly_9"
+                     WHEN  z(!scale_denominator!) = 10 THEN "geom_poly_simp"."geom_poly_10"
+                     WHEN  z(!scale_denominator!) = 11 THEN "geom_poly_simp"."geom_poly_11"
+                     WHEN  z(!scale_denominator!) = 12 THEN "geom_poly_simp"."geom_poly_12"
+                     WHEN  z(!scale_denominator!) = 13 THEN "geom_poly_simp"."geom_poly_13"
+                     ELSE "geom_poly_simp"."geom_poly"
+                   END
+                  ELSE
+                   null
+                 END as "geom_poly",
+                 "boundaries"."min_zoom_poly",
+                 "boundaries"."min_zoom_border",
+                 "boundaries"."min_zoom_tint_band",
+                 "boundaries"."unit_code"
+        FROM     "boundaries"
+        JOIN
+          "geom_poly_simp" ON "boundaries"."unit_code" = "geom_poly_simp"."unit_code"
+        ORDER BY "boundaries"."unit_area" DESC) as data
+      type: postgis
+      user: postgres
+    description: NPS park polygons
+    fields: 
+      min_zoom_border: Number
+      min_zoom_poly: Number
+      min_zoom_tint_band: Number
+      unit_code: String
+      unit_id: Number
+    properties: 
+      "buffer-size": 32
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: nps_places_reference_lines
+    Datasource: 
+      dbname: places_boundaries
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: geom_line
+      geometry_table: boundaries
+      host: localhost
+      key_field: unit_id
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (
+        SELECT    "boundaries"."unit_id",
+                  CASE WHEN
+                    z(!scale_denominator!) >= "boundaries"."min_zoom_poly"
+                  THEN
+                    CASE
+                      WHEN  z(!scale_denominator!) = 0 THEN "geom_line_simp"."geom_line_1"
+                      WHEN  z(!scale_denominator!) = 1 THEN "geom_line_simp"."geom_line_2"
+                      WHEN  z(!scale_denominator!) = 2 THEN "geom_line_simp"."geom_line_3"
+                      WHEN  z(!scale_denominator!) = 3 THEN "geom_line_simp"."geom_line_4"
+                      WHEN  z(!scale_denominator!) = 4 THEN "geom_line_simp"."geom_line_5"
+                      WHEN  z(!scale_denominator!) = 5 THEN "geom_line_simp"."geom_line_6"
+                      WHEN  z(!scale_denominator!) = 6 THEN "geom_line_simp"."geom_line_7"
+                      WHEN  z(!scale_denominator!) = 7 THEN "geom_line_simp"."geom_line_8"
+                      WHEN  z(!scale_denominator!) = 8 THEN "geom_line_simp"."geom_line_9"
+                      WHEN  z(!scale_denominator!) = 9 THEN "geom_line_simp"."geom_line_10"
+                      WHEN  z(!scale_denominator!) = 10 THEN "geom_line_simp"."geom_line_11"
+                      WHEN  z(!scale_denominator!) = 11 THEN "geom_line_simp"."geom_line_12"
+                      WHEN  z(!scale_denominator!) = 12 THEN "geom_line_simp"."geom_line_13"
+                      WHEN  z(!scale_denominator!) = 13 THEN "geom_line_simp"."geom_line_14"
+                      ELSE "geom_line_simp"."geom_line"
+                    END
+                   ELSE
+                    null
+                  END as "geom_line",
+                  "boundaries"."min_zoom_poly",
+                  "boundaries"."unit_code",
+                  "boundaries"."unit_name_short",
+                  "boundaries"."unit_name_long",
+                  "boundaries"."unit_desig_abbr",
+                  "boundaries"."unit_desig_full",
+                  "boundaries"."min_zoom_border",
+                  "boundaries"."min_zoom_tint_band",
+                  "boundaries"."min_zoom_label_short",
+                  "boundaries"."min_zoom_label_long",
+                  "boundaries"."min_zoom_label_center"
+         FROM     "boundaries"
+         JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
+         ORDER BY "boundaries"."unit_area" DESC) as data
+      type: postgis
+      user: postgres
+    description: Line geometry for parks
+    fields: 
+      min_zoom_border: Number
+      min_zoom_label_center: Number
+      min_zoom_label_long: Number
+      min_zoom_label_short: Number
+      min_zoom_poly: Number
+      min_zoom_tint_band: Number
+      unit_code: String
+      unit_desig_abbr: String
+      unit_desig_full: String
+      unit_id: Number
+      unit_name_long: String
+      unit_name_short: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: nps_places_reference_points
+    Datasource: 
+      dbname: places_boundaries
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: geom_point
+      geometry_table: boundaries
+      host: localhost
+      key_field: unit_id
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (
+        SELECT   "boundaries"."unit_id",
+                 "boundaries"."unit_code",
+                 "boundaries"."ldir",
+                 "boundaries"."min_zoom_poly",
+                 "boundaries"."unit_name_short",
+                 "boundaries"."unit_name_long",
+                 "boundaries"."unit_desig_abbr",
+                 "boundaries"."unit_desig_full",
+                 "boundaries"."unit_urban",
+                 "boundaries"."unit_simplification",
+                 "boundaries"."min_zoom_label_short",
+                 "boundaries"."min_zoom_label_long",
+                 "boundaries"."min_zoom_label_center",
+                 "boundaries"."geom_point"
+        FROM     "boundaries"
+        ORDER BY "boundaries"."unit_area" DESC) as data
+      type: postgis
+      user: postgres
+    description: Points for places boundares
+    fields: 
+      ldir: String
+      min_zoom_label_center: Number
+      min_zoom_label_long: Number
+      min_zoom_label_short: Number
+      min_zoom_poly: Number
+      unit_code: String
+      unit_desig_abbr: String
+      unit_desig_full: String
+      unit_id: Number
+      unit_name_long: String
+      unit_name_short: String
+      unit_simplification: String
+      unit_urban: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: nps_great_lakes_large
+    Datasource: 
+      dbname: data_import_3
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: wkb_geometry
+      geometry_table: great_lakes_large
+      host: localhost
+      key_field: ogc_fid
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (SELECT 
+                   ogc_fid,
+                   name,
+                   wkb_geometry
+                 FROM great_lakes_large
+                 WHERE 
+                    wkb_geometry && !bbox! AND
+                 z(!scale_denominator!) >= 8 AND z(!scale_denominator!) <= 12) as data
+      type: postgis
+      user: postgres
+    description: nps_great_lakes_large
+    fields: 
+      name: String
+      ogc_fid: Name of the Lake
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: nps_great_lakes_small
+    Datasource: 
+      dbname: data_import_3
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: wkb_geometry
+      geometry_table: great_lakes_small
+      host: localhost
+      key_field: ogc_fid
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (SELECT 
+                   ogc_fid,
+                   name,
+                   wkb_geometry
+                 FROM great_lakes_small
+                 WHERE 
+                   wkb_geometry && !bbox! AND
+                 z(!scale_denominator!) >= 4 AND z(!scale_denominator!) <= 7) as data
+      type: postgis
+      user: postgres
+    description: nps_great_lakes_small
+    fields: 
+      name: Name of the Lake
+      ogc_fid: Number
+    properties: 
+      "buffer-size": 64
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 14
+minzoom: 0
+name: nps_places_reference
