@@ -1,14 +1,14 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: nps.nps-places-reference
+  mapid: nps.nps-places-internal
   rev: s-faaf800c
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -125.1563
-  - 54.1624
-  - 2
+  - -108.457
+  - 43.1972
+  - 3
 description: Boundaries of the National Parks
 Layer: 
   - id: nps_places_reference_polygons
@@ -19,6 +19,7 @@ Layer:
       geometry_table: boundaries
       host: localhost
       key_field: unit_id
+      key_field_as_attribute: ''
       max_size: 512
       password: postgres
       port: 5432
@@ -50,8 +51,7 @@ Layer:
                    null
                  END as "geom_poly",
                  "boundaries"."min_zoom_poly",
-                 "boundaries"."min_zoom_border",
-                 "boundaries"."min_zoom_tint_band",
+                 "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band",
                  "boundaries"."unit_code"
         FROM     "boundaries"
         JOIN
@@ -61,7 +61,6 @@ Layer:
       user: postgres
     description: NPS park polygons
     fields: 
-      min_zoom_border: Number
       min_zoom_poly: Number
       min_zoom_tint_band: Number
       unit_code: String
@@ -77,6 +76,7 @@ Layer:
       geometry_table: boundaries
       host: localhost
       key_field: unit_id
+      key_field_as_attribute: ''
       max_size: 512
       password: postgres
       port: 5432
@@ -113,11 +113,11 @@ Layer:
                   "boundaries"."unit_name_long",
                   "boundaries"."unit_desig_abbr",
                   "boundaries"."unit_desig_full",
-                  "boundaries"."min_zoom_border",
-                  "boundaries"."min_zoom_tint_band",
-                  "boundaries"."min_zoom_label_short",
-                  "boundaries"."min_zoom_label_long",
-                  "boundaries"."min_zoom_label_center"
+                  --"boundaries"."min_zoom_border",
+                  "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band",
+                  "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short",
+                  "boundaries"."min_zoom_label_long" <= z(!scale_denominator!) as "min_zoom_label_long",
+                  "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center"
          FROM     "boundaries"
          JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
          ORDER BY "boundaries"."unit_area" DESC) as data
@@ -125,7 +125,6 @@ Layer:
       user: postgres
     description: Line geometry for parks
     fields: 
-      min_zoom_border: Number
       min_zoom_label_center: Number
       min_zoom_label_long: Number
       min_zoom_label_short: Number
@@ -148,6 +147,7 @@ Layer:
       geometry_table: boundaries
       host: localhost
       key_field: unit_id
+      key_field_as_attribute: ''
       max_size: 512
       password: postgres
       port: 5432
@@ -164,9 +164,9 @@ Layer:
                  "boundaries"."unit_desig_full",
                  "boundaries"."unit_urban",
                  "boundaries"."unit_simplification",
-                 "boundaries"."min_zoom_label_short",
-                 "boundaries"."min_zoom_label_long",
-                 "boundaries"."min_zoom_label_center",
+                 "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short",
+                 "boundaries"."min_zoom_label_long"  <= z(!scale_denominator!) as "min_zoom_label_long",
+                 "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center",
                  "boundaries"."geom_point"
         FROM     "boundaries"
         ORDER BY "boundaries"."unit_area" DESC) as data
@@ -177,7 +177,7 @@ Layer:
       ldir: String
       min_zoom_label_center: Number
       min_zoom_label_long: Number
-      min_zoom_label_short: Number
+      min_zoom_label_short: Boolean
       min_zoom_poly: Number
       unit_code: String
       unit_desig_abbr: String
@@ -198,6 +198,7 @@ Layer:
       geometry_table: great_lakes_large
       host: localhost
       key_field: ogc_fid
+      key_field_as_attribute: ''
       max_size: 512
       password: postgres
       port: 5432
@@ -228,6 +229,7 @@ Layer:
       geometry_table: great_lakes_small
       host: localhost
       key_field: ogc_fid
+      key_field_as_attribute: ''
       max_size: 512
       password: postgres
       port: 5432
