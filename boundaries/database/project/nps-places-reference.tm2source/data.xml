@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
-  <Parameter name="center">-108.457,43.1972,3</Parameter>
+  <Parameter name="center">-110.5664,45.089,3</Parameter>
   <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
   <Parameter name="format">pbf</Parameter>
   <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","min_zoom_poly":"Number","min_zoom_tint_band":"Number","unit_code":"String"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","min_zoom_poly":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","unit_desig_abbr":"String","unit_desig_full":"String","min_zoom_tint_band":"Number","min_zoom_label_short":"Number","min_zoom_label_long":"Number","min_zoom_label_center":"Number"}},{"id":"nps_places_reference_points","description":"Points for places boundares","fields":{"unit_id":"Number","unit_code":"String","ldir":"String","min_zoom_poly":"Number","unit_name_short":"String","unit_name_long":"String","unit_desig_abbr":"String","unit_desig_full":"String","unit_urban":"Number","unit_simplification":"String","min_zoom_label_short":"Boolean","min_zoom_label_long":"Number","min_zoom_label_center":"Number"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
