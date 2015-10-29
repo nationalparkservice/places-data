@@ -1,7 +1,7 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: nps.nps-places-internal
+  mapid: nps.nps-places-reference
   rev: s-faaf800c
   saveCenter: true
 attribution: National Park Service
