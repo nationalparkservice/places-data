@@ -7,7 +7,7 @@
   <Parameter name="center">-110.5664,45.089,3</Parameter>
   <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","min_zoom_poly":"Number","min_zoom_tint_band":"Number","unit_code":"String"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","min_zoom_poly":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","unit_desig_abbr":"String","unit_desig_full":"String","min_zoom_tint_band":"Number","min_zoom_label_short":"Number","min_zoom_label_long":"Number","min_zoom_label_center":"Number"}},{"id":"nps_places_reference_points","description":"Points for places boundares","fields":{"unit_id":"Number","unit_code":"String","ldir":"String","min_zoom_poly":"Number","unit_name_short":"String","unit_name_long":"String","unit_desig_abbr":"String","unit_desig_full":"String","unit_urban":"Number","unit_simplification":"String","min_zoom_label_short":"Boolean","min_zoom_label_long":"Number","min_zoom_label_center":"Number"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","min_zoom_poly":"Number","min_zoom_poly_bool":"Boolean","min_zoom_tint_band_bool":"Boolean","unit_code":"String"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","min_zoom_poly":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","unit_desig_abbr":"String","unit_desig_full":"String","min_zoom_poly_bool":"Boolean","min_zoom_tint_band_bool":"Boolean","min_zoom_label_short_bool":"Boolean","min_zoom_label_long_bool":"Boolean","min_zoom_label_center_bool":"Boolean"}},{"id":"nps_places_reference_points","description":"Points for places boundares","fields":{"unit_id":"Number","unit_code":"String","ldir":"String","min_zoom_poly":"Number","unit_name_short":"String","unit_name_long":"String","unit_desig_abbr":"String","unit_desig_full":"String","unit_urban":"Number","unit_simplification":"String","min_zoom_poly_bool":"Boolean","min_zoom_label_short_bool":"Boolean","min_zoom_label_long_bool":"Boolean","min_zoom_label_center_bool":"Boolean"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[nps_places_reference]]></Parameter>
@@ -15,7 +15,7 @@
 
 
 <Layer name="nps_places_reference_polygons"
-  buffer-size="32"
+  buffer-size="64"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
@@ -56,7 +56,8 @@ SELECT   "boundaries"."unit_id",
            null
          END as "geom_poly",
          "boundaries"."min_zoom_poly",
-         "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band",
+         "boundaries"."min_zoom_poly"  <= z(!scale_denominator!) as "min_zoom_poly_bool",
+         "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band_bool",
          "boundaries"."unit_code"
 FROM     "boundaries"
 JOIN
@@ -115,10 +116,11 @@ SELECT    "boundaries"."unit_id",
           "boundaries"."unit_desig_abbr",
           "boundaries"."unit_desig_full",
           --"boundaries"."min_zoom_border",
-          "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band",
-          "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short",
-          "boundaries"."min_zoom_label_long" <= z(!scale_denominator!) as "min_zoom_label_long",
-          "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center"
+          "boundaries"."min_zoom_poly"  <= z(!scale_denominator!)  as "min_zoom_poly_bool",
+          "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band_bool",
+          "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short_bool",
+          "boundaries"."min_zoom_label_long" <= z(!scale_denominator!) as "min_zoom_label_long_bool",
+          "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool"
  FROM     "boundaries"
  JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
  ORDER BY "boundaries"."unit_area" DESC) as data]]></Parameter>
@@ -154,9 +156,10 @@ SELECT   "boundaries"."unit_id",
          "boundaries"."unit_desig_full",
          "boundaries"."unit_urban",
          "boundaries"."unit_simplification",
-         "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short",
-         "boundaries"."min_zoom_label_long"  <= z(!scale_denominator!) as "min_zoom_label_long",
-         "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center",
+         "boundaries"."min_zoom_poly" <= z(!scale_denominator!) as "min_zoom_poly_bool",
+         "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short_bool",
+         "boundaries"."min_zoom_label_long"  <= z(!scale_denominator!) as "min_zoom_label_long_bool",
+         "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool",
          "boundaries"."geom_point"
 FROM     "boundaries"
 ORDER BY "boundaries"."unit_area" DESC) as data]]></Parameter>

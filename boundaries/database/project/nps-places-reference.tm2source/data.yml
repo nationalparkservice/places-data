@@ -1,7 +1,7 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: nps.nps-places-reference
+  mapid: nps.nps-places-internal
   rev: s-faaf800c
   saveCenter: true
 attribution: National Park Service
@@ -51,7 +51,8 @@ Layer:
                    null
                  END as "geom_poly",
                  "boundaries"."min_zoom_poly",
-                 "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band",
+                 "boundaries"."min_zoom_poly"  <= z(!scale_denominator!) as "min_zoom_poly_bool",
+                 "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band_bool",
                  "boundaries"."unit_code"
         FROM     "boundaries"
         JOIN
@@ -62,7 +63,8 @@ Layer:
     description: NPS park polygons
     fields: 
       min_zoom_poly: Number
-      min_zoom_tint_band: Number
+      min_zoom_poly_bool: Boolean
+      min_zoom_tint_band_bool: Boolean
       unit_code: String
       unit_id: Number
     properties: 
@@ -114,10 +116,11 @@ Layer:
                   "boundaries"."unit_desig_abbr",
                   "boundaries"."unit_desig_full",
                   --"boundaries"."min_zoom_border",
-                  "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band",
-                  "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short",
-                  "boundaries"."min_zoom_label_long" <= z(!scale_denominator!) as "min_zoom_label_long",
-                  "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center"
+                  "boundaries"."min_zoom_poly"  <= z(!scale_denominator!)  as "min_zoom_poly_bool",
+                  "boundaries"."min_zoom_tint_band"  <= z(!scale_denominator!) as "min_zoom_tint_band_bool",
+                  "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short_bool",
+                  "boundaries"."min_zoom_label_long" <= z(!scale_denominator!) as "min_zoom_label_long_bool",
+                  "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool"
          FROM     "boundaries"
          JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
          ORDER BY "boundaries"."unit_area" DESC) as data
@@ -125,11 +128,12 @@ Layer:
       user: postgres
     description: Line geometry for parks
     fields: 
-      min_zoom_label_center: Number
-      min_zoom_label_long: Number
-      min_zoom_label_short: Number
+      min_zoom_label_center_bool: Boolean
+      min_zoom_label_long_bool: Boolean
+      min_zoom_label_short_bool: Boolean
       min_zoom_poly: Number
-      min_zoom_tint_band: Number
+      min_zoom_poly_bool: Boolean
+      min_zoom_tint_band_bool: Boolean
       unit_code: String
       unit_desig_abbr: String
       unit_desig_full: String
@@ -137,7 +141,7 @@ Layer:
       unit_name_long: String
       unit_name_short: String
     properties: 
-      "buffer-size": 8
+      "buffer-size": 128
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_places_reference_points
     Datasource: 
@@ -164,9 +168,10 @@ Layer:
                  "boundaries"."unit_desig_full",
                  "boundaries"."unit_urban",
                  "boundaries"."unit_simplification",
-                 "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short",
-                 "boundaries"."min_zoom_label_long"  <= z(!scale_denominator!) as "min_zoom_label_long",
-                 "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center",
+                 "boundaries"."min_zoom_poly" <= z(!scale_denominator!) as "min_zoom_poly_bool",
+                 "boundaries"."min_zoom_label_short" <= z(!scale_denominator!) as "min_zoom_label_short_bool",
+                 "boundaries"."min_zoom_label_long"  <= z(!scale_denominator!) as "min_zoom_label_long_bool",
+                 "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool",
                  "boundaries"."geom_point"
         FROM     "boundaries"
         ORDER BY "boundaries"."unit_area" DESC) as data
@@ -175,10 +180,11 @@ Layer:
     description: Points for places boundares
     fields: 
       ldir: String
-      min_zoom_label_center: Number
-      min_zoom_label_long: Number
-      min_zoom_label_short: Boolean
+      min_zoom_label_center_bool: Boolean
+      min_zoom_label_long_bool: Boolean
+      min_zoom_label_short_bool: Boolean
       min_zoom_poly: Number
+      min_zoom_poly_bool: Boolean
       unit_code: String
       unit_desig_abbr: String
       unit_desig_full: String
@@ -188,7 +194,7 @@ Layer:
       unit_simplification: String
       unit_urban: Number
     properties: 
-      "buffer-size": 8
+      "buffer-size": 128
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_great_lakes_large
     Datasource: 
@@ -219,7 +225,7 @@ Layer:
       name: String
       ogc_fid: Name of the Lake
     properties: 
-      "buffer-size": 8
+      "buffer-size": 128
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_great_lakes_small
     Datasource: 
@@ -250,7 +256,7 @@ Layer:
       name: Name of the Lake
       ogc_fid: Number
     properties: 
-      "buffer-size": 64
+      "buffer-size": 128
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
 maxzoom: 14
 minzoom: 0
