@@ -8,7 +8,7 @@ attribution: National Park Service
 center: 
   - -110.5664
   - 45.089
-  - 3
+  - 4
 description: Boundaries of the National Parks
 Layer: 
   - id: nps_places_reference_polygons
@@ -57,6 +57,9 @@ Layer:
         FROM     "boundaries"
         JOIN
           "geom_poly_simp" ON "boundaries"."unit_code" = "geom_poly_simp"."unit_code"
+        WHERE
+          "geom_poly_simp"."geom_poly" && !bbox! AND
+          z(!scale_denominator!) >= 5 AND z(!scale_denominator!) <= 22
         ORDER BY "boundaries"."unit_area" DESC) as data
       type: postgis
       user: postgres
@@ -123,6 +126,8 @@ Layer:
                   "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool"
          FROM     "boundaries"
          JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
+         WHERE    "geom_line_simp"."geom_line" && !bbox! AND
+                  z(!scale_denominator!) >= 5 AND z(!scale_denominator!) <= 22 
          ORDER BY "boundaries"."unit_area" DESC) as data
       type: postgis
       user: postgres
@@ -141,7 +146,7 @@ Layer:
       unit_name_long: String
       unit_name_short: String
     properties: 
-      "buffer-size": 128
+      "buffer-size": 32
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_places_reference_points
     Datasource: 
@@ -174,6 +179,9 @@ Layer:
                  "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool",
                  "boundaries"."geom_point"
         FROM     "boundaries"
+        WHERE    
+                  "boundaries"."geom_point" && !bbox! AND
+                  z(!scale_denominator!) >= 4 AND z(!scale_denominator!) <= 22
         ORDER BY "boundaries"."unit_area" DESC) as data
       type: postgis
       user: postgres
@@ -259,5 +267,5 @@ Layer:
       "buffer-size": 128
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
 maxzoom: 14
-minzoom: 0
+minzoom: 4
 name: nps_places_reference
