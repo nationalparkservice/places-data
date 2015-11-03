@@ -16,8 +16,8 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "historic": "building",
-    "building": "*"
+    "building": "*",
+    "historic": "*"
   },
   "terms": [
     "historic",
