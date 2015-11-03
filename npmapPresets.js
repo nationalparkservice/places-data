@@ -661,8 +661,8 @@ iD.data.npmapPresets = {
       "defaultOrder": 5,
       "matchScore": 1,
       "tags": {
-        "historic": "building",
-        "building": "*"
+        "building": "*",
+        "historic": "*"
       },
       "terms": [
         "historic",
@@ -1131,7 +1131,6 @@ iD.data.npmapPresets = {
         "building": "hut"
       },
       "terms": [
-        "shelter",
         "cover",
         "hide",
         "lean-to",
@@ -2076,6 +2075,7 @@ iD.data.npmapPresets = {
       "terms": [
         "campground",
         "backcountry",
+        "backcountry campground",
         "backcountry camping",
         "backcountry campsite",
         "primitive",
@@ -2644,7 +2644,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "area",
-        "junction",
         "locality",
         "location",
         "place",
