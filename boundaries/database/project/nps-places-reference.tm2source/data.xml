@@ -15,7 +15,7 @@
 
 
 <Layer name="nps_places_reference_polygons"
-  buffer-size="32"
+  buffer-size="16"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
@@ -62,6 +62,9 @@ SELECT   "boundaries"."unit_id",
 FROM     "boundaries"
 JOIN
   "geom_poly_simp" ON "boundaries"."unit_code" = "geom_poly_simp"."unit_code"
+WHERE
+  "geom_poly_simp"."geom_poly" && !bbox! AND
+  z(!scale_denominator!) >= 5 AND z(!scale_denominator!) <= 22
 ORDER BY "boundaries"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
@@ -69,7 +72,7 @@ ORDER BY "boundaries"."unit_area" DESC) as data]]></Parameter>
   </Layer>
 
 <Layer name="nps_places_reference_lines"
-  buffer-size="128"
+  buffer-size="16"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
@@ -123,6 +126,8 @@ SELECT    "boundaries"."unit_id",
           "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool"
  FROM     "boundaries"
  JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
+ WHERE    "geom_line_simp"."geom_line" && !bbox! AND
+          z(!scale_denominator!) >= 5 AND z(!scale_denominator!) <= 22 
  ORDER BY "boundaries"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
@@ -130,7 +135,7 @@ SELECT    "boundaries"."unit_id",
   </Layer>
 
 <Layer name="nps_places_reference_points"
-  buffer-size="128"
+  buffer-size="64"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
@@ -162,6 +167,9 @@ SELECT   "boundaries"."unit_id",
          "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool",
          "boundaries"."geom_point"
 FROM     "boundaries"
+WHERE    
+          "boundaries"."geom_point" && !bbox! AND
+          z(!scale_denominator!) >= 4 AND z(!scale_denominator!) <= 22
 ORDER BY "boundaries"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
