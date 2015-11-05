@@ -31,11 +31,11 @@ Layer:
                    z(!scale_denominator!) >= "boundaries"."min_zoom_poly"
                  THEN
                    CASE
-                     WHEN  z(!scale_denominator!) = 0 THEN "geom_poly_simp"."geom_poly_0"
-                     WHEN  z(!scale_denominator!) = 1 THEN "geom_poly_simp"."geom_poly_1"
-                     WHEN  z(!scale_denominator!) = 2 THEN "geom_poly_simp"."geom_poly_2"
-                     WHEN  z(!scale_denominator!) = 3 THEN "geom_poly_simp"."geom_poly_3"
-                     WHEN  z(!scale_denominator!) = 4 THEN "geom_poly_simp"."geom_poly_4"
+                     -- WHEN  z(!scale_denominator!) = 0 THEN "geom_poly_simp"."geom_poly_0"
+                     -- WHEN  z(!scale_denominator!) = 1 THEN "geom_poly_simp"."geom_poly_1"
+                     -- WHEN  z(!scale_denominator!) = 2 THEN "geom_poly_simp"."geom_poly_2"
+                     -- WHEN  z(!scale_denominator!) = 3 THEN "geom_poly_simp"."geom_poly_3"
+                     WHEN  z(!scale_denominator!) <= 4 THEN null --"geom_poly_simp"."geom_poly_4"
                      WHEN  z(!scale_denominator!) = 5 THEN "geom_poly_simp"."geom_poly_5"
                      WHEN  z(!scale_denominator!) = 6 THEN "geom_poly_simp"."geom_poly_6"
                      WHEN  z(!scale_denominator!) = 7 THEN "geom_poly_simp"."geom_poly_7"
@@ -58,7 +58,7 @@ Layer:
         JOIN
           "geom_poly_simp" ON "boundaries"."unit_code" = "geom_poly_simp"."unit_code"
         WHERE
-          "geom_poly_simp"."geom_poly" && !bbox! AND
+          ("geom_poly_simp"."geom_poly_4" && !bbox! OR "geom_poly_simp"."geom_poly_10" && !bbox! OR "geom_poly_simp"."geom_poly" && !bbox!) AND
           z(!scale_denominator!) >= 5 AND z(!scale_denominator!) <= 22
         ORDER BY "boundaries"."unit_area" DESC) as data
       type: postgis
@@ -71,7 +71,7 @@ Layer:
       unit_code: String
       unit_id: Number
     properties: 
-      "buffer-size": 32
+      "buffer-size": 16
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_places_reference_lines
     Datasource: 
@@ -93,20 +93,20 @@ Layer:
                     z(!scale_denominator!) >= "boundaries"."min_zoom_poly"
                   THEN
                     CASE
-                      WHEN  z(!scale_denominator!) = 0 THEN "geom_line_simp"."geom_line_1"
-                      WHEN  z(!scale_denominator!) = 1 THEN "geom_line_simp"."geom_line_2"
-                      WHEN  z(!scale_denominator!) = 2 THEN "geom_line_simp"."geom_line_3"
-                      WHEN  z(!scale_denominator!) = 3 THEN "geom_line_simp"."geom_line_4"
-                      WHEN  z(!scale_denominator!) = 4 THEN "geom_line_simp"."geom_line_5"
-                      WHEN  z(!scale_denominator!) = 5 THEN "geom_line_simp"."geom_line_6"
-                      WHEN  z(!scale_denominator!) = 6 THEN "geom_line_simp"."geom_line_7"
-                      WHEN  z(!scale_denominator!) = 7 THEN "geom_line_simp"."geom_line_8"
-                      WHEN  z(!scale_denominator!) = 8 THEN "geom_line_simp"."geom_line_9"
-                      WHEN  z(!scale_denominator!) = 9 THEN "geom_line_simp"."geom_line_10"
-                      WHEN  z(!scale_denominator!) = 10 THEN "geom_line_simp"."geom_line_11"
-                      WHEN  z(!scale_denominator!) = 11 THEN "geom_line_simp"."geom_line_12"
-                      WHEN  z(!scale_denominator!) = 12 THEN "geom_line_simp"."geom_line_13"
-                      WHEN  z(!scale_denominator!) = 13 THEN "geom_line_simp"."geom_line_14"
+                      -- WHEN  z(!scale_denominator!) = 0 THEN "geom_line_simp"."geom_line_0"
+                      -- WHEN  z(!scale_denominator!) = 1 THEN "geom_line_simp"."geom_line_1"
+                      -- WHEN  z(!scale_denominator!) = 2 THEN "geom_line_simp"."geom_line_2"
+                      -- WHEN  z(!scale_denominator!) = 3 THEN "geom_line_simp"."geom_line_3"
+                      WHEN  z(!scale_denominator!) <= 4 THEN null -- "geom_line_simp"."geom_line_4"
+                      WHEN  z(!scale_denominator!) = 5 THEN "geom_line_simp"."geom_line_5"
+                      WHEN  z(!scale_denominator!) = 6 THEN "geom_line_simp"."geom_line_6"
+                      WHEN  z(!scale_denominator!) = 7 THEN "geom_line_simp"."geom_line_7"
+                      WHEN  z(!scale_denominator!) = 8 THEN "geom_line_simp"."geom_line_8"
+                      WHEN  z(!scale_denominator!) = 9 THEN "geom_line_simp"."geom_line_9"
+                      WHEN  z(!scale_denominator!) = 10 THEN "geom_line_simp"."geom_line_10"
+                      WHEN  z(!scale_denominator!) = 11 THEN "geom_line_simp"."geom_line_11"
+                      WHEN  z(!scale_denominator!) = 12 THEN "geom_line_simp"."geom_line_12"
+                      WHEN  z(!scale_denominator!) = 13 THEN "geom_line_simp"."geom_line_13"
                       ELSE "geom_line_simp"."geom_line"
                     END
                    ELSE
@@ -126,7 +126,7 @@ Layer:
                   "boundaries"."min_zoom_label_center" <= z(!scale_denominator!) as "min_zoom_label_center_bool"
          FROM     "boundaries"
          JOIN     "geom_line_simp" ON "boundaries"."unit_id" = "geom_line_simp"."unit_id"
-         WHERE    "geom_line_simp"."geom_line" && !bbox! AND
+         WHERE    ("geom_line_simp"."geom_line_12" && !bbox! OR "geom_line_simp"."geom_line" && !bbox!) AND
                   z(!scale_denominator!) >= 5 AND z(!scale_denominator!) <= 22 
          ORDER BY "boundaries"."unit_area" DESC) as data
       type: postgis
@@ -146,7 +146,7 @@ Layer:
       unit_name_long: String
       unit_name_short: String
     properties: 
-      "buffer-size": 32
+      "buffer-size": 16
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_places_reference_points
     Datasource: 
@@ -202,7 +202,7 @@ Layer:
       unit_simplification: String
       unit_urban: Number
     properties: 
-      "buffer-size": 128
+      "buffer-size": 64
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_great_lakes_large
     Datasource: 
@@ -233,7 +233,7 @@ Layer:
       name: String
       ogc_fid: Name of the Lake
     properties: 
-      "buffer-size": 128
+      "buffer-size": 64
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_great_lakes_small
     Datasource: 
