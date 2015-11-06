@@ -94,6 +94,8 @@ Let's use this document to sort out the schema for our `parks` database (formerl
   - `visitors` - number of park visitors in the most recent year available (or average)
     - `parks.unit_visitors`
   - `scalerank` - Ranking to determine which parks should take priority at smaller scales. Just min_zoom_label with a more generic name. Values can be 0-22 and correspond directly to zoom levels.
+  - `subunit_of` - unit code of any unit that serves as a parent unit of this park.
+    - `parks.subunit_of`
   - `longitude` - longitude in decimal degrees of the park's weighted centroid
     - `parks.lon_point`
   - `latitude` - latitude in decimal degrees of the park's weighted centroid
