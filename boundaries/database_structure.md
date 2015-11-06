@@ -18,8 +18,8 @@ Let's use this document to sort out the schema for our `parks` database (formerl
   - `unit_area` - correctly-calulated area of the park unit
   - `unit_visitors` - visitor count, updated annually (where available)
   - `subunit_of` - 3 digit park unit code of which this park is a member (ex: 'goga')
-  - `point_longitude` - longitude in decimal degrees of `geom_point`
-  - `point_latitude` - latitude in decimal degrees of `geom_point`
+  - `lon_point` - longitude in decimal degrees of `geom_point`
+  - `lat_point` - latitude in decimal degrees of `geom_point`
   - `geom_point` - point geometry for centroid of park unit
   - `date_created_point` - date
   - `last_updated_point` - date
@@ -95,9 +95,9 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - `parks.unit_visitors`
   - `scalerank` - Ranking to determine which parks should take priority at smaller scales. Just min_zoom_label with a more generic name. Values can be 0-22 and correspond directly to zoom levels.
   - `longitude` - longitude in decimal degrees of the park's weighted centroid
-    - `parks.point_longitude`
+    - `parks.lon_point`
   - `latitude` - latitude in decimal degrees of the park's weighted centroid
-    - `parks.point_latitude`
+    - `parks.lat_point`
   - `the_geom` - polygon geometry for the park
     - `parks_poly.geom_poly`
   - `geom_source` - the source of our polygon geometry
