@@ -104,4 +104,4 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - `parks_poly.data_source_poly`
 
 
-- `...` - whatever else Jim needs to pull off the vector tile rendering to Mapbox
+- `...` - whatever other views Jim needs to pull off the vector tile rendering to Mapbox
