@@ -43,6 +43,33 @@ The `places_boundaries` database lives on internal NPS servers. To connect to th
 - Once you click `enter`, the tunnel will be open
 - To close the tunnel, use `ctrl+c`
 
+#### Updating a boundary in PostgreSQL
+
+Once connected to the server, run the following in Terminal to *update* a park boundary:
+
+- Navigate to the directory housing the updated boundary file
+- SFTP into places_boundaries:
+ - `sftp username@10.147.153.191` (replace "username" with your username)
+- Copy the local boundary files to the server:
+ - `sftp> put boundary.*` (replace "boundary" with appropriate file name)
+- Exit out of SFTP:
+ - `sftp> exit`
+- Determine the projection of the boundary file, for use when importing via shp2pgsql:
+ - `ogrinfo boundary_file.shp -al -so`
+- Copy `PROJCS` value into http://spatialreference.org/ to figure out EPSG
+- SSH into places_boundaries:
+ - `ssh -L:15432:localhost:5432 username@10.147.153.191`
+- Import local boundary via shp2pgsql:
+ - `shp2pgsql -I -s SRID boundary.shp temp_table | psql -d places_boundaries` (replace "SRID" with appropriate value based on projection, replace "boundary" with appropriate file name, and replace "temp_table" with a temporary table name for new boundary)
+- Confirm that the table has been created successfully:
+ - `psql -U postgres -d places_boundaries -c "\dt"`
+- Replace geometry in `parks_poly` table with new geometry from new table `temp_table`:
+ - `psql -U postgres -d places_boundaries -c "UPDATE parks_poly SET geom_poly = (SELECT ST_Union(geom) FROM temp_table) WHERE unit_code = 'unit_code';"` (replace "temp_table" with table name, replace "unit_code" with appropriate park unit code; remove "ST_Union()" if there is only one row in boundary)
+- Check the log to confirm that query ran properly:
+ - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; scroll to bottom, last query is most recent ran
+- Drop temporary table "temp_table":
+ - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"``
+
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
 - Open PGAdmin and find the button for *Add a connection to a server* (top left)
@@ -318,4 +345,3 @@ To publish a Mapbox data source directly from our `places_boundaries` database, 
 To publish a data source, we need to add a few names and add a bit more SQL to incorporate our zoom-dependent simplified geometries.
 
 - Add more directions...
-
