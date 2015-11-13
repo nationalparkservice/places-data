@@ -10,6 +10,7 @@ then
   echo "USAGE: updatePresets.sh PATH_TO_CSV"
   exit 1 # terminate and indicate error
 else
+  npm install
   rm -r ./data/presets/
   node ./tools/buildFromCSV.js $CSV_File
   cd ./tools
