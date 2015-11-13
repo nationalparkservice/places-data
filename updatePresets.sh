@@ -1,3 +1,4 @@
+#!/bin/bash
 # USAGE: updatePresets.sh PATH_TO_CSV
 # This script will run the code to generate new presets and write them to the presets file for use in iD
 # If no CSV File is specified, it will return an error
