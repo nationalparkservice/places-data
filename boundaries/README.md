@@ -66,7 +66,7 @@ Once connected to the server, run the following in Terminal to *update* a park b
 - Replace geometry in `parks_poly` table with new geometry from new table `temp_table`:
  - `psql -U postgres -d places_boundaries -c "UPDATE parks_poly SET geom_poly = (SELECT ST_Union(geom) FROM temp_table) WHERE unit_code = 'unit_code';"` (replace "temp_table" with table name, replace "unit_code" with appropriate park unit code; remove "ST_Union()" if there is only one row in boundary)
 - Check the log to confirm that query ran properly:
- - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; scroll to bottom, last query is most recent ran
+ - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; first query is most recent ran
 - Drop temporary table "temp_table":
  - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"``
 
