@@ -45,7 +45,7 @@ The `places_boundaries` database lives on internal NPS servers. To connect to th
 
 #### Updating a boundary in PostgreSQL
 
-Once connected to the server, run the following in Terminal to *update* a park boundary:
+Run the following in Terminal to *update* a park boundary:
 
 - Navigate to the directory housing the updated boundary file
 - SFTP into places_boundaries:
