@@ -68,7 +68,7 @@ Once connected to the server, run the following in Terminal to *update* a park b
 - Check the log to confirm that query ran properly:
  - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; first query is most recent ran
 - Drop temporary table "temp_table":
- - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"``
+ - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"`
 
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
