@@ -47,30 +47,40 @@ The `places_boundaries` database lives on internal NPS servers. To connect to th
 
 Run the following in Terminal to *update* a park boundary:
 
-- Navigate to the directory housing the updated boundary file
-- SFTP into places_boundaries:
+1. Navigate to the directory housing the updated boundary file
+1. SFTP into places_boundaries:
  - `sftp username@10.147.153.191` (replace "username" with your username)
-- Copy the local boundary files to the server:
+1. Copy the local boundary files to the server:
  - `sftp> put boundary.*` (replace "boundary" with appropriate file name)
-- Exit out of SFTP:
+1. Exit out of SFTP:
  - `sftp> exit`
-- Determine the projection of the boundary file, for use when importing via shp2pgsql:
- - `ogrinfo boundary_file.shp -al -so`
-- Copy `PROJCS` value into http://spatialreference.org/ to figure out EPSG
-- SSH into places_boundaries:
+1. SSH into places_boundaries:
  - `ssh -L:15432:localhost:5432 username@10.147.153.191`
-- Import local boundary via shp2pgsql:
- - `shp2pgsql -I -s SRID boundary.shp temp_table | psql -d places_boundaries` (replace "SRID" with appropriate value based on projection, replace "boundary" with appropriate file name, and replace "temp_table" with a temporary table name for new boundary)
-- Confirm that the table has been created successfully:
+1. Import local boundary via shp2pgsql:
+ - `shp2pgsql -I -s 3857 boundary.shp temp_table | psql -d places_boundaries` (3857 is the "SRID" (spatial reference system identifier) for WGS 84, replace "boundary" with appropriate file name, and replace "temp_table" with a temporary table name for new boundary)
+1. Confirm that the table has been created successfully:
  - `psql -U postgres -d places_boundaries -c "\dt"`
-- Replace geometry in `parks_poly` table with new geometry from new table `temp_table`:
+1. Replace geometry in `parks_poly` table with new geometry from new table `temp_table`:
  - `psql -U postgres -d places_boundaries -c "UPDATE parks_poly SET geom_poly = (SELECT ST_Union(geom) FROM temp_table) WHERE unit_code = 'unit_code';"` (replace "temp_table" with table name, replace "unit_code" with appropriate park unit code; remove "ST_Union()" if there is only one row in boundary)
-- Check the log to confirm that query ran properly:
+1. Check the log to confirm that query ran properly:
  - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; first query is most recent ran
-- Drop temporary table "temp_table":
+1. Drop temporary table "temp_table":
  - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"`
 
  *Remember to update the `parks` table if the `data_source` has changed.*
+
+#### Adding a boundary in PostgreSQL
+
+Run the following in Terminal to *add* a park boundary:
+
+1. Perform steps #1-7 from above "Updating a boundary in PostgreSQL"
+1. Populate the `parks` table with park attribute data along with its boundary's area and centroid (WACO example below; table name `waco`):
+ - `psql -U postgres -d places_boundaries -c "INSERT INTO parks (unit_id, unit_name_short, unit_name_long, unit_desig_abbr, unit_desig_full, unit_code, unit_area, simp_type, geom_point, date_created, last_updated, data_source) values ((select max(unit_id) + 1 from parks), 'Waco Mammoth', 'Waco Mammoth', 'NM', 'National Monument', 'waco', (select ST_Area(geom) from waco), 'point', (select ST_Centroid(geom) from waco), '2015-12-03', '2015-12-03', 'WACO');"`
+ - Remaining fields to be populated by cartography: `unit_rank`, `unit_urban`, `ldir`, `min_zoom_poly`, `min_zoom_border`, `min_zoom_tint_band`, `min_zoom_label`, `min_zoom_label_long`, `min_zoom_label_center`, `ldir_enforce`, `min_zoom_simp`, `max_zoom_label`
+1. Populate the `parks_poly` table (WACO example below; table name `waco`):
+ - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_poly VALUES ((select unit_id from parks where unit_code = 'waco'), 'waco', (select geom from waco));"`
+ 1. Populate the `parks_line` table (WACO example below; table name `waco`):
+  - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_line VALUES ((select unit_id from parks where unit_code = 'waco'), 'waco');"`
 
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
