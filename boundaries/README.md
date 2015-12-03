@@ -70,6 +70,8 @@ Run the following in Terminal to *update* a park boundary:
 - Drop temporary table "temp_table":
  - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"`
 
+ *Remember to update the `parks` table if the `data_source` has changed.*
+
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
 - Open PGAdmin and find the button for *Add a connection to a server* (top left)
