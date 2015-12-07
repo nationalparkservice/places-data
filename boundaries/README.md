@@ -66,8 +66,8 @@ Run the following in Terminal to *update* a park boundary:
  - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; first query is most recent ran
 1. Drop temporary table "temp_table":
  - `psql -U postgres -d places_boundaries -c "DROP TABLE temp_table;"`
-
- *Remember to update the `parks` table if the `data_source` has changed.*
+1. Update the `parks` table's `unit_area` and `last_updated` fields, along with the `data_source`if this has changed (MUWO example below):
+ - `psql -U postgres -d places_boundaries -c "UPDATE parks SET unit_area = (SELECT ST_Area(geom_poly) FROM parks_poly WHERE unit_code = 'muwo'), last_updated = '2015-12-07', data_source = 'Land Resources Division' WHERE unit_code = 'muwo';"`
 
 #### Adding a boundary in PostgreSQL
 
