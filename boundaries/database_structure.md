@@ -78,7 +78,7 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - concatenate `parks.unit_name + ' ' + parks.unit_desig_abbr`
   - `full_name` - park name with fully spelled out designation.
     - concatenate `parks.unit_name + ' ' + parks.unit_desig_full`
-  - `blurb` - a little blurb about the park
+  - ~~`blurb` - a little blurb about the park~~
     - `parks.unit_blurb`
   - ~~`climate` - a little blurb about the climate of the park~~
     - ~~`parks.unit_climate`~~
@@ -88,7 +88,7 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - ~~`parks.unit_phone`~~
   - `url` - full url (including http://) of park's main page
     - `parks.unit_url`
-  - `area` - area of park polygon, generated on import with proper projections (What units? Maybe acres would be best. If so, we could rename to `area_acres`)
+  - `area` - area of park polygon, generated on import with proper projections. Let cast our geometries as a geography
   - `visitors` - number of park visitors in the most recent year available (or average)
     - `parks.unit_visitors`
   - ~~`scalerank` - Ranking to determine which parks should take priority at smaller scales. Just min_zoom_label with a more generic name. Values can be 0-22 and correspond directly to zoom levels.~~
