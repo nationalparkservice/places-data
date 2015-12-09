@@ -74,24 +74,24 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - `parks.unit_region`
   - `designation` - park designation, fully spelled out  
     - `parks.unit_desig_full`
-  - `display_name` - park name with abbreviated unit code.  
+  - `display_name` - park name with abbreviated designation.  
     - concatenate `parks.unit_name + ' ' + parks.unit_desig_abbr`
   - `full_name` - park name with fully spelled out designation.
     - concatenate `parks.unit_name + ' ' + parks.unit_desig_full`
   - `blurb` - a little blurb about the park
     - `parks.unit_blurb`
-  - `climate` - a little blurb about the climate of the park
-    - `parks.unit_climate`
-  - `address` - address of main office
-    - `parks.unit_address`
-  - `phone` - phone number of main office
-    - `parks.unit_phone`
+  - ~~`climate` - a little blurb about the climate of the park~~
+    - ~~`parks.unit_climate`~~
+  - ~~`address` - address of main office~~
+    - ~~`parks.unit_address`~~
+  - ~~`phone` - phone number of main office~~
+    - ~~`parks.unit_phone`~~
   - `url` - full url (including http://) of park's main page
     - `parks.unit_url`
   - `area` - area of park polygon, generated on import with proper projections (What units? Maybe acres would be best. If so, we could rename to `area_acres`)
   - `visitors` - number of park visitors in the most recent year available (or average)
     - `parks.unit_visitors`
-  - `scalerank` - Ranking to determine which parks should take priority at smaller scales. Just min_zoom_label with a more generic name. Values can be 0-22 and correspond directly to zoom levels.
+  - ~~`scalerank` - Ranking to determine which parks should take priority at smaller scales. Just min_zoom_label with a more generic name. Values can be 0-22 and correspond directly to zoom levels.~~
   - `subunit_of` - unit code of any unit that serves as a parent unit of this park.
     - `parks.subunit_of`
   - `longitude` - longitude in decimal degrees of the park's weighted centroid
@@ -100,8 +100,10 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - `parks.lat_point`
   - `the_geom` - polygon geometry for the park
     - `parks_poly.geom_poly`
-  - `geom_source` - the source of our polygon geometry
-    - `parks_poly.data_source_poly`
+  - ~~`geom_source` - the source of our polygon geometry~~
+    - ~~`parks_poly.data_source_poly`~~
+
+
 
 
 - `...` - whatever other views Jim needs to pull off the vector tile rendering to Mapbox
