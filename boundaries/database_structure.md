@@ -72,8 +72,6 @@ Let's use this document to sort out the schema for our `parks` database (formerl
     - `parks.unit_state`
   - `region` - NPS region code in which the park is administered
     - `parks.unit_region`
-  - `name` - park name with no unit code
-    - `parks.unit_name`
   - `designation` - park designation, fully spelled out  
     - `parks.unit_desig_full`
   - `display_name` - park name with abbreviated unit code.  
