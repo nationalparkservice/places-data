@@ -79,8 +79,10 @@ Run the following in Terminal to *add* a park boundary:
  - Remaining fields to be populated by cartography: `unit_rank`, `unit_urban`, `ldir`, `min_zoom_poly`, `min_zoom_border`, `min_zoom_tint_band`, `min_zoom_label`, `min_zoom_label_long`, `min_zoom_label_center`, `ldir_enforce`, `min_zoom_simp`, `max_zoom_label`
 1. Populate the `parks_poly` table (THJE example below; table name `thje`):
  - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_poly VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje', (select geom from thje));"`
- 1. Populate the `parks_line` table (THJE example below; table name `thje`):
+1. Populate the `parks_line` table (THJE example below; table name `thje`):
   - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_line VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje');"`
+1. Drop the temporary table (`thje` from the examples above):
+ - `psql -U postgres -d places_boundaries -c "DROP TABLE thje;"`
 
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
