@@ -74,13 +74,13 @@ Run the following in Terminal to *update* a park boundary:
 Run the following in Terminal to *add* a park boundary:
 
 1. Perform steps #1-7 from above "Updating a boundary in PostgreSQL"
-1. Populate the `parks` table with park attribute data along with its boundary's area and centroid (WACO example below; table name `waco`):
- - `psql -U postgres -d places_boundaries -c "INSERT INTO parks (unit_id, unit_name_short, unit_name_long, unit_desig_abbr, unit_desig_full, unit_code, unit_area, simp_type, geom_point, date_created, last_updated, data_source) values ((select max(unit_id) + 1 from parks), 'Waco Mammoth', 'Waco Mammoth', 'NM', 'National Monument', 'waco', (select ST_Area(geom) from waco), 'point', (select ST_Centroid(geom) from waco), '2015-12-03', '2015-12-03', 'WACO');"`
+1. Populate the `parks` table with park attribute data along with its boundary's area and centroid (THJE example below; table name `thje`):
+ - `psql -U postgres -d places_boundaries -c "INSERT INTO parks (unit_id, unit_name_short, unit_name_long, unit_desig_abbr, unit_desig_full, unit_code, unit_area, simp_type, geom_point, date_created, last_updated, data_source, region_code, created_by, updated_by, state, url) values ((select max(unit_id) + 1 from parks), 'Thomas Jefferson', 'Thomas Jefferson', 'MEM', 'Memorial', 'thje', (select ST_Area(geom) from thje), 'point', (select ST_Centroid(geom) from thje), '2015-12-09', '2015-12-09', 'Land Resources Division', 'NCR', 'Chad Lawlis', 'Chad Lawlis', 'District of Columbia', 'http://www.nps.gov/thje/index.htm');"`
  - Remaining fields to be populated by cartography: `unit_rank`, `unit_urban`, `ldir`, `min_zoom_poly`, `min_zoom_border`, `min_zoom_tint_band`, `min_zoom_label`, `min_zoom_label_long`, `min_zoom_label_center`, `ldir_enforce`, `min_zoom_simp`, `max_zoom_label`
-1. Populate the `parks_poly` table (WACO example below; table name `waco`):
- - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_poly VALUES ((select unit_id from parks where unit_code = 'waco'), 'waco', (select geom from waco));"`
- 1. Populate the `parks_line` table (WACO example below; table name `waco`):
-  - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_line VALUES ((select unit_id from parks where unit_code = 'waco'), 'waco');"`
+1. Populate the `parks_poly` table (THJE example below; table name `thje`):
+ - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_poly VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje', (select geom from thje));"`
+ 1. Populate the `parks_line` table (THJE example below; table name `thje`):
+  - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_line VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje');"`
 
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
