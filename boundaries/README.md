@@ -61,13 +61,13 @@ Run the following in Terminal to *update* a park boundary:
 1. Confirm that the table has been created successfully:
  - `psql -d places_boundaries -c "\dt"`
 1. Replace geometry in `parks_poly` table with new geometry (continuing with MUWO example):
- - `psql -d places_boundaries -c "UPDATE parks_poly SET geom_poly = (SELECT ST_Union(wkb_geometry) FROM muwo) WHERE unit_code = 'muwo';"` (remove `ST_Union()` if there is only one row in boundary)
+ - `psql -U postgres -d places_boundaries -c "UPDATE parks_poly SET geom_poly = (SELECT ST_Union(wkb_geometry) FROM muwo) WHERE unit_code = 'muwo';"` (remove `ST_Union()` if there is only one row in boundary)
 1. Check the log to confirm that query ran properly:
  - In pgAdmin right click `logged_actions` table under `audit` schema and select "view last 100 rows"; first query is most recent
 1. Drop source file table (continuing MUWO example):
- - `psql -d places_boundaries -c "DROP TABLE muwo;"`
+ - `psql -U postgres -d places_boundaries -c "DROP TABLE muwo;"`
 1. Update the `parks` table's `unit_area` and `updated_by` fields, along with the `data_source`if this has changed (continuing MUWO example):
- - `psql -d places_boundaries -c "UPDATE parks SET unit_area = (SELECT ST_Area(geom_poly) FROM parks_poly WHERE unit_code = 'muwo'), updated_by = 'Chad Lawlis', data_source = 'Land Resources Division' WHERE unit_code = 'muwo';"`
+ - `psql -U postgres -d places_boundaries -c "UPDATE parks SET unit_area = (SELECT ST_Area(geom_poly) FROM parks_poly WHERE unit_code = 'muwo'), updated_by = 'Chad Lawlis', data_source = 'Land Resources Division' WHERE unit_code = 'muwo';"`
 
 #### Adding a boundary in PostgreSQL
 
@@ -75,14 +75,14 @@ Run the following in Terminal to *add* a park boundary:
 
 1. Perform steps #1-7 from above "Updating a boundary in PostgreSQL"
 1. Populate the `parks` table with park attribute data along with its boundary's area and centroid (THJE example below; table name `thje`):
- - `psql -d places_boundaries -c "INSERT INTO parks (unit_id, unit_name_short, unit_name_long, unit_desig_abbr, unit_desig_full, unit_code, unit_area, simp_type, geom_point, data_source, region_code, created_by, updated_by, state, url) values ((select max(unit_id) + 1 from parks), 'Thomas Jefferson', 'Thomas Jefferson', 'MEM', 'Memorial', 'thje', (select ST_Area(wkb_geometry) from thje), 'point', (select ST_Centroid(wkb_geometry) from thje), 'Land Resources Division', 'NCR', 'Chad Lawlis', 'Chad Lawlis', 'District of Columbia', 'http://www.nps.gov/thje/index.htm');"`
+ - `psql -U postgres -d places_boundaries -c "INSERT INTO parks (unit_id, unit_name_short, unit_name_long, unit_desig_abbr, unit_desig_full, unit_code, unit_area, simp_type, geom_point, data_source, region_code, created_by, updated_by, state, url) values ((select max(unit_id) + 1 from parks), 'Thomas Jefferson', 'Thomas Jefferson', 'MEM', 'Memorial', 'thje', (select ST_Area(wkb_geometry) from thje), 'point', (select ST_Centroid(wkb_geometry) from thje), 'Land Resources Division', 'NCR', 'Chad Lawlis', 'Chad Lawlis', 'District of Columbia', 'http://www.nps.gov/thje/index.htm');"`
  - Remaining fields to be populated by cartography: `unit_rank`, `unit_urban`, `ldir`, `min_zoom_poly`, `min_zoom_border`, `min_zoom_tint_band`, `min_zoom_label`, `min_zoom_label_long`, `min_zoom_label_center`, `ldir_enforce`, `min_zoom_simp`, `max_zoom_label`
 1. Populate the `parks_poly` table (continuing THJE example):
- - `psql -d places_boundaries -c "INSERT INTO parks_poly VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje', (select wkb_geometry from thje));"`
+ - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_poly VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje', (select wkb_geometry from thje));"`
 1. Populate the `parks_line` table (continuing THJE example):
-  - `psql -d places_boundaries -c "INSERT INTO parks_line VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje');"`
+  - `psql -U postgres -d places_boundaries -c "INSERT INTO parks_line VALUES ((select unit_id from parks where unit_code = 'thje'), 'thje');"`
 1. Drop the source file table (continuing THJE example):
- - `psql -d places_boundaries -c "DROP TABLE thje;"`
+ - `psql -U postgres -d places_boundaries -c "DROP TABLE thje;"`
 
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
