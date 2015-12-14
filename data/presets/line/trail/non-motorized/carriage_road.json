@@ -1,0 +1,47 @@
+{
+  "name": "Carriage Road",
+  "path": "Trail--Non-Motorized--Carriage_Road",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "tracktype",
+    "surface",
+    "width",
+    "incline",
+    "mtb/scale",
+    "mtb/scale/uphill",
+    "mtb/scale/imba",
+    "sac_scale",
+    "trail_visibility",
+    "nps/nonmotorizeduse",
+    "nps/structure"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "icon": "highway-bridleway",
+  "maki": "maki",
+  "layerIndex": 12,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "highway": "bridleway"
+  },
+  "terms": [
+    "carriage",
+    "bridleway",
+    "horse",
+    "horse drawn",
+    "horse riding",
+    "horse riding trail",
+    "horseback",
+    "horseback riding trail",
+    "trail",
+    "track",
+    "path"
+  ]
+}

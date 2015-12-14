@@ -1,0 +1,33 @@
+{
+  "name": "Cinema",
+  "path": "Service--Entertainment--Cinema",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "fee"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "cinema",
+  "maki": "maki",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "amenity": "cinema"
+  },
+  "terms": [
+    "movie",
+    "theater",
+    "movie theater",
+    "film",
+    "picture"
+  ]
+}

@@ -17,5 +17,12 @@
   "tags": {
     "amenity": "parking",
     "capacity:charging": "*"
-  }
+  },
+  "terms": [
+    "electric",
+    "parking",
+    "charging",
+    "car",
+    "vehicle"
+  ]
 }

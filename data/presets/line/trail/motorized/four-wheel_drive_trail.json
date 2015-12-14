@@ -24,13 +24,20 @@
   "maki": "maki",
   "layerIndex": 15,
   "defaultOrder": null,
-  "matchScore": 1,
+  "matchScore": 1.03,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
     "highway": "track",
-    "4wd_only": "*"
+    "motor_vehicle": "no",
+    "motorcycle": "no",
+    "foot": "no",
+    "bicycle": "no",
+    "atv": "no",
+    "4wd_only": "*",
+    "snowmobile": "no",
+    "horse": "no"
   },
   "terms": [
     "4wd",
@@ -40,9 +47,6 @@
     "four-wheel drive vehicle > 50\" in tread width",
     "four-wheeler",
     "high clearance",
-    "off road",
-    "off-road",
-    "quad",
     "trail",
     "track"
   ]

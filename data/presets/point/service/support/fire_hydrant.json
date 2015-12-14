@@ -1,0 +1,25 @@
+{
+  "name": "Fire Hydrant",
+  "path": "Service--Support--Fire_Hydrant",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "emergency": "fire_hydrant"
+  },
+  "terms": [
+    "fire",
+    "hydrant"
+  ]
+}

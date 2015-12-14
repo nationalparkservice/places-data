@@ -16,5 +16,10 @@
   "inEditor": true,
   "tags": {
     "mooring": "*"
-  }
+  },
+  "terms": [
+    "anchorage",
+    "anchor",
+    "dock"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "Amphitheater",
-  "path": "Service--Theater--Amphitheater",
+  "path": "Service--Entertainment--Amphitheater",
   "fields": [
     "name",
     "nps/unitcode",

@@ -1,0 +1,24 @@
+{
+  "name": "Natural Feature",
+  "path": "Natural_Feature--Natural_Feature--Natural_Feature",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "*"
+  },
+  "terms": [
+    "generic",
+    "natural"
+  ]
+}

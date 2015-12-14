@@ -1,0 +1,24 @@
+{
+  "name": "Shoal (Bar)",
+  "path": "Natural_Feature--Bar--Shoal_(Bar)",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "tidal"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "shoal"
+  },
+  "terms": [
+    "shoal"
+  ]
+}

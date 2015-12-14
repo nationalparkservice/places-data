@@ -1,6 +1,6 @@
 {
   "name": "Fortification",
-  "path": "Building--Miscellaneous--Fortification",
+  "path": "Miscellaneous--Structure--Fortification",
   "fields": [
     "name",
     "nps/unitcode",

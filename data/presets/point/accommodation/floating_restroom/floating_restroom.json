@@ -27,5 +27,9 @@
   "tags": {
     "amenity": "toilets",
     "type": "floating"
-  }
+  },
+  "terms": [
+    "restoom",
+    "latrine"
+  ]
 }

@@ -24,13 +24,20 @@
   "maki": "maki",
   "layerIndex": 15,
   "defaultOrder": null,
-  "matchScore": 1,
+  "matchScore": 1.03,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
     "highway": "track",
-    "snowmobile": "*"
+    "motor_vehicle": "no",
+    "motorcycle": "no",
+    "foot": "no",
+    "bicycle": "no",
+    "atv": "no",
+    "4wd_only": "no",
+    "snowmobile": "*",
+    "horse": "no"
   },
   "terms": [
     "snowmachine",

@@ -1,0 +1,27 @@
+{
+  "name": "Webcam",
+  "path": "Service--Surveillance--Webcam",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "webcam-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "man_made": "surveillance"
+  },
+  "terms": [
+    "surveillance",
+    "camera"
+  ]
+}
