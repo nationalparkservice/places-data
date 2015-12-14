@@ -31,33 +31,41 @@ var parser = csvParse(parserOptions, function (err, presetList) {
     console.log(err);
   } else {
     presetList.filter(function (d) {
-      return d.name.length;
+      return (d.type || d.name).length;
     }).forEach(processPreset);
   }
 });
 
+var getGeometry = function (preset) {
+  return makeGeometryList(preset)[0];
+};
+
 var processPreset = function (preset) {
-  // try {
-  var newPreset = {
-    name: preset.name,
-    description: preset.description,
-    howToMap: preset.howToMap,
-    path: [preset.superclass, preset['class'], preset.name].join('--').replace(/\s/g, '_'),
-    fields: makeFields(preset),
-    geometry: makeGeometryList(preset),
-    icon: makeIcon(preset),
-    maki: makeMaki(preset),
-    layerIndex: parseFloat(preset.layerIndex),
-    defaultOrder: isNaN(preset.defaultOrder) ? null : parseFloat(preset.defaultOrder),
-    matchScore: makeMatchScore(preset),
-    inCarto: !!(preset.inCarto.length > 0 && preset.inCarto.toLowerCase() !== 'no'),
-    inGuide: !!(preset.inGuide.length > 0 && preset.inGuide.toLowerCase() !== 'no'),
-    inEditor: !!(preset.inEditor.length > 0 && preset.inEditor.toLowerCase() !== 'no'),
-    tags: preset.tags ? JSON.parse(preset.tags) : {
-      'error': 'error'
-    },
-    terms: preset.altNames ? JSON.parse(preset.altNames) : []
-  };
+  try {
+    var newPreset = {
+      name: preset.type || preset.name,
+      description: preset.description,
+      howToMap: preset.howToMap,
+      path: [preset.superclass, preset['class'], (preset.type || preset.name)].join('--').replace(/\s/g, '_'),
+      fields: makeFields(preset),
+      geometry: makeGeometryList(preset),
+      icon: makeIcon(preset),
+      maki: makeMaki(preset),
+      layerIndex: parseFloat(preset.layerIndex),
+      defaultOrder: isNaN(preset.defaultOrder) ? null : parseFloat(preset.defaultOrder),
+      matchScore: makeMatchScore(preset),
+      inCarto: !!(preset.inCarto.length > 0 && preset.inCarto.toLowerCase() !== 'no'),
+      inGuide: !!(preset.inGuide.length > 0 && preset.inGuide.toLowerCase() !== 'no'),
+      inEditor: !!(preset.inEditor.length > 0 && preset.inEditor.toLowerCase() !== 'no'),
+      tags: preset.tags ? JSON.parse(preset.tags) : {
+        'error': 'error'
+      },
+      terms: preset.altNames ? JSON.parse(preset.altNames) : []
+    };
+  } catch (err) {
+    console.log('Error with preset', preset.type || preset.name);
+    throw err;
+  }
   // remove empty properties
   Object.getOwnPropertyNames(newPreset).forEach(function (prop) {
     if (newPreset[prop] === null || newPreset[prop] === undefined || !newPreset[prop].toString || newPreset[prop].toString().length === 0) delete newPreset[prop];
@@ -67,7 +75,7 @@ var processPreset = function (preset) {
   var isValid = jsonschema.validate(newPreset, presetSchemaFile);
 
   // write new preset to file
-  var presetFile = (preset.superclass + '/' + preset['class'] + '/' + encodeURIComponent(preset.name).replace(/%20/g, ' ') + '.json').toLowerCase().replace(/\s/g, '_');
+  var presetFile = (getGeometry(preset) + '/' + preset.superclass + '/' + preset['class'] + '/' + encodeURIComponent(preset.type || preset.name).replace(/%20/g, ' ') + '.json').toLowerCase().replace(/\s/g, '_');
   var presetPath = path.join(presetPathRoot, presetFile);
   var presetDir = path.dirname(presetPath);
   var fileContent = JSON.stringify(newPreset, null, 2);
@@ -148,7 +156,7 @@ var makeMatchScore = function (preset) {
     'point': 0.1,
     'vertex': 0.1
   };
-  matchScore = hardcodedScores[preset.name.toLowerCase()] || 1;
+  matchScore = hardcodedScores[(preset.type || preset.name).toLowerCase()] || 1;
 
   // certain tags get a better matchScore
   var specialTags = {
@@ -156,7 +164,14 @@ var makeMatchScore = function (preset) {
     'bicycle': 0.01
   };
 
-  var tags = preset.tags ? JSON.parse(preset.tags) : {};
+  var tags = {};
+  try {
+    tags = preset.tags ? JSON.parse(preset.tags) : {};
+  } catch (err) {
+    console.log('Error with preset tags: ', preset.tags);
+    console.log('This is on preset: ', preset);
+    throw err;
+  }
   for (var tag in tags) {
     if (specialTags[tag]) {
       matchScore += specialTags[tag];
