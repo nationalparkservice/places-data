@@ -23,5 +23,14 @@
   "tags": {
     "highway": "service",
     "service": "parking_aisle"
-  }
+  },
+  "terms": [
+    "parking",
+    "lot",
+    "car park",
+    "car parking",
+    "carpark",
+    "vehicle parking",
+    "marker"
+  ]
 }

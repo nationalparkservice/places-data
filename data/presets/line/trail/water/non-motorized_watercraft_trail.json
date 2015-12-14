@@ -23,7 +23,8 @@
   "inEditor": true,
   "tags": {
     "canoe": "*",
-    "waterway": "*"
+    "waterway": "*",
+    "motorboat": "no"
   },
   "terms": [
     "non-motorized watercraft",

@@ -1,0 +1,31 @@
+{
+  "name": "Athletic Field",
+  "path": "Land_Recreation--Sports_Field--Athletic_Field",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours",
+    "fee"
+  ],
+  "geometry": [
+    "area"
+  ],
+  "icon": "pitch",
+  "maki": "maki",
+  "layerIndex": 10,
+  "defaultOrder": 4,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "leisure": "pitch"
+  },
+  "terms": [
+    "sport",
+    "field",
+    "sport field"
+  ]
+}

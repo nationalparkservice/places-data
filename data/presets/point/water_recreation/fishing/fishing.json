@@ -11,12 +11,16 @@
   "icon": "fishing-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": 20,
+  "defaultOrder": 21,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
     "leisure": "fishing"
-  }
+  },
+  "terms": [
+    "fish",
+    "fishing"
+  ]
 }

@@ -1,0 +1,26 @@
+{
+  "name": "Hot Spring",
+  "path": "Natural_Feature--Thermal--Hot_Spring",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "natural": "hot_spring"
+  },
+  "terms": [
+    "spring",
+    "hot",
+    "water",
+    "geological"
+  ]
+}

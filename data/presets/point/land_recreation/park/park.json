@@ -1,0 +1,31 @@
+{
+  "name": "Park",
+  "path": "Land_Recreation--Park--Park",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "fee"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "park",
+  "maki": "maki",
+  "layerIndex": 60,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "leisure": "park"
+  },
+  "terms": [
+    "playground",
+    "field",
+    "clearing",
+    "recreation"
+  ]
+}

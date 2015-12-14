@@ -16,5 +16,9 @@
   "inEditor": true,
   "tags": {
     "landuse": "aquaculture"
-  }
+  },
+  "terms": [
+    "fish",
+    "hatchery"
+  ]
 }

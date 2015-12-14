@@ -1,14 +1,19 @@
 {
-  "name": "Shoal (Bar)",
-  "path": "Natural_Feature--Shoal--Shoal_(Bar)",
+  "name": "Library",
+  "path": "Service--Library--Library",
   "fields": [
     "name",
     "nps/unitcode",
-    "tidal"
+    "operator",
+    "address",
+    "opening_hours",
+    "fee"
   ],
   "geometry": [
     "point"
   ],
+  "icon": "library",
+  "maki": "maki",
   "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
@@ -16,14 +21,9 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "shoal"
+    "amenity": "library"
   },
   "terms": [
-    "shoal",
-    "bar",
-    "ledge",
-    "reef",
-    "sandbar",
-    "spit"
+    "book"
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "name": "Bookstore",
+  "path": "Service--Shopping--Bookstore",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "store-black",
+  "maki": "npmap-symbol-library",
+  "layerIndex": 10,
+  "defaultOrder": 14,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "shop": "books"
+  },
+  "terms": [
+    "shop",
+    "shopping",
+    "store"
+  ]
+}

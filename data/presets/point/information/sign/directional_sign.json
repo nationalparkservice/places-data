@@ -21,6 +21,7 @@
     "sign:type": "directional"
   },
   "terms": [
-    "sign"
+    "sign",
+    "directional"
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "name": "Golf Course",
+  "path": "Land_Recreation--Golf--Golf_Course",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "address",
+    "opening_hours"
+  ],
+  "geometry": [
+    "area"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": 5,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "leisure": "golf_course"
+  },
+  "terms": [
+    "fairway",
+    "golf",
+    "golfing",
+    "golfing area",
+    "golfing green",
+    "green"
+  ]
+}
