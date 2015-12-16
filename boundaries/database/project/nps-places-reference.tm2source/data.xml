@@ -4,7 +4,7 @@
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
-  <Parameter name="center">-104.3262,40.8471,4</Parameter>
+  <Parameter name="center">-108.2813,38.2382,5</Parameter>
   <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
   <Parameter name="format">pbf</Parameter>
   <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","min_zoom_poly":"Number","show_border":"Boolean","show_tint_band":"Boolean"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","show_poly":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean"}},{"id":"nps_places_reference_points","description":"Points for places boundaries","fields":{"unit_id":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","ldir_enforce":"Boolean","ldir":"String","show_poly":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","show_simp":"Boolean","simp_type":"String"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
@@ -149,8 +149,8 @@ SELECT    "parks"."unit_id",
        <Parameter name="table"><![CDATA[(
 SELECT   "parks"."unit_id",
          "parks"."unit_code",
-         "parks"."unit_name_short" || ' ' || "parks"."unit_desig_abbr" AS "unit_name_short",
-         "parks"."unit_name_long" || ' ' || "parks"."unit_desig_full" AS "unit_name_long",
+         "parks"."unit_name_short" || ' ' || COALESCE("parks"."unit_desig_abbr", '') AS "unit_name_short",
+         "parks"."unit_name_long" || ' ' || COALESCE("parks"."unit_desig_full", '') AS "unit_name_long",
          "parks"."ldir_enforce",
          "parks"."ldir",
          "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
