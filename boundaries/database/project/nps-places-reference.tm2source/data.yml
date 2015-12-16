@@ -6,9 +6,9 @@ _prefs:
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -104.3262
-  - 40.8471
-  - 4
+  - -108.2813
+  - 38.2382
+  - 5
 description: Boundaries of the National Parks
 Layer: 
   - id: nps_places_reference_polygons
@@ -157,8 +157,8 @@ Layer:
         (
         SELECT   "parks"."unit_id",
                  "parks"."unit_code",
-                 "parks"."unit_name_short" || ' ' || "parks"."unit_desig_abbr" AS "unit_name_short",
-                 "parks"."unit_name_long" || ' ' || "parks"."unit_desig_full" AS "unit_name_long",
+                 "parks"."unit_name_short" || ' ' || COALESCE("parks"."unit_desig_abbr", '') AS "unit_name_short",
+                 "parks"."unit_name_long" || ' ' || COALESCE("parks"."unit_desig_full", '') AS "unit_name_long",
                  "parks"."ldir_enforce",
                  "parks"."ldir",
                  "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
