@@ -28,7 +28,8 @@ Layer:
         ( 
         SELECT   "parks"."unit_id",
                  "parks"."unit_code",
-          "parks"."min_zoom_poly",
+                 "parks"."min_zoom_poly",
+                 CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
                  "parks"."min_zoom_border"  <= z(!scale_denominator!) as "show_border",
                  "parks"."min_zoom_tint_band"  <= z(!scale_denominator!) as "show_tint_band",
                  CASE WHEN
@@ -65,6 +66,7 @@ Layer:
       user: postgres
     description: NPS park polygons
     fields: 
+      is_subunit: Boolean
       min_zoom_poly: Number
       show_border: Boolean
       show_tint_band: Boolean
@@ -96,6 +98,7 @@ Layer:
                   "parks"."min_zoom_label" <= z(!scale_denominator!) AND "parks"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
                   "parks"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
                   "parks"."min_zoom_label_center" <= z(!scale_denominator!) as "label_center",
+                  CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
                   CASE WHEN
                     "parks"."min_zoom_poly" <= z(!scale_denominator!)
                   THEN
@@ -129,6 +132,7 @@ Layer:
       user: postgres
     description: Line geometry for parks
     fields: 
+      is_subunit: Boolean
       label_center: Boolean
       label_long: Boolean
       show_label: Boolean
@@ -159,6 +163,7 @@ Layer:
                  "parks"."unit_code",
                  "parks"."unit_name_short" || ' ' || COALESCE("parks"."unit_desig_abbr", '') AS "unit_name_short",
                  "parks"."unit_name_long" || ' ' || COALESCE("parks"."unit_desig_full", '') AS "unit_name_long",
+                 CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
                  "parks"."ldir_enforce",
                  "parks"."ldir",
                  "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
@@ -177,6 +182,7 @@ Layer:
       user: postgres
     description: Points for places boundaries
     fields: 
+      is_subunit: Boolean
       label_center: Boolean
       label_long: Boolean
       ldir: String
