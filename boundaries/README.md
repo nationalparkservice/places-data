@@ -58,7 +58,10 @@ Run the following in Terminal to *update* a park boundary:
  - `ssh -L:15432:localhost:5432 username@10.147.153.191`
 1. Import local boundary via ogr2ogr (MUWO example below, source file `muwo.shp`, table `muwo`):
  - `ogr2ogr -f "PostgreSQL" PG:"host=localhost user=postgres password=postgres dbname=places_boundaries" muwo.shp -nln muwo -nlt MULTIPOLYGON -t_srs EPSG:3857`
- - Use "POLYGON" instead of "MULTIPOLYGON" if boundary is not a multipolygon
+ - `-nln` assigns the table name
+ - `-nlt` assigns the geometry type
+ - `-t_srs` assigns the spatial reference system
+ - Use "POLYGON", "POINT", "MULTIPOINT", "LINESTRING", or "MULTILINESTRING" instead of "MULTIPOLYGON" if boundary is not a multipolygon (see more on ogr2ogr terminology here: http://www.gdal.org/ogr2ogr.html)
 1. Confirm that the table has been created successfully:
  - `psql -d places_boundaries -c "\dt"`
 1. Replace geometry in `parks_poly` table with new geometry (continuing with MUWO example):
