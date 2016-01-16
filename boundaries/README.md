@@ -88,6 +88,21 @@ Run the following in Terminal to *add* a park boundary:
 1. Drop the source file table (continuing THJE example):
  - `psql -U postgres -d places_boundaries -c "DROP TABLE thje;"`
 
+#### Exporting a boundary via pgsql2shp
+
+Run the following in Terminal to *export* a park boundary(s):
+
+1. In one tab, ssh into the server: `ssh -L:15432:localhost:5432 username@10.147.153.191`.
+1. Navigate to the desired directory (on the server) in which you want to download the boundary(s).
+1. Run the following pgsql2shp command: `pgsql2shp -u postgres -f output.shp -k places_boundaries "select * from parks_poly;"`
+ - Replace `output.shp` with the desired name of the output shapefile
+ - Replace the query `"select * from parks_poly"` with the desired query
+1. In another tab, navigate to the desired directory (locally) in which you want to download the boundary(s).
+1. Once in the desired local directory, sftp into the server: `sftp username@10.147.153.191`
+1. Navigate to the directory (on the server) in which the boundary was downloaded.
+1. Run `get output.shp` to pull the shapefile down to your local `pwd`.
+1. Exit out of sftp by running `exit`.
+
 ### PGAdmin
 - If you don't have PGAdmin, you'll need to [download it here](http://www.pgadmin.org/download/).
 - Open PGAdmin and find the button for *Add a connection to a server* (top left)
