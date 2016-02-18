@@ -32,16 +32,8 @@ var isDefault = function (d, base) {
 var categories = function (presets) {
   var idCategories = {};
   var preset;
-
-    console.log('******************************************************************************************');
-    console.log('presets', presets);
-    console.log('******************************************************************************************');
-
   for (var presetId in presets) {
     preset = presets[presetId];
-    console.log('******************************************************************************************');
-    console.log('preset', preset);
-    console.log('******************************************************************************************');
     preset.geometry.forEach(function (geometry) {
       // Loop through all possible geometries
       var category = 'category-' + geometry + '-' + presetId.split('/')[0];
