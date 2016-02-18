@@ -19,5 +19,10 @@
     "tourism": "information",
     "information": "sign",
     "sign:type": "trail_sign"
-  }
+  },
+  "terms": [
+    "sign",
+    "trail",
+    "trail sign"
+  ]
 }

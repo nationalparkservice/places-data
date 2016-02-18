@@ -18,6 +18,7 @@
     "lock": "*"
   },
   "terms": [
-    "sluice"
+    "sluice",
+    "lock"
   ]
 }

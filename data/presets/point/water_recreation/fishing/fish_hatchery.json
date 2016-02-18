@@ -18,6 +18,8 @@
     "landuse": "aquaculture"
   },
   "terms": [
-    "hatchery"
+    "hatchery",
+    "fish",
+    "fish hatchery"
   ]
 }

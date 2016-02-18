@@ -16,5 +16,9 @@
   "inEditor": true,
   "tags": {
     "amenity": "boat_storage"
-  }
+  },
+  "terms": [
+    "boat",
+    "storage"
+  ]
 }

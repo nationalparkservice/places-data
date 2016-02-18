@@ -30,6 +30,9 @@
     "non-motorized watercraft",
     "canoe",
     "kayak",
-    "raft"
+    "raft",
+    "trail",
+    "track",
+    "non-motorized watercraft trail"
   ]
 }

@@ -18,6 +18,8 @@
     "amenity": "waste_disposal"
   },
   "terms": [
-    "trash"
+    "trash",
+    "dumpster",
+    "waste"
   ]
 }

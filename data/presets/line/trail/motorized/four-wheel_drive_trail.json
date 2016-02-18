@@ -44,8 +44,15 @@
     "4 wheeler",
     "4-wheeler",
     "four wheeler",
-    "four-wheel drive vehicle > 50\" in tread width",
+    "four-wheel drive vehicle > 50\\ in tread width",
     "four-wheeler",
-    "high clearance"
+    "high clearance",
+    "trail",
+    "track",
+    "four-wheel drive trail",
+    "off-road",
+    "off road",
+    "four-wheel drive vehicle > 50 in tread width",
+    "four-wheel drive vehicle > 50\" in tread width"
   ]
 }

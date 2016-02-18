@@ -18,5 +18,10 @@
   "tags": {
     "building": "*",
     "historic": "*"
-  }
+  },
+  "terms": [
+    "historic",
+    "building",
+    "historic building"
+  ]
 }

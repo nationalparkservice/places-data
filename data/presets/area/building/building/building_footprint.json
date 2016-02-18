@@ -22,6 +22,8 @@
     "building": "*"
   },
   "terms": [
-    "footprint"
+    "footprint",
+    "building",
+    "structure"
   ]
 }

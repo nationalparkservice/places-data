@@ -36,5 +36,15 @@
     "4wd_only": "no",
     "snowmobile": "no",
     "horse": "no"
-  }
+  },
+  "terms": [
+    "dirt bike",
+    "dirt bike trail",
+    "motorbike",
+    "motorbike trail",
+    "motorcycle",
+    "trail",
+    "track",
+    "motorcycle trail"
+  ]
 }

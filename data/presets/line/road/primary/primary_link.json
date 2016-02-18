@@ -27,6 +27,9 @@
     "highway": "primary_link"
   },
   "terms": [
-    "primary ramp"
+    "primary ramp",
+    "ramp",
+    "on ramp",
+    "off ramp"
   ]
 }
