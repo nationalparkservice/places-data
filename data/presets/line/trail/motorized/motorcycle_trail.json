@@ -36,10 +36,5 @@
     "4wd_only": "no",
     "snowmobile": "no",
     "horse": "no"
-  },
-  "terms": [
-    "motorcycle",
-    "trail",
-    "track"
-  ]
+  }
 }

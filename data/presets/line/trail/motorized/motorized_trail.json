@@ -30,11 +30,5 @@
   "inEditor": true,
   "tags": {
     "highway": "track"
-  },
-  "terms": [
-    "track",
-    "trail",
-    "path",
-    "motorized"
-  ]
+  }
 }

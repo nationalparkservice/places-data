@@ -17,9 +17,5 @@
   "tags": {
     "place": "locality",
     "historic": "district"
-  },
-  "terms": [
-    "historic",
-    "district"
-  ]
+  }
 }

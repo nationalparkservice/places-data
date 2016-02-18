@@ -1,6 +1,6 @@
 {
   "name": "Backcountry Ski Trail",
-  "path": "Winter_Recreation--Downing_Skiing--Backcountry_Ski_Trail",
+  "path": "Winter_Recreation--Downhill_Skiing--Backcountry_Ski_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -31,8 +31,6 @@
   },
   "terms": [
     "backcountry",
-    "backcountry ski",
-    "trail",
-    "track"
+    "backcountry ski"
   ]
 }

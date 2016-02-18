@@ -17,9 +17,5 @@
   "tags": {
     "place": "locality",
     "historic": "landscape"
-  },
-  "terms": [
-    "cultural",
-    "landscape"
-  ]
+  }
 }

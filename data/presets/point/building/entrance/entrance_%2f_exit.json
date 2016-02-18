@@ -6,6 +6,7 @@
     "nps/unitcode"
   ],
   "geometry": [
+    "point",
     "vertex"
   ],
   "icon": "entrance-black",

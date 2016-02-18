@@ -1,6 +1,6 @@
 {
   "name": "Downhill Ski Trail",
-  "path": "Winter_Recreation--Downing_Skiing--Downhill_Ski_Trail",
+  "path": "Winter_Recreation--Downhill_Skiing--Downhill_Ski_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -37,8 +37,6 @@
     "alpine ski trail",
     "alpine trail",
     "downhill",
-    "downhill ski",
-    "trail",
-    "track"
+    "downhill ski"
   ]
 }

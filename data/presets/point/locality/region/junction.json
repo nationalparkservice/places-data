@@ -17,10 +17,5 @@
   "tags": {
     "place": "locality",
     "locality_type": "junction"
-  },
-  "terms": [
-    "locality",
-    "area",
-    "junction"
-  ]
+  }
 }
