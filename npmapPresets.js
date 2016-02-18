@@ -2729,6 +2729,1273 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/airport/runway": {
+      "name": "Runway",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "surface",
+        "width"
+      ],
+      "geometry": [
+        "area"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "runway"
+      },
+      "terms": [
+        "aeroway",
+        "air strip",
+        "landing strip",
+        "landing spot",
+        "plane landing"
+      ],
+      "searchable": true
+    },
+    "service/airport/airport": {
+      "name": "Airport",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "airport-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "aerodrome"
+      },
+      "terms": [
+        "aeroway",
+        "aerodrome",
+        "airport"
+      ],
+      "searchable": true
+    },
+    "service/airport/airstrip": {
+      "name": "Airstrip",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "airfield",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "aerodrome",
+        "aerodrome": "airstrip"
+      },
+      "terms": [
+        "airfield",
+        "air field",
+        "landing field",
+        "airport",
+        "airstrip",
+        "aeroway",
+        "aerodrome"
+      ],
+      "searchable": true
+    },
+    "service/airport/landing strip": {
+      "name": "Landing Strip",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "airfield",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "aerodrome",
+        "aerodrome": "airstrip",
+        "surface": "ground"
+      },
+      "terms": [
+        "landing spot",
+        "plane landing",
+        "airport",
+        "aeroway",
+        "aerodrome",
+        "air field",
+        "landing strip",
+        "landing"
+      ],
+      "searchable": true
+    },
+    "service/airport/seaplane base": {
+      "name": "Seaplane Base",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "seamark:type": "seaplane_landing_area"
+      },
+      "terms": [
+        "float landing",
+        "float plane",
+        "airport"
+      ],
+      "searchable": true
+    },
+    "service/bank/atm": {
+      "name": "ATM",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "atm"
+      },
+      "terms": [
+        "automated teller machine",
+        "cash",
+        "cash dispenser",
+        "atm"
+      ],
+      "searchable": true
+    },
+    "service/bus/bus stop %2f shuttle stop": {
+      "name": "Bus Stop / Shuttle Stop",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "public_transport",
+        "network",
+        "shelter",
+        "bench"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "bus-stop-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "bus_stop"
+      },
+      "terms": [
+        "bus stop",
+        "shuttle stop",
+        "bus station",
+        "bus stop / shuttle stop"
+      ],
+      "searchable": true
+    },
+    "service/entertainment/amphitheater": {
+      "name": "Amphitheater",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "amphitheater-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      },
+      "terms": [
+        "theatre",
+        "theater",
+        "opera house",
+        "performance",
+        "play",
+        "playhouse",
+        "musical",
+        "amphitheater"
+      ],
+      "searchable": true
+    },
+    "service/entertainment/cinema": {
+      "name": "Cinema",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "cinema",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "cinema"
+      },
+      "terms": [
+        "movie",
+        "movies",
+        "movie theater",
+        "film",
+        "picture",
+        "theater"
+      ],
+      "searchable": true
+    },
+    "service/entrance/entrance station": {
+      "name": "Entrance Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "entrance-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -7,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "entrance"
+      },
+      "terms": [
+        "entrance",
+        "entry",
+        "exit",
+        "portal",
+        "entrance station",
+        "gateway"
+      ],
+      "searchable": true
+    },
+    "service/entrance/fee booth": {
+      "name": "Fee Booth",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "toll_booth"
+      },
+      "terms": [
+        "fee",
+        "toll",
+        "toll booth",
+        "fee booth"
+      ],
+      "searchable": true
+    },
+    "service/ferry/ferry terminal": {
+      "name": "Ferry Terminal",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "cargo"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "ferry",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "ferry_terminal"
+      },
+      "terms": [
+        "ferry",
+        "terminal",
+        "boat terminal",
+        "ferry terminal"
+      ],
+      "searchable": true
+    },
+    "service/food/food service": {
+      "name": "Food Service",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "food-service-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 12,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "food_court"
+      },
+      "terms": [
+        "cafe",
+        "food",
+        "food court",
+        "restaurant",
+        "snacks",
+        "snack bar",
+        "food service"
+      ],
+      "searchable": true
+    },
+    "service/fuel/gas station": {
+      "name": "Gas Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "gas-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 16,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fuel"
+      },
+      "terms": [
+        "fuel",
+        "fuel pump",
+        "petrol station",
+        "petrol",
+        "propane",
+        "diesel",
+        "lng",
+        "liquified natural gas",
+        "cng",
+        "compressed natural gas",
+        "biodiesel",
+        "gas station"
+      ],
+      "searchable": true
+    },
+    "service/internet/wi-fi": {
+      "name": "Wi-Fi",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "wifi": "*"
+      },
+      "terms": [
+        "wifi",
+        "internet",
+        "online"
+      ],
+      "searchable": true
+    },
+    "service/laundry/laundry": {
+      "name": "Laundry",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "laundry-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "shop": "laundry"
+      },
+      "terms": [
+        "coin laundry",
+        "coinwash",
+        "laundry service",
+        "launderette",
+        "laundrette",
+        "laundromat",
+        "self-service laundry",
+        "laundry"
+      ],
+      "searchable": true
+    },
+    "service/library/library": {
+      "name": "Library",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "library",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "library"
+      },
+      "terms": [
+        "book"
+      ],
+      "searchable": true
+    },
+    "service/parking/electric vehicle parking": {
+      "name": "Electric Vehicle Parking",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "parking",
+        "capacity:charging": "*"
+      },
+      "terms": [
+        "electric",
+        "electric car",
+        "electric vehicle",
+        "car charging",
+        "charging",
+        "parking lot",
+        "vehicle charging",
+        "parking",
+        "car",
+        "vehicle",
+        "electric vehicle parking"
+      ],
+      "searchable": true
+    },
+    "service/parking/parking lot": {
+      "name": "Parking Lot",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "capacity",
+        "maxstay",
+        "fee",
+        "nps/trailuse"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "parking-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -3,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "parking"
+      },
+      "terms": [
+        "parking",
+        "lot",
+        "car park",
+        "car parking",
+        "carpark",
+        "vehicle parking",
+        "parking lot"
+      ],
+      "searchable": true
+    },
+    "service/parking/roadside pullout": {
+      "name": "Roadside Pullout",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "rest_area"
+      },
+      "terms": [
+        "passing place",
+        "pullout",
+        "pull off",
+        "pull-off",
+        "roadside pull off",
+        "roadside pull-off",
+        "roadside turnout",
+        "turnout",
+        "roadside pullout"
+      ],
+      "searchable": true
+    },
+    "service/post/mailbox": {
+      "name": "Mailbox",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "post_box"
+      },
+      "terms": [
+        "mail box",
+        "mail drop",
+        "postbox",
+        "post box",
+        "mailbox"
+      ],
+      "searchable": true
+    },
+    "service/post/post office": {
+      "name": "Post Office",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "post-office-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "post_office"
+      },
+      "terms": [
+        "letter",
+        "mail",
+        "mail office",
+        "package",
+        "parcel",
+        "post",
+        "post office"
+      ],
+      "searchable": true
+    },
+    "service/rail/metro stop %2f subway entrance": {
+      "name": "Metro Stop / Subway Entrance",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "rail-metro",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "railway": "subway_entrance"
+      },
+      "terms": [
+        "metro stop",
+        "subway entrance",
+        "subway exit",
+        "metro stop / subway entrance"
+      ],
+      "searchable": true
+    },
+    "service/rail/train station": {
+      "name": "Train Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels",
+        "smoking"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "rail",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "train_station"
+      },
+      "terms": [
+        "depot",
+        "railroad station",
+        "railway station",
+        "station",
+        "train station"
+      ],
+      "searchable": true
+    },
+    "service/shopping/bookstore": {
+      "name": "Bookstore",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "store-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 14,
+      "matchScore": 1,
+      "tags": {
+        "shop": "books"
+      },
+      "terms": [
+        "book",
+        "reading",
+        "shop",
+        "shopping",
+        "store"
+      ],
+      "searchable": true
+    },
+    "service/shopping/gift shop": {
+      "name": "Gift Shop",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "store-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 15,
+      "matchScore": 1,
+      "tags": {
+        "shop": "gift"
+      },
+      "terms": [
+        "gift",
+        "shop",
+        "shopping",
+        "store"
+      ],
+      "searchable": true
+    },
+    "service/shopping/store": {
+      "name": "Store",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "store-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 13,
+      "matchScore": 1,
+      "tags": {
+        "shop": "general"
+      },
+      "terms": [
+        "shop",
+        "shopping",
+        "general store",
+        "store"
+      ],
+      "searchable": true
+    },
+    "service/showers/showers": {
+      "name": "Showers",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee",
+        "access"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "showers-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "shower"
+      },
+      "terms": [
+        "bath",
+        "bathhouse",
+        "bath house",
+        "shower",
+        "showers"
+      ],
+      "searchable": true
+    },
+    "service/support/emergency telephone": {
+      "name": "Emergency Telephone",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "telephone-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "emergency": "phone"
+      },
+      "terms": [
+        "emergency phone",
+        "phone",
+        "emergency",
+        "emergency telephone"
+      ],
+      "searchable": true
+    },
+    "service/support/fire hydrant": {
+      "name": "Fire Hydrant",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "emergency": "fire_hydrant"
+      },
+      "terms": [
+        "fire",
+        "hydrant"
+      ],
+      "searchable": true
+    },
+    "service/support/fire station": {
+      "name": "Fire Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "fire-station",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fire_station"
+      },
+      "terms": [
+        "fire department",
+        "emergency",
+        "fire station"
+      ],
+      "searchable": true
+    },
+    "service/support/first aid station": {
+      "name": "First Aid Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "first-aid-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "first_aid"
+      },
+      "terms": [
+        "clinic",
+        "first aid",
+        "medical",
+        "medical clinic",
+        "emergency",
+        "first aid station"
+      ],
+      "searchable": true
+    },
+    "service/support/hospital": {
+      "name": "Hospital",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "emergency"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "hospital-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "hospital"
+      },
+      "terms": [
+        "doctor",
+        "emergency room",
+        "health service",
+        "hospital grounds",
+        "institution",
+        "infirmary",
+        "medical",
+        "sick",
+        "surgery",
+        "ward",
+        "emergency",
+        "hospital",
+        "clinic"
+      ],
+      "searchable": true
+    },
+    "service/support/patrol cabin": {
+      "name": "Patrol Cabin",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "patrol_cabin"
+      },
+      "terms": [
+        "cabin",
+        "backcountry cabin",
+        "backcountry office",
+        "backcountry ranger cabin",
+        "patrol",
+        "ranger cabin",
+        "ranger patrol cabin",
+        "patrol cabin"
+      ],
+      "searchable": true
+    },
+    "service/support/police": {
+      "name": "Police",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "police",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "police"
+      },
+      "terms": [
+        "badge",
+        "constable",
+        "cops",
+        "detective",
+        "fed",
+        "law enforcement",
+        "officer",
+        "police force",
+        "police station",
+        "emergency",
+        "police",
+        "patrol"
+      ],
+      "searchable": true
+    },
+    "service/support/ranger station": {
+      "name": "Ranger Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "ranger-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -2,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "ranger_station"
+      },
+      "terms": [
+        "park ranger",
+        "permit center",
+        "permit centre",
+        "ranger",
+        "warden office",
+        "warden center",
+        "ranger station",
+        "backcountry office"
+      ],
+      "searchable": true
+    },
+    "service/surveillance/webcam": {
+      "name": "Webcam",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "webcam-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "surveillance"
+      },
+      "terms": [
+        "surveillance",
+        "camera"
+      ],
+      "searchable": true
+    },
+    "service/telephone/telephone": {
+      "name": "Telephone",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "indoor"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "telephone-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 17,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "telephone"
+      },
+      "terms": [
+        "pay phone",
+        "phone",
+        "telephone box",
+        "phone booth",
+        "telephone"
+      ],
+      "searchable": true
+    },
+    "service/waste/dumpster": {
+      "name": "Dumpster",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "waste_disposal"
+      },
+      "terms": [
+        "trash",
+        "dumpster",
+        "waste"
+      ],
+      "searchable": true
+    },
+    "service/waste/litter receptacle": {
+      "name": "Litter Receptacle",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "waste",
+        "bin"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "litter-receptacle-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 19,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "waste_basket"
+      },
+      "terms": [
+        "waste basket",
+        "waste paper basket",
+        "trash bin",
+        "waste bin",
+        "trash",
+        "rubbish",
+        "litter",
+        "garbage"
+      ],
+      "searchable": true
+    },
+    "service/waste/recycling": {
+      "name": "Recycling",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "recycling/cans",
+        "recycling/glass",
+        "recycling/paper",
+        "recycling/clothes"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "recycling-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "recycling"
+      },
+      "terms": [
+        "can",
+        "bottle",
+        "glass",
+        "recycle",
+        "recycle center",
+        "recycle station",
+        "recycling center",
+        "recycling station",
+        "salvage",
+        "scrap",
+        "recycling",
+        "garbage",
+        "trash"
+      ],
+      "searchable": true
+    },
+    "service/water/fountain": {
+      "name": "Fountain",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "drinking_water",
+        "lit"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fountain"
+      },
+      "terms": [
+        "well",
+        "fountain"
+      ],
+      "searchable": true
+    },
+    "service/water/potable water": {
+      "name": "Potable Water",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "description",
+        "indoor",
+        "access"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "drinking-water-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 18,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "drinking_water"
+      },
+      "terms": [
+        "drinking fountain",
+        "drinking water",
+        "potable",
+        "fountain"
+      ],
+      "searchable": true
+    },
+    "service/water/radiator water": {
+      "name": "Radiator Water",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "radiator-water-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "emergency": "water_tank"
+      },
+      "terms": [
+        "water tank",
+        "radiator water"
+      ],
+      "searchable": true
+    },
+    "service/water/water well": {
+      "name": "Water Well",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "drinking_water",
+        "pump"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "water_well"
+      },
+      "terms": [
+        "well",
+        "water well"
+      ],
+      "searchable": true
+    },
     "structure/recreation/boat dock": {
       "name": "Boat Dock",
       "fields": [
@@ -6332,1247 +7599,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "service/airport/airport": {
-      "name": "Airport",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "airport-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "aeroway": "aerodrome"
-      },
-      "terms": [
-        "aeroway",
-        "aerodrome",
-        "airport"
-      ],
-      "searchable": true
-    },
-    "service/airport/airstrip": {
-      "name": "Airstrip",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "airfield",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "aeroway": "aerodrome",
-        "aerodrome": "airstrip"
-      },
-      "terms": [
-        "airfield",
-        "air field",
-        "landing field",
-        "airport",
-        "airstrip",
-        "aeroway",
-        "aerodrome"
-      ],
-      "searchable": true
-    },
-    "service/airport/landing strip": {
-      "name": "Landing Strip",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "airfield",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "aeroway": "aerodrome",
-        "aerodrome": "airstrip",
-        "surface": "ground"
-      },
-      "terms": [
-        "landing spot",
-        "plane landing",
-        "airport",
-        "aeroway",
-        "aerodrome",
-        "air field",
-        "landing strip",
-        "landing"
-      ],
-      "searchable": true
-    },
-    "service/airport/seaplane base": {
-      "name": "Seaplane Base",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "seamark:type": "seaplane_landing_area"
-      },
-      "terms": [
-        "float landing",
-        "float plane",
-        "airport"
-      ],
-      "searchable": true
-    },
-    "service/bank/atm": {
-      "name": "ATM",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "fee"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "atm"
-      },
-      "terms": [
-        "automated teller machine",
-        "cash",
-        "cash dispenser",
-        "atm"
-      ],
-      "searchable": true
-    },
-    "service/bus/bus stop %2f shuttle stop": {
-      "name": "Bus Stop / Shuttle Stop",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "public_transport",
-        "network",
-        "shelter",
-        "bench"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "bus-stop-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "bus_stop"
-      },
-      "terms": [
-        "bus stop",
-        "shuttle stop",
-        "bus station",
-        "bus stop / shuttle stop"
-      ],
-      "searchable": true
-    },
-    "service/entertainment/amphitheater": {
-      "name": "Amphitheater",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "amphitheater-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "theatre",
-        "theatre:type": "amphi"
-      },
-      "terms": [
-        "theatre",
-        "theater",
-        "opera house",
-        "performance",
-        "play",
-        "playhouse",
-        "musical",
-        "amphitheater"
-      ],
-      "searchable": true
-    },
-    "service/entertainment/cinema": {
-      "name": "Cinema",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "fee"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "cinema",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "cinema"
-      },
-      "terms": [
-        "movie",
-        "movies",
-        "movie theater",
-        "film",
-        "picture",
-        "theater"
-      ],
-      "searchable": true
-    },
-    "service/entrance/entrance station": {
-      "name": "Entrance Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "entrance-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -7,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "entrance"
-      },
-      "terms": [
-        "entrance",
-        "entry",
-        "exit",
-        "portal",
-        "entrance station",
-        "gateway"
-      ],
-      "searchable": true
-    },
-    "service/entrance/fee booth": {
-      "name": "Fee Booth",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "toll_booth"
-      },
-      "terms": [
-        "fee",
-        "toll",
-        "toll booth",
-        "fee booth"
-      ],
-      "searchable": true
-    },
-    "service/ferry/ferry terminal": {
-      "name": "Ferry Terminal",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "cargo"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "ferry",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "ferry_terminal"
-      },
-      "terms": [
-        "ferry",
-        "terminal",
-        "boat terminal",
-        "ferry terminal"
-      ],
-      "searchable": true
-    },
-    "service/food/food service": {
-      "name": "Food Service",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "food-service-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 12,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "food_court"
-      },
-      "terms": [
-        "cafe",
-        "food",
-        "food court",
-        "restaurant",
-        "snacks",
-        "snack bar",
-        "food service"
-      ],
-      "searchable": true
-    },
-    "service/fuel/gas station": {
-      "name": "Gas Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "gas-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 16,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fuel"
-      },
-      "terms": [
-        "fuel",
-        "fuel pump",
-        "petrol station",
-        "petrol",
-        "propane",
-        "diesel",
-        "lng",
-        "liquified natural gas",
-        "cng",
-        "compressed natural gas",
-        "biodiesel",
-        "gas station"
-      ],
-      "searchable": true
-    },
-    "service/internet/wi-fi": {
-      "name": "Wi-Fi",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "wifi": "*"
-      },
-      "terms": [
-        "wifi",
-        "internet",
-        "online"
-      ],
-      "searchable": true
-    },
-    "service/laundry/laundry": {
-      "name": "Laundry",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "laundry-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "shop": "laundry"
-      },
-      "terms": [
-        "coin laundry",
-        "coinwash",
-        "laundry service",
-        "launderette",
-        "laundrette",
-        "laundromat",
-        "self-service laundry",
-        "laundry"
-      ],
-      "searchable": true
-    },
-    "service/library/library": {
-      "name": "Library",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "fee"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "library",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "library"
-      },
-      "terms": [
-        "book"
-      ],
-      "searchable": true
-    },
-    "service/parking/electric vehicle parking": {
-      "name": "Electric Vehicle Parking",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "parking",
-        "capacity:charging": "*"
-      },
-      "terms": [
-        "electric",
-        "electric car",
-        "electric vehicle",
-        "car charging",
-        "charging",
-        "parking lot",
-        "vehicle charging",
-        "parking",
-        "car",
-        "vehicle",
-        "electric vehicle parking"
-      ],
-      "searchable": true
-    },
-    "service/parking/parking lot": {
-      "name": "Parking Lot",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "capacity",
-        "maxstay",
-        "fee",
-        "nps/trailuse"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -3,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "parking"
-      },
-      "terms": [
-        "parking",
-        "lot",
-        "car park",
-        "car parking",
-        "carpark",
-        "vehicle parking",
-        "parking lot"
-      ],
-      "searchable": true
-    },
-    "service/parking/roadside pullout": {
-      "name": "Roadside Pullout",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "rest_area"
-      },
-      "terms": [
-        "passing place",
-        "pullout",
-        "pull off",
-        "pull-off",
-        "roadside pull off",
-        "roadside pull-off",
-        "roadside turnout",
-        "turnout",
-        "roadside pullout"
-      ],
-      "searchable": true
-    },
-    "service/post/mailbox": {
-      "name": "Mailbox",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "post_box"
-      },
-      "terms": [
-        "mail box",
-        "mail drop",
-        "postbox",
-        "post box",
-        "mailbox"
-      ],
-      "searchable": true
-    },
-    "service/post/post office": {
-      "name": "Post Office",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "post-office-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "post_office"
-      },
-      "terms": [
-        "letter",
-        "mail",
-        "mail office",
-        "package",
-        "parcel",
-        "post",
-        "post office"
-      ],
-      "searchable": true
-    },
-    "service/rail/metro stop %2f subway entrance": {
-      "name": "Metro Stop / Subway Entrance",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "rail-metro",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "railway": "subway_entrance"
-      },
-      "terms": [
-        "metro stop",
-        "subway entrance",
-        "subway exit",
-        "metro stop / subway entrance"
-      ],
-      "searchable": true
-    },
-    "service/rail/train station": {
-      "name": "Train Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels",
-        "smoking"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "rail",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "train_station"
-      },
-      "terms": [
-        "depot",
-        "railroad station",
-        "railway station",
-        "station",
-        "train station"
-      ],
-      "searchable": true
-    },
-    "service/shopping/bookstore": {
-      "name": "Bookstore",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "store-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 14,
-      "matchScore": 1,
-      "tags": {
-        "shop": "books"
-      },
-      "terms": [
-        "book",
-        "reading",
-        "shop",
-        "shopping",
-        "store"
-      ],
-      "searchable": true
-    },
-    "service/shopping/gift shop": {
-      "name": "Gift Shop",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "store-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 15,
-      "matchScore": 1,
-      "tags": {
-        "shop": "gift"
-      },
-      "terms": [
-        "gift",
-        "shop",
-        "shopping",
-        "store"
-      ],
-      "searchable": true
-    },
-    "service/shopping/store": {
-      "name": "Store",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "store-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 13,
-      "matchScore": 1,
-      "tags": {
-        "shop": "general"
-      },
-      "terms": [
-        "shop",
-        "shopping",
-        "general store",
-        "store"
-      ],
-      "searchable": true
-    },
-    "service/showers/showers": {
-      "name": "Showers",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "fee",
-        "access"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "showers-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "shower"
-      },
-      "terms": [
-        "bath",
-        "bathhouse",
-        "bath house",
-        "shower",
-        "showers"
-      ],
-      "searchable": true
-    },
-    "service/support/emergency telephone": {
-      "name": "Emergency Telephone",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "telephone-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "emergency": "phone"
-      },
-      "terms": [
-        "emergency phone",
-        "phone",
-        "emergency",
-        "emergency telephone"
-      ],
-      "searchable": true
-    },
-    "service/support/fire hydrant": {
-      "name": "Fire Hydrant",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "emergency": "fire_hydrant"
-      },
-      "terms": [
-        "fire",
-        "hydrant"
-      ],
-      "searchable": true
-    },
-    "service/support/fire station": {
-      "name": "Fire Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "fire-station",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fire_station"
-      },
-      "terms": [
-        "fire department",
-        "emergency",
-        "fire station"
-      ],
-      "searchable": true
-    },
-    "service/support/first aid station": {
-      "name": "First Aid Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "first-aid-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "first_aid"
-      },
-      "terms": [
-        "clinic",
-        "first aid",
-        "medical",
-        "medical clinic",
-        "emergency",
-        "first aid station"
-      ],
-      "searchable": true
-    },
-    "service/support/hospital": {
-      "name": "Hospital",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "emergency"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "hospital-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "hospital"
-      },
-      "terms": [
-        "doctor",
-        "emergency room",
-        "health service",
-        "hospital grounds",
-        "institution",
-        "infirmary",
-        "medical",
-        "sick",
-        "surgery",
-        "ward",
-        "emergency",
-        "hospital",
-        "clinic"
-      ],
-      "searchable": true
-    },
-    "service/support/patrol cabin": {
-      "name": "Patrol Cabin",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "patrol_cabin"
-      },
-      "terms": [
-        "cabin",
-        "backcountry cabin",
-        "backcountry office",
-        "backcountry ranger cabin",
-        "patrol",
-        "ranger cabin",
-        "ranger patrol cabin",
-        "patrol cabin"
-      ],
-      "searchable": true
-    },
-    "service/support/police": {
-      "name": "Police",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "police",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "police"
-      },
-      "terms": [
-        "badge",
-        "constable",
-        "cops",
-        "detective",
-        "fed",
-        "law enforcement",
-        "officer",
-        "police force",
-        "police station",
-        "emergency",
-        "police",
-        "patrol"
-      ],
-      "searchable": true
-    },
-    "service/support/ranger station": {
-      "name": "Ranger Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "ranger-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -2,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "ranger_station"
-      },
-      "terms": [
-        "park ranger",
-        "permit center",
-        "permit centre",
-        "ranger",
-        "warden office",
-        "warden center",
-        "ranger station",
-        "backcountry office"
-      ],
-      "searchable": true
-    },
-    "service/surveillance/webcam": {
-      "name": "Webcam",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "webcam-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "surveillance"
-      },
-      "terms": [
-        "surveillance",
-        "camera"
-      ],
-      "searchable": true
-    },
-    "service/telephone/telephone": {
-      "name": "Telephone",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "indoor"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "telephone-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 17,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "telephone"
-      },
-      "terms": [
-        "pay phone",
-        "phone",
-        "telephone box",
-        "phone booth",
-        "telephone"
-      ],
-      "searchable": true
-    },
-    "service/waste/dumpster": {
-      "name": "Dumpster",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "waste_disposal"
-      },
-      "terms": [
-        "trash",
-        "dumpster",
-        "waste"
-      ],
-      "searchable": true
-    },
-    "service/waste/litter receptacle": {
-      "name": "Litter Receptacle",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "waste",
-        "bin"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "litter-receptacle-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 19,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "waste_basket"
-      },
-      "terms": [
-        "waste basket",
-        "waste paper basket",
-        "trash bin",
-        "waste bin",
-        "trash",
-        "rubbish",
-        "litter",
-        "garbage"
-      ],
-      "searchable": true
-    },
-    "service/waste/recycling": {
-      "name": "Recycling",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "recycling/cans",
-        "recycling/glass",
-        "recycling/paper",
-        "recycling/clothes"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "recycling-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "recycling"
-      },
-      "terms": [
-        "can",
-        "bottle",
-        "glass",
-        "recycle",
-        "recycle center",
-        "recycle station",
-        "recycling center",
-        "recycling station",
-        "salvage",
-        "scrap",
-        "recycling",
-        "garbage",
-        "trash"
-      ],
-      "searchable": true
-    },
-    "service/water/fountain": {
-      "name": "Fountain",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "drinking_water",
-        "lit"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fountain"
-      },
-      "terms": [
-        "well",
-        "fountain"
-      ],
-      "searchable": true
-    },
-    "service/water/potable water": {
-      "name": "Potable Water",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "description",
-        "indoor",
-        "access"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "drinking-water-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 18,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "drinking_water"
-      },
-      "terms": [
-        "drinking fountain",
-        "drinking water",
-        "potable",
-        "fountain"
-      ],
-      "searchable": true
-    },
-    "service/water/radiator water": {
-      "name": "Radiator Water",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "radiator-water-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "emergency": "water_tank"
-      },
-      "terms": [
-        "water tank",
-        "radiator water"
-      ],
-      "searchable": true
-    },
-    "service/water/water well": {
-      "name": "Water Well",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "drinking_water",
-        "pump"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "water_well"
-      },
-      "terms": [
-        "well",
-        "water well"
-      ],
-      "searchable": true
-    },
     "water recreation/access/boat launch": {
       "name": "Boat Launch",
       "fields": [
@@ -8367,6 +8393,31 @@ iD.data.npmapPresets = {
       "icon": "parking-black",
       "maki": "npmap-symbol-library"
     },
+    "category-point-service": {
+      "geometry": "point",
+      "displayName": "Service",
+      "members": [
+        "service/food/food service",
+        "service/shopping/store",
+        "service/shopping/bookstore",
+        "service/shopping/gift shop",
+        "service/fuel/gas station",
+        "service/telephone/telephone",
+        "service/water/potable water",
+        "service/waste/litter receptacle"
+      ],
+      "icon": "entrance-station-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-vertex-service": {
+      "geometry": "vertex",
+      "displayName": "Service",
+      "members": [
+        "service/parking/parking lot"
+      ],
+      "icon": "parking-black",
+      "maki": "npmap-symbol-library"
+    },
     "category-area-structure": {
       "geometry": "area",
       "displayName": "Structure",
@@ -8437,31 +8488,6 @@ iD.data.npmapPresets = {
       "members": [
         "locality/region/locale"
       ]
-    },
-    "category-point-service": {
-      "geometry": "point",
-      "displayName": "Service",
-      "members": [
-        "service/food/food service",
-        "service/shopping/store",
-        "service/shopping/bookstore",
-        "service/shopping/gift shop",
-        "service/fuel/gas station",
-        "service/telephone/telephone",
-        "service/water/potable water",
-        "service/waste/litter receptacle"
-      ],
-      "icon": "entrance-station-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-service": {
-      "geometry": "vertex",
-      "displayName": "Service",
-      "members": [
-        "service/parking/parking lot"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library"
     },
     "category-point-water recreation": {
       "geometry": "point",
