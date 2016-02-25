@@ -22,7 +22,7 @@ CREATE MATERIALIZED VIEW geom_poly_simp AS
     ST_SimplifyPreserveTopology(parks_poly.geom_poly, zres(13::double precision)) AS geom_poly_13,
     ST_SimplifyPreserveTopology(parks_poly.geom_poly, zres(14::double precision)) AS geom_poly_14
    FROM parks JOIN parks_poly ON parks.unit_id = parks_poly.unit_id
-  WHERE parks.geom_poly IS NOT NULL
+  WHERE parks_poly.geom_poly IS NOT NULL
 WITH DATA;
 
 
