@@ -94,7 +94,6 @@ var toSql = function () {
           }
           fs.writeFile(outputFilename, inserts.join('\n'), function (err) {
             if (err) return console.log(err);
-            console.log('done!');
           });
         }
       });
