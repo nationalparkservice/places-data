@@ -32,7 +32,6 @@ var isDefault = function (d, base) {
 var categories = function (presets) {
   var idCategories = {};
   var preset;
-
   for (var presetId in presets) {
     preset = presets[presetId];
     preset.geometry.forEach(function (geometry) {

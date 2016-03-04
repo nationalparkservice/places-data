@@ -1,6 +1,6 @@
 {
-  "name": "Backcountry Ski Trail",
-  "path": "Winter_Recreation--Downing_Skiing--Backcountry_Ski_Trail",
+  "name": "Downhill Ski Trail",
+  "path": "Winter_Recreation--Downhill_Skiing--Downhill_Ski_Trail",
   "fields": [
     "name",
     "nps/unitcode",
@@ -20,6 +20,8 @@
   "geometry": [
     "point"
   ],
+  "icon": "downhill-skiing-black",
+  "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
@@ -27,12 +29,17 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "piste:type": "skitour"
+    "piste:type": "downhill"
   },
   "terms": [
-    "backcountry",
-    "backcountry ski",
+    "alpine",
+    "alpine ski",
+    "alpine ski trail",
+    "alpine trail",
+    "downhill",
+    "downhill ski",
     "trail",
-    "track"
+    "track",
+    "downhill ski trail"
   ]
 }

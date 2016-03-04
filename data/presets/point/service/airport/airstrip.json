@@ -25,9 +25,12 @@
     "aerodrome": "airstrip"
   },
   "terms": [
-    "airport",
     "airfield",
     "air field",
-    "landing field"
+    "landing field",
+    "airport",
+    "airstrip",
+    "aeroway",
+    "aerodrome"
   ]
 }

@@ -1,135 +1,137 @@
 iD.data.npmapPresets = {
   "presets": {
-    "accessibility/wheelchair accessible/wheelchair accessible": {
-      "name": "Wheelchair Accessible",
+    "building/building/building footprint": {
+      "name": "Building Footprint",
       "fields": [
         "name",
-        "nps/unitcode"
+        "nps/unitcode",
+        "address",
+        "levels"
+      ],
+      "geometry": [
+        "area"
+      ],
+      "icon": "building",
+      "maki": "maki",
+      "defaultOrder": 1,
+      "matchScore": 1,
+      "tags": {
+        "building": "*"
+      },
+      "terms": [
+        "footprint",
+        "building",
+        "structure"
+      ],
+      "searchable": true
+    },
+    "building/building/building": {
+      "name": "Building",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels"
       ],
       "geometry": [
         "point"
       ],
-      "icon": "wheelchair-accessible-black",
-      "maki": "npmap-symbol-library",
+      "icon": "building",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "wheelchair": "*"
+        "building": "*"
       },
       "terms": [
-        "wheelchair",
-        "accessible"
+        "structure",
+        "building"
       ],
       "searchable": true
     },
-    "accommodation/floating restroom/floating restroom": {
-      "name": "Floating Restroom",
+    "building/building/building under construction": {
+      "name": "Building Under Construction",
       "fields": [
         "name",
         "nps/unitcode",
-        "operator",
         "address",
-        "opening_hours",
-        "toilets/disposal",
-        "gender",
-        "indoor",
-        "fee",
-        "access"
+        "levels"
       ],
       "geometry": [
         "point"
       ],
-      "icon": "restrooms-black",
-      "maki": "npmap-symbol-library",
+      "icon": "building",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "amenity": "toilets",
-        "type": "floating"
+        "building": "construction"
       },
+      "terms": [
+        "under construction",
+        "construction",
+        "construction area",
+        "construction zone",
+        "building",
+        "building under construction"
+      ],
       "searchable": true
     },
-    "accommodation/restroom/restroom": {
-      "name": "Restroom",
+    "building/building/bunker": {
+      "name": "Bunker",
       "fields": [
         "name",
         "nps/unitcode",
-        "operator",
         "address",
-        "opening_hours",
-        "toilets/disposal",
-        "gender",
-        "indoor",
-        "fee",
-        "access"
+        "levels",
+        "bunker_type"
       ],
       "geometry": [
-        "point",
-        "vertex"
+        "point"
       ],
-      "icon": "restrooms-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -1,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "toilets"
-      },
-      "terms": [
-        "bathroom",
-        "head",
-        "latrine",
-        "lavatory",
-        "outhouse",
-        "privy",
-        "toilet",
-        "toilets",
-        "water closet",
-        "wc"
-      ],
-      "searchable": true
-    },
-    "barrier/fence/fence": {
-      "name": "Fence",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "line"
-      ],
+      "icon": "building",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "barrier": "fence"
+        "building": "bunker"
       },
       "terms": [
-        "barricade",
-        "barrier",
-        "enclosure",
-        "fencing",
-        "palisade",
-        "railing",
-        "stockade"
+        "air-raid shelter",
+        "fallout shelter",
+        "military bunker",
+        "bunker"
       ],
       "searchable": true
     },
-    "barrier/gate/gate": {
-      "name": "Gate",
+    "building/building/public building": {
+      "name": "Public Building",
       "fields": [
         "name",
-        "nps/unitcode"
+        "nps/unitcode",
+        "address",
+        "levels",
+        "smoking"
       ],
       "geometry": [
-        "line"
+        "point"
       ],
+      "icon": "building",
+      "maki": "maki",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "barrier": "gate"
+        "building": "public"
       },
       "terms": [
-        "entry way",
-        "gateway"
+        "public",
+        "civic",
+        "court house",
+        "courthouse",
+        "townhall",
+        "town hall",
+        "building",
+        "public building"
       ],
       "searchable": true
     },
@@ -153,7 +155,8 @@ iD.data.npmapPresets = {
         "building": "barn"
       },
       "terms": [
-        "farmhouse"
+        "farmhouse",
+        "barn"
       ],
       "searchable": true
     },
@@ -177,7 +180,9 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "glasshouse",
-        "hothouse"
+        "hothouse",
+        "greenhouse",
+        "garden"
       ],
       "searchable": true
     },
@@ -227,137 +232,8 @@ iD.data.npmapPresets = {
       "terms": [
         "box stall",
         "pen",
-        "stall"
-      ],
-      "searchable": true
-    },
-    "building/building/building": {
-      "name": "Building",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "*"
-      },
-      "terms": [
-        "structure"
-      ],
-      "searchable": true
-    },
-    "building/building/building footprint": {
-      "name": "Building Footprint",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "area"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "defaultOrder": 1,
-      "matchScore": 1,
-      "tags": {
-        "building": "*"
-      },
-      "terms": [
-        "building",
-        "footprint"
-      ],
-      "searchable": true
-    },
-    "building/building/building under construction": {
-      "name": "Building Under Construction",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "construction"
-      },
-      "terms": [
-        "building",
-        "under construction",
-        "construction",
-        "construction area",
-        "construction zone"
-      ],
-      "searchable": true
-    },
-    "building/building/bunker": {
-      "name": "Bunker",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels",
-        "bunker_type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "bunker"
-      },
-      "terms": [
-        "air-raid shelter",
-        "fallout shelter",
-        "military bunker"
-      ],
-      "searchable": true
-    },
-    "building/building/public building": {
-      "name": "Public Building",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels",
-        "smoking"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "public"
-      },
-      "terms": [
-        "building",
-        "public",
-        "civic",
-        "court house",
-        "courthouse",
-        "townhall",
-        "town hall"
+        "stall",
+        "stable"
       ],
       "searchable": true
     },
@@ -381,7 +257,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "cottage",
-        "log cabin"
+        "log cabin",
+        "cabin"
       ],
       "searchable": true
     },
@@ -405,14 +282,15 @@ iD.data.npmapPresets = {
         "office": "government"
       },
       "terms": [
-        "building",
         "administrative",
         "office",
         "admin",
         "admin office",
         "civil service",
         "government",
-        "government office"
+        "government office",
+        "building",
+        "administrative office"
       ],
       "searchable": true
     },
@@ -436,8 +314,9 @@ iD.data.npmapPresets = {
         "building": "commercial"
       },
       "terms": [
+        "commercial",
         "building",
-        "commercial"
+        "commercial building"
       ],
       "searchable": true
     },
@@ -463,11 +342,15 @@ iD.data.npmapPresets = {
         "function": "headquarters"
       },
       "terms": [
-        "building",
         "government headquarters",
         "hq",
         "park hq",
-        "park headquarters"
+        "park headquarters",
+        "building",
+        "headquarters",
+        "office",
+        "government office",
+        "office building"
       ],
       "searchable": true
     },
@@ -491,9 +374,10 @@ iD.data.npmapPresets = {
         "building": "industrial"
       },
       "terms": [
-        "building",
         "industrial",
-        "factory"
+        "factory",
+        "building",
+        "industrial building"
       ],
       "searchable": true
     },
@@ -517,9 +401,10 @@ iD.data.npmapPresets = {
         "building": "office"
       },
       "terms": [
+        "office",
+        "office building",
         "building",
-        "commercial building",
-        "office building"
+        "commercial building"
       ],
       "searchable": true
     },
@@ -543,9 +428,10 @@ iD.data.npmapPresets = {
         "building": "retail"
       },
       "terms": [
-        "building",
         "commercial building",
-        "retail"
+        "retail",
+        "building",
+        "retail building"
       ],
       "searchable": true
     },
@@ -566,9 +452,10 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "education",
-        "center",
         "learning",
-        "learning center"
+        "learning center",
+        "center",
+        "education center"
       ],
       "searchable": true
     },
@@ -595,7 +482,8 @@ iD.data.npmapPresets = {
         "academy",
         "elementary school",
         "middle school",
-        "high school"
+        "high school",
+        "school building"
       ],
       "searchable": true
     },
@@ -621,7 +509,8 @@ iD.data.npmapPresets = {
         "university",
         "college",
         "higher ed",
-        "higher education"
+        "higher education",
+        "university building"
       ],
       "searchable": true
     },
@@ -632,6 +521,7 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
+        "point",
         "vertex"
       ],
       "icon": "entrance-black",
@@ -644,7 +534,8 @@ iD.data.npmapPresets = {
       "terms": [
         "building entrance",
         "building exit",
-        "emergency exit"
+        "emergency exit",
+        "entrance"
       ],
       "searchable": true
     },
@@ -666,7 +557,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "historic",
-        "building"
+        "building",
+        "historic building"
       ],
       "searchable": true
     },
@@ -695,30 +587,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "building/miscellaneous/fortification": {
-      "name": "Fortification",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "site_type"
-      ],
-      "geometry": [
-        "area"
-      ],
-      "defaultOrder": 3,
-      "matchScore": 1,
-      "tags": {
-        "historic": "archaeological_site",
-        "site_type": "fortification"
-      },
-      "terms": [
-        "fort",
-        "earthworks",
-        "hill fort",
-        "trench"
-      ],
-      "searchable": true
-    },
     "building/place of worship/cathedral": {
       "name": "Cathedral",
       "fields": [
@@ -739,7 +607,8 @@ iD.data.npmapPresets = {
         "building": "cathedral"
       },
       "terms": [
-        "church"
+        "church",
+        "cathedral"
       ],
       "searchable": true
     },
@@ -763,7 +632,8 @@ iD.data.npmapPresets = {
         "building": "chapel"
       },
       "terms": [
-        "church"
+        "church",
+        "chapel"
       ],
       "searchable": true
     },
@@ -787,7 +657,8 @@ iD.data.npmapPresets = {
         "building": "church"
       },
       "terms": [
-        "place of worship"
+        "place of worship",
+        "church"
       ],
       "searchable": true
     },
@@ -810,9 +681,10 @@ iD.data.npmapPresets = {
         "building": "apartments"
       },
       "terms": [
-        "residential building",
         "apartment",
-        "apartment building"
+        "apartment building",
+        "residential building",
+        "apartments"
       ],
       "searchable": true
     },
@@ -835,9 +707,10 @@ iD.data.npmapPresets = {
         "building": "detached"
       },
       "terms": [
-        "residential building",
         "detached",
-        "detached building"
+        "detached building",
+        "residential building",
+        "detached home"
       ],
       "searchable": true
     },
@@ -860,10 +733,11 @@ iD.data.npmapPresets = {
         "building": "dormitory"
       },
       "terms": [
-        "residential building",
         "dorm",
         "dormatorium",
-        "residence hall"
+        "residence hall",
+        "residential building",
+        "dormitory"
       ],
       "searchable": true
     },
@@ -886,9 +760,10 @@ iD.data.npmapPresets = {
         "building": "house"
       },
       "terms": [
-        "residential building",
         "home",
-        "private home"
+        "private home",
+        "residential building",
+        "house"
       ],
       "searchable": true
     },
@@ -914,7 +789,9 @@ iD.data.npmapPresets = {
       "terms": [
         "alpine hut",
         "wilderness hut",
-        "wilderness lodge"
+        "wilderness lodge",
+        "lodge",
+        "hut"
       ],
       "searchable": true
     },
@@ -947,7 +824,8 @@ iD.data.npmapPresets = {
         "public cabin",
         "public use cabin",
         "puc",
-        "resort"
+        "resort",
+        "lodging"
       ],
       "searchable": true
     },
@@ -974,7 +852,8 @@ iD.data.npmapPresets = {
         "park residence",
         "ranger residence",
         "residence",
-        "residential"
+        "residential",
+        "residential building"
       ],
       "searchable": true
     },
@@ -997,9 +876,10 @@ iD.data.npmapPresets = {
         "building": "terrace"
       },
       "terms": [
-        "residential building",
         "terrace",
-        "townhouse"
+        "townhouse",
+        "residential building",
+        "row house"
       ],
       "searchable": true
     },
@@ -1023,7 +903,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "mobile home",
-        "static caravan"
+        "static caravan",
+        "static mobile home"
       ],
       "searchable": true
     },
@@ -1049,12 +930,18 @@ iD.data.npmapPresets = {
         "pavilion_type": "gazebo"
       },
       "terms": [
-        "shelter",
         "alhambra",
         "belvedere",
         "folly",
         "pergola",
-        "rotunda"
+        "rotunda",
+        "shelter",
+        "sanctuary",
+        "cover",
+        "hide",
+        "lean-to",
+        "gazebo",
+        "picnic"
       ],
       "searchable": true
     },
@@ -1077,10 +964,11 @@ iD.data.npmapPresets = {
         "building": "hut"
       },
       "terms": [
-        "shelter",
         "palloza",
         "roundhouse",
-        "yurt"
+        "yurt",
+        "shelter",
+        "hut"
       ],
       "searchable": true
     },
@@ -1105,8 +993,14 @@ iD.data.npmapPresets = {
         "building": "pavilion"
       },
       "terms": [
+        "sports pavilion",
         "shelter",
-        "sports pavilion"
+        "sanctuary",
+        "cover",
+        "hide",
+        "lean-to",
+        "pavilion",
+        "picnic"
       ],
       "searchable": true
     },
@@ -1136,7 +1030,9 @@ iD.data.npmapPresets = {
         "lean-to",
         "picnic shelter",
         "sanctuary",
-        "wall tent"
+        "wall tent",
+        "shelter",
+        "picnic"
       ],
       "searchable": true
     },
@@ -1155,13 +1051,13 @@ iD.data.npmapPresets = {
         "amenity": "shelter"
       },
       "terms": [
-        "shelter",
         "emergency shelter",
         "emergency shelter cabin",
         "tornado shelter",
         "warming hut",
         "warming tent",
-        "warming shelter"
+        "warming shelter",
+        "shelter"
       ],
       "searchable": true
     },
@@ -1196,7 +1092,8 @@ iD.data.npmapPresets = {
         "shop",
         "utility",
         "utility building",
-        "workshop"
+        "workshop",
+        "garage"
       ],
       "searchable": true
     },
@@ -1222,7 +1119,8 @@ iD.data.npmapPresets = {
         "cache",
         "outbuilding",
         "shack",
-        "weatherport"
+        "weatherport",
+        "shed"
       ],
       "searchable": true
     },
@@ -1246,521 +1144,63 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "storage",
-        "storage building"
+        "storage building",
+        "warehouse"
       ],
       "searchable": true
     },
-    "historic/battlefield/battlefield": {
-      "name": "Battlefield",
+    "land recreation/golf/golf course": {
+      "name": "Golf Course",
       "fields": [
         "name",
-        "nps/unitcode"
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
       ],
       "geometry": [
-        "point"
+        "area"
       ],
-      "defaultOrder": null,
+      "defaultOrder": 5,
       "matchScore": 1,
       "tags": {
-        "historic": "battlefield"
+        "leisure": "golf_course"
       },
       "terms": [
-        "historic",
-        "historic battlefield",
-        "battle"
+        "fairway",
+        "golf",
+        "golfing",
+        "golfing area",
+        "golfing green",
+        "green",
+        "golf course"
       ],
       "searchable": true
     },
-    "historic/cannon/cannon": {
-      "name": "Cannon",
+    "land recreation/sports field/athletic field": {
+      "name": "Athletic Field",
       "fields": [
         "name",
-        "nps/unitcode"
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee"
       ],
       "geometry": [
-        "point"
+        "area"
       ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "cannon"
-      },
-      "terms": [
-        "historic",
-        "historic cannon",
-        "artillery",
-        "battering ram",
-        "catapult"
-      ],
-      "searchable": true
-    },
-    "historic/marker/battlefield marker": {
-      "name": "Battlefield Marker",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "marker",
-        "marker_type": "battlefield"
-      },
-      "terms": [
-        "historic",
-        "battlefield",
-        "marker"
-      ],
-      "searchable": true
-    },
-    "historic/marker/historic marker": {
-      "name": "Historic Marker",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "marker"
-      },
-      "terms": [
-        "historic",
-        "marker"
-      ],
-      "searchable": true
-    },
-    "historic/monument/memorial": {
-      "name": "Memorial",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "monument",
+      "icon": "pitch",
       "maki": "maki",
-      "defaultOrder": null,
+      "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
-        "historic": "memorial"
+        "leisure": "pitch"
       },
       "terms": [
-        "historic",
-        "historic memorial"
-      ],
-      "searchable": true
-    },
-    "historic/monument/monument": {
-      "name": "Monument",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "monument",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "monument"
-      },
-      "terms": [
-        "historic",
-        "historic monument"
-      ],
-      "searchable": true
-    },
-    "historic/ruin/historic ruins": {
-      "name": "Historic Ruins",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "ruins"
-      },
-      "terms": [
-        "historic",
-        "ruins"
-      ],
-      "searchable": true
-    },
-    "historic/ship/historic ship": {
-      "name": "Historic Ship",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "ship"
-      },
-      "terms": [
-        "historic",
-        "ship"
-      ],
-      "searchable": true
-    },
-    "historic/site/historic site": {
-      "name": "Historic Site",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "site_type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "*"
-      },
-      "terms": [
-        "historic",
-        "site"
-      ],
-      "searchable": true
-    },
-    "historic/wreck/wreck": {
-      "name": "Wreck",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "wreck"
-      },
-      "terms": [
-        "historic",
-        "shipwreck",
-        "submerged wreck"
-      ],
-      "searchable": true
-    },
-    "information/information/brochure box": {
-      "name": "Brochure Box",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "brochure"
-      },
-      "terms": [
-        "information",
-        "brochure holder",
-        "brochure dispenser",
-        "dispenser",
-        "information dispenser"
-      ],
-      "searchable": true
-    },
-    "information/information/information": {
-      "name": "Information",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 11,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information"
-      },
-      "terms": [
-        "tourist information",
-        "visitor information"
-      ],
-      "searchable": true
-    },
-    "information/information/information board": {
-      "name": "Information Board",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "board"
-      },
-      "terms": [
-        "information",
-        "bulletin board",
-        "information kiosk",
-        "kiosk"
-      ],
-      "searchable": true
-    },
-    "information/information/information map": {
-      "name": "Information Map",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "map"
-      },
-      "terms": [
-        "information",
-        "map"
-      ],
-      "searchable": true
-    },
-    "information/information/interpretive exhibit": {
-      "name": "Interpretive Exhibit",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "exhibit"
-      },
-      "terms": [
-        "information",
-        "attraction",
-        "exhibit",
-        "exhibit / wayside",
-        "exhibit/wayside",
-        "interpretive sign",
-        "tourist attraction",
-        "wayside"
-      ],
-      "searchable": true
-    },
-    "information/sign/directional sign": {
-      "name": "Directional Sign",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "sign",
-        "sign:type": "directional"
-      },
-      "terms": [
-        "sign"
-      ],
-      "searchable": true
-    },
-    "information/sign/gateway sign": {
-      "name": "Gateway Sign",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "sign"
-      },
-      "terms": [
-        "sign",
-        "location",
-        "place name"
-      ],
-      "searchable": true
-    },
-    "information/sign/mile marker": {
-      "name": "Mile Marker",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "milestone"
-      },
-      "terms": [
-        "marker",
-        "milepost"
-      ],
-      "searchable": true
-    },
-    "information/sign/regulatory sign": {
-      "name": "Regulatory Sign",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "sign",
-        "sign:type": "regulatory"
-      },
-      "terms": [
-        "sign",
-        "traffic law"
-      ],
-      "searchable": true
-    },
-    "information/sign/trail marker": {
-      "name": "Trail Marker",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "guidepost"
-      },
-      "terms": [
-        "marker",
-        "path marker"
-      ],
-      "searchable": true
-    },
-    "information/sign/trail sign": {
-      "name": "Trail Sign",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "sign",
-        "sign:type": "trail_sign"
-      },
-      "terms": [
-        "sign"
-      ],
-      "searchable": true
-    },
-    "information/visitor center/visitor center": {
-      "name": "Visitor Center",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "visitor-center-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -8,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information",
-        "information": "office"
-      },
-      "terms": [
-        "information",
-        "visitor centre",
-        "visitor information"
+        "sport",
+        "field",
+        "sport field"
       ],
       "searchable": true
     },
@@ -1785,8 +1225,6 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
-      "icon": "All-terrain trail",
-      "maki": "npmap-symbol-library",
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1803,9 +1241,17 @@ iD.data.npmapPresets = {
         "atv trail",
         "off road",
         "off-road",
+        "ohv",
+        "ohv trail",
+        "orv",
+        "orv trail",
         "quad",
         "trail",
-        "track"
+        "track",
+        "4wd",
+        "4 wheeler",
+        "four-wheeler",
+        "structure"
       ],
       "searchable": true
     },
@@ -1841,14 +1287,18 @@ iD.data.npmapPresets = {
         "4 wheeler",
         "4-wheeler",
         "four wheeler",
-        "four-wheel drive vehicle > 50\" in tread width",
+        "four-wheel drive vehicle > 50\\ in tread width",
         "four-wheeler",
         "high clearance",
-        "off road",
-        "off-road",
-        "quad",
         "trail",
-        "track"
+        "track",
+        "four-wheel drive trail",
+        "atv",
+        "all terrain vehicle",
+        "quad",
+        "off-road",
+        "off road",
+        "four-wheel drive vehicle > 50\" in tread width"
       ],
       "searchable": true
     },
@@ -1886,7 +1336,8 @@ iD.data.npmapPresets = {
         "bike",
         "bike trail",
         "trail",
-        "track"
+        "track",
+        "bicycle trail"
       ],
       "searchable": true
     },
@@ -1910,7 +1361,8 @@ iD.data.npmapPresets = {
         "bicycle rack",
         "bicycle stand",
         "bike parking",
-        "bike stand"
+        "bike stand",
+        "bike rack"
       ],
       "searchable": true
     },
@@ -1935,7 +1387,8 @@ iD.data.npmapPresets = {
         "campfire circle",
         "fire ring",
         "firepit",
-        "fireplace"
+        "fireplace",
+        "campfire ring"
       ],
       "searchable": true
     },
@@ -1962,7 +1415,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "camping",
-        "camping area"
+        "camping area",
+        "campground"
       ],
       "searchable": true
     },
@@ -1991,7 +1445,8 @@ iD.data.npmapPresets = {
       "terms": [
         "camp site",
         "pitch",
-        "tent pad"
+        "tent pad",
+        "campsite"
       ],
       "searchable": true
     },
@@ -2016,7 +1471,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "sanitary disposal station",
-        "dumpstation"
+        "dumpstation",
+        "dump station"
       ],
       "searchable": true
     },
@@ -2044,8 +1500,9 @@ iD.data.npmapPresets = {
         "horse": "*"
       },
       "terms": [
+        "horse campground",
         "campground",
-        "horse campground"
+        "horse camp"
       ],
       "searchable": true
     },
@@ -2073,13 +1530,15 @@ iD.data.npmapPresets = {
         "backcountry": "*"
       },
       "terms": [
-        "campground",
         "backcountry",
         "backcountry campground",
         "backcountry camping",
         "backcountry campsite",
         "primitive",
-        "primitive campsite"
+        "primitive campsite",
+        "campground",
+        "campsite",
+        "camp site"
       ],
       "searchable": true
     },
@@ -2112,7 +1571,10 @@ iD.data.npmapPresets = {
         "motorhome park",
         "rv",
         "rv pad",
-        "rv park"
+        "rv park",
+        "rv campground",
+        "campsite",
+        "camp_site"
       ],
       "searchable": true
     },
@@ -2133,7 +1595,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "canyoneering",
-        "route"
+        "route",
+        "canyoneering route"
       ],
       "searchable": true
     },
@@ -2153,10 +1616,11 @@ iD.data.npmapPresets = {
         "sport": "climbing"
       },
       "terms": [
+        "mountain climbing",
+        "mountain climbing route",
         "climbing",
         "route",
-        "mountain climbing",
-        "mountain climbing route"
+        "climbing route"
       ],
       "searchable": true
     },
@@ -2183,35 +1647,6 @@ iD.data.npmapPresets = {
         "bear cache",
         "bear pole",
         "food pole"
-      ],
-      "searchable": true
-    },
-    "land recreation/golf/golf course": {
-      "name": "Golf Course",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "golfing-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "leisure": "golf_course"
-      },
-      "terms": [
-        "fairway",
-        "golf",
-        "golfing",
-        "golfing area",
-        "golfing green",
-        "green"
       ],
       "searchable": true
     },
@@ -2248,12 +1683,12 @@ iD.data.npmapPresets = {
         "bridleway",
         "equestrian",
         "equestrian trail",
-        "horse",
         "horse riding",
         "horse riding trail",
         "horseback",
         "horseback riding trail",
         "pack and saddle",
+        "horse",
         "trail",
         "track"
       ],
@@ -2295,7 +1730,35 @@ iD.data.npmapPresets = {
         "motorbike trail",
         "motorcycle",
         "trail",
-        "track"
+        "track",
+        "motorcycle trail"
+      ],
+      "searchable": true
+    },
+    "land recreation/park/park": {
+      "name": "Park",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "park",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "leisure": "park"
+      },
+      "terms": [
+        "clearing",
+        "recreation",
+        "playground",
+        "field"
       ],
       "searchable": true
     },
@@ -2317,7 +1780,8 @@ iD.data.npmapPresets = {
         "barbecue",
         "barbecue grill",
         "bbq",
-        "bbq grill"
+        "bbq grill",
+        "grill"
       ],
       "searchable": true
     },
@@ -2343,7 +1807,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "picnic",
-        "picnic site"
+        "picnic site",
+        "picnic area"
       ],
       "searchable": true
     },
@@ -2362,7 +1827,8 @@ iD.data.npmapPresets = {
         "leisure": "picnic_table"
       },
       "terms": [
-        "picnic bench"
+        "picnic bench",
+        "picnic table"
       ],
       "searchable": true
     },
@@ -2382,7 +1848,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "play area",
-        "playpark"
+        "playpark",
+        "playground"
       ],
       "searchable": true
     },
@@ -2416,7 +1883,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "track",
-        "trail"
+        "trail",
+        "path"
       ],
       "searchable": true
     },
@@ -2457,7 +1925,8 @@ iD.data.npmapPresets = {
         "walk",
         "walkway",
         "trail",
-        "path"
+        "path",
+        "track"
       ],
       "searchable": true
     },
@@ -2483,7 +1952,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "guidepost",
-        "guide post"
+        "guide post",
+        "information"
       ],
       "searchable": true
     },
@@ -2506,7 +1976,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "stairs",
-        "staircase"
+        "staircase",
+        "steps"
       ],
       "searchable": true
     },
@@ -2530,7 +2001,10 @@ iD.data.npmapPresets = {
       "terms": [
         "capsule",
         "register",
-        "summit capsule"
+        "summit capsule",
+        "trail head",
+        "trail",
+        "track"
       ],
       "searchable": true
     },
@@ -2565,99 +2039,45 @@ iD.data.npmapPresets = {
       "terms": [
         "trailend",
         "trail end",
-        "trail head"
+        "trail head",
+        "trailhead",
+        "trail",
+        "track"
       ],
       "searchable": true
     },
-    "locality/region/cultural landscape": {
-      "name": "Cultural Landscape",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "locality",
-        "historic": "landscape"
-      },
-      "terms": [
-        "cultural",
-        "landscape"
-      ],
-      "searchable": true
-    },
-    "locality/region/historic district": {
-      "name": "Historic District",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "locality",
-        "historic": "district"
-      },
-      "terms": [
-        "historic",
-        "district"
-      ],
-      "searchable": true
-    },
-    "locality/region/junction": {
-      "name": "Junction",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "locality",
-        "locality_type": "junction"
-      },
-      "searchable": true
-    },
-    "locality/region/locale": {
-      "name": "Locale",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": -5,
-      "matchScore": 1,
-      "tags": {
-        "place": "locality"
-      },
-      "terms": [
-        "area",
-        "locality",
-        "location",
-        "place",
-        "placename",
-        "place name"
-      ],
-      "searchable": true
-    },
-    "locality/region/populated place": {
-      "name": "Populated Place",
+    "miscellaneous/structure/fortification": {
+      "name": "Fortification",
       "fields": [
         "name",
         "nps/unitcode",
-        "population"
+        "site_type"
+      ],
+      "geometry": [
+        "area"
+      ],
+      "defaultOrder": 3,
+      "matchScore": 1,
+      "tags": {
+        "historic": "archaeological_site",
+        "site_type": "fortification"
+      },
+      "terms": [
+        "fort",
+        "earthworks",
+        "hill fort",
+        "trench",
+        "fortification"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/structure/tower": {
+      "name": "Tower",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tower/type"
       ],
       "geometry": [
         "point"
@@ -2665,14 +2085,38 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "place": "hamlet"
+        "man_made": "tower"
       },
       "terms": [
-        "city",
-        "hamlet",
-        "neighborhood",
-        "place",
-        "town"
+        "castle",
+        "clock tower",
+        "fire tower",
+        "lookout tower",
+        "water tower",
+        "tower",
+        "overlook"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/structure/windmill": {
+      "name": "Windmill",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "windmill"
+      },
+      "terms": [
+        "wind turbine",
+        "windpump",
+        "windmill"
       ],
       "searchable": true
     },
@@ -2694,7 +2138,8 @@ iD.data.npmapPresets = {
         "artwork_type": "statue"
       },
       "terms": [
-        "art"
+        "art",
+        "sculpture"
       ],
       "searchable": true
     },
@@ -2737,7 +2182,8 @@ iD.data.npmapPresets = {
         "amenity": "bench"
       },
       "terms": [
-        "seat"
+        "seat",
+        "bench"
       ],
       "searchable": true
     },
@@ -2759,7 +2205,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "ditch",
-        "lateal"
+        "lateal",
+        "canal"
       ],
       "searchable": true
     },
@@ -2810,7 +2257,8 @@ iD.data.npmapPresets = {
         "burial",
         "burial site",
         "headstone",
-        "tomb"
+        "tomb",
+        "grave"
       ],
       "searchable": true
     },
@@ -2833,7 +2281,8 @@ iD.data.npmapPresets = {
       "terms": [
         "breakwater",
         "dike",
-        "jetty"
+        "jetty",
+        "dam"
       ],
       "searchable": true
     },
@@ -2859,7 +2308,8 @@ iD.data.npmapPresets = {
         "fencing",
         "palisade",
         "railing",
-        "stockade"
+        "stockade",
+        "gate"
       ],
       "searchable": true
     },
@@ -2899,7 +2349,8 @@ iD.data.npmapPresets = {
         "leisure": "garden"
       },
       "terms": [
-        "arboretum"
+        "arboretum",
+        "garden"
       ],
       "searchable": true
     },
@@ -2920,7 +2371,7 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "entry way",
-        "gateway"
+        "gate"
       ],
       "searchable": true
     },
@@ -2960,7 +2411,8 @@ iD.data.npmapPresets = {
         "lock": "*"
       },
       "terms": [
-        "sluice"
+        "sluice",
+        "lock"
       ],
       "searchable": true
     },
@@ -2979,7 +2431,8 @@ iD.data.npmapPresets = {
         "landuse": "military"
       },
       "terms": [
-        "military"
+        "military",
+        "military area"
       ],
       "searchable": true
     },
@@ -3001,7 +2454,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "historic",
-        "mine"
+        "mine",
+        "historic mine"
       ],
       "searchable": true
     },
@@ -3024,7 +2478,8 @@ iD.data.npmapPresets = {
       "terms": [
         "quarry",
         "mine",
-        "pit"
+        "pit",
+        "pit mine"
       ],
       "searchable": true
     },
@@ -3066,6 +2521,12 @@ iD.data.npmapPresets = {
       "tags": {
         "tourism": "museum"
       },
+      "terms": [
+        "history",
+        "geology",
+        "nature",
+        "museum"
+      ],
       "searchable": true
     },
     "miscellaneous/oil well/oilfield": {
@@ -3088,7 +2549,10 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "oil field",
-        "pipeline"
+        "oil well",
+        "pipeline",
+        "well",
+        "oilfield"
       ],
       "searchable": true
     },
@@ -3112,7 +2576,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "interest",
-        "poi"
+        "poi",
+        "point of interest"
       ],
       "searchable": true
     },
@@ -3138,7 +2603,8 @@ iD.data.npmapPresets = {
         "protected",
         "protected area",
         "wildlife",
-        "wildlife reserve"
+        "wildlife reserve",
+        "reserve"
       ],
       "searchable": true
     },
@@ -3163,77 +2629,10 @@ iD.data.npmapPresets = {
       "terms": [
         "storage pond",
         "water storage",
-        "water supply"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/structure/fortification": {
-      "name": "Fortification",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "site_type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "historic": "archaeological_site",
-        "site_type": "fortification"
-      },
-      "terms": [
-        "fort",
-        "earthworks",
-        "hill fort",
-        "trench"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/structure/tower": {
-      "name": "Tower",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "tower/type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "tower"
-      },
-      "terms": [
-        "castle",
-        "clock tower",
-        "fire tower",
-        "lookout tower",
-        "water tower"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/structure/windmill": {
-      "name": "Windmill",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "windmill"
-      },
-      "terms": [
-        "wind turbine",
-        "windpump"
+        "water supply",
+        "reservoir",
+        "lake",
+        "tank"
       ],
       "searchable": true
     },
@@ -3257,8 +2656,11 @@ iD.data.npmapPresets = {
         "viewpoint_type": "overlook"
       },
       "terms": [
+        "scenic",
+        "scenic overlook",
+        "overlook",
         "viewpoint",
-        "scenic overlook"
+        "view"
       ],
       "searchable": true
     },
@@ -3285,1117 +2687,13 @@ iD.data.npmapPresets = {
         "scenery",
         "scenic",
         "scenic viewpoint",
+        "view",
         "viewing area",
         "viewing point",
         "vista",
-        "vista point"
+        "vista point",
+        "viewpoint"
       ],
-      "searchable": true
-    },
-    "natural feature/arroyo/arroyo": {
-      "name": "Arroyo",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "drain",
-        "intermittent": "*"
-      },
-      "terms": [
-        "coulee",
-        "draw",
-        "gully",
-        "wash"
-      ],
-      "searchable": true
-    },
-    "natural feature/basin/basin": {
-      "name": "Basin",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "landuse": "basin"
-      },
-      "terms": [
-        "cirque",
-        "hole",
-        "pit",
-        "sink",
-        "sinkhole"
-      ],
-      "searchable": true
-    },
-    "natural feature/bay/bay": {
-      "name": "Bay",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "bay"
-      },
-      "terms": [
-        "arm",
-        "bight",
-        "cove",
-        "estuary",
-        "gulf",
-        "inlet",
-        "sound"
-      ],
-      "searchable": true
-    },
-    "natural feature/beach/beach": {
-      "name": "Beach",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "beach"
-      },
-      "terms": [
-        "coast",
-        "shore",
-        "strand"
-      ],
-      "searchable": true
-    },
-    "natural feature/cape/cape": {
-      "name": "Cape",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "cape"
-      },
-      "terms": [
-        "lea",
-        "neck",
-        "peninsula",
-        "point"
-      ],
-      "searchable": true
-    },
-    "natural feature/cave/cave entrance": {
-      "name": "Cave Entrance",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "cave_entrance"
-      },
-      "terms": [
-        "cave",
-        "cavern",
-        "grotto"
-      ],
-      "searchable": true
-    },
-    "natural feature/cliff/cliff": {
-      "name": "Cliff",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "height"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "cliff"
-      },
-      "terms": [
-        "bluff",
-        "crag",
-        "head",
-        "headland",
-        "nose",
-        "palisades",
-        "precipice",
-        "promontory",
-        "rim",
-        "rimrock",
-        "slope"
-      ],
-      "searchable": true
-    },
-    "natural feature/desert/desert": {
-      "name": "Desert",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "desert"
-      },
-      "searchable": true
-    },
-    "natural feature/dune/dune": {
-      "name": "Dune",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "dune"
-      },
-      "terms": [
-        "sand dune"
-      ],
-      "searchable": true
-    },
-    "natural feature/forest/forest": {
-      "name": "Forest",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "leaf_type",
-        "leaf_cycle",
-        "crop"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "park",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "landuse": "forest"
-      },
-      "terms": [
-        "jungle"
-      ],
-      "searchable": true
-    },
-    "natural feature/forest/woods": {
-      "name": "Woods",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "leaf_type",
-        "leaf_cycle",
-        "crop"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "park2",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "wood"
-      },
-      "terms": [
-        "forest",
-        "wood"
-      ],
-      "searchable": true
-    },
-    "natural feature/glacier/glacier": {
-      "name": "Glacier",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface",
-        "direction"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "glacier"
-      },
-      "terms": [
-        "icefield",
-        "ice patch",
-        "snow patch"
-      ],
-      "searchable": true
-    },
-    "natural feature/grove/grove": {
-      "name": "Grove",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grove"
-      },
-      "terms": [
-        "orchard",
-        "trees"
-      ],
-      "searchable": true
-    },
-    "natural feature/grove/tree": {
-      "name": "Tree",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "tree"
-      },
-      "terms": [
-        "stump"
-      ],
-      "searchable": true
-    },
-    "natural feature/harbor/harbor": {
-      "name": "Harbor",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "harbor",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "harbour": "*"
-      },
-      "terms": [
-        "harbour"
-      ],
-      "searchable": true
-    },
-    "natural feature/island/island": {
-      "name": "Island",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "island"
-      },
-      "terms": [
-        "archipelago",
-        "atoll",
-        "cay",
-        "hammock",
-        "hummock",
-        "isla",
-        "isle",
-        "islet",
-        "key",
-        "moku"
-      ],
-      "searchable": true
-    },
-    "natural feature/isthmus/isthmus": {
-      "name": "Isthmus",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "isthmus"
-      },
-      "terms": [
-        "tombolo"
-      ],
-      "searchable": true
-    },
-    "natural feature/lake/lake": {
-      "name": "Lake",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "water",
-        "water": "lake"
-      },
-      "terms": [
-        "backwater",
-        "lac",
-        "lagoon",
-        "laguna",
-        "lakelet",
-        "loch",
-        "mere",
-        "pond",
-        "pool",
-        "resaca",
-        "waterhole"
-      ],
-      "searchable": true
-    },
-    "natural feature/lava/lava": {
-      "name": "Lava",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "lava"
-      },
-      "terms": [
-        "flow",
-        "jumble",
-        "kepula",
-        "lava bed",
-        "lava flow"
-      ],
-      "searchable": true
-    },
-    "natural feature/pass/mountain pass (saddle %2f gap)": {
-      "name": "Mountain Pass (Saddle / Gap)",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "ele",
-        "direction"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "saddle"
-      },
-      "terms": [
-        "mountain pass",
-        "saddle",
-        "gap",
-        "col",
-        "notch",
-        "pass",
-        "water gap",
-        "wind gap"
-      ],
-      "searchable": true
-    },
-    "natural feature/peak/peak": {
-      "name": "Peak",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "ele"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "triangle",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "peak"
-      },
-      "terms": [
-        "summit",
-        "acme",
-        "ahu",
-        "aiguille",
-        "alp",
-        "berg",
-        "bald",
-        "butte",
-        "cerro",
-        "climax",
-        "colina",
-        "cone",
-        "crest",
-        "crown",
-        "cumbre",
-        "dome",
-        "head",
-        "hill",
-        "horn",
-        "knob",
-        "knoll",
-        "mauna",
-        "mesa",
-        "mesita",
-        "mound",
-        "mount",
-        "mountain",
-        "pinnacle",
-        "puu",
-        "sugarloaf",
-        "tip",
-        "top"
-      ],
-      "searchable": true
-    },
-    "natural feature/plain/grassland": {
-      "name": "Grassland",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grassland"
-      },
-      "terms": [
-        "shrubland"
-      ],
-      "searchable": true
-    },
-    "natural feature/plain/plain": {
-      "name": "Plain",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grassland",
-        "grassland_type": "plain"
-      },
-      "terms": [
-        "highland",
-        "kula",
-        "meadow",
-        "upland"
-      ],
-      "searchable": true
-    },
-    "natural feature/plain/prairie": {
-      "name": "Prairie",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grassland",
-        "grassland": "prarie"
-      },
-      "terms": [
-        "savanna",
-        "steppe"
-      ],
-      "searchable": true
-    },
-    "natural feature/plateau/plateau": {
-      "name": "Plateau",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "landform",
-        "landform": "plateau"
-      },
-      "terms": [
-        "mesa",
-        "table",
-        "tableland"
-      ],
-      "searchable": true
-    },
-    "natural feature/rapids/rapids": {
-      "name": "Rapids",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "whitewater",
-        "width",
-        "rapid_grade"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "rapids"
-      },
-      "terms": [
-        "riffle",
-        "ripple"
-      ],
-      "searchable": true
-    },
-    "natural feature/reef/reef (bar)": {
-      "name": "Reef (Bar)",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "reef"
-      },
-      "terms": [
-        "reef",
-        "bar",
-        "ledge",
-        "sandbar",
-        "shoal",
-        "spit"
-      ],
-      "searchable": true
-    },
-    "natural feature/ridge/ridge": {
-      "name": "Ridge",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "ridge"
-      },
-      "terms": [
-        "crest",
-        "cuesta",
-        "escarpment",
-        "hogback",
-        "lae",
-        "rim",
-        "spur"
-      ],
-      "searchable": true
-    },
-    "natural feature/rock formation/arch": {
-      "name": "Arch",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "arch"
-      },
-      "terms": [
-        "bridge",
-        "land bridge",
-        "natural bridge",
-        "sea arch",
-        "window"
-      ],
-      "searchable": true
-    },
-    "natural feature/rock formation/pillar": {
-      "name": "Pillar",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "rock",
-        "rock_type": "pillar"
-      },
-      "terms": [
-        "chimney",
-        "monument",
-        "pinnacle",
-        "pohaku",
-        "rock tower"
-      ],
-      "searchable": true
-    },
-    "natural feature/rock formation/rock formation": {
-      "name": "Rock Formation",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "rock"
-      },
-      "terms": [
-        "rock",
-        "formation",
-        "fin",
-        "fold",
-        "hoodoo",
-        "nipple",
-        "slickrock",
-        "slide",
-        "spire",
-        "stairs",
-        "throne",
-        "wall"
-      ],
-      "searchable": true
-    },
-    "natural feature/sea/sea": {
-      "name": "Sea",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "sea"
-      },
-      "terms": [
-        "gulf",
-        "ocean"
-      ],
-      "searchable": true
-    },
-    "natural feature/shoal/shoal (bar)": {
-      "name": "Shoal (Bar)",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "tidal"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "shoal"
-      },
-      "terms": [
-        "shoal",
-        "bar",
-        "ledge",
-        "reef",
-        "sandbar",
-        "spit"
-      ],
-      "searchable": true
-    },
-    "natural feature/spring/spring": {
-      "name": "Spring",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "drinking_water"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "spring-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "spring"
-      },
-      "terms": [
-        "seep"
-      ],
-      "searchable": true
-    },
-    "natural feature/strait/strait (channel)": {
-      "name": "Strait (Channel)",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "strait"
-      },
-      "terms": [
-        "strait",
-        "channel",
-        "passage",
-        "reach",
-        "thoroughfare",
-        "throughfare"
-      ],
-      "searchable": true
-    },
-    "natural feature/stream/stream": {
-      "name": "Stream",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "stream"
-      },
-      "terms": [
-        "beck",
-        "branch",
-        "brook",
-        "burn",
-        "course",
-        "creek",
-        "current",
-        "drift",
-        "flood",
-        "flow",
-        "freshet",
-        "race",
-        "rill",
-        "rindle",
-        "rivulet",
-        "run",
-        "runnel",
-        "rush",
-        "spate",
-        "spritz",
-        "surge",
-        "tide",
-        "torrent",
-        "tributary",
-        "watercourse"
-      ],
-      "searchable": true
-    },
-    "natural feature/swamp/swamp": {
-      "name": "Swamp",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "wetland",
-        "wetland": "swamp"
-      },
-      "terms": [
-        "bog",
-        "cienega",
-        "marais",
-        "marsh",
-        "mire",
-        "pocosin"
-      ],
-      "searchable": true
-    },
-    "natural feature/thermal/geyser": {
-      "name": "Geyser",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "geyser"
-      },
-      "terms": [
-        "gusher",
-        "spout",
-        "hot spring",
-        "thermal geyser",
-        "thermal spring"
-      ],
-      "searchable": true
-    },
-    "natural feature/thermal/mud pot": {
-      "name": "Mud Pot",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "mud"
-      },
-      "terms": [
-        "mud"
-      ],
-      "searchable": true
-    },
-    "natural feature/valley/canyon": {
-      "name": "Canyon",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "canyon"
-      },
-      "searchable": true
-    },
-    "natural feature/valley/valley": {
-      "name": "Valley",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "valley"
-      },
-      "terms": [
-        "barranca",
-        "chasm",
-        "cove",
-        "draw",
-        "glen",
-        "gorge",
-        "gulch",
-        "gulf",
-        "hollow",
-        "ravine"
-      ],
-      "searchable": true
-    },
-    "natural feature/volcano/volcano": {
-      "name": "Volcano",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "status",
-        "ele",
-        "type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "triangle",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "volcano"
-      },
-      "terms": [
-        "caldera",
-        "cinder cone",
-        "composite",
-        "composite volcano",
-        "crater",
-        "fumarole",
-        "shield",
-        "shield volcano"
-      ],
-      "searchable": true
-    },
-    "natural feature/waterfall/waterfall": {
-      "name": "Waterfall",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "waterfall"
-      },
-      "terms": [
-        "falls",
-        "cascade",
-        "cataract"
-      ],
-      "searchable": true
-    },
-    "natural feature/wetland/wetland": {
-      "name": "Wetland",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "wetland",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "wetland"
-      },
-      "terms": [
-        "bayou",
-        "bogland",
-        "fen",
-        "fenland",
-        "morass",
-        "muskeg",
-        "quagmire",
-        "slough"
-      ],
-      "searchable": true
-    },
-    "natural line/valley/canyon": {
-      "name": "Canyon",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "canyon"
-      },
       "searchable": true
     },
     "parking/parking/parking lot": {
@@ -4426,7 +2724,1362 @@ iD.data.npmapPresets = {
         "car park",
         "car parking",
         "carpark",
-        "vehicle parking"
+        "vehicle parking",
+        "parking lot"
+      ],
+      "searchable": true
+    },
+    "service/airport/runway": {
+      "name": "Runway",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "surface",
+        "width"
+      ],
+      "geometry": [
+        "area"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "runway"
+      },
+      "terms": [
+        "aeroway",
+        "air strip",
+        "landing strip",
+        "landing spot",
+        "plane landing"
+      ],
+      "searchable": true
+    },
+    "service/airport/airport": {
+      "name": "Airport",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "airport-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "aerodrome"
+      },
+      "terms": [
+        "aeroway",
+        "aerodrome",
+        "airport"
+      ],
+      "searchable": true
+    },
+    "service/airport/airstrip": {
+      "name": "Airstrip",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "airfield",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "aerodrome",
+        "aerodrome": "airstrip"
+      },
+      "terms": [
+        "airfield",
+        "air field",
+        "landing field",
+        "airport",
+        "airstrip",
+        "aeroway",
+        "aerodrome"
+      ],
+      "searchable": true
+    },
+    "service/airport/landing strip": {
+      "name": "Landing Strip",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "airfield",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "aerodrome",
+        "aerodrome": "airstrip",
+        "surface": "ground"
+      },
+      "terms": [
+        "landing spot",
+        "plane landing",
+        "airport",
+        "aeroway",
+        "aerodrome",
+        "air field",
+        "landing strip",
+        "landing"
+      ],
+      "searchable": true
+    },
+    "service/airport/seaplane base": {
+      "name": "Seaplane Base",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "seamark:type": "seaplane_landing_area"
+      },
+      "terms": [
+        "float landing",
+        "float plane",
+        "airport"
+      ],
+      "searchable": true
+    },
+    "service/bank/atm": {
+      "name": "ATM",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "atm"
+      },
+      "terms": [
+        "automated teller machine",
+        "cash",
+        "cash dispenser",
+        "atm"
+      ],
+      "searchable": true
+    },
+    "service/bus/bus stop %2f shuttle stop": {
+      "name": "Bus Stop / Shuttle Stop",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "public_transport",
+        "network",
+        "shelter",
+        "bench"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "bus-stop-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "bus_stop"
+      },
+      "terms": [
+        "bus stop",
+        "shuttle stop",
+        "bus station",
+        "bus stop / shuttle stop"
+      ],
+      "searchable": true
+    },
+    "service/entertainment/amphitheater": {
+      "name": "Amphitheater",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "amphitheater-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "theatre",
+        "theatre:type": "amphi"
+      },
+      "terms": [
+        "theatre",
+        "theater",
+        "opera house",
+        "performance",
+        "play",
+        "playhouse",
+        "musical",
+        "amphitheater"
+      ],
+      "searchable": true
+    },
+    "service/entertainment/cinema": {
+      "name": "Cinema",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "cinema",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "cinema"
+      },
+      "terms": [
+        "movie",
+        "movies",
+        "movie theater",
+        "film",
+        "picture",
+        "theater"
+      ],
+      "searchable": true
+    },
+    "service/entrance/entrance station": {
+      "name": "Entrance Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "entrance-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -7,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "entrance"
+      },
+      "terms": [
+        "entrance",
+        "entry",
+        "exit",
+        "portal",
+        "entrance station",
+        "gateway"
+      ],
+      "searchable": true
+    },
+    "service/entrance/fee booth": {
+      "name": "Fee Booth",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "toll_booth"
+      },
+      "terms": [
+        "fee",
+        "toll",
+        "toll booth",
+        "fee booth"
+      ],
+      "searchable": true
+    },
+    "service/ferry/ferry terminal": {
+      "name": "Ferry Terminal",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "cargo"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "ferry",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "ferry_terminal"
+      },
+      "terms": [
+        "ferry",
+        "terminal",
+        "boat terminal",
+        "ferry terminal"
+      ],
+      "searchable": true
+    },
+    "service/food/food service": {
+      "name": "Food Service",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "food-service-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 12,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "food_court"
+      },
+      "terms": [
+        "cafe",
+        "food",
+        "food court",
+        "restaurant",
+        "snacks",
+        "snack bar",
+        "food service"
+      ],
+      "searchable": true
+    },
+    "service/fuel/gas station": {
+      "name": "Gas Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "gas-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 16,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fuel"
+      },
+      "terms": [
+        "fuel",
+        "fuel pump",
+        "petrol station",
+        "petrol",
+        "propane",
+        "diesel",
+        "lng",
+        "liquified natural gas",
+        "cng",
+        "compressed natural gas",
+        "biodiesel",
+        "gas station"
+      ],
+      "searchable": true
+    },
+    "service/internet/wi-fi": {
+      "name": "Wi-Fi",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "wifi": "*"
+      },
+      "terms": [
+        "wifi",
+        "internet",
+        "online"
+      ],
+      "searchable": true
+    },
+    "service/laundry/laundry": {
+      "name": "Laundry",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "laundry-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "shop": "laundry"
+      },
+      "terms": [
+        "coin laundry",
+        "coinwash",
+        "laundry service",
+        "launderette",
+        "laundrette",
+        "laundromat",
+        "self-service laundry",
+        "laundry"
+      ],
+      "searchable": true
+    },
+    "service/library/library": {
+      "name": "Library",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "library",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "library"
+      },
+      "terms": [
+        "book"
+      ],
+      "searchable": true
+    },
+    "service/parking/electric vehicle parking": {
+      "name": "Electric Vehicle Parking",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "parking",
+        "capacity:charging": "*"
+      },
+      "terms": [
+        "electric",
+        "electric car",
+        "electric vehicle",
+        "car charging",
+        "charging",
+        "parking lot",
+        "vehicle charging",
+        "parking",
+        "car",
+        "vehicle",
+        "electric vehicle parking"
+      ],
+      "searchable": true
+    },
+    "service/parking/parking lot": {
+      "name": "Parking Lot",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "capacity",
+        "maxstay",
+        "fee",
+        "nps/trailuse"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "parking-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -3,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "parking"
+      },
+      "terms": [
+        "parking",
+        "lot",
+        "car park",
+        "car parking",
+        "carpark",
+        "vehicle parking",
+        "parking lot"
+      ],
+      "searchable": true
+    },
+    "service/parking/roadside pullout": {
+      "name": "Roadside Pullout",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "rest_area"
+      },
+      "terms": [
+        "passing place",
+        "pullout",
+        "pull off",
+        "pull-off",
+        "roadside pull off",
+        "roadside pull-off",
+        "roadside turnout",
+        "turnout",
+        "roadside pullout"
+      ],
+      "searchable": true
+    },
+    "service/post/mailbox": {
+      "name": "Mailbox",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "post_box"
+      },
+      "terms": [
+        "mail box",
+        "mail drop",
+        "postbox",
+        "post box",
+        "mailbox"
+      ],
+      "searchable": true
+    },
+    "service/post/post office": {
+      "name": "Post Office",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "post-office-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "post_office"
+      },
+      "terms": [
+        "letter",
+        "mail",
+        "mail office",
+        "package",
+        "parcel",
+        "post",
+        "post office"
+      ],
+      "searchable": true
+    },
+    "service/rail/metro stop %2f subway entrance": {
+      "name": "Metro Stop / Subway Entrance",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "rail-metro",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "railway": "subway_entrance"
+      },
+      "terms": [
+        "metro stop",
+        "subway entrance",
+        "subway exit",
+        "metro stop / subway entrance"
+      ],
+      "searchable": true
+    },
+    "service/rail/train station": {
+      "name": "Train Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels",
+        "smoking"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "rail",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "train_station"
+      },
+      "terms": [
+        "depot",
+        "railroad station",
+        "railway station",
+        "station",
+        "train station"
+      ],
+      "searchable": true
+    },
+    "service/shopping/bookstore": {
+      "name": "Bookstore",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "store-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 14,
+      "matchScore": 1,
+      "tags": {
+        "shop": "books"
+      },
+      "terms": [
+        "book",
+        "reading",
+        "shop",
+        "shopping",
+        "store"
+      ],
+      "searchable": true
+    },
+    "service/shopping/gift shop": {
+      "name": "Gift Shop",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "store-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 15,
+      "matchScore": 1,
+      "tags": {
+        "shop": "gift"
+      },
+      "terms": [
+        "gift",
+        "shop",
+        "shopping",
+        "store"
+      ],
+      "searchable": true
+    },
+    "service/shopping/store": {
+      "name": "Store",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "store-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 13,
+      "matchScore": 1,
+      "tags": {
+        "shop": "general"
+      },
+      "terms": [
+        "shop",
+        "shopping",
+        "general store",
+        "store"
+      ],
+      "searchable": true
+    },
+    "service/showers/showers": {
+      "name": "Showers",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee",
+        "access"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "showers-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "shower"
+      },
+      "terms": [
+        "bath",
+        "bathhouse",
+        "bath house",
+        "shower",
+        "showers"
+      ],
+      "searchable": true
+    },
+    "service/support/emergency telephone": {
+      "name": "Emergency Telephone",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "telephone-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "emergency": "phone"
+      },
+      "terms": [
+        "emergency phone",
+        "phone",
+        "emergency",
+        "emergency telephone"
+      ],
+      "searchable": true
+    },
+    "service/support/fire hydrant": {
+      "name": "Fire Hydrant",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "emergency": "fire_hydrant"
+      },
+      "terms": [
+        "fire",
+        "hydrant"
+      ],
+      "searchable": true
+    },
+    "service/support/fire station": {
+      "name": "Fire Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "fire-station",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fire_station"
+      },
+      "terms": [
+        "fire department",
+        "emergency",
+        "fire station"
+      ],
+      "searchable": true
+    },
+    "service/support/first aid station": {
+      "name": "First Aid Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "first-aid-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "first_aid"
+      },
+      "terms": [
+        "clinic",
+        "first aid",
+        "medical",
+        "medical clinic",
+        "emergency",
+        "first aid station"
+      ],
+      "searchable": true
+    },
+    "service/support/hospital": {
+      "name": "Hospital",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "emergency"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "hospital-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "hospital"
+      },
+      "terms": [
+        "doctor",
+        "emergency room",
+        "health service",
+        "hospital grounds",
+        "institution",
+        "infirmary",
+        "medical",
+        "sick",
+        "surgery",
+        "ward",
+        "emergency",
+        "hospital",
+        "clinic"
+      ],
+      "searchable": true
+    },
+    "service/support/patrol cabin": {
+      "name": "Patrol Cabin",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "patrol_cabin"
+      },
+      "terms": [
+        "cabin",
+        "backcountry cabin",
+        "backcountry office",
+        "backcountry ranger cabin",
+        "patrol",
+        "ranger cabin",
+        "ranger patrol cabin",
+        "patrol cabin"
+      ],
+      "searchable": true
+    },
+    "service/support/police": {
+      "name": "Police",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "police",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "police"
+      },
+      "terms": [
+        "badge",
+        "constable",
+        "cops",
+        "detective",
+        "fed",
+        "law enforcement",
+        "officer",
+        "police force",
+        "police station",
+        "emergency",
+        "police",
+        "patrol"
+      ],
+      "searchable": true
+    },
+    "service/support/ranger station": {
+      "name": "Ranger Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "ranger-station-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -2,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "ranger_station"
+      },
+      "terms": [
+        "park ranger",
+        "permit center",
+        "permit centre",
+        "ranger",
+        "warden office",
+        "warden center",
+        "ranger station",
+        "backcountry office"
+      ],
+      "searchable": true
+    },
+    "service/surveillance/webcam": {
+      "name": "Webcam",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "webcam-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "surveillance"
+      },
+      "terms": [
+        "surveillance",
+        "camera"
+      ],
+      "searchable": true
+    },
+    "service/telephone/telephone": {
+      "name": "Telephone",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "indoor"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "telephone-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 17,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "telephone"
+      },
+      "terms": [
+        "pay phone",
+        "phone",
+        "telephone box",
+        "phone booth",
+        "telephone"
+      ],
+      "searchable": true
+    },
+    "service/waste/dumpster": {
+      "name": "Dumpster",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "waste_disposal"
+      },
+      "terms": [
+        "trash",
+        "dumpster",
+        "waste"
+      ],
+      "searchable": true
+    },
+    "service/waste/litter receptacle": {
+      "name": "Litter Receptacle",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "waste",
+        "bin"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "litter-receptacle-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 19,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "waste_basket"
+      },
+      "terms": [
+        "waste basket",
+        "waste paper basket",
+        "trash bin",
+        "waste bin",
+        "trash",
+        "rubbish",
+        "litter",
+        "garbage"
+      ],
+      "searchable": true
+    },
+    "service/waste/recycling": {
+      "name": "Recycling",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "recycling/cans",
+        "recycling/glass",
+        "recycling/paper",
+        "recycling/clothes"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "recycling-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "recycling"
+      },
+      "terms": [
+        "can",
+        "bottle",
+        "glass",
+        "recycle",
+        "recycle center",
+        "recycle station",
+        "recycling center",
+        "recycling station",
+        "salvage",
+        "scrap",
+        "recycling",
+        "garbage",
+        "trash"
+      ],
+      "searchable": true
+    },
+    "service/water/fountain": {
+      "name": "Fountain",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "drinking_water",
+        "lit"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "fountain"
+      },
+      "terms": [
+        "well",
+        "fountain"
+      ],
+      "searchable": true
+    },
+    "service/water/potable water": {
+      "name": "Potable Water",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "description",
+        "indoor",
+        "access"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "drinking-water-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 18,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "drinking_water"
+      },
+      "terms": [
+        "drinking fountain",
+        "drinking water",
+        "potable",
+        "fountain"
+      ],
+      "searchable": true
+    },
+    "service/water/radiator water": {
+      "name": "Radiator Water",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "radiator-water-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "emergency": "water_tank"
+      },
+      "terms": [
+        "water tank",
+        "radiator water"
+      ],
+      "searchable": true
+    },
+    "service/water/water well": {
+      "name": "Water Well",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "drinking_water",
+        "pump"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "water_well"
+      },
+      "terms": [
+        "well",
+        "water well"
+      ],
+      "searchable": true
+    },
+    "structure/recreation/boat dock": {
+      "name": "Boat Dock",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "area"
+      ],
+      "defaultOrder": 6,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "pier",
+        "mooring": "yes"
+      },
+      "terms": [
+        "boat",
+        "dock",
+        "pier"
+      ],
+      "searchable": true
+    },
+    "barrier/fence/fence": {
+      "name": "Fence",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "fence"
+      },
+      "terms": [
+        "barricade",
+        "barrier",
+        "enclosure",
+        "fencing",
+        "palisade",
+        "railing",
+        "stockade",
+        "fence"
+      ],
+      "searchable": true
+    },
+    "barrier/gate/gate": {
+      "name": "Gate",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "gate"
+      },
+      "terms": [
+        "entry way",
+        "gate"
+      ],
+      "searchable": true
+    },
+    "natural line/valley/canyon": {
+      "name": "Canyon",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "canyon"
+      },
+      "terms": [
+        "canyon"
       ],
       "searchable": true
     },
@@ -4483,7 +4136,8 @@ iD.data.npmapPresets = {
         "four wheeler",
         "four-wheeler",
         "high clearance",
-        "road"
+        "road",
+        "four-wheel drive road"
       ],
       "searchable": true
     },
@@ -4517,7 +4171,8 @@ iD.data.npmapPresets = {
         "motorway",
         "interstate",
         "interstate highway",
-        "road"
+        "road",
+        "highway"
       ],
       "searchable": true
     },
@@ -4549,7 +4204,8 @@ iD.data.npmapPresets = {
         "highway ramp",
         "off ramp",
         "on ramp",
-        "ramp"
+        "ramp",
+        "highway"
       ],
       "searchable": true
     },
@@ -4610,7 +4266,8 @@ iD.data.npmapPresets = {
       "terms": [
         "pedestrian road",
         "road",
-        "street"
+        "street",
+        "pedestrian street"
       ],
       "searchable": true
     },
@@ -4648,7 +4305,8 @@ iD.data.npmapPresets = {
         "administrative road",
         "administrative service road",
         "road",
-        "street"
+        "street",
+        "private road"
       ],
       "searchable": true
     },
@@ -4681,7 +4339,8 @@ iD.data.npmapPresets = {
         "local",
         "local road",
         "road",
-        "street"
+        "street",
+        "residential road"
       ],
       "searchable": true
     },
@@ -4733,7 +4392,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "road",
-        "street"
+        "street",
+        "unknown road"
       ],
       "searchable": true
     },
@@ -4761,7 +4421,10 @@ iD.data.npmapPresets = {
         "highway": "primary_link"
       },
       "terms": [
-        "primary ramp"
+        "primary ramp",
+        "ramp",
+        "on ramp",
+        "off ramp"
       ],
       "searchable": true
     },
@@ -4795,7 +4458,10 @@ iD.data.npmapPresets = {
         "us highway",
         "state highway",
         "state route",
-        "road"
+        "road",
+        "primary road",
+        "interstate",
+        "interstate highway"
       ],
       "searchable": true
     },
@@ -4823,7 +4489,10 @@ iD.data.npmapPresets = {
         "highway": "secondary_link"
       },
       "terms": [
-        "secondary ramp"
+        "secondary ramp",
+        "ramp",
+        "on ramp",
+        "off ramp"
       ],
       "searchable": true
     },
@@ -4854,7 +4523,10 @@ iD.data.npmapPresets = {
       "terms": [
         "secondary",
         "county highway",
-        "road"
+        "road",
+        "secondary road",
+        "us highway",
+        "state highway"
       ],
       "searchable": true
     },
@@ -4888,7 +4560,8 @@ iD.data.npmapPresets = {
         "service",
         "service road",
         "road",
-        "street"
+        "street",
+        "access road"
       ],
       "searchable": true
     },
@@ -4913,6 +4586,16 @@ iD.data.npmapPresets = {
         "highway": "service",
         "service": "parking_aisle"
       },
+      "terms": [
+        "parking",
+        "lot",
+        "car park",
+        "car parking",
+        "carpark",
+        "vehicle parking",
+        "marker",
+        "parking aisle"
+      ],
       "searchable": true
     },
     "road/tertiary/tertiary link": {
@@ -4939,7 +4622,10 @@ iD.data.npmapPresets = {
         "highway": "tertiary_link"
       },
       "terms": [
-        "tertiary ramp"
+        "tertiary ramp",
+        "ramp",
+        "on ramp",
+        "off ramp"
       ],
       "searchable": true
     },
@@ -4969,1176 +4655,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "tertiary",
-        "road"
-      ],
-      "searchable": true
-    },
-    "road feature/bridge/bridge": {
-      "name": "Bridge",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "bridge": "*"
-      },
-      "terms": [
-        "aqueduct",
-        "overpass",
-        "viaduct"
-      ],
-      "searchable": true
-    },
-    "road feature/control/traffic signals": {
-      "name": "Traffic Signals",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "circle",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "traffic_signals"
-      },
-      "terms": [
-        "stoplight",
-        "stop light",
-        "traffic light",
-        "traffic signal"
-      ],
-      "searchable": true
-    },
-    "road feature/no-outlet/turning circle": {
-      "name": "Turning Circle",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "circle",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "turning_circle"
-      },
-      "terms": [
-        "blind alley",
-        "cul-de-sac",
-        "dead end street"
-      ],
-      "searchable": true
-    },
-    "road feature/tunnel/tunnel": {
-      "name": "Tunnel",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "tunnel": "*"
-      },
-      "terms": [
-        "covered passageway",
-        "covered way"
-      ],
-      "searchable": true
-    },
-    "service/airport/airport": {
-      "name": "Airport",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "airport-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "aeroway": "aerodrome"
-      },
-      "terms": [
-        "aeroway",
-        "aerodrome"
-      ],
-      "searchable": true
-    },
-    "service/airport/airstrip": {
-      "name": "Airstrip",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "airfield",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "aeroway": "aerodrome",
-        "aerodrome": "airstrip"
-      },
-      "terms": [
-        "airpot",
-        "airfield",
-        "air field",
-        "landing field"
-      ],
-      "searchable": true
-    },
-    "service/airport/landing strip": {
-      "name": "Landing Strip",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "airfield",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "aeroway": "aerodrome",
-        "aerodrome": "airstrip",
-        "surface": "ground"
-      },
-      "terms": [
-        "airport",
-        "landing spot",
-        "plane landing"
-      ],
-      "searchable": true
-    },
-    "service/airport/seaplane base": {
-      "name": "Seaplane Base",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "icao",
-        "iata"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "seamark:type": "seaplane_landing_area"
-      },
-      "terms": [
-        "airport",
-        "float landing",
-        "float plane"
-      ],
-      "searchable": true
-    },
-    "service/bank/atm": {
-      "name": "ATM",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "fee"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "atm"
-      },
-      "terms": [
-        "automated teller machine",
-        "cash",
-        "cash dispenser"
-      ],
-      "searchable": true
-    },
-    "service/bus/bus stop %2f shuttle stop": {
-      "name": "Bus Stop / Shuttle Stop",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "public_transport",
-        "network",
-        "shelter",
-        "bench"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "bus-stop-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "bus_stop"
-      },
-      "terms": [
-        "bus stop",
-        "shuttle stop",
-        "bus station"
-      ],
-      "searchable": true
-    },
-    "service/entrance/entrance station": {
-      "name": "Entrance Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "entrance-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -7,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "entrance"
-      },
-      "terms": [
-        "entrance",
-        "entry",
-        "exit",
-        "gateway",
-        "portal"
-      ],
-      "searchable": true
-    },
-    "service/entrance/fee booth": {
-      "name": "Fee Booth",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "toll_booth"
-      },
-      "terms": [
-        "fee",
-        "toll",
-        "toll booth"
-      ],
-      "searchable": true
-    },
-    "service/ferry/ferry terminal": {
-      "name": "Ferry Terminal",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "cargo"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "ferry",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "ferry_terminal"
-      },
-      "terms": [
-        "ferry",
-        "terminal",
-        "boat terminal"
-      ],
-      "searchable": true
-    },
-    "service/food/food service": {
-      "name": "Food Service",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "food-service-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 12,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "food_court"
-      },
-      "terms": [
-        "cafe",
-        "food",
-        "food court",
-        "restaurant",
-        "snacks",
-        "snack bar"
-      ],
-      "searchable": true
-    },
-    "service/fuel/gas station": {
-      "name": "Gas Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "gas-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 15,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fuel"
-      },
-      "terms": [
-        "fuel",
-        "fuel pump",
-        "petrol station",
-        "petrol",
-        "propane",
-        "diesel",
-        "lng",
-        "liquified natural gas",
-        "cng",
-        "compressed natural gas",
-        "biodiesel"
-      ],
-      "searchable": true
-    },
-    "service/internet/wi-fi": {
-      "name": "Wi-Fi",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "wifi": "*"
-      },
-      "terms": [
-        "wifi",
-        "internet",
-        "online"
-      ],
-      "searchable": true
-    },
-    "service/laundry/laundry": {
-      "name": "Laundry",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "laundry-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "shop": "laundry"
-      },
-      "terms": [
-        "coin laundry",
-        "coinwash",
-        "laundry service",
-        "launderette",
-        "laundrette",
-        "laundromat",
-        "self-service laundry"
-      ],
-      "searchable": true
-    },
-    "service/parking/electric vehicle parking": {
-      "name": "Electric Vehicle Parking",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "parking",
-        "capacity:charging": "*"
-      },
-      "searchable": true
-    },
-    "service/parking/parking lot": {
-      "name": "Parking Lot",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "capacity",
-        "maxstay",
-        "fee",
-        "nps/trailuse"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -3,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "parking"
-      },
-      "terms": [
-        "parking",
-        "lot",
-        "car park",
-        "car parking",
-        "carpark",
-        "vehicle parking"
-      ],
-      "searchable": true
-    },
-    "service/parking/roadside pullout": {
-      "name": "Roadside Pullout",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "rest_area"
-      },
-      "terms": [
-        "passing place",
-        "pullout",
-        "pull off",
-        "pull-off",
-        "roadside pull off",
-        "roadside pull-off",
-        "roadside turnout",
-        "turnout"
-      ],
-      "searchable": true
-    },
-    "service/post/mailbox": {
-      "name": "Mailbox",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "post_box"
-      },
-      "terms": [
-        "mail box",
-        "mail drop",
-        "postbox",
-        "post box"
-      ],
-      "searchable": true
-    },
-    "service/post/post office": {
-      "name": "Post Office",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "post-office-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "post_office"
-      },
-      "terms": [
-        "letter",
-        "mail",
-        "mail office",
-        "package",
-        "parcel",
-        "post"
-      ],
-      "searchable": true
-    },
-    "service/rail/metro stop %2f subway entrance": {
-      "name": "Metro Stop / Subway Entrance",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "rail-metro",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "railway": "subway_entrance"
-      },
-      "terms": [
-        "metro stop",
-        "subway entrance",
-        "subway exit"
-      ],
-      "searchable": true
-    },
-    "service/rail/train station": {
-      "name": "Train Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels",
-        "smoking"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "rail",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "train_station"
-      },
-      "terms": [
-        "depot",
-        "railroad station",
-        "railway station",
-        "station"
-      ],
-      "searchable": true
-    },
-    "service/shopping/gift shop": {
-      "name": "Gift Shop",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "store-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 14,
-      "matchScore": 1,
-      "tags": {
-        "shop": "gift"
-      },
-      "terms": [
-        "gift",
-        "shop",
-        "shopping"
-      ],
-      "searchable": true
-    },
-    "service/shopping/store": {
-      "name": "Store",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "store-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 13,
-      "matchScore": 1,
-      "tags": {
-        "shop": "general"
-      },
-      "terms": [
-        "shop",
-        "shopping",
-        "general store"
-      ],
-      "searchable": true
-    },
-    "service/showers/showers": {
-      "name": "Showers",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "fee",
-        "access"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "showers-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "shower"
-      },
-      "terms": [
-        "bath",
-        "bathhouse",
-        "bath house",
-        "shower"
-      ],
-      "searchable": true
-    },
-    "service/support/emergency telephone": {
-      "name": "Emergency Telephone",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "telephone-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "emergency": "phone"
-      },
-      "terms": [
-        "emergency phone",
-        "phone",
-        "emergency"
-      ],
-      "searchable": true
-    },
-    "service/support/fire station": {
-      "name": "Fire Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "fire-station",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fire_station"
-      },
-      "terms": [
-        "fire department",
-        "emergency"
-      ],
-      "searchable": true
-    },
-    "service/support/first aid station": {
-      "name": "First Aid Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "first-aid-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "first_aid"
-      },
-      "terms": [
-        "clinic",
-        "first aid",
-        "medical",
-        "medical clinic",
-        "emergency"
-      ],
-      "searchable": true
-    },
-    "service/support/hospital": {
-      "name": "Hospital",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "emergency"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "hospital-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "hospital"
-      },
-      "terms": [
-        "doctor",
-        "emergency room",
-        "health service",
-        "hospital grounds",
-        "institution",
-        "infirmary",
-        "medical",
-        "sick",
-        "surgery",
-        "ward",
-        "emergency"
-      ],
-      "searchable": true
-    },
-    "service/support/patrol cabin": {
-      "name": "Patrol Cabin",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "patrol_cabin"
-      },
-      "terms": [
-        "cabin",
-        "backcountry cabin",
-        "backcountry office",
-        "backcountry ranger cabin",
-        "patrol",
-        "ranger cabin",
-        "ranger patrol cabin"
-      ],
-      "searchable": true
-    },
-    "service/support/police": {
-      "name": "Police",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "police",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "police"
-      },
-      "terms": [
-        "badge",
-        "constable",
-        "cops",
-        "detective",
-        "fed",
-        "law enforcement",
-        "officer",
-        "patrol",
-        "police force",
-        "police station",
-        "emergency"
-      ],
-      "searchable": true
-    },
-    "service/support/ranger station": {
-      "name": "Ranger Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "ranger-station-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": -2,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "ranger_station"
-      },
-      "terms": [
-        "park ranger",
-        "permit center",
-        "permit centre",
-        "ranger",
-        "warden office",
-        "warden center"
-      ],
-      "searchable": true
-    },
-    "service/telephone/telephone": {
-      "name": "Telephone",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "indoor"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "telephone-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 16,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "telephone"
-      },
-      "terms": [
-        "phone",
-        "telephone box",
-        "phone booth"
-      ],
-      "searchable": true
-    },
-    "service/theater/amphitheater": {
-      "name": "Amphitheater",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "amphitheater-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "theatre",
-        "theatre:type": "amphi"
-      },
-      "terms": [
-        "theatre",
-        "theater",
-        "opera house",
-        "performance",
-        "play",
-        "playhouse",
-        "musical"
-      ],
-      "searchable": true
-    },
-    "service/waste/dumpster": {
-      "name": "Dumpster",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "waste_disposal"
-      },
-      "searchable": true
-    },
-    "service/waste/litter receptacle": {
-      "name": "Litter Receptacle",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "waste",
-        "bin"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "litter-receptacle-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 18,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "waste_basket"
-      },
-      "terms": [
-        "waste basket",
-        "waste paper basket",
-        "trash bin",
-        "waste bin",
-        "trash",
-        "rubbish",
-        "litter",
-        "garbage"
-      ],
-      "searchable": true
-    },
-    "service/waste/recycling": {
-      "name": "Recycling",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "recycling/cans",
-        "recycling/glass",
-        "recycling/paper",
-        "recycling/clothes"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "recycling-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "recycling"
-      },
-      "terms": [
-        "can",
-        "bottle",
-        "glass",
-        "recycle",
-        "recycle center",
-        "recycle station",
-        "recycling center",
-        "recycling station",
-        "salvage",
-        "scrap"
-      ],
-      "searchable": true
-    },
-    "service/water/fountain": {
-      "name": "Fountain",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "drinking_water",
-        "lit"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "fountain"
-      },
-      "terms": [
-        "well"
-      ],
-      "searchable": true
-    },
-    "service/water/potable water": {
-      "name": "Potable Water",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "description",
-        "indoor",
-        "access"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "drinking-water-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": 17,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "drinking_water"
-      },
-      "terms": [
-        "drinking fountain",
-        "drinking water",
-        "potable"
-      ],
-      "searchable": true
-    },
-    "service/water/radiator water": {
-      "name": "Radiator Water",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "radiator-water-black",
-      "maki": "npmap-symbol-library",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "emergency": "water_tank"
-      },
-      "terms": [
-        "water tank"
-      ],
-      "searchable": true
-    },
-    "service/water/water well": {
-      "name": "Water Well",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "drinking_water",
-        "pump"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "water_well"
-      },
-      "terms": [
-        "well"
-      ],
-      "searchable": true
-    },
-    "structure/recreation/boat dock": {
-      "name": "Boat Dock",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "area"
-      ],
-      "defaultOrder": 4,
-      "matchScore": 1,
-      "tags": {
-        "man_made": "pier",
-        "mooring": "yes"
-      },
-      "terms": [
-        "boat",
-        "dock",
-        "pier"
+        "road",
+        "tertiary road"
       ],
       "searchable": true
     },
@@ -6166,10 +4684,17 @@ iD.data.npmapPresets = {
       "icon": "highway-track",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1,
+      "matchScore": 1.03,
       "tags": {
         "highway": "track",
-        "atv": "*"
+        "motor_vehicle": "no",
+        "motorcycle": "no",
+        "foot": "no",
+        "bicycle": "no",
+        "atv": "*",
+        "4wd_only": "no",
+        "snowmobile": "no",
+        "horse": "no"
       },
       "terms": [
         "all terrain trail",
@@ -6181,6 +4706,10 @@ iD.data.npmapPresets = {
         "atv trail",
         "off road",
         "off-road",
+        "ohv",
+        "ohv trail",
+        "orv",
+        "orv trail",
         "quad",
         "trail",
         "track"
@@ -6211,24 +4740,33 @@ iD.data.npmapPresets = {
       "icon": "highway-track",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1,
+      "matchScore": 1.03,
       "tags": {
         "highway": "track",
-        "4wd_only": "*"
+        "motor_vehicle": "no",
+        "motorcycle": "no",
+        "foot": "no",
+        "bicycle": "no",
+        "atv": "no",
+        "4wd_only": "*",
+        "snowmobile": "no",
+        "horse": "no"
       },
       "terms": [
         "4wd",
         "4 wheeler",
         "4-wheeler",
         "four wheeler",
-        "four-wheel drive vehicle > 50\" in tread width",
+        "four-wheel drive vehicle > 50\\ in tread width",
         "four-wheeler",
         "high clearance",
-        "off road",
-        "off-road",
-        "quad",
         "trail",
-        "track"
+        "track",
+        "four-wheel drive trail",
+        "off-road",
+        "off road",
+        "four-wheel drive vehicle > 50 in tread width",
+        "four-wheel drive vehicle > 50\" in tread width"
       ],
       "searchable": true
     },
@@ -6256,15 +4794,25 @@ iD.data.npmapPresets = {
       "icon": "highway-track",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1,
+      "matchScore": 1.02,
       "tags": {
         "highway": "track",
-        "motorcycle": "*"
+        "motor_vehicle": "no",
+        "motorcycle": "*",
+        "atv": "no",
+        "4wd_only": "no",
+        "snowmobile": "no",
+        "horse": "no"
       },
       "terms": [
+        "dirt bike",
+        "dirt bike trail",
+        "motorbike",
+        "motorbike trail",
         "motorcycle",
         "trail",
-        "track"
+        "track",
+        "motorcycle trail"
       ],
       "searchable": true
     },
@@ -6328,10 +4876,17 @@ iD.data.npmapPresets = {
       "icon": "highway-track",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1,
+      "matchScore": 1.03,
       "tags": {
         "highway": "track",
-        "snowmobile": "*"
+        "motor_vehicle": "no",
+        "motorcycle": "no",
+        "foot": "no",
+        "bicycle": "no",
+        "atv": "no",
+        "4wd_only": "no",
+        "snowmobile": "*",
+        "horse": "no"
       },
       "terms": [
         "snowmachine",
@@ -6340,7 +4895,8 @@ iD.data.npmapPresets = {
         "snow machine",
         "snow machine trail",
         "trail",
-        "track"
+        "track",
+        "snowmobile trail"
       ],
       "searchable": true
     },
@@ -6376,7 +4932,8 @@ iD.data.npmapPresets = {
         "backcountry",
         "backcountry ski",
         "trail",
-        "track"
+        "track",
+        "backcountry ski trail"
       ],
       "searchable": true
     },
@@ -6404,17 +4961,25 @@ iD.data.npmapPresets = {
       "icon": "highway-cycleway",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1.01,
+      "matchScore": 1.03,
       "tags": {
         "highway": "path",
-        "bicycle": "*"
+        "motor_vehicle": "no",
+        "motorcycle": "no",
+        "foot": "no",
+        "bicycle": "*",
+        "atv": "no",
+        "4wd_only": "no",
+        "snowmobile": "no",
+        "horse": "no"
       },
       "terms": [
         "bicycle",
         "bike",
         "bike trail",
         "trail",
-        "track"
+        "track",
+        "bicycle trail"
       ],
       "searchable": true
     },
@@ -6437,7 +5002,51 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "canyoneering",
-        "route"
+        "route",
+        "canyoneering route"
+      ],
+      "searchable": true
+    },
+    "trail/non-motorized/carriage road": {
+      "name": "Carriage Road",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "nps/nonmotorizeduse",
+        "nps/structure"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-bridleway",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "bridleway"
+      },
+      "terms": [
+        "carriage",
+        "bridleway",
+        "horse",
+        "horse drawn",
+        "horse riding",
+        "horse riding trail",
+        "horseback",
+        "horseback riding trail",
+        "trail",
+        "track",
+        "path"
       ],
       "searchable": true
     },
@@ -6462,7 +5071,9 @@ iD.data.npmapPresets = {
         "climbing",
         "route",
         "mountain climbing",
-        "mountain climbing route"
+        "mountain climbing route",
+        "climbing route",
+        "climing"
       ],
       "searchable": true
     },
@@ -6503,7 +5114,8 @@ iD.data.npmapPresets = {
         "nordic trail",
         "xcs",
         "trail",
-        "track"
+        "track",
+        "cross-country ski trail"
       ],
       "searchable": true
     },
@@ -6541,7 +5153,8 @@ iD.data.npmapPresets = {
         "mushing trail",
         "winter track",
         "trail",
-        "track"
+        "track",
+        "dog sled trail"
       ],
       "searchable": true
     },
@@ -6581,7 +5194,8 @@ iD.data.npmapPresets = {
         "downhill",
         "downhill ski",
         "trail",
-        "track"
+        "track",
+        "downhill ski trail"
       ],
       "searchable": true
     },
@@ -6609,9 +5223,15 @@ iD.data.npmapPresets = {
       "icon": "highway-bridleway",
       "maki": "maki",
       "defaultOrder": null,
-      "matchScore": 1.02,
+      "matchScore": 1.03,
       "tags": {
         "highway": "path",
+        "motor_vehicle": "no",
+        "motorcycle": "no",
+        "bicycle": "no",
+        "atv": "no",
+        "4wd_only": "no",
+        "snowmobile": "no",
         "horse": "*"
       },
       "terms": [
@@ -6625,7 +5245,8 @@ iD.data.npmapPresets = {
         "horseback riding trail",
         "pack and saddle",
         "trail",
-        "track"
+        "track",
+        "path"
       ],
       "searchable": true
     },
@@ -6652,7 +5273,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "footway",
-        "pedestrian trail"
+        "pedestrian trail",
+        "pedestrian path"
       ],
       "searchable": true
     },
@@ -6680,7 +5302,8 @@ iD.data.npmapPresets = {
         "footway": "sidewalk"
       },
       "terms": [
-        "footway"
+        "footway",
+        "sidewalk"
       ],
       "searchable": true
     },
@@ -6716,7 +5339,8 @@ iD.data.npmapPresets = {
         "snowshoe",
         "showshoeing",
         "trail",
-        "track"
+        "track",
+        "snowshoe trail"
       ],
       "searchable": true
     },
@@ -6741,7 +5365,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "stairs",
-        "staircase"
+        "staircase",
+        "steps"
       ],
       "searchable": true
     },
@@ -6787,7 +5412,8 @@ iD.data.npmapPresets = {
         "social trail",
         "animal trail",
         "human use (social)",
-        "non-human use (animal)"
+        "non-human use (animal)",
+        "trail"
       ],
       "searchable": true
     },
@@ -6873,7 +5499,8 @@ iD.data.npmapPresets = {
         "motorized watercraft",
         "motorboat",
         "trail",
-        "track"
+        "track",
+        "motorized watercraft trail"
       ],
       "searchable": true
     },
@@ -6897,7 +5524,8 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "canoe": "*",
-        "waterway": "*"
+        "waterway": "*",
+        "motorboat": "no"
       },
       "terms": [
         "non-motorized watercraft",
@@ -6905,7 +5533,2069 @@ iD.data.npmapPresets = {
         "kayak",
         "raft",
         "trail",
-        "track"
+        "track",
+        "non-motorized watercraft trail"
+      ],
+      "searchable": true
+    },
+    "accessibility/wheelchair accessible/wheelchair accessible": {
+      "name": "Wheelchair Accessible",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "wheelchair-accessible-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "wheelchair": "*"
+      },
+      "terms": [
+        "wheelchair",
+        "accessible",
+        "wheelchair accessible"
+      ],
+      "searchable": true
+    },
+    "accommodation/floating restroom/floating restroom": {
+      "name": "Floating Restroom",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "toilets/disposal",
+        "gender",
+        "indoor",
+        "fee",
+        "access"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "toilets",
+        "type": "floating"
+      },
+      "terms": [
+        "restoom",
+        "latrine",
+        "floating restroom"
+      ],
+      "searchable": true
+    },
+    "accommodation/restroom/restroom": {
+      "name": "Restroom",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "toilets/disposal",
+        "gender",
+        "indoor",
+        "fee",
+        "access"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -1,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "toilets"
+      },
+      "terms": [
+        "restroom",
+        "bathroom",
+        "latrine",
+        "lavatory",
+        "outhouse",
+        "privy",
+        "toilet",
+        "toilets",
+        "water closet",
+        "wc",
+        "head"
+      ],
+      "searchable": true
+    },
+    "historic/battlefield/battlefield": {
+      "name": "Battlefield",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "battlefield"
+      },
+      "terms": [
+        "historic battlefield",
+        "battle",
+        "historic",
+        "battlefield"
+      ],
+      "searchable": true
+    },
+    "historic/cannon/cannon": {
+      "name": "Cannon",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "cannon"
+      },
+      "terms": [
+        "historic cannon",
+        "artillery",
+        "battering ram",
+        "catapult",
+        "historic",
+        "cannon"
+      ],
+      "searchable": true
+    },
+    "historic/marker/battlefield marker": {
+      "name": "Battlefield Marker",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "marker",
+        "marker_type": "battlefield"
+      },
+      "terms": [
+        "historic",
+        "battlefield",
+        "marker",
+        "battlefield marker"
+      ],
+      "searchable": true
+    },
+    "historic/marker/historic marker": {
+      "name": "Historic Marker",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "marker"
+      },
+      "terms": [
+        "historic",
+        "marker",
+        "historic marker"
+      ],
+      "searchable": true
+    },
+    "historic/monument/memorial": {
+      "name": "Memorial",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "monument",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "memorial"
+      },
+      "terms": [
+        "historic",
+        "historic memorial",
+        "memorial"
+      ],
+      "searchable": true
+    },
+    "historic/monument/monument": {
+      "name": "Monument",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "monument",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "monument"
+      },
+      "terms": [
+        "historic",
+        "historic monument",
+        "monument"
+      ],
+      "searchable": true
+    },
+    "historic/ruin/historic ruins": {
+      "name": "Historic Ruins",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "ruins"
+      },
+      "terms": [
+        "historic",
+        "ruins",
+        "historic ruins"
+      ],
+      "searchable": true
+    },
+    "historic/ship/historic ship": {
+      "name": "Historic Ship",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "ship"
+      },
+      "terms": [
+        "historic",
+        "ship"
+      ],
+      "searchable": true
+    },
+    "historic/site/historic site": {
+      "name": "Historic Site",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "site_type"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "*"
+      },
+      "terms": [
+        "historic",
+        "site",
+        "historic site"
+      ],
+      "searchable": true
+    },
+    "historic/wreck/wreck": {
+      "name": "Wreck",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "wreck"
+      },
+      "terms": [
+        "shipwreck",
+        "submerged wreck",
+        "historic",
+        "wreck"
+      ],
+      "searchable": true
+    },
+    "information/information/brochure box": {
+      "name": "Brochure Box",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "brochure"
+      },
+      "terms": [
+        "brochure holder",
+        "brochure dispenser",
+        "dispenser",
+        "information dispenser",
+        "information",
+        "brochure box"
+      ],
+      "searchable": true
+    },
+    "information/information/information": {
+      "name": "Information",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": 11,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information"
+      },
+      "terms": [
+        "tourist information",
+        "visitor information",
+        "information"
+      ],
+      "searchable": true
+    },
+    "information/information/information board": {
+      "name": "Information Board",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "board"
+      },
+      "terms": [
+        "bulletin board",
+        "information kiosk",
+        "kiosk",
+        "information"
+      ],
+      "searchable": true
+    },
+    "information/information/information map": {
+      "name": "Information Map",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "map"
+      },
+      "terms": [
+        "map",
+        "information",
+        "information map"
+      ],
+      "searchable": true
+    },
+    "information/information/interpretive exhibit": {
+      "name": "Interpretive Exhibit",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "exhibit"
+      },
+      "terms": [
+        "attraction",
+        "exhibit",
+        "exhibit / wayside",
+        "exhibit/wayside",
+        "interpretive sign",
+        "tourist attraction",
+        "wayside",
+        "information"
+      ],
+      "searchable": true
+    },
+    "information/sign/directional sign": {
+      "name": "Directional Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "directional"
+      },
+      "terms": [
+        "directional",
+        "sign",
+        "directional sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/gateway sign": {
+      "name": "Gateway Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign"
+      },
+      "terms": [
+        "sign",
+        "gateway",
+        "location",
+        "place name",
+        "gateway sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/mile marker": {
+      "name": "Mile Marker",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "milestone"
+      },
+      "terms": [
+        "milepost",
+        "marker",
+        "mile marker"
+      ],
+      "searchable": true
+    },
+    "information/sign/regulatory sign": {
+      "name": "Regulatory Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "regulatory"
+      },
+      "terms": [
+        "regulatory",
+        "traffic law",
+        "sign",
+        "regulatory sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/trail marker": {
+      "name": "Trail Marker",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "guidepost"
+      },
+      "terms": [
+        "path marker",
+        "marker",
+        "trail marker",
+        "trail",
+        "sign"
+      ],
+      "searchable": true
+    },
+    "information/sign/trail sign": {
+      "name": "Trail Sign",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "sign",
+        "sign:type": "trail_sign"
+      },
+      "terms": [
+        "sign",
+        "trail",
+        "trail sign"
+      ],
+      "searchable": true
+    },
+    "information/visitor center/visitor center": {
+      "name": "Visitor Center",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "visitor-center-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": -8,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information",
+        "information": "office"
+      },
+      "terms": [
+        "information",
+        "visitor centre",
+        "visitor information",
+        "visitor center"
+      ],
+      "searchable": true
+    },
+    "locality/region/cultural landscape": {
+      "name": "Cultural Landscape",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "locality",
+        "historic": "landscape"
+      },
+      "terms": [
+        "cultural",
+        "landscape"
+      ],
+      "searchable": true
+    },
+    "locality/region/historic district": {
+      "name": "Historic District",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "locality",
+        "historic": "district"
+      },
+      "terms": [
+        "historic",
+        "district"
+      ],
+      "searchable": true
+    },
+    "locality/region/junction": {
+      "name": "Junction",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "locality",
+        "locality_type": "junction"
+      },
+      "terms": [
+        "locality",
+        "area",
+        "junction"
+      ],
+      "searchable": true
+    },
+    "locality/region/locale": {
+      "name": "Locale",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": -5,
+      "matchScore": 1,
+      "tags": {
+        "place": "locality"
+      },
+      "terms": [
+        "area",
+        "locality",
+        "location",
+        "place",
+        "placename",
+        "place name",
+        "locale",
+        "neighborhood",
+        "district"
+      ],
+      "searchable": true
+    },
+    "locality/region/populated place": {
+      "name": "Populated Place",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "population"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "hamlet"
+      },
+      "terms": [
+        "city",
+        "hamlet",
+        "neighborhood",
+        "place",
+        "town"
+      ],
+      "searchable": true
+    },
+    "natural feature/arroyo/arroyo": {
+      "name": "Arroyo",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "drain",
+        "intermittent": "*"
+      },
+      "terms": [
+        "coulee",
+        "draw",
+        "gully",
+        "wash",
+        "arroyo"
+      ],
+      "searchable": true
+    },
+    "natural feature/bar/reef (bar)": {
+      "name": "Reef (Bar)",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "reef"
+      },
+      "terms": [
+        "reef",
+        "bar",
+        "ledge",
+        "sandbar",
+        "shoal",
+        "spit"
+      ],
+      "searchable": true
+    },
+    "natural feature/bar/shoal (bar)": {
+      "name": "Shoal (Bar)",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "tidal"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "shoal"
+      },
+      "terms": [
+        "shoal",
+        "bar",
+        "ledge",
+        "reef",
+        "sandbar",
+        "spit"
+      ],
+      "searchable": true
+    },
+    "natural feature/basin/basin": {
+      "name": "Basin",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "basin"
+      },
+      "terms": [
+        "cirque",
+        "hole",
+        "sink",
+        "sinkhole",
+        "basin"
+      ],
+      "searchable": true
+    },
+    "natural feature/bay/bay": {
+      "name": "Bay",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "bay"
+      },
+      "terms": [
+        "arm",
+        "bight",
+        "cove",
+        "estuary",
+        "gulf",
+        "inlet",
+        "sound",
+        "bay"
+      ],
+      "searchable": true
+    },
+    "natural feature/beach/beach": {
+      "name": "Beach",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "beach"
+      },
+      "terms": [
+        "coast",
+        "shore",
+        "strand",
+        "beach"
+      ],
+      "searchable": true
+    },
+    "natural feature/cape/cape": {
+      "name": "Cape",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "cape"
+      },
+      "terms": [
+        "lea",
+        "neck",
+        "peninsula",
+        "point",
+        "cape"
+      ],
+      "searchable": true
+    },
+    "natural feature/cave/cave entrance": {
+      "name": "Cave Entrance",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "cave_entrance"
+      },
+      "terms": [
+        "cave",
+        "cavern",
+        "grotto"
+      ],
+      "searchable": true
+    },
+    "natural feature/cliff/cliff": {
+      "name": "Cliff",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "height"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "cliff"
+      },
+      "terms": [
+        "bluff",
+        "crag",
+        "head",
+        "headland",
+        "nose",
+        "palisades",
+        "precipice",
+        "promontory",
+        "rimrock",
+        "slope",
+        "cliff",
+        "rim"
+      ],
+      "searchable": true
+    },
+    "natural feature/desert/desert": {
+      "name": "Desert",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "desert"
+      },
+      "terms": [
+        "desert"
+      ],
+      "searchable": true
+    },
+    "natural feature/dune/dune": {
+      "name": "Dune",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "dune"
+      },
+      "terms": [
+        "sand dune",
+        "dune"
+      ],
+      "searchable": true
+    },
+    "natural feature/forest/forest": {
+      "name": "Forest",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "leaf_type",
+        "leaf_cycle",
+        "crop"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "park",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "forest"
+      },
+      "terms": [
+        "jungle",
+        "forest",
+        "wood",
+        "park"
+      ],
+      "searchable": true
+    },
+    "natural feature/forest/woods": {
+      "name": "Woods",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "leaf_type",
+        "leaf_cycle",
+        "crop"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "park2",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "wood"
+      },
+      "terms": [
+        "forest",
+        "wood",
+        "park",
+        "jungle"
+      ],
+      "searchable": true
+    },
+    "natural feature/glacier/glacier": {
+      "name": "Glacier",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface",
+        "direction"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "glacier"
+      },
+      "terms": [
+        "icefield",
+        "ice patch",
+        "snow patch",
+        "glacier"
+      ],
+      "searchable": true
+    },
+    "natural feature/grove/grove": {
+      "name": "Grove",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grove"
+      },
+      "terms": [
+        "orchard",
+        "trees"
+      ],
+      "searchable": true
+    },
+    "natural feature/grove/tree": {
+      "name": "Tree",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "tree"
+      },
+      "terms": [
+        "stump",
+        "tree"
+      ],
+      "searchable": true
+    },
+    "natural feature/harbor/harbor": {
+      "name": "Harbor",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "harbor",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "harbour": "*"
+      },
+      "terms": [
+        "harbour",
+        "harbor",
+        "marina"
+      ],
+      "searchable": true
+    },
+    "natural feature/island/island": {
+      "name": "Island",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "island"
+      },
+      "terms": [
+        "archipelago",
+        "atoll",
+        "cay",
+        "hammock",
+        "hummock",
+        "isla",
+        "isle",
+        "islet",
+        "key",
+        "moku",
+        "island",
+        "rock"
+      ],
+      "searchable": true
+    },
+    "natural feature/isthmus/isthmus": {
+      "name": "Isthmus",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "isthmus"
+      },
+      "terms": [
+        "tombolo",
+        "isthmus"
+      ],
+      "searchable": true
+    },
+    "natural feature/lake/lake": {
+      "name": "Lake",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "water",
+        "water": "lake"
+      },
+      "terms": [
+        "backwater",
+        "lac",
+        "lagoon",
+        "laguna",
+        "lakelet",
+        "loch",
+        "mere",
+        "pond",
+        "resaca",
+        "waterhole",
+        "lake",
+        "pool"
+      ],
+      "searchable": true
+    },
+    "natural feature/lava/lava": {
+      "name": "Lava",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "lava"
+      },
+      "terms": [
+        "jumble",
+        "kepula",
+        "lava bed",
+        "lava flow",
+        "pyroclastic flow",
+        "lava"
+      ],
+      "searchable": true
+    },
+    "natural feature/natural feature/natural feature": {
+      "name": "Natural Feature",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "*"
+      },
+      "terms": [
+        "generic",
+        "natural"
+      ],
+      "searchable": true
+    },
+    "natural feature/pass/mountain pass (saddle %2f gap)": {
+      "name": "Mountain Pass (Saddle / Gap)",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "ele",
+        "direction"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "saddle"
+      },
+      "terms": [
+        "mountain pass",
+        "saddle",
+        "gap",
+        "col",
+        "notch",
+        "pass",
+        "water gap",
+        "wind gap"
+      ],
+      "searchable": true
+    },
+    "natural feature/peak/peak": {
+      "name": "Peak",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "ele"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "triangle",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "peak"
+      },
+      "terms": [
+        "summit",
+        "acme",
+        "ahu",
+        "aiguille",
+        "alp",
+        "berg",
+        "bald",
+        "butte",
+        "cerro",
+        "climax",
+        "colina",
+        "cone",
+        "crown",
+        "cumbre",
+        "dome",
+        "hill",
+        "horn",
+        "knob",
+        "knoll",
+        "mauna",
+        "mesita",
+        "mound",
+        "mount",
+        "mountain",
+        "puu",
+        "sugarloaf",
+        "tip",
+        "top",
+        "peak",
+        "head",
+        "mesa",
+        "rock",
+        "sugarload",
+        "table",
+        "crest",
+        "pinnacle"
+      ],
+      "searchable": true
+    },
+    "natural feature/plain/grassland": {
+      "name": "Grassland",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grassland"
+      },
+      "terms": [
+        "shrubland",
+        "grassland",
+        "plain",
+        "highland",
+        "kula",
+        "upland"
+      ],
+      "searchable": true
+    },
+    "natural feature/plain/plain": {
+      "name": "Plain",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grassland",
+        "grassland_type": "plain"
+      },
+      "terms": [
+        "highland",
+        "kula",
+        "meadow",
+        "upland"
+      ],
+      "searchable": true
+    },
+    "natural feature/plain/prairie": {
+      "name": "Prairie",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grassland",
+        "grassland": "prarie"
+      },
+      "terms": [
+        "savanna",
+        "steppe",
+        "prarie",
+        "grassland"
+      ],
+      "searchable": true
+    },
+    "natural feature/plateau/plateau": {
+      "name": "Plateau",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "landform",
+        "landform": "plateau"
+      },
+      "terms": [
+        "mesa",
+        "table",
+        "tableland",
+        "plateau"
+      ],
+      "searchable": true
+    },
+    "natural feature/rapids/rapids": {
+      "name": "Rapids",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "whitewater",
+        "width",
+        "rapid_grade"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "rapids"
+      },
+      "terms": [
+        "riffle",
+        "ripple",
+        "rapids"
+      ],
+      "searchable": true
+    },
+    "natural feature/ridge/ridge": {
+      "name": "Ridge",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "ridge"
+      },
+      "terms": [
+        "crest",
+        "cuesta",
+        "escarpment",
+        "hogback",
+        "lae",
+        "spur",
+        "ridge",
+        "rim"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/arch": {
+      "name": "Arch",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "arch"
+      },
+      "terms": [
+        "bridge",
+        "land bridge",
+        "natural bridge",
+        "sea arch",
+        "window",
+        "arch"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/pillar": {
+      "name": "Pillar",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "rock",
+        "rock_type": "pillar"
+      },
+      "terms": [
+        "chimney",
+        "monument",
+        "pinnacle",
+        "pohaku",
+        "rock tower"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/rock formation": {
+      "name": "Rock Formation",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "rock"
+      },
+      "terms": [
+        "rock",
+        "formation",
+        "fin",
+        "fold",
+        "hoodoo",
+        "nipple",
+        "slickrock",
+        "slide",
+        "spire",
+        "throne",
+        "wall",
+        "rock formation"
+      ],
+      "searchable": true
+    },
+    "natural feature/sea/sea": {
+      "name": "Sea",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "sea"
+      },
+      "terms": [
+        "gulf",
+        "ocean",
+        "sea"
+      ],
+      "searchable": true
+    },
+    "natural feature/spring/spring": {
+      "name": "Spring",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "drinking_water"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "spring-black",
+      "maki": "npmap-symbol-library",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "spring"
+      },
+      "terms": [
+        "seep",
+        "spring"
+      ],
+      "searchable": true
+    },
+    "natural feature/strait/strait (channel)": {
+      "name": "Strait (Channel)",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "strait"
+      },
+      "terms": [
+        "strait",
+        "channel",
+        "passage",
+        "reach",
+        "thoroughfare",
+        "throughfare"
+      ],
+      "searchable": true
+    },
+    "natural feature/stream/stream": {
+      "name": "Stream",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "stream"
+      },
+      "terms": [
+        "beck",
+        "branch",
+        "brook",
+        "burn",
+        "course",
+        "creek",
+        "current",
+        "drift",
+        "flood",
+        "flowline",
+        "freshet",
+        "race",
+        "rill",
+        "rindle",
+        "rivulet",
+        "run",
+        "runnel",
+        "rush",
+        "spate",
+        "spritz",
+        "surge",
+        "tide",
+        "torrent",
+        "tributary",
+        "watercourse",
+        "flow"
+      ],
+      "searchable": true
+    },
+    "natural feature/swamp/swamp": {
+      "name": "Swamp",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "wetland",
+        "wetland": "swamp"
+      },
+      "terms": [
+        "bog",
+        "cienega",
+        "marais",
+        "marsh",
+        "mire",
+        "pocosin",
+        "swamp",
+        "wetland"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/fumarole": {
+      "name": "Fumarole",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "fumarole"
+      },
+      "terms": [
+        "steam",
+        "vent",
+        "volcanic gas",
+        "thermal",
+        "fumarole",
+        "geological"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/geyser": {
+      "name": "Geyser",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "geyser"
+      },
+      "terms": [
+        "gusher",
+        "spout",
+        "thermal geyser",
+        "hot spring",
+        "thermal spring",
+        "geyser"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/hot spring": {
+      "name": "Hot Spring",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "hot_spring"
+      },
+      "terms": [
+        "hot",
+        "spring",
+        "thermal spring",
+        "water",
+        "geological"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/mud pot": {
+      "name": "Mud Pot",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "mud"
+      },
+      "terms": [
+        "mud",
+        "mud flow",
+        "mudflow",
+        "thermal pool",
+        "fumarole"
+      ],
+      "searchable": true
+    },
+    "natural feature/valley/canyon": {
+      "name": "Canyon",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "canyon"
+      },
+      "terms": [
+        "canyon"
+      ],
+      "searchable": true
+    },
+    "natural feature/valley/valley": {
+      "name": "Valley",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "valley"
+      },
+      "terms": [
+        "barranca",
+        "chasm",
+        "glen",
+        "gorge",
+        "gulch",
+        "hollow",
+        "ravine",
+        "valley",
+        "canyon",
+        "cove",
+        "draw",
+        "gulf"
+      ],
+      "searchable": true
+    },
+    "natural feature/volcano/volcano": {
+      "name": "Volcano",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "status",
+        "ele",
+        "type"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "triangle",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "volcano"
+      },
+      "terms": [
+        "caldera",
+        "cinder cone",
+        "composite",
+        "composite volcano",
+        "crater",
+        "shield",
+        "shield volcano",
+        "volcano"
+      ],
+      "searchable": true
+    },
+    "natural feature/waterfall/waterfall": {
+      "name": "Waterfall",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "waterfall"
+      },
+      "terms": [
+        "falls",
+        "cascade",
+        "cataract",
+        "waterfall"
+      ],
+      "searchable": true
+    },
+    "natural feature/wetland/wetland": {
+      "name": "Wetland",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "wetland",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "wetland"
+      },
+      "terms": [
+        "bayou",
+        "bogland",
+        "fen",
+        "fenland",
+        "morass",
+        "muskeg",
+        "quagmire",
+        "slough",
+        "wetland"
+      ],
+      "searchable": true
+    },
+    "road feature/bridge/bridge": {
+      "name": "Bridge",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "bridge": "*"
+      },
+      "terms": [
+        "aqueduct",
+        "overpass",
+        "viaduct",
+        "bridge"
+      ],
+      "searchable": true
+    },
+    "road feature/control/traffic signals": {
+      "name": "Traffic Signals",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "circle",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "traffic_signals"
+      },
+      "terms": [
+        "stoplight",
+        "stop light",
+        "traffic light",
+        "traffic signal",
+        "traffic signals"
+      ],
+      "searchable": true
+    },
+    "road feature/no-outlet/turning circle": {
+      "name": "Turning Circle",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "circle",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "turning_circle"
+      },
+      "terms": [
+        "blind alley",
+        "cul-de-sac",
+        "dead end street",
+        "turning circle"
+      ],
+      "searchable": true
+    },
+    "road feature/tunnel/tunnel": {
+      "name": "Tunnel",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "tunnel": "*"
+      },
+      "terms": [
+        "covered passageway",
+        "covered way",
+        "tunnel"
       ],
       "searchable": true
     },
@@ -6925,14 +7615,15 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 19,
+      "defaultOrder": 20,
       "matchScore": 1,
       "tags": {
         "leisure": "slipway"
       },
       "terms": [
         "slipway",
-        "boat ramp"
+        "boat ramp",
+        "boat launch"
       ],
       "searchable": true
     },
@@ -6956,7 +7647,8 @@ iD.data.npmapPresets = {
       "matchScore": 1,
       "tags": {
         "leisure": "slipway",
-        "canoe": "*"
+        "canoe": "*",
+        "motorboat": "no"
       },
       "terms": [
         "canoe",
@@ -7007,6 +7699,10 @@ iD.data.npmapPresets = {
       "tags": {
         "seamark:type": "anchorage"
       },
+      "terms": [
+        "anchor",
+        "anchorage"
+      ],
       "searchable": true
     },
     "water recreation/boat/boat dock": {
@@ -7025,9 +7721,9 @@ iD.data.npmapPresets = {
         "mooring": "yes"
       },
       "terms": [
-        "boat",
         "dock",
-        "pier"
+        "pier",
+        "boat"
       ],
       "searchable": true
     },
@@ -7067,7 +7763,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "float",
-        "navigation aid"
+        "navigation aid",
+        "buoy"
       ],
       "searchable": true
     },
@@ -7086,13 +7783,16 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 21,
+      "defaultOrder": 22,
       "matchScore": 1,
       "tags": {
         "leisure": "marina"
       },
       "terms": [
-        "port"
+        "port",
+        "marina",
+        "harbour",
+        "harbor"
       ],
       "searchable": true
     },
@@ -7110,6 +7810,12 @@ iD.data.npmapPresets = {
       "tags": {
         "mooring": "*"
       },
+      "terms": [
+        "dock",
+        "anchorage",
+        "anchor",
+        "mooring"
+      ],
       "searchable": true
     },
     "water recreation/boat/sailing": {
@@ -7131,7 +7837,8 @@ iD.data.npmapPresets = {
       "terms": [
         "sail",
         "sailing area",
-        "sail area"
+        "sail area",
+        "sailing"
       ],
       "searchable": true
     },
@@ -7152,7 +7859,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "decontamination",
-        "decontamination station"
+        "decontamination station",
+        "zebra mussel decontamination station"
       ],
       "searchable": true
     },
@@ -7171,8 +7879,10 @@ iD.data.npmapPresets = {
         "amenity": "fish_cleaning"
       },
       "terms": [
+        "cleaning",
         "fish cleaning station",
-        "fish cleaning table"
+        "fish cleaning table",
+        "fish cleaning"
       ],
       "searchable": true
     },
@@ -7190,6 +7900,11 @@ iD.data.npmapPresets = {
       "tags": {
         "landuse": "aquaculture"
       },
+      "terms": [
+        "hatchery",
+        "fish",
+        "fish hatchery"
+      ],
       "searchable": true
     },
     "water recreation/fishing/fishing": {
@@ -7203,11 +7918,15 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
-      "defaultOrder": 20,
+      "defaultOrder": 21,
       "matchScore": 1,
       "tags": {
         "leisure": "fishing"
       },
+      "terms": [
+        "fish",
+        "fishing"
+      ],
       "searchable": true
     },
     "water recreation/lighthouse/lighthouse": {
@@ -7225,7 +7944,8 @@ iD.data.npmapPresets = {
         "man_made": "lighthouse"
       },
       "terms": [
-        "beacon"
+        "beacon",
+        "lighthouse"
       ],
       "searchable": true
     },
@@ -7247,7 +7967,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "scuba",
-        "scuba diving area"
+        "scuba diving area",
+        "scuba diving"
       ],
       "searchable": true
     },
@@ -7269,8 +7990,11 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "pool",
+        "natural pool",
+        "natural swimming pool",
         "swimming",
-        "swimming pool"
+        "swimming pool",
+        "swimming area"
       ],
       "searchable": true
     },
@@ -7334,7 +8058,8 @@ iD.data.npmapPresets = {
         "nordic trail",
         "xcs",
         "trail",
-        "track"
+        "track",
+        "cross-country ski trail"
       ],
       "searchable": true
     },
@@ -7370,11 +8095,12 @@ iD.data.npmapPresets = {
         "mushing trail",
         "winter track",
         "trail",
-        "track"
+        "track",
+        "dog sled trail"
       ],
       "searchable": true
     },
-    "winter recreation/downing skiing/backcountry ski trail": {
+    "winter recreation/downhill skiing/backcountry ski trail": {
       "name": "Backcountry Ski Trail",
       "fields": [
         "name",
@@ -7404,11 +8130,13 @@ iD.data.npmapPresets = {
         "backcountry",
         "backcountry ski",
         "trail",
-        "track"
+        "track",
+        "backcountry ski trail",
+        "structure"
       ],
       "searchable": true
     },
-    "winter recreation/downing skiing/downhill ski trail": {
+    "winter recreation/downhill skiing/downhill ski trail": {
       "name": "Downhill Ski Trail",
       "fields": [
         "name",
@@ -7444,7 +8172,8 @@ iD.data.npmapPresets = {
         "downhill",
         "downhill ski",
         "trail",
-        "track"
+        "track",
+        "downhill ski trail"
       ],
       "searchable": true
     },
@@ -7476,7 +8205,8 @@ iD.data.npmapPresets = {
         "ice skating",
         "ice skating area",
         "rink",
-        "skating"
+        "skating",
+        "ice rink"
       ],
       "searchable": true
     },
@@ -7510,7 +8240,8 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "sled",
-        "sledding area"
+        "sledding area",
+        "sledding"
       ],
       "searchable": true
     },
@@ -7550,7 +8281,8 @@ iD.data.npmapPresets = {
         "snow machine",
         "snow machine trail",
         "trail",
-        "track"
+        "track",
+        "snowmobile trail"
       ],
       "searchable": true
     },
@@ -7584,36 +8316,18 @@ iD.data.npmapPresets = {
         "snowshoe",
         "showshoeing",
         "trail",
-        "track"
+        "track",
+        "snowshoe trail"
       ],
       "searchable": true
     }
   },
   "categories": {
-    "category-point-accommodation": {
-      "geometry": "point",
-      "displayName": "Accommodation",
-      "members": [
-        "accommodation/restroom/restroom"
-      ],
-      "icon": "restrooms-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-accommodation": {
-      "geometry": "vertex",
-      "displayName": "Accommodation",
-      "members": [
-        "accommodation/restroom/restroom"
-      ],
-      "icon": "restrooms-black",
-      "maki": "npmap-symbol-library"
-    },
     "category-area-building": {
       "geometry": "area",
       "displayName": "Building",
       "members": [
-        "building/building/building footprint",
-        "building/miscellaneous/fortification"
+        "building/building/building footprint"
       ],
       "icon": "building",
       "maki": "maki"
@@ -7631,14 +8345,15 @@ iD.data.npmapPresets = {
       "icon": "commercial",
       "maki": "maki"
     },
-    "category-point-information": {
-      "geometry": "point",
-      "displayName": "Information",
+    "category-area-land recreation": {
+      "geometry": "area",
+      "displayName": "Land Recreation",
       "members": [
-        "information/information/information"
+        "land recreation/sports field/athletic field",
+        "land recreation/golf/golf course"
       ],
-      "icon": "visitor-center-black",
-      "maki": "npmap-symbol-library"
+      "icon": "pitch",
+      "maki": "maki"
     },
     "category-point-land recreation": {
       "geometry": "point",
@@ -7662,11 +8377,11 @@ iD.data.npmapPresets = {
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library"
     },
-    "category-point-locality": {
-      "geometry": "point",
-      "displayName": "Locality",
+    "category-area-miscellaneous": {
+      "geometry": "area",
+      "displayName": "Miscellaneous",
       "members": [
-        "locality/region/locale"
+        "miscellaneous/structure/fortification"
       ]
     },
     "category-area-parking": {
@@ -7678,29 +8393,13 @@ iD.data.npmapPresets = {
       "icon": "parking-black",
       "maki": "npmap-symbol-library"
     },
-    "category-line-road": {
-      "geometry": "line",
-      "displayName": "Road",
-      "members": [
-        "road/minor/unknown road",
-        "road/highway/highway",
-        "road/primary/primary road",
-        "road/secondary/secondary road",
-        "road/minor/minor road",
-        "road/minor/residential road",
-        "road/service/access road",
-        "road/service/parking aisle",
-        "road/minor/private road"
-      ],
-      "icon": "highway-unclassified",
-      "maki": "maki"
-    },
     "category-point-service": {
       "geometry": "point",
       "displayName": "Service",
       "members": [
         "service/food/food service",
         "service/shopping/store",
+        "service/shopping/bookstore",
         "service/shopping/gift shop",
         "service/fuel/gas station",
         "service/telephone/telephone",
@@ -7726,6 +8425,23 @@ iD.data.npmapPresets = {
         "structure/recreation/boat dock"
       ]
     },
+    "category-line-road": {
+      "geometry": "line",
+      "displayName": "Road",
+      "members": [
+        "road/minor/unknown road",
+        "road/highway/highway",
+        "road/primary/primary road",
+        "road/secondary/secondary road",
+        "road/minor/minor road",
+        "road/minor/residential road",
+        "road/service/access road",
+        "road/service/parking aisle",
+        "road/minor/private road"
+      ],
+      "icon": "highway-unclassified",
+      "maki": "maki"
+    },
     "category-line-trail": {
       "geometry": "line",
       "displayName": "Trail",
@@ -7738,6 +8454,40 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-path",
       "maki": "maki"
+    },
+    "category-point-accommodation": {
+      "geometry": "point",
+      "displayName": "Accommodation",
+      "members": [
+        "accommodation/restroom/restroom"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-vertex-accommodation": {
+      "geometry": "vertex",
+      "displayName": "Accommodation",
+      "members": [
+        "accommodation/restroom/restroom"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-point-information": {
+      "geometry": "point",
+      "displayName": "Information",
+      "members": [
+        "information/information/information"
+      ],
+      "icon": "visitor-center-black",
+      "maki": "npmap-symbol-library"
+    },
+    "category-point-locality": {
+      "geometry": "point",
+      "displayName": "Locality",
+      "members": [
+        "locality/region/locale"
+      ]
     },
     "category-point-water recreation": {
       "geometry": "point",
@@ -7752,6 +8502,13 @@ iD.data.npmapPresets = {
     }
   },
   "defaults": {
+    "area": [
+      "building/building/building footprint",
+      "category-area-land recreation",
+      "parking/parking/parking lot",
+      "miscellaneous/structure/fortification",
+      "structure/recreation/boat dock"
+    ],
     "point": [
       "information/visitor center/visitor center",
       "service/entrance/entrance station",
@@ -7772,11 +8529,6 @@ iD.data.npmapPresets = {
       "land recreation/trail/trailhead",
       "service/parking/parking lot",
       "accommodation/restroom/restroom"
-    ],
-    "area": [
-      "category-area-building",
-      "parking/parking/parking lot",
-      "structure/recreation/boat dock"
     ],
     "line": [
       "category-line-road",

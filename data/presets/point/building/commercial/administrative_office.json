@@ -23,13 +23,14 @@
     "office": "government"
   },
   "terms": [
-    "building",
     "administrative",
     "office",
     "admin",
     "admin office",
     "civil service",
     "government",
-    "government office"
+    "government office",
+    "building",
+    "administrative office"
   ]
 }

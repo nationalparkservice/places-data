@@ -27,6 +27,9 @@
     "highway": "tertiary_link"
   },
   "terms": [
-    "tertiary ramp"
+    "tertiary ramp",
+    "ramp",
+    "on ramp",
+    "off ramp"
   ]
 }

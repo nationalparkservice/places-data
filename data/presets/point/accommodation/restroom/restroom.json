@@ -29,6 +29,7 @@
     "amenity": "toilets"
   },
   "terms": [
+    "restroom",
     "bathroom",
     "latrine",
     "lavatory",
@@ -37,6 +38,7 @@
     "toilet",
     "toilets",
     "water closet",
-    "wc"
+    "wc",
+    "head"
   ]
 }

@@ -37,6 +37,7 @@
     "administrative road",
     "administrative service road",
     "road",
-    "street"
+    "street",
+    "private road"
   ]
 }

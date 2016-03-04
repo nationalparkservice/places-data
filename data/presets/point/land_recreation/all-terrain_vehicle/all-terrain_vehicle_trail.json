@@ -20,8 +20,6 @@
   "geometry": [
     "point"
   ],
-  "icon": "All-terrain trail",
-  "maki": "npmap-symbol-library",
   "layerIndex": 30,
   "defaultOrder": null,
   "matchScore": 1,
@@ -48,6 +46,10 @@
     "orv trail",
     "quad",
     "trail",
-    "track"
+    "track",
+    "4wd",
+    "4 wheeler",
+    "four-wheeler",
+    "structure"
   ]
 }

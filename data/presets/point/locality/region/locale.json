@@ -23,6 +23,9 @@
     "location",
     "place",
     "placename",
-    "place name"
+    "place name",
+    "locale",
+    "neighborhood",
+    "district"
   ]
 }

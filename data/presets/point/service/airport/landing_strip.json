@@ -26,8 +26,13 @@
     "surface": "ground"
   },
   "terms": [
-    "airport",
     "landing spot",
-    "plane landing"
+    "plane landing",
+    "airport",
+    "aeroway",
+    "aerodrome",
+    "air field",
+    "landing strip",
+    "landing"
   ]
 }

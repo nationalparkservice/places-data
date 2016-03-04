@@ -40,6 +40,25 @@ var getGeometry = function (preset) {
   return makeGeometryList(preset)[0];
 };
 
+var combineArrays = function () {
+  var arrays = [];
+  for (var a in arguments) {
+    if (Array.isArray(arguments[a])) {
+      arrays.push(arguments[a]);
+    }
+  }
+  var newArray = [];
+  arrays.forEach(function (arr) {
+    arr.forEach(function (t) {
+      t = typeof t === 'string' ? t.trim() : t;
+      if (t && t !== '' && newArray.indexOf(t) === -1) {
+        newArray.push(t);
+      }
+    });
+  });
+  return newArray;
+};
+
 var processPreset = function (preset) {
   try {
     var newPreset = {
@@ -60,7 +79,7 @@ var processPreset = function (preset) {
       tags: preset.tags ? JSON.parse(preset.tags) : {
         'error': 'error'
       },
-      terms: preset.altNames ? JSON.parse(preset.altNames) : []
+      terms: combineArrays(JSON.parse(preset.iDSearchTerms || []), JSON.parse(preset.altNames || []))
     };
   } catch (err) {
     console.log('Error with preset', preset.type || preset.name);

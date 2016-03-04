@@ -23,8 +23,9 @@
     "building": "retail"
   },
   "terms": [
-    "building",
     "commercial building",
-    "retail"
+    "retail",
+    "building",
+    "retail building"
   ]
 }

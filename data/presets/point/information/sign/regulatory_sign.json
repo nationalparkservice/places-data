@@ -21,8 +21,9 @@
     "sign:type": "regulatory"
   },
   "terms": [
-    "sign",
     "regulatory",
-    "traffic law"
+    "traffic law",
+    "sign",
+    "regulatory sign"
   ]
 }

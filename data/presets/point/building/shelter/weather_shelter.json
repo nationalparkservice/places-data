@@ -18,12 +18,12 @@
     "amenity": "shelter"
   },
   "terms": [
-    "shelter",
     "emergency shelter",
     "emergency shelter cabin",
     "tornado shelter",
     "warming hut",
     "warming tent",
-    "warming shelter"
+    "warming shelter",
+    "shelter"
   ]
 }

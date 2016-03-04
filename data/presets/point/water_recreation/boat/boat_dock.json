@@ -19,8 +19,8 @@
     "mooring": "yes"
   },
   "terms": [
-    "boat",
     "dock",
-    "pier"
+    "pier",
+    "boat"
   ]
 }

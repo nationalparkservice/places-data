@@ -18,8 +18,9 @@
     "mooring": "*"
   },
   "terms": [
+    "dock",
     "anchorage",
     "anchor",
-    "dock"
+    "mooring"
   ]
 }

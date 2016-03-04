@@ -22,8 +22,9 @@
     "building": "house"
   },
   "terms": [
-    "residential building",
     "home",
-    "private home"
+    "private home",
+    "residential building",
+    "house"
   ]
 }

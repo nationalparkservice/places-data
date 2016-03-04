@@ -31,6 +31,7 @@
     "highway ramp",
     "off ramp",
     "on ramp",
-    "ramp"
+    "ramp",
+    "highway"
   ]
 }

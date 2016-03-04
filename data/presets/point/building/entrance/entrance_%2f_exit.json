@@ -6,6 +6,7 @@
     "nps/unitcode"
   ],
   "geometry": [
+    "point",
     "vertex"
   ],
   "icon": "entrance-black",
@@ -22,6 +23,7 @@
   "terms": [
     "building entrance",
     "building exit",
-    "emergency exit"
+    "emergency exit",
+    "entrance"
   ]
 }

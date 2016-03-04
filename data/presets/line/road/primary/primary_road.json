@@ -35,6 +35,9 @@
     "us highway",
     "state highway",
     "state route",
-    "road"
+    "road",
+    "primary road",
+    "interstate",
+    "interstate highway"
   ]
 }

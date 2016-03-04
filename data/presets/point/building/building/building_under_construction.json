@@ -22,10 +22,11 @@
     "building": "construction"
   },
   "terms": [
-    "building",
     "under construction",
     "construction",
     "construction area",
-    "construction zone"
+    "construction zone",
+    "building",
+    "building under construction"
   ]
 }

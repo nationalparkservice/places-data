@@ -22,6 +22,8 @@
     "harbour": "*"
   },
   "terms": [
-    "harbour"
+    "harbour",
+    "harbor",
+    "marina"
   ]
 }

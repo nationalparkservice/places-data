@@ -22,8 +22,8 @@
     "seamark:type": "seaplane_landing_area"
   },
   "terms": [
-    "airport",
     "float landing",
-    "float plane"
+    "float plane",
+    "airport"
   ]
 }
