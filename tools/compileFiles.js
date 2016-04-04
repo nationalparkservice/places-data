@@ -25,6 +25,8 @@ module.exports = function (path, callback) {
       }
       if (!tree[category].subcategories[subcategory].tags[tag]) {
         tree[category].subcategories[subcategory].tags[tag] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      } else {
+        tree[category].subcategories[subcategory].tags[tag].geometry.push(geometry);
       }
     });
     callback(error, error ? null : tree);
