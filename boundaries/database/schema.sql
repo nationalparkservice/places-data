@@ -5,13 +5,14 @@
   -- SQL Here: https://raw.githubusercontent.com/2ndQuadrant/audit-trigger/master/audit.sql
 
 -- -----------------------------------------------------
--- FUNCTION "_update_updated_at"
+-- FUNCTION "_update_audit_fields"
 -- -----------------------------------------------------
 -- http://docs.cartodb.com/tips-and-tricks/data-types/
-CREATE OR REPLACE FUNCTION _update_updated_at()
+CREATE OR REPLACE FUNCTION _update_audit_fields()
   RETURNS TRIGGER AS $$
   BEGIN
     NEW.updated_at := now();
+    NEW.updated_by := CURRENT_USER;
     RETURN NEW;
   END;
 $$ LANGUAGE plpgsql VOLATILE;
@@ -45,8 +46,9 @@ CREATE TABLE "parks" (
   "unit_state" TEXT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
-CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks" FOR EACH ROW EXECUTE PROCEDURE _update_updated_at();
+CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('parks');
 
 -- -----------------------------------------------------
@@ -57,8 +59,9 @@ CREATE TABLE "alt_unit_codes" (
   "alt_unit_code" TEXT NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_code", "alt_unit_code"));
-CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "alt_unit_codes" FOR EACH ROW EXECUTE PROCEDURE _update_updated_at();
+CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "alt_unit_codes" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('alt_unit_codes');
 
 -- -----------------------------------------------------
@@ -75,8 +78,9 @@ CREATE TABLE "parks_poly" (
   "geom_poly" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
-CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_poly" FOR EACH ROW EXECUTE PROCEDURE _update_updated_at();
+CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_poly" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('parks_poly');
 
 -- -----------------------------------------------------
@@ -88,8 +92,9 @@ CREATE TABLE "parks_line" (
   "geom_line" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
-CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_line" FOR EACH ROW EXECUTE PROCEDURE _update_updated_at();
+CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_line" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('parks_line');
 
 -- -----------------------------------------------------
@@ -101,8 +106,9 @@ CREATE TABLE "parks_point" (
   "geom_point" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
-CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_point" FOR EACH ROW EXECUTE PROCEDURE _update_updated_at();
+CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_point" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('parks_point');
 
 -- -----------------------------------------------------
@@ -125,8 +131,9 @@ CREATE TABLE "parks_label" (
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "label_size" TEXT NULL,
   "label_wrap_width" TEXT NULL,
+  "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("label_id"));
-CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_label" FOR EACH ROW EXECUTE PROCEDURE _update_updated_at();
+CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_label" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('parks_label');
 
 -- -----------------------------------------------------
