@@ -55,12 +55,12 @@ SELECT audit.audit_table('parks');
 -- Table "alt_unit_codes"
 -- -----------------------------------------------------
 CREATE TABLE "alt_unit_codes" (
-  "unit_code" TEXT NOT NULL,
+  "unit_id" INT NOT NULL,
   "alt_unit_code" TEXT NOT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
-  PRIMARY KEY ("unit_code", "alt_unit_code"));
+  PRIMARY KEY ("unit_id", "alt_unit_code"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "alt_unit_codes" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
 SELECT audit.audit_table('alt_unit_codes');
 
