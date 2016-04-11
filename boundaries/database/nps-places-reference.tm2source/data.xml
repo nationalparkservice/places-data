@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
+  <Parameter name="center">-99.9756,33.4131,6</Parameter>
+  <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","min_zoom_poly":"Number","is_subunit":"Boolean","show_border":"Boolean","show_tint_band":"Boolean"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","show_poly":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","is_subunit":"Boolean"}},{"id":"nps_places_reference_points","description":"Points for places boundaries","fields":{"unit_id":"Number","unit_code":"String","unit_name_short":"String","unit_name_long":"String","is_subunit":"Boolean","ldir_enforce":"Boolean","ldir":"String","show_poly":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","show_simp":"Boolean","simp_type":"String"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">4</Parameter>
+  <Parameter name="name"><![CDATA[nps_places_reference]]></Parameter>
+</Parameters>
+
+
+<Layer name="nps_places_reference_polygons"
+  buffer-size="4"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[places_boundaries]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geom_poly]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[geom_poly_simp]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[unit_id]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[( 
+SELECT   "parks"."unit_id",
+         "parks"."unit_code",
+         "parks"."min_zoom_poly",
+         CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
+         "parks"."min_zoom_border"  <= z(!scale_denominator!) as "show_border",
+         "parks"."min_zoom_tint_band"  <= z(!scale_denominator!) as "show_tint_band",
+         CASE WHEN
+           z(!scale_denominator!) >= "parks"."min_zoom_poly"
+         THEN
+           CASE
+             WHEN  z(!scale_denominator!) = 0 THEN "geom_poly_simp"."geom_poly_0"
+             WHEN  z(!scale_denominator!) = 1 THEN "geom_poly_simp"."geom_poly_1"
+             WHEN  z(!scale_denominator!) = 2 THEN "geom_poly_simp"."geom_poly_2"
+             WHEN  z(!scale_denominator!) = 3 THEN "geom_poly_simp"."geom_poly_3"
+             WHEN  z(!scale_denominator!) = 4 THEN "geom_poly_simp"."geom_poly_4"
+             WHEN  z(!scale_denominator!) = 5 THEN "geom_poly_simp"."geom_poly_5"
+             WHEN  z(!scale_denominator!) = 6 THEN "geom_poly_simp"."geom_poly_6"
+             WHEN  z(!scale_denominator!) = 7 THEN "geom_poly_simp"."geom_poly_7"
+             WHEN  z(!scale_denominator!) = 8 THEN "geom_poly_simp"."geom_poly_8"
+             WHEN  z(!scale_denominator!) = 9 THEN "geom_poly_simp"."geom_poly_9"
+             WHEN  z(!scale_denominator!) = 10 THEN "geom_poly_simp"."geom_poly_10"
+             WHEN  z(!scale_denominator!) = 11 THEN "geom_poly_simp"."geom_poly_11"
+             WHEN  z(!scale_denominator!) = 12 THEN "geom_poly_simp"."geom_poly_12"
+             WHEN  z(!scale_denominator!) = 13 THEN "geom_poly_simp"."geom_poly_13"
+             ELSE "geom_poly_simp"."geom_poly"
+           END
+          ELSE
+           null
+         END as "geom_poly"
+FROM     "geom_poly_simp" JOIN "parks" ON
+         "parks"."unit_id" = "geom_poly_simp"."unit_id"
+WHERE
+  "geom_poly_simp"."geom_poly" && !bbox! AND
+  "parks"."min_zoom_poly"  <= z(!scale_denominator!) AND
+  "geom_poly_simp"."geom_poly" IS NOT NULL
+ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="nps_places_reference_lines"
+  buffer-size="4"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[places_boundaries]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geom_line]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[geom_line_simp]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[unit_id]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(
+SELECT    "parks"."unit_id",
+          "parks"."unit_code",
+          "parks"."unit_name_short" || ' ' || "parks"."unit_desig_abbr" AS "unit_name_short",
+          "parks"."unit_name_long" || ' ' || "parks"."unit_desig_full" AS "unit_name_long",
+          "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
+          "parks"."min_zoom_label" <= z(!scale_denominator!) AND "parks"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
+          "parks"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
+          "parks"."min_zoom_label_center" <= z(!scale_denominator!) as "label_center",
+          CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
+          CASE WHEN
+            "parks"."min_zoom_poly" <= z(!scale_denominator!)
+          THEN
+            CASE
+              WHEN  z(!scale_denominator!) = 0 THEN "geom_line_simp"."geom_line_0"
+              WHEN  z(!scale_denominator!) = 1 THEN "geom_line_simp"."geom_line_1"
+              WHEN  z(!scale_denominator!) = 2 THEN "geom_line_simp"."geom_line_2"
+              WHEN  z(!scale_denominator!) = 3 THEN "geom_line_simp"."geom_line_3"
+              WHEN  z(!scale_denominator!) = 4 THEN "geom_line_simp"."geom_line_4"
+              WHEN  z(!scale_denominator!) = 5 THEN "geom_line_simp"."geom_line_5"
+              WHEN  z(!scale_denominator!) = 6 THEN "geom_line_simp"."geom_line_6"
+              WHEN  z(!scale_denominator!) = 7 THEN "geom_line_simp"."geom_line_7"
+              WHEN  z(!scale_denominator!) = 8 THEN "geom_line_simp"."geom_line_8"
+              WHEN  z(!scale_denominator!) = 9 THEN "geom_line_simp"."geom_line_9"
+              WHEN  z(!scale_denominator!) = 10 THEN "geom_line_simp"."geom_line_10"
+              WHEN  z(!scale_denominator!) = 11 THEN "geom_line_simp"."geom_line_11"
+              WHEN  z(!scale_denominator!) = 12 THEN "geom_line_simp"."geom_line_12"
+              WHEN  z(!scale_denominator!) = 13 THEN "geom_line_simp"."geom_line_13"
+              ELSE "geom_line_simp"."geom_line"
+            END
+           ELSE
+            null
+          END as "geom_line"
+ FROM     "geom_line_simp"
+ JOIN     "parks" ON "parks"."unit_id" = "geom_line_simp"."unit_id"
+ WHERE    "geom_line_simp"."geom_line" && !bbox! AND
+          "parks"."min_zoom_poly" <= z(!scale_denominator!) AND
+          "geom_line_simp"."geom_line" IS NOT NULL
+ ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="nps_places_reference_points"
+  buffer-size="64"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[places_boundaries]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[geom_point]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[parks]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[unit_id]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(
+SELECT   "parks"."unit_id",
+         "parks"."unit_code",
+         "parks"."unit_name_short" || ' ' || COALESCE("parks"."unit_desig_abbr", '') AS "unit_name_short",
+         "parks"."unit_name_long" || ' ' || COALESCE("parks"."unit_desig_full", '') AS "unit_name_long",
+         CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
+         "parks"."ldir_enforce",
+         "parks"."ldir",
+         "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
+         "parks"."min_zoom_label" <= z(!scale_denominator!) AND "parks"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
+         "parks"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
+         "parks"."min_zoom_label_center" <= z(!scale_denominator!) as "label_center",
+         "parks"."min_zoom_simp" <= z(!scale_denominator!) as "show_simp",
+         "parks"."simp_type",
+         "parks"."geom_point"
+FROM     "parks"
+WHERE    
+          "parks"."geom_point" && !bbox! AND
+          "parks"."geom_point" IS NOT NULL
+ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="nps_great_lakes_large"
+  buffer-size="64"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[data_import_3]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[great_lakes_large]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT 
+           ogc_fid,
+           name,
+           wkb_geometry
+         FROM great_lakes_large
+         WHERE 
+            wkb_geometry && !bbox! AND
+         z(!scale_denominator!) >= 8 AND z(!scale_denominator!) <= 12) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="nps_great_lakes_small"
+  buffer-size="64"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[data_import_3]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[great_lakes_small]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT 
+           ogc_fid,
+           name,
+           wkb_geometry
+         FROM great_lakes_small
+         WHERE 
+           wkb_geometry && !bbox! AND
+         z(!scale_denominator!) >= 4 AND z(!scale_denominator!) <= 7) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
