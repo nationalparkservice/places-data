@@ -73,7 +73,7 @@ CREATE TABLE "parks_poly" (
   "min_zoom_border" INT NULL,
   "min_zoom_tintband" INT NULL,
   "simp_type" TEXT NULL,
-  "pt_render" TINYINT(1) NULL,
+  "pt_render" BOOLEAN NULL,
   "data_source" TEXT NULL,
   "geom_poly" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -88,7 +88,7 @@ SELECT audit.audit_table('parks_poly');
 -- -----------------------------------------------------
 CREATE TABLE "parks_line" (
   "unit_id" INT NOT NULL,
-  "pt_render" TINYINT(1) NULL,
+  "pt_render" BOOLEAN NULL,
   "geom_line" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -125,8 +125,8 @@ CREATE TABLE "parks_label" (
   "min_zoom_label_center" INT NULL,
   "max_zoom_label" INT NULL,
   "ldir" TEXT NULL,
-  "ldir_enforce" TINYINT(1) NULL,
-  "pt_render" TINYINT(1) NULL,
+  "ldir_enforce" BOOLEAN NULL,
+  "pt_render" BOOLEAN NULL,
   "geom_label" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
