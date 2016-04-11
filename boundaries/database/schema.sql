@@ -36,7 +36,7 @@ $func$;
 CREATE TABLE "parks" (
   "unit_id" INT NOT NULL,
   "unit_code" TEXT NOT NULL,
-  "subunit_of" INT NULL,
+  "subunit_of" TEXT NULL,
   "unit_name_short" TEXT NULL,
   "unit_name_long" TEXT NULL,
   "unit_desig_abbr" TEXT NULL,
