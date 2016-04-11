@@ -1,5 +1,8 @@
 -- BEFORE RUNNING THIS, CREATE THE DATABASE ADD THE AUDIT TRIGGER:
   -- CREATE DATABASE places_parks;
+-- You will also need to spatially enable the database
+  -- CREATE EXTENSION postgis;
+  -- CREATE EXTENSION postgis_topology;
 -- Audit Trigger
   -- Directions here: https://wiki.postgresql.org/wiki/Audit_trigger_91plus
   -- SQL Here: https://raw.githubusercontent.com/2ndQuadrant/audit-trigger/master/audit.sql
