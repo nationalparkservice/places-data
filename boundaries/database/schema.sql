@@ -21,7 +21,7 @@ $$ LANGUAGE plpgsql VOLATILE;
 -- FUNCTION ZRes
 -- -----------------------------------------------------
 -- https://raw.githubusercontent.com/mapbox/postgis-vt-util/master/src/ZRes.sql
-CREATE OR REPLACE FUNCTION ZRes2 (FLOAT)
+CREATE OR REPLACE FUNCTION ZRes (FLOAT)
     RETURNS FLOAT
     LANGUAGE sql
     IMMUTABLE
