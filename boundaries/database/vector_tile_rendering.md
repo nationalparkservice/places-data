@@ -34,7 +34,7 @@ This source includes label points from the `parks_label` table.
 - `show_point` _boolean_
   - logic: `IF zoom < park_poly.min_zoom_poly AND park_poly.label_type != `site` THEN true, ELSE false
 - `show_label` _boolean_
-  - logic: `IF zoom >= park_label.min_zoom_label AND park_label.min_zoom_label <= park_label.max_zoom_label THEN true, ELSE false`
+  - logic: `IF zoom >= park_label.min_zoom_label AND zoom <= park_label.max_zoom_label THEN true, ELSE false`
 - `label_long` _boolean_
   - logic: `IF zoom >= park_label.min_zoom_label_long THEN true, ELSE false`
 - `label_center` _boolean_
