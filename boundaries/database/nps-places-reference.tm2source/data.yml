@@ -6,14 +6,73 @@ _prefs:
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -99.9756
-  - 33.4131
-  - 6
+  - -102.1289
+  - 36.1734
+  - 5
 description: Boundaries of the National Parks
 Layer: 
+  - id: nps_places_reference_points
+    Datasource: 
+      dbname: places_parks
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: geom_label
+      geometry_table: parks_label
+      host: localhost
+      key_field: label_id
+      key_field_as_attribute: ''
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (
+        SELECT   "parks_label"."label_id",
+                 "parks"."unit_code",
+                 "parks_label"."label_name_short" AS "label_name_short",
+                 "parks_label"."label_name_long" "label_name_long",
+                 "parks_poly"."min_zoom_poly" > z(!scale_denominator!) AND
+                   "parks_label"."label_type" != 'site'
+                   AS "show_point",
+                 "parks_label"."min_zoom_label" <= z(!scale_denominator!)  AND 
+                   "parks_label"."max_zoom_label" >= z(!scale_denominator!)
+                   AS "show_label",
+                 "parks_label"."min_zoom_label_long" <= z(!scale_denominator!) AS "label_long",
+                 "parks_label"."min_zoom_label_center" <= z(!scale_denominator!) AS "label_center",
+                 "parks_label"."ldir",
+                 "parks_label"."ldir_enforce",
+                 "parks_label"."label_wrap_width",
+                 "parks_label"."label_small",
+                 "parks_label"."geom_label"
+        FROM     "parks_label" JOIN "parks" ON
+                   "parks_label"."unit_id" = "parks"."unit_id"
+                 LEFT JOIN "parks_poly" ON
+                   "parks_label"."unit_id" = "parks_poly"."unit_id"
+        WHERE    
+                  "parks_label"."geom_label" && !bbox! AND
+                  "parks_label"."geom_label" IS NOT NULL
+        ORDER BY "parks"."unit_area" DESC) as data
+      type: postgis
+      user: postgres
+    description: Points for places boundaries
+    fields: 
+      label_center: Boolean
+      label_id: Number
+      label_long: Boolean
+      label_name_long: String
+      label_name_short: String
+      label_small: Boolean
+      label_wrap_width: Number
+      ldir: String
+      ldir_enforce: Boolean
+      show_label: Boolean
+      show_point: Boolean
+      unit_code: String
+    properties: 
+      "buffer-size": 64
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_places_reference_polygons
     Datasource: 
-      dbname: places_boundaries
+      dbname: places_parks
       extent: -20037508.34,-20037508.34,20037508.34,20037508.34
       geometry_field: geom_poly
       geometry_table: geom_poly_simp
@@ -28,12 +87,11 @@ Layer:
         ( 
         SELECT   "parks"."unit_id",
                  "parks"."unit_code",
-                 "parks"."min_zoom_poly",
-                 CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
-                 "parks"."min_zoom_border"  <= z(!scale_denominator!) as "show_border",
-                 "parks"."min_zoom_tint_band"  <= z(!scale_denominator!) as "show_tint_band",
+                 "parks"."unit_name_long" AS "unit_name",
+                 "parks_poly"."min_zoom_border"  <= z(!scale_denominator!) as "show_border",
+                 "parks_poly"."min_zoom_tintband"  <= z(!scale_denominator!) as "show_tintband",
                  CASE WHEN
-                   z(!scale_denominator!) >= "parks"."min_zoom_poly"
+                   z(!scale_denominator!) >= "parks_poly"."min_zoom_poly"
                  THEN
                    CASE
                      WHEN  z(!scale_denominator!) = 0 THEN "geom_poly_simp"."geom_poly_0"
@@ -55,29 +113,31 @@ Layer:
                   ELSE
                    null
                  END as "geom_poly"
-        FROM     "geom_poly_simp" JOIN "parks" ON
-                 "parks"."unit_id" = "geom_poly_simp"."unit_id"
+        FROM     "parks_poly" JOIN "parks" ON
+                   "parks_poly"."unit_id" = "parks"."unit_id" JOIN
+                 "geom_poly_simp" ON
+                   "parks_poly"."unit_id" = "geom_poly_simp"."unit_id" 
         WHERE
           "geom_poly_simp"."geom_poly" && !bbox! AND
-          "parks"."min_zoom_poly"  <= z(!scale_denominator!) AND
-          "geom_poly_simp"."geom_poly" IS NOT NULL
+          "parks_poly"."min_zoom_poly"  <= z(!scale_denominator!) AND
+          "geom_poly_simp"."geom_poly" IS NOT NULL AND
+          "parks_poly"."pt_render" != false
         ORDER BY "parks"."unit_area" DESC) as data
       type: postgis
       user: postgres
     description: NPS park polygons
     fields: 
-      is_subunit: Boolean
-      min_zoom_poly: Number
       show_border: Boolean
-      show_tint_band: Boolean
+      show_tintband: Boolean
       unit_code: String
       unit_id: Number
+      unit_name: String
     properties: 
       "buffer-size": 4
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_places_reference_lines
     Datasource: 
-      dbname: places_boundaries
+      dbname: places_parks
       extent: -20037508.34,-20037508.34,20037508.34,20037508.34
       geometry_field: geom_line
       geometry_table: geom_line_simp
@@ -90,17 +150,17 @@ Layer:
       srid: ''
       table: |-
         (
-        SELECT    "parks"."unit_id",
+        SELECT    "parks_label"."unit_id",
+          "parks_poly"."min_zoom_poly",
                   "parks"."unit_code",
-                  "parks"."unit_name_short" || ' ' || "parks"."unit_desig_abbr" AS "unit_name_short",
-                  "parks"."unit_name_long" || ' ' || "parks"."unit_desig_full" AS "unit_name_long",
-                  "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
-                  "parks"."min_zoom_label" <= z(!scale_denominator!) AND "parks"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
-                  "parks"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
-                  "parks"."min_zoom_label_center" <= z(!scale_denominator!) as "label_center",
-                  CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
+                  "parks_label"."label_name_short",
+                  "parks_label"."label_name_long",
+                  "parks_poly"."min_zoom_poly"  < z(!scale_denominator!) AS "show_line",
+                  "parks_label"."min_zoom_label" <= z(!scale_denominator!) AND 
+                    "parks_label"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
+                  "parks_label"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
                   CASE WHEN
-                    "parks"."min_zoom_poly" <= z(!scale_denominator!)
+                    "parks_poly"."min_zoom_poly" > z(!scale_denominator!)
                   THEN
                     CASE
                       WHEN  z(!scale_denominator!) = 0 THEN "geom_line_simp"."geom_line_0"
@@ -123,80 +183,28 @@ Layer:
                     null
                   END as "geom_line"
          FROM     "geom_line_simp"
-         JOIN     "parks" ON "parks"."unit_id" = "geom_line_simp"."unit_id"
+         JOIN     "parks" ON "parks"."unit_id" = "geom_line_simp"."unit_id" 
+         JOIN     "parks_label" ON "parks_label"."unit_id" = "geom_line_simp"."unit_id"
+         JOIN     "parks_poly" ON "parks_poly"."unit_id" = "geom_line_simp"."unit_id"
          WHERE    "geom_line_simp"."geom_line" && !bbox! AND
-                  "parks"."min_zoom_poly" <= z(!scale_denominator!) AND
-                  "geom_line_simp"."geom_line" IS NOT NULL
+                  "parks_poly"."min_zoom_poly" > z(!scale_denominator!) AND
+                  "geom_line_simp"."geom_line" IS NOT NULL AND
+                  "parks_poly"."simp_type" = 'line'
          ORDER BY "parks"."unit_area" DESC) as data
       type: postgis
       user: postgres
     description: Line geometry for parks
     fields: 
-      is_subunit: Boolean
-      label_center: Boolean
       label_long: Boolean
+      label_name_long: String
+      label_name_short: String
+      min_zoom_poly: Number
       show_label: Boolean
-      show_poly: Boolean
+      show_line: Boolean
       unit_code: String
       unit_id: Number
-      unit_name_long: String
-      unit_name_short: String
     properties: 
       "buffer-size": 4
-    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
-  - id: nps_places_reference_points
-    Datasource: 
-      dbname: places_boundaries
-      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
-      geometry_field: geom_point
-      geometry_table: parks
-      host: localhost
-      key_field: unit_id
-      key_field_as_attribute: ''
-      max_size: 512
-      password: postgres
-      port: 5432
-      srid: ''
-      table: |-
-        (
-        SELECT   "parks"."unit_id",
-                 "parks"."unit_code",
-                 "parks"."unit_name_short" || ' ' || COALESCE("parks"."unit_desig_abbr", '') AS "unit_name_short",
-                 "parks"."unit_name_long" || ' ' || COALESCE("parks"."unit_desig_full", '') AS "unit_name_long",
-                 CASE WHEN "parks"."subunit_of" IS NULL THEN false ELSE true END AS "is_subunit",
-                 "parks"."ldir_enforce",
-                 "parks"."ldir",
-                 "parks"."min_zoom_poly"  <= z(!scale_denominator!)  as "show_poly",
-                 "parks"."min_zoom_label" <= z(!scale_denominator!) AND "parks"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
-                 "parks"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
-                 "parks"."min_zoom_label_center" <= z(!scale_denominator!) as "label_center",
-                 "parks"."min_zoom_simp" <= z(!scale_denominator!) as "show_simp",
-                 "parks"."simp_type",
-                 "parks"."geom_point"
-        FROM     "parks"
-        WHERE    
-                  "parks"."geom_point" && !bbox! AND
-                  "parks"."geom_point" IS NOT NULL
-        ORDER BY "parks"."unit_area" DESC) as data
-      type: postgis
-      user: postgres
-    description: Points for places boundaries
-    fields: 
-      is_subunit: Boolean
-      label_center: Boolean
-      label_long: Boolean
-      ldir: String
-      ldir_enforce: Boolean
-      show_label: Boolean
-      show_poly: Boolean
-      show_simp: Boolean
-      simp_type: String
-      unit_code: String
-      unit_id: Number
-      unit_name_long: String
-      unit_name_short: String
-    properties: 
-      "buffer-size": 64
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
   - id: nps_great_lakes_large
     Datasource: 
