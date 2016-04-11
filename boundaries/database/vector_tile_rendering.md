@@ -1,7 +1,5 @@
-# Parks Database
-
-## Mapbox Tile Rendering: `nps_places_reference`
-An outline of how boundaries should render in our Mapbox tiles.
+# Mapbox Vector Tile Rendering: `nps_places_reference`
+An outline of how park boundaries should render in our Mapbox tiles.
 
 `nps_places_reference` layers:
 - `nps_places_reference_polygons` park polygon boundaries
