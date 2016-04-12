@@ -44,7 +44,7 @@ CREATE TABLE "parks" (
   "unit_name_long" TEXT NULL,
   "unit_desig_abbr" TEXT NULL,
   "unit_desig_full" TEXT NULL,
-  "unit_area" TEXT NULL,
+  "unit_area" INT NULL,
   "unit_region" TEXT NULL,
   "unit_state" TEXT NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
