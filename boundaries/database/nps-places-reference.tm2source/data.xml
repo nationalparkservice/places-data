@@ -4,10 +4,10 @@
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
-  <Parameter name="center">-102.1289,36.1734,5</Parameter>
+  <Parameter name="center">-97.7344,35.2636,5</Parameter>
   <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_points","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","min_zoom_poly":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_points","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">4</Parameter>
   <Parameter name="name"><![CDATA[nps_places_reference_dev]]></Parameter>
@@ -35,8 +35,9 @@ SELECT   "parks_label"."label_id",
          "parks"."unit_code",
          "parks_label"."label_name_short" AS "label_name_short",
          "parks_label"."label_name_long" "label_name_long",
-         "parks_poly"."min_zoom_poly" > z(!scale_denominator!) AND
-           "parks_label"."label_type" != 'site'
+         "parks_poly"."min_zoom_poly" > z(!scale_denominator!)
+           AND "parks_label"."label_type" != 'site'
+           AND "parks_poly"."simp_type" != 'line'
            AS "show_point",
          "parks_label"."min_zoom_label" <= z(!scale_denominator!)  AND 
            "parks_label"."max_zoom_label" >= z(!scale_denominator!)
@@ -139,14 +140,17 @@ ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="srid"><![CDATA[]]></Parameter>
        <Parameter name="table"><![CDATA[(
 SELECT    "parks_label"."unit_id",
-  "parks_poly"."min_zoom_poly",
           "parks"."unit_code",
           "parks_label"."label_name_short",
           "parks_label"."label_name_long",
-          "parks_poly"."min_zoom_poly"  < z(!scale_denominator!) AS "show_line",
-          "parks_label"."min_zoom_label" <= z(!scale_denominator!) AND 
-            "parks_label"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
-          "parks_label"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
+          "parks_poly"."min_zoom_poly"  > z(!scale_denominator!)
+            AND "parks_poly"."simp_type" = 'line' 
+            AS "show_line",
+          "parks_label"."min_zoom_label" <= z(!scale_denominator!) 
+            AND "parks_label"."max_zoom_label" >= z(!scale_denominator!)
+            AS "show_label",
+          "parks_label"."min_zoom_label_long"<= z(!scale_denominator!) 
+            AS "label_long",
           CASE WHEN
             "parks_poly"."min_zoom_poly" > z(!scale_denominator!)
           THEN
