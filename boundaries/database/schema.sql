@@ -131,7 +131,7 @@ CREATE TABLE "parks_label" (
   "ldir" TEXT NULL,
   "ldir_enforce" BOOLEAN NULL,
   "label_small" BOOLEAN NULL,
-  "label_wrap_width" INT NULL,
+  "label_wrap_width" INT NULL DEFAULT 100,
   "pt_render" BOOLEAN NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
