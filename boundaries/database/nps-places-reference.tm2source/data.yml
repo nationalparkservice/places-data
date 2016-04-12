@@ -6,8 +6,8 @@ _prefs:
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -102.1289
-  - 36.1734
+  - -97.7344
+  - 35.2636
   - 5
 description: Boundaries of the National Parks
 Layer: 
@@ -30,8 +30,9 @@ Layer:
                  "parks"."unit_code",
                  "parks_label"."label_name_short" AS "label_name_short",
                  "parks_label"."label_name_long" "label_name_long",
-                 "parks_poly"."min_zoom_poly" > z(!scale_denominator!) AND
-                   "parks_label"."label_type" != 'site'
+                 "parks_poly"."min_zoom_poly" > z(!scale_denominator!)
+                   AND "parks_label"."label_type" != 'site'
+                   AND "parks_poly"."simp_type" != 'line'
                    AS "show_point",
                  "parks_label"."min_zoom_label" <= z(!scale_denominator!)  AND 
                    "parks_label"."max_zoom_label" >= z(!scale_denominator!)
@@ -151,14 +152,17 @@ Layer:
       table: |-
         (
         SELECT    "parks_label"."unit_id",
-          "parks_poly"."min_zoom_poly",
                   "parks"."unit_code",
                   "parks_label"."label_name_short",
                   "parks_label"."label_name_long",
-                  "parks_poly"."min_zoom_poly"  < z(!scale_denominator!) AS "show_line",
-                  "parks_label"."min_zoom_label" <= z(!scale_denominator!) AND 
-                    "parks_label"."max_zoom_label" >= z(!scale_denominator!) as "show_label",
-                  "parks_label"."min_zoom_label_long"<= z(!scale_denominator!) as "label_long",
+                  "parks_poly"."min_zoom_poly"  > z(!scale_denominator!)
+                    AND "parks_poly"."simp_type" = 'line' 
+                    AS "show_line",
+                  "parks_label"."min_zoom_label" <= z(!scale_denominator!) 
+                    AND "parks_label"."max_zoom_label" >= z(!scale_denominator!)
+                    AS "show_label",
+                  "parks_label"."min_zoom_label_long"<= z(!scale_denominator!) 
+                    AS "label_long",
                   CASE WHEN
                     "parks_poly"."min_zoom_poly" > z(!scale_denominator!)
                   THEN
@@ -198,7 +202,6 @@ Layer:
       label_long: Boolean
       label_name_long: String
       label_name_short: String
-      min_zoom_poly: Number
       show_label: Boolean
       show_line: Boolean
       unit_code: String
