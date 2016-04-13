@@ -1,19 +1,19 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: nps.nps-places-reference-dev
+  mapid: nps.nps-places-reference-v2
   rev: ''
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -106.5234
-  - 39.3683
-  - 5
+  - -113.1812
+  - 36.9104
+  - 7
 description: Boundaries of the National Parks
 Layer: 
-  - id: nps_places_reference_points
+  - id: nps_places_boundaries_point
     Datasource: 
-      dbname: places_parks
+      dbname: places_boundaries_v2
       extent: -20037508.34,-20037508.34,20037508.34,20037508.34
       geometry_field: geom_label
       geometry_table: parks_label
@@ -71,9 +71,9 @@ Layer:
     properties: 
       "buffer-size": 64
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
-  - id: nps_places_reference_polygons
+  - id: nps_places_boundaries_polygon
     Datasource: 
-      dbname: places_parks
+      dbname: places_boundaries_v2
       extent: -20037508.34,-20037508.34,20037508.34,20037508.34
       geometry_field: geom_poly
       geometry_table: geom_poly_simp
@@ -89,6 +89,7 @@ Layer:
         SELECT   "parks"."unit_id",
                  "parks"."unit_code",
                  "parks"."unit_name_long" AS "unit_name",
+                 "parks_poly"."pt_fill" AS "show_fill",
                  "parks_poly"."min_zoom_border"  <= z(!scale_denominator!) 
                    AS "show_border",
                  "parks_poly"."min_zoom_tintband"  <= z(!scale_denominator!) 
@@ -131,6 +132,7 @@ Layer:
     description: NPS park polygons
     fields: 
       show_border: Boolean
+      show_fill: Boolean
       show_tintband: Boolean
       unit_code: String
       unit_id: Number
@@ -138,9 +140,9 @@ Layer:
     properties: 
       "buffer-size": 4
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
-  - id: nps_places_reference_lines
+  - id: nps_places_boundaries_line
     Datasource: 
-      dbname: places_parks
+      dbname: places_boundaries_v2
       extent: -20037508.34,-20037508.34,20037508.34,20037508.34
       geometry_field: geom_line
       geometry_table: geom_line_simp
@@ -211,68 +213,6 @@ Layer:
     properties: 
       "buffer-size": 4
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
-  - id: nps_great_lakes_large
-    Datasource: 
-      dbname: data_import_3
-      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
-      geometry_field: wkb_geometry
-      geometry_table: great_lakes_large
-      host: localhost
-      key_field: ogc_fid
-      key_field_as_attribute: ''
-      max_size: 512
-      password: postgres
-      port: 5432
-      srid: ''
-      table: |-
-        (SELECT 
-                   ogc_fid,
-                   name,
-                   wkb_geometry
-                 FROM great_lakes_large
-                 WHERE 
-                    wkb_geometry && !bbox! AND
-                 z(!scale_denominator!) >= 8 AND z(!scale_denominator!) <= 12) as data
-      type: postgis
-      user: postgres
-    description: nps_great_lakes_large
-    fields: 
-      name: String
-      ogc_fid: Name of the Lake
-    properties: 
-      "buffer-size": 64
-    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
-  - id: nps_great_lakes_small
-    Datasource: 
-      dbname: data_import_3
-      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
-      geometry_field: wkb_geometry
-      geometry_table: great_lakes_small
-      host: localhost
-      key_field: ogc_fid
-      key_field_as_attribute: ''
-      max_size: 512
-      password: postgres
-      port: 5432
-      srid: ''
-      table: |-
-        (SELECT 
-                   ogc_fid,
-                   name,
-                   wkb_geometry
-                 FROM great_lakes_small
-                 WHERE 
-                   wkb_geometry && !bbox! AND
-                 z(!scale_denominator!) >= 4 AND z(!scale_denominator!) <= 7) as data
-      type: postgis
-      user: postgres
-    description: nps_great_lakes_small
-    fields: 
-      name: Name of the Lake
-      ogc_fid: Number
-    properties: 
-      "buffer-size": 64
-    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
 maxzoom: 14
 minzoom: 4
-name: nps_places_reference_dev
+name: nps_places_reference_v2
