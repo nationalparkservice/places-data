@@ -4,22 +4,22 @@
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
-  <Parameter name="center">-106.5234,39.3683,5</Parameter>
+  <Parameter name="center">-113.1812,36.9104,7</Parameter>
   <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_reference_points","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_reference_polygons","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_reference_lines","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean"}},{"id":"nps_great_lakes_large","description":"nps_great_lakes_large","fields":{"ogc_fid":"Name of the Lake","name":"String"}},{"id":"nps_great_lakes_small","description":"nps_great_lakes_small","fields":{"ogc_fid":"Number","name":"Name of the Lake"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_boundaries_point","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_boundaries_polygon","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_fill":"Boolean","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_boundaries_line","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean"}}]}]]></Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">4</Parameter>
-  <Parameter name="name"><![CDATA[nps_places_reference_dev]]></Parameter>
+  <Parameter name="name"><![CDATA[nps_places_reference_v2]]></Parameter>
 </Parameters>
 
 
-<Layer name="nps_places_reference_points"
+<Layer name="nps_places_boundaries_point"
   buffer-size="64"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
-       <Parameter name="dbname"><![CDATA[places_parks]]></Parameter>
+       <Parameter name="dbname"><![CDATA[places_boundaries_v2]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[geom_label]]></Parameter>
        <Parameter name="geometry_table"><![CDATA[parks_label]]></Parameter>
@@ -62,12 +62,12 @@ ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
     </Datasource>
   </Layer>
 
-<Layer name="nps_places_reference_polygons"
+<Layer name="nps_places_boundaries_polygon"
   buffer-size="4"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
-       <Parameter name="dbname"><![CDATA[places_parks]]></Parameter>
+       <Parameter name="dbname"><![CDATA[places_boundaries_v2]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[geom_poly]]></Parameter>
        <Parameter name="geometry_table"><![CDATA[geom_poly_simp]]></Parameter>
@@ -82,6 +82,7 @@ ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
 SELECT   "parks"."unit_id",
          "parks"."unit_code",
          "parks"."unit_name_long" AS "unit_name",
+         "parks_poly"."pt_fill" AS "show_fill",
          "parks_poly"."min_zoom_border"  <= z(!scale_denominator!) 
            AS "show_border",
          "parks_poly"."min_zoom_tintband"  <= z(!scale_denominator!) 
@@ -124,12 +125,12 @@ ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
     </Datasource>
   </Layer>
 
-<Layer name="nps_places_reference_lines"
+<Layer name="nps_places_boundaries_line"
   buffer-size="4"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
-       <Parameter name="dbname"><![CDATA[places_parks]]></Parameter>
+       <Parameter name="dbname"><![CDATA[places_boundaries_v2]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[geom_line]]></Parameter>
        <Parameter name="geometry_table"><![CDATA[geom_line_simp]]></Parameter>
@@ -185,64 +186,6 @@ SELECT    "parks_label"."unit_id",
           "geom_line_simp"."geom_line" IS NOT NULL AND
           "parks_poly"."simp_type" = 'line'
  ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
-       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[postgres]]></Parameter>
-    </Datasource>
-  </Layer>
-
-<Layer name="nps_great_lakes_large"
-  buffer-size="64"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    
-    <Datasource>
-       <Parameter name="dbname"><![CDATA[data_import_3]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
-       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
-       <Parameter name="geometry_table"><![CDATA[great_lakes_large]]></Parameter>
-       <Parameter name="host"><![CDATA[localhost]]></Parameter>
-       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
-       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
-       <Parameter name="max_size"><![CDATA[512]]></Parameter>
-       <Parameter name="password"><![CDATA[postgres]]></Parameter>
-       <Parameter name="port"><![CDATA[5432]]></Parameter>
-       <Parameter name="srid"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[(SELECT 
-           ogc_fid,
-           name,
-           wkb_geometry
-         FROM great_lakes_large
-         WHERE 
-            wkb_geometry && !bbox! AND
-         z(!scale_denominator!) >= 8 AND z(!scale_denominator!) <= 12) as data]]></Parameter>
-       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[postgres]]></Parameter>
-    </Datasource>
-  </Layer>
-
-<Layer name="nps_great_lakes_small"
-  buffer-size="64"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    
-    <Datasource>
-       <Parameter name="dbname"><![CDATA[data_import_3]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
-       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
-       <Parameter name="geometry_table"><![CDATA[great_lakes_small]]></Parameter>
-       <Parameter name="host"><![CDATA[localhost]]></Parameter>
-       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
-       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
-       <Parameter name="max_size"><![CDATA[512]]></Parameter>
-       <Parameter name="password"><![CDATA[postgres]]></Parameter>
-       <Parameter name="port"><![CDATA[5432]]></Parameter>
-       <Parameter name="srid"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[(SELECT 
-           ogc_fid,
-           name,
-           wkb_geometry
-         FROM great_lakes_small
-         WHERE 
-           wkb_geometry && !bbox! AND
-         z(!scale_denominator!) >= 4 AND z(!scale_denominator!) <= 7) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
