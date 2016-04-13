@@ -248,5 +248,5 @@ CREATE INDEX "geom_poly_simp_unit_id_idx" ON "geom_poly_simp"("unit_id");
 -- -----------------------------------------------------
 -- Must be done for each user the requires access
 
--- GRANT ALL ON ALL TABLES IN SCHEMA public TO USER;
--- GRANT SELECT ON ALL TABLES IN SCHEMA audit TO USER;
+-- ALTER DEFAULT PRIVILEGES FOR USER USERNAME IN SCHEMA public GRANT ALL ON TABLES TO USERNAME;
+-- GRANT SELECT ON ALL TABLES IN SCHEMA audit TO USERNAME;
