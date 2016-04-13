@@ -241,3 +241,11 @@ CREATE INDEX "geom_poly_simp_gix" ON "geom_poly_simp" USING GIST ("geom_poly");
 
 --DROP INDEX geom_poly_simp_unit_id_idx;
 CREATE INDEX "geom_poly_simp_unit_id_idx" ON "geom_poly_simp"("unit_id");
+
+-- -----------------------------------------------------
+-- Permissions
+-- -----------------------------------------------------
+-- Must be done for each user the requires access
+
+-- GRANT ALL ON ALL TABLES IN SCHEMA public TO USER;
+-- GRANT SELECT ON ALL TABLES IN SCHEMA audit TO USER;
