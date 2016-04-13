@@ -1,13 +1,13 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: nps.nps-places-reference-v2
+  mapid: nps.nps-places-reference-dev
   rev: ''
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -97.7344
-  - 35.2636
+  - -106.5234
+  - 39.3683
   - 5
 description: Boundaries of the National Parks
 Layer: 
@@ -89,8 +89,10 @@ Layer:
         SELECT   "parks"."unit_id",
                  "parks"."unit_code",
                  "parks"."unit_name_long" AS "unit_name",
-                 "parks_poly"."min_zoom_border"  <= z(!scale_denominator!) as "show_border",
-                 "parks_poly"."min_zoom_tintband"  <= z(!scale_denominator!) as "show_tintband",
+                 "parks_poly"."min_zoom_border"  <= z(!scale_denominator!) 
+                   AS "show_border",
+                 "parks_poly"."min_zoom_tintband"  <= z(!scale_denominator!) 
+                   AS "show_tintband",
                  CASE WHEN
                    z(!scale_denominator!) >= "parks_poly"."min_zoom_poly"
                  THEN
