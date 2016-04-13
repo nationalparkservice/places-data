@@ -10,7 +10,7 @@
   <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_boundaries_point","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_boundaries_polygon","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_fill":"Boolean","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_boundaries_line","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean"}}]}]]></Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">4</Parameter>
-  <Parameter name="name"><![CDATA[nps_places_reference_v2]]></Parameter>
+  <Parameter name="name"><![CDATA[nps_places_boundaries_v2]]></Parameter>
 </Parameters>
 
 
