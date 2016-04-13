@@ -21,6 +21,24 @@ CREATE OR REPLACE FUNCTION _update_audit_fields()
 $$ LANGUAGE plpgsql VOLATILE;
 
 -- -----------------------------------------------------
+-- FUNCTION z (for mbstudio classic)
+-- -----------------------------------------------------
+-- https://github.com/mapbox/postgis-vt-util/blob/master/src/Z.sql
+CREATE OR REPLACE FUNCTION z (numeric)
+  RETURNS INTEGER
+  LANGUAGE sql
+  IMMUTABLE
+  RETURNS null on null INPUT
+AS $func$
+SELECT
+  CASE
+    -- Don't bother if the scale is larger than ~zoom level 0
+    WHEN $1 > 600000000 OR $1 = 0 THEN NULL
+    ELSE CAST (ROUND(LOG(2,559082264.028/$1)) AS INTEGER)
+  END;
+$func$;
+
+-- -----------------------------------------------------
 -- FUNCTION ZRes
 -- -----------------------------------------------------
 -- https://raw.githubusercontent.com/mapbox/postgis-vt-util/master/src/ZRes.sql
@@ -52,6 +70,7 @@ CREATE TABLE "parks" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_unit_id_idx" ON parks("unit_id");
 SELECT audit.audit_table('parks');
 
 -- -----------------------------------------------------
@@ -65,6 +84,7 @@ CREATE TABLE "alt_unit_codes" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id", "alt_unit_code"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "alt_unit_codes" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "alt_unit_codes_unit_id_idx" ON alt_unit_codes("unit_id");
 SELECT audit.audit_table('alt_unit_codes');
 
 -- -----------------------------------------------------
@@ -85,6 +105,7 @@ CREATE TABLE "parks_poly" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_poly" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_poly_unit_id_idx" ON parks_poly("unit_id");
 SELECT audit.audit_table('parks_poly');
 
 -- -----------------------------------------------------
@@ -92,13 +113,14 @@ SELECT audit.audit_table('parks_poly');
 -- -----------------------------------------------------
 CREATE TABLE "parks_line" (
   "unit_id" INT NOT NULL,
-  "pt_render" BOOLEAN NULL,
+  "pt_render" BOOLEAN NULL DEFAULT true,
   "geom_line" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_line" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_line_unit_id_idx" ON parks_line("unit_id");
 SELECT audit.audit_table('parks_line');
 
 -- -----------------------------------------------------
@@ -113,6 +135,7 @@ CREATE TABLE "parks_point" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_point" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_point_unit_id_idx" ON parks_point("unit_id");
 SELECT audit.audit_table('parks_point');
 
 -- -----------------------------------------------------
@@ -139,6 +162,7 @@ CREATE TABLE "parks_label" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("label_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_label" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_label_unit_id_idx" ON parks_label("unit_id");
 SELECT audit.audit_table('parks_label');
 
 -- -----------------------------------------------------
