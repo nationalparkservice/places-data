@@ -1,5 +1,6 @@
 -- BEFORE RUNNING THIS, CREATE THE DATABASE ADD THE AUDIT TRIGGER:
   -- CREATE DATABASE places_boundaries_v2;
+  -- \connect places_boundaries_v2
 -- You will also need to spatially enable the database
   -- CREATE EXTENSION postgis;
   -- CREATE EXTENSION postgis_topology;
