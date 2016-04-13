@@ -1,5 +1,6 @@
 -- BEFORE RUNNING THIS, CREATE THE DATABASE ADD THE AUDIT TRIGGER:
-  -- CREATE DATABASE places_parks;
+  -- CREATE DATABASE places_boundaries_v2;
+  -- \connect places_boundaries_v2
 -- You will also need to spatially enable the database
   -- CREATE EXTENSION postgis;
   -- CREATE EXTENSION postgis_topology;
@@ -19,6 +20,24 @@ CREATE OR REPLACE FUNCTION _update_audit_fields()
     RETURN NEW;
   END;
 $$ LANGUAGE plpgsql VOLATILE;
+
+-- -----------------------------------------------------
+-- FUNCTION z (for mbstudio classic)
+-- -----------------------------------------------------
+-- https://github.com/mapbox/postgis-vt-util/blob/master/src/Z.sql
+CREATE OR REPLACE FUNCTION z (numeric)
+  RETURNS INTEGER
+  LANGUAGE sql
+  IMMUTABLE
+  RETURNS null on null INPUT
+AS $func$
+SELECT
+  CASE
+    -- Don't bother if the scale is larger than ~zoom level 0
+    WHEN $1 > 600000000 OR $1 = 0 THEN NULL
+    ELSE CAST (ROUND(LOG(2,559082264.028/$1)) AS INTEGER)
+  END;
+$func$;
 
 -- -----------------------------------------------------
 -- FUNCTION ZRes
@@ -52,6 +71,7 @@ CREATE TABLE "parks" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_unit_id_idx" ON parks("unit_id");
 SELECT audit.audit_table('parks');
 
 -- -----------------------------------------------------
@@ -65,6 +85,7 @@ CREATE TABLE "alt_unit_codes" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id", "alt_unit_code"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "alt_unit_codes" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "alt_unit_codes_unit_id_idx" ON alt_unit_codes("unit_id");
 SELECT audit.audit_table('alt_unit_codes');
 
 -- -----------------------------------------------------
@@ -75,8 +96,9 @@ CREATE TABLE "parks_poly" (
   "min_zoom_poly" INT NULL,
   "min_zoom_border" INT NULL,
   "min_zoom_tintband" INT NULL,
-  "simp_type" TEXT NULL,
-  "pt_render" BOOLEAN NULL,
+  "simp_type" TEXT DEFAULT 'point',
+  "pt_render" BOOLEAN DEFAULT true,
+  "pt_fill" BOOLEAN DEFAULT true,
   "data_source" TEXT NULL,
   "geom_poly" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -84,6 +106,7 @@ CREATE TABLE "parks_poly" (
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_poly" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_poly_unit_id_idx" ON parks_poly("unit_id");
 SELECT audit.audit_table('parks_poly');
 
 -- -----------------------------------------------------
@@ -91,13 +114,14 @@ SELECT audit.audit_table('parks_poly');
 -- -----------------------------------------------------
 CREATE TABLE "parks_line" (
   "unit_id" INT NOT NULL,
-  "pt_render" BOOLEAN NULL,
+  "pt_render" BOOLEAN NULL DEFAULT true,
   "geom_line" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_line" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_line_unit_id_idx" ON parks_line("unit_id");
 SELECT audit.audit_table('parks_line');
 
 -- -----------------------------------------------------
@@ -105,13 +129,14 @@ SELECT audit.audit_table('parks_line');
 -- -----------------------------------------------------
 CREATE TABLE "parks_point" (
   "unit_id" INT NOT NULL,
-  "pt_render" TEXT NULL,
+  "pt_render" BOOLEAN NULL DEFAULT true,
   "geom_point" GEOMETRY NULL,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("unit_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_point" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_point_unit_id_idx" ON parks_point("unit_id");
 SELECT audit.audit_table('parks_point');
 
 -- -----------------------------------------------------
@@ -129,15 +154,16 @@ CREATE TABLE "parks_label" (
   "min_zoom_label_center" INT NULL,
   "max_zoom_label" INT NULL,
   "ldir" TEXT NULL,
-  "ldir_enforce" BOOLEAN NULL,
-  "label_small" BOOLEAN NULL,
+  "ldir_enforce" BOOLEAN NULL DEFAULT false,
+  "label_small" BOOLEAN NULL DEFAULT false,
   "label_wrap_width" INT NULL DEFAULT 100,
-  "pt_render" BOOLEAN NULL,
+  "pt_render" BOOLEAN NULL DEFAULT true,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   "updated_by" TEXT NOT NULL DEFAULT CURRENT_USER,
   PRIMARY KEY ("label_id"));
 CREATE TRIGGER update_updated_at_trigger BEFORE UPDATE ON "parks_label" FOR EACH ROW EXECUTE PROCEDURE _update_audit_fields();
+CREATE INDEX "parks_label_unit_id_idx" ON parks_label("unit_id");
 SELECT audit.audit_table('parks_label');
 
 -- -----------------------------------------------------
@@ -216,3 +242,11 @@ CREATE INDEX "geom_poly_simp_gix" ON "geom_poly_simp" USING GIST ("geom_poly");
 
 --DROP INDEX geom_poly_simp_unit_id_idx;
 CREATE INDEX "geom_poly_simp_unit_id_idx" ON "geom_poly_simp"("unit_id");
+
+-- -----------------------------------------------------
+-- Permissions
+-- -----------------------------------------------------
+-- Must be done for each user the requires access
+
+-- GRANT ALL ON ALL TABLES IN SCHEMA public TO USER;
+-- GRANT SELECT ON ALL TABLES IN SCHEMA audit TO USER;
