@@ -1,0 +1,24 @@
+{
+  "name": "Cemetery / Graveyard",
+  "path": "Miscellaneous--Cemetery--Cemetery_/_Graveyard",
+  "fields": [
+    "name",
+    "nps/unitcode"
+  ],
+  "geometry": [
+    "area"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "landuse": "cemetery"
+  },
+  "terms": [
+    "cemetery",
+    "graveyard"
+  ]
+}

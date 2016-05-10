@@ -1159,7 +1159,8 @@ iD.data.npmapPresets = {
         "opening_hours"
       ],
       "geometry": [
-        "area"
+        "area",
+        "point"
       ],
       "defaultOrder": 5,
       "matchScore": 1,
@@ -1188,7 +1189,8 @@ iD.data.npmapPresets = {
         "fee"
       ],
       "geometry": [
-        "area"
+        "area",
+        "point"
       ],
       "icon": "pitch",
       "maki": "maki",
@@ -2046,6 +2048,57 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "miscellaneous/cemetery/cemetery %2f graveyard": {
+      "name": "Cemetery / Graveyard",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "area",
+        "point"
+      ],
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "cemetery"
+      },
+      "terms": [
+        "cemetery",
+        "graveyard"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/cemetery/grave": {
+      "name": "Grave",
+      "fields": [
+        "memo",
+        "nps/unitcoderial",
+        "subject/name",
+        "subject/species",
+        "subject/birth",
+        "subject/death",
+        "religion"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "cemetery",
+      "maki": "maki",
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "cemetery": "grave"
+      },
+      "terms": [
+        "burial",
+        "burial site",
+        "headstone",
+        "tomb",
+        "grave"
+      ],
+      "searchable": true
+    },
     "miscellaneous/structure/fortification": {
       "name": "Fortification",
       "fields": [
@@ -2054,7 +2107,8 @@ iD.data.npmapPresets = {
         "site_type"
       ],
       "geometry": [
-        "area"
+        "area",
+        "point"
       ],
       "defaultOrder": 3,
       "matchScore": 1,
@@ -2207,58 +2261,6 @@ iD.data.npmapPresets = {
         "ditch",
         "lateal",
         "canal"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/cemetery/cemetery %2f graveyard": {
-      "name": "Cemetery / Graveyard",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "cemetery",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "landuse": "cemetery"
-      },
-      "terms": [
-        "cemetery",
-        "graveyard"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/cemetery/grave": {
-      "name": "Grave",
-      "fields": [
-        "memo",
-        "nps/unitcoderial",
-        "subject/name",
-        "subject/species",
-        "subject/birth",
-        "subject/death",
-        "religion"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "cemetery",
-      "maki": "maki",
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "cemetery": "grave"
-      },
-      "terms": [
-        "burial",
-        "burial site",
-        "headstone",
-        "tomb",
-        "grave"
       ],
       "searchable": true
     },
@@ -2739,7 +2741,8 @@ iD.data.npmapPresets = {
         "width"
       ],
       "geometry": [
-        "area"
+        "area",
+        "line"
       ],
       "defaultOrder": null,
       "matchScore": 1,
@@ -8359,6 +8362,8 @@ iD.data.npmapPresets = {
       "geometry": "point",
       "displayName": "Land Recreation",
       "members": [
+        "land recreation/sports field/athletic field",
+        "land recreation/golf/golf course",
         "land recreation/camping/campsite",
         "land recreation/picnic/picnic area",
         "land recreation/picnic/picnic table",
@@ -8379,6 +8384,13 @@ iD.data.npmapPresets = {
     },
     "category-area-miscellaneous": {
       "geometry": "area",
+      "displayName": "Miscellaneous",
+      "members": [
+        "miscellaneous/structure/fortification"
+      ]
+    },
+    "category-point-miscellaneous": {
+      "geometry": "point",
       "displayName": "Miscellaneous",
       "members": [
         "miscellaneous/structure/fortification"
@@ -8520,6 +8532,7 @@ iD.data.npmapPresets = {
       "accommodation/restroom/restroom",
       "category-point-building",
       "category-point-land recreation",
+      "miscellaneous/structure/fortification",
       "category-point-information",
       "category-point-service",
       "category-point-water recreation",
