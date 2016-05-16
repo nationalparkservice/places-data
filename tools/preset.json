@@ -78,6 +78,11 @@
             "type": "number",
             "default": 1.0
         },
+        "layerIndex": {
+            "description": "The higher the number the 'higher' the object will appear when rendered",
+            "type": "number",
+            "default": 0
+        },
         "path": {
           "desciption": "A unique identifier for this preset that contains the category, subcategory, and the tag name",
           "type": "string"
