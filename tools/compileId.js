@@ -3,7 +3,7 @@ var compileFiles = require('./compileFiles');
 var presetSchema = require('./preset.json');
 
 // TODO: Pull these from this document: https://github.com/nationalparkservice/places-editor/blob/master/data/presets/schema/preset.json
-var acceptableFields = ['name', 'geometry', 'tags', 'addTags', 'removeTags', 'fields', 'icon', 'maki', 'terms', 'searchable', 'matchScore', 'defaultOrder'];
+var acceptableFields = ['name', 'geometry', 'tags', 'addTags', 'removeTags', 'fields', 'icon', 'maki', 'terms', 'searchable', 'matchScore', 'defaultOrder', 'layerIndex'];
 
 var sortPreset = function (presets, categories, sortField, desc) {
   return function (a, b) {

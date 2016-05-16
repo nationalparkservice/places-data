@@ -13,6 +13,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": 1,
       "matchScore": 1,
       "tags": {
@@ -38,6 +39,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -62,6 +64,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -91,6 +94,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -118,6 +122,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -149,6 +154,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "farm",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -173,6 +179,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "garden",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -198,6 +205,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -224,6 +232,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "stable-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -250,6 +259,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -276,6 +286,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -308,6 +319,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -334,6 +346,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": 1,
       "matchScore": 1,
       "tags": {
@@ -368,6 +381,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "industrial",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -395,6 +409,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
@@ -422,6 +437,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "commercial",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -444,6 +460,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -472,6 +489,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "school",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -500,6 +518,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "college",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -526,6 +545,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "entrance-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -549,6 +569,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 70,
       "defaultOrder": 5,
       "matchScore": 1,
       "tags": {
@@ -575,6 +596,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -601,6 +623,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "place-of-worship",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -626,6 +649,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "place-of-worship",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -651,6 +675,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "place-of-worship",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -675,6 +700,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -701,6 +727,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -727,6 +754,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -754,6 +782,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -781,6 +810,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 70,
       "defaultOrder": 2,
       "matchScore": 1,
       "tags": {
@@ -809,6 +839,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "lodging-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 70,
       "defaultOrder": 3,
       "matchScore": 1,
       "tags": {
@@ -842,6 +873,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -870,6 +902,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -896,6 +929,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -922,6 +956,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "shelter-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -958,6 +993,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "shelter-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -986,6 +1022,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "shelter-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1018,6 +1055,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "shelter-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1045,6 +1083,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1075,6 +1114,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "warehouse",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1110,6 +1150,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "building",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1137,6 +1178,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "warehouse",
       "maki": "maki",
+      "layerIndex": 70,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1162,6 +1204,7 @@ iD.data.npmapPresets = {
         "area",
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": 5,
       "matchScore": 1,
       "tags": {
@@ -1194,6 +1237,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "pitch",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
@@ -1227,6 +1271,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1278,6 +1323,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1327,6 +1373,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "bicycle-trail-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1.01,
       "tags": {
@@ -1352,6 +1399,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1379,6 +1427,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campfire-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1410,6 +1459,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campground-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": -6,
       "matchScore": 1,
       "tags": {
@@ -1438,6 +1488,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campsite-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": 6,
       "matchScore": 1,
       "tags": {
@@ -1466,6 +1517,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "sanitary-disposal-station-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1495,6 +1547,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campground-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1.02,
       "tags": {
@@ -1524,6 +1577,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "campsite-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1560,6 +1614,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rv-campground-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": 9,
       "matchScore": 1,
       "tags": {
@@ -1589,6 +1644,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 50,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1611,6 +1667,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 50,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1637,6 +1694,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "food-cache-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1676,6 +1734,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "horseback-riding-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1719,6 +1778,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "motor-bike-trail-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1751,6 +1811,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park",
       "maki": "maki",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1773,6 +1834,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1802,6 +1864,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "picnic-area-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": 7,
       "matchScore": 1,
       "tags": {
@@ -1823,6 +1886,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 60,
       "defaultOrder": 8,
       "matchScore": 1,
       "tags": {
@@ -1843,6 +1907,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1878,6 +1943,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1913,6 +1979,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1946,6 +2013,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "self-guiding-trail-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": 10,
       "matchScore": 1,
       "tags": {
@@ -1971,6 +2039,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -1995,6 +2064,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2033,6 +2103,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": -4,
       "matchScore": 1,
       "tags": {
@@ -2058,6 +2129,7 @@ iD.data.npmapPresets = {
         "area",
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2085,6 +2157,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cemetery",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2110,6 +2183,7 @@ iD.data.npmapPresets = {
         "area",
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": 3,
       "matchScore": 1,
       "tags": {
@@ -2136,6 +2210,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2162,6 +2237,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2185,6 +2261,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "statue-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2206,6 +2283,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2230,6 +2308,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2252,6 +2331,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2275,6 +2355,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "dam",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2298,6 +2379,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2326,6 +2408,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "flagpole-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2345,6 +2428,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2366,6 +2450,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2387,6 +2472,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2407,6 +2493,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2427,6 +2514,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2449,6 +2537,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2472,6 +2561,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2496,6 +2586,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2518,6 +2609,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2544,6 +2636,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "oil-well",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2571,6 +2664,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2595,6 +2689,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2621,6 +2716,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2651,6 +2747,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2678,6 +2775,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2715,6 +2813,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "parking-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 2,
       "matchScore": 1,
       "tags": {
@@ -2744,6 +2843,7 @@ iD.data.npmapPresets = {
         "area",
         "line"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2773,6 +2873,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "airport-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2800,6 +2901,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "airfield",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2832,6 +2934,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "airfield",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2864,6 +2967,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2887,6 +2991,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 40,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2917,6 +3022,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "bus-stop-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2943,6 +3049,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "amphitheater-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 40,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -2976,6 +3083,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cinema",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3005,6 +3113,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "entrance-station-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": -7,
       "matchScore": 1,
       "tags": {
@@ -3032,6 +3141,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3059,6 +3169,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ferry",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3086,6 +3197,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "food-service-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 50,
       "defaultOrder": 12,
       "matchScore": 1,
       "tags": {
@@ -3116,6 +3228,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "gas-station-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 40,
       "defaultOrder": 16,
       "matchScore": 1,
       "tags": {
@@ -3146,6 +3259,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3172,6 +3286,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "laundry-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3204,6 +3319,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "library",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3223,6 +3339,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3262,6 +3379,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "parking-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 60,
       "defaultOrder": -3,
       "matchScore": 1,
       "tags": {
@@ -3289,6 +3407,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3318,6 +3437,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3346,6 +3466,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "post-office-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3373,6 +3494,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rail-metro",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3400,6 +3522,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "rail",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3428,6 +3551,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
@@ -3456,6 +3580,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
@@ -3483,6 +3608,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "store-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 40,
       "defaultOrder": 13,
       "matchScore": 1,
       "tags": {
@@ -3512,6 +3638,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "showers-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3539,6 +3666,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3562,6 +3690,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3586,6 +3715,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fire-station",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3611,6 +3741,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "first-aid-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3641,6 +3772,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "hospital-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3674,6 +3806,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": null,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3705,6 +3838,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "police",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3740,6 +3874,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ranger-station-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 95,
       "defaultOrder": -2,
       "matchScore": 1,
       "tags": {
@@ -3769,6 +3904,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "webcam-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3794,6 +3930,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "telephone-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 17,
       "matchScore": 1,
       "tags": {
@@ -3817,6 +3954,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3844,6 +3982,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "litter-receptacle-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 19,
       "matchScore": 1,
       "tags": {
@@ -3878,6 +4017,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "recycling-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3913,6 +4053,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3939,6 +4080,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "drinking-water-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 18,
       "matchScore": 1,
       "tags": {
@@ -3965,6 +4107,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "radiator-water-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -3988,6 +4131,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4008,6 +4152,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "area"
       ],
+      "layerIndex": 10,
       "defaultOrder": 6,
       "matchScore": 1,
       "tags": {
@@ -4030,6 +4175,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4056,6 +4202,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4076,6 +4223,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4096,6 +4244,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4126,6 +4275,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "four-wheel-drive-road-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 15,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4163,6 +4313,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-motorway",
       "maki": "maki",
+      "layerIndex": 94,
       "defaultOrder": 2,
       "matchScore": 1,
       "tags": {
@@ -4197,6 +4348,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-motorway-link",
       "maki": "maki",
+      "layerIndex": 94,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4231,6 +4383,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-unclassified",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": 5,
       "matchScore": 1,
       "tags": {
@@ -4261,6 +4414,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-footway",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4293,6 +4447,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-road",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": 9,
       "matchScore": 1,
       "tags": {
@@ -4332,6 +4487,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-residential",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": 6,
       "matchScore": 1,
       "tags": {
@@ -4358,6 +4514,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-road",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4388,6 +4545,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-unclassified",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": 1,
       "matchScore": 1,
       "tags": {
@@ -4418,6 +4576,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-primary-link",
       "maki": "maki",
+      "layerIndex": 53,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4450,6 +4609,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-primary",
       "maki": "maki",
+      "layerIndex": 55,
       "defaultOrder": 3,
       "matchScore": 1,
       "tags": {
@@ -4486,6 +4646,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-secondary-link",
       "maki": "maki",
+      "layerIndex": 45,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4518,6 +4679,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-secondary",
       "maki": "maki",
+      "layerIndex": 45,
       "defaultOrder": 4,
       "matchScore": 1,
       "tags": {
@@ -4553,6 +4715,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-service",
       "maki": "maki",
+      "layerIndex": 20,
       "defaultOrder": 7,
       "matchScore": 1,
       "tags": {
@@ -4583,6 +4746,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-service",
       "maki": "maki",
+      "layerIndex": 20,
       "defaultOrder": 8,
       "matchScore": 1,
       "tags": {
@@ -4619,6 +4783,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-tertiary-link",
       "maki": "maki",
+      "layerIndex": 35,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4651,6 +4816,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-tertiary",
       "maki": "maki",
+      "layerIndex": 35,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4686,6 +4852,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
+      "layerIndex": 30,
       "defaultOrder": null,
       "matchScore": 1.03,
       "tags": {
@@ -4742,6 +4909,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
+      "layerIndex": 15,
       "defaultOrder": null,
       "matchScore": 1.03,
       "tags": {
@@ -4796,6 +4964,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
+      "layerIndex": 15,
       "defaultOrder": null,
       "matchScore": 1.02,
       "tags": {
@@ -4842,6 +5011,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
+      "layerIndex": 25,
       "defaultOrder": 12,
       "matchScore": 1,
       "tags": {
@@ -4878,6 +5048,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
+      "layerIndex": 15,
       "defaultOrder": null,
       "matchScore": 1.03,
       "tags": {
@@ -4926,6 +5097,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "downhill-skiing-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4963,6 +5135,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-cycleway",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1.03,
       "tags": {
@@ -4997,6 +5170,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "other-line",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5033,6 +5207,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-bridleway",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5064,6 +5239,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "other-line",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5103,6 +5279,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cross-country-ski-trail-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5145,6 +5322,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "other-line",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5184,6 +5362,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "downhill-skiing-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5225,6 +5404,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-bridleway",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1.03,
       "tags": {
@@ -5269,6 +5449,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-footway",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": 13,
       "matchScore": 1,
       "tags": {
@@ -5298,6 +5479,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "other-line",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": 14,
       "matchScore": 1,
       "tags": {
@@ -5333,6 +5515,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "other-line",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5361,6 +5544,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-steps",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": 15,
       "matchScore": 1,
       "tags": {
@@ -5396,6 +5580,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-path",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": 10,
       "matchScore": 1,
       "tags": {
@@ -5441,6 +5626,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "line"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5466,6 +5652,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ferry",
       "maki": "maki",
+      "layerIndex": 25,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5492,6 +5679,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 25,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5523,6 +5711,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "other-line",
       "maki": "maki",
+      "layerIndex": 12,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5552,6 +5741,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "wheelchair-accessible-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5583,6 +5773,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "restrooms-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5616,6 +5807,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "restrooms-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": -1,
       "matchScore": 1,
       "tags": {
@@ -5645,6 +5837,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5667,6 +5860,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5691,6 +5885,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5714,6 +5909,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5737,6 +5933,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "monument",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5760,6 +5957,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "monument",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5781,6 +5979,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5802,6 +6001,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5823,6 +6023,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5844,6 +6045,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5869,6 +6071,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 80,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5899,6 +6102,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 80,
       "defaultOrder": 11,
       "matchScore": 1,
       "tags": {
@@ -5925,6 +6129,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 80,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5953,6 +6158,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 80,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -5981,6 +6187,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "information-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 80,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6009,6 +6216,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": null,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6036,6 +6244,7 @@ iD.data.npmapPresets = {
         "point",
         "vertex"
       ],
+      "layerIndex": 80,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6061,6 +6270,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": null,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6083,6 +6293,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": null,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6108,6 +6319,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": null,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6133,6 +6345,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": null,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6161,6 +6374,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "visitor-center-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 100,
       "defaultOrder": -8,
       "matchScore": 1,
       "tags": {
@@ -6184,6 +6398,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6205,6 +6420,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6226,6 +6442,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6248,6 +6465,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": -5,
       "matchScore": 1,
       "tags": {
@@ -6276,6 +6494,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6301,6 +6520,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6325,6 +6545,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6350,6 +6571,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6374,6 +6596,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6397,6 +6620,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6424,6 +6648,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6446,6 +6671,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6469,6 +6695,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6491,6 +6718,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6521,6 +6749,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6540,6 +6769,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6565,6 +6795,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6592,6 +6823,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "park2",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6616,6 +6848,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6638,6 +6871,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6658,6 +6892,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6682,6 +6917,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "harbor",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6703,6 +6939,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6733,6 +6970,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6755,6 +6993,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6786,6 +7025,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6810,6 +7050,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6832,6 +7073,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6861,6 +7103,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "triangle",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6915,6 +7158,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6939,6 +7183,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6962,6 +7207,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -6985,6 +7231,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7014,6 +7261,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7035,6 +7283,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7061,6 +7310,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7085,6 +7335,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7109,6 +7360,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7141,6 +7393,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7165,6 +7418,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "spring-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7185,6 +7439,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7211,6 +7466,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7257,6 +7513,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7284,6 +7541,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7308,6 +7566,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7332,6 +7591,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7355,6 +7615,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7378,6 +7639,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7397,6 +7659,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7432,6 +7695,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "triangle",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7460,6 +7724,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "water",
       "maki": "maki",
+      "layerIndex": 15,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7484,6 +7749,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "wetland",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7513,6 +7779,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7539,6 +7806,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "circle",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7566,6 +7834,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "circle",
       "maki": "maki",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7590,6 +7859,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7618,6 +7888,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "boat-launch-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 20,
       "matchScore": 1,
       "tags": {
@@ -7646,6 +7917,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "canoe-access-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7677,6 +7949,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7697,6 +7970,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7717,6 +7991,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7739,6 +8014,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7759,6 +8035,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7786,6 +8063,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "marina-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 22,
       "matchScore": 1,
       "tags": {
@@ -7808,6 +8086,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7832,6 +8111,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "sailing-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7854,6 +8134,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7876,6 +8157,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7898,6 +8180,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7921,6 +8204,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "fishing-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": 21,
       "matchScore": 1,
       "tags": {
@@ -7941,6 +8225,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7963,6 +8248,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "scuba-diving-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -7986,6 +8272,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "swimming-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8012,6 +8299,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "wind-surfing-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8047,6 +8335,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "cross-country-ski-trail-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8087,6 +8376,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8124,6 +8414,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8162,6 +8453,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "downhill-skiing-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8196,6 +8488,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "ice-skating-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8236,6 +8529,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "sledding-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8271,6 +8565,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "snowmobile-trail-black",
       "maki": "npmap-symbol-library",
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -8310,6 +8605,7 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
