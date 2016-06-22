@@ -147,7 +147,7 @@ Layer:
            lower(nps_render_line.type) as type,
            tags->'access' as "access",
            tags->'oneway' as "one_way",
-           tags->'surface' as "surface",
+           lower(tags->'surface') as "surface",
            tags->'nps:carto' as "nps_carto",
            CASE 
              WHEN z(!scale_denominator!) >= 8
