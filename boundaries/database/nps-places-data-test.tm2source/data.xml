@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
+  <Parameter name="center">-107.608,38.4775,11</Parameter>
+  <Parameter name="description"><![CDATA[Data from the NPS Places Test Database]]></Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_polygons","description":"Buildings and Parking lots in Places","fields":{"osm_id":"Number","name":"Name of the Polygon","superclass":"Superclass for the Polygon","class":"Class for the Polygon","new_type":"Type for the Polygon","type":"Old Type for the Polygon","access":"Value of the access tag","z_order":"order in which to display the polygon","unit_code":"unit_code of the containing park","nps_carto":"String","minzoompoly":"the min zoom at which to show this park"}},{"id":"nps_places_poi","description":"POIs from the NPS Places Database","fields":{"osm_id":"Primary Key","name":"Name of the POI","superclass":"Superclass for this POI","class":"Class for this POI","type":"Type for this POI","access":"Value of the access tag","FCategory":"Version 1 type for this POI","minzoompoly":"Min zoom in which the park containing this point is displayed","unit_code":"Unit Code of the park containing the point","nps_carto":"String","z_order":"The order in which the features are displayed"}},{"id":"nps_places_roads_and_trails","description":"roads and trails from Places","fields":{"osm_id":"The id for the feature","name":"The name of the line","superclass":"Superclass for the Line","class":"Class for the Line","new_type":"Type for the Line","type":"Old Type for the Line","access":"Value of the access tag","one_way":"Describes if the line is one way (yes/no/-1/null)","surface":"String","nps_carto":"String","structure":"Selection from the nps/structure box","z_order":"order in which it display this line","unit_code":"Unit code of the containing park","minzoompoly":"The min zoom that this park has a polygon"}}]}]]></Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">6</Parameter>
+  <Parameter name="name"><![CDATA[Places: Automated Data Test]]></Parameter>
+</Parameters>
+
+
+<Layer name="nps_places_polygons"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[test_places_pgs]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[the_geom]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[nps_render_polygon]]></Parameter>
+       <Parameter name="host"><![CDATA[10.147.153.193]]></Parameter>
+       <Parameter name="key_field"><![CDATA[osm_id]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(
+  SELECT
+    nps_render_polygon.osm_id,
+    nps_render_polygon.name,
+    nps_render_polygon.superclass AS "superclass",
+    nps_render_polygon.class AS "class",
+    lower(nps_render_polygon.type) AS "new_type",
+    nps_render_polygon.v1_type AS "type",
+    nps_render_polygon.tags->'access' AS "access",
+    nps_render_polygon.tags,
+    nps_render_polygon.the_geom,
+    nps_render_polygon.z_order,
+    nps_render_polygon.unit_code,
+    -- todo, this nps_carto function doesn't support relations
+    CASE WHEN nps_render_polygon.osm_id > 0 THEN
+    (
+      SELECT (tags::json)->>'nps:carto'
+      FROM ways
+      WHERE ways.id = nps_render_polygon.osm_id
+    ) ELSE (
+      SELECT (tags::json)->>'nps:carto'
+      FROM relations
+      WHERE relations.id = nps_render_polygon.osm_id * -1
+    ) END AS nps_carto,
+    (SELECT minzoompoly FROM render_park_polys WHERE lower(nps_render_polygon.unit_code) = lower(render_park_polys.unit_code::text) LIMIT 1) AS "minzoompoly"
+  FROM
+    nps_render_polygon
+  WHERE
+    nps_render_polygon.type IS NOT NULL AND
+    z(!scale_denominator!) >= 13
+
+) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="nps_places_poi"
+  buffer-size="48"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[test_places_pgs]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[nps_tilemill_point_view]]></Parameter>
+       <Parameter name="host"><![CDATA[10.147.153.193]]></Parameter>
+       <Parameter name="key_field"><![CDATA[osm_id]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT
+   nps_tilemill_point_view.osm_id,
+   nps_tilemill_point_view.way,
+   nps_tilemill_point_view.name,
+   nps_tilemill_point_view.superclass,
+   nps_tilemill_point_view.class,
+   lower(nps_tilemill_point_view.type) as type,
+   nodes.tags->'access' as "access",
+   nps_tilemill_point_view.v1_type as "FCategory",
+   nodes.tags,
+   nps_tilemill_point_view.minzoompoly,
+   nps_tilemill_point_view.unit_code,
+    (SELECT (tags::json)->>'nps:carto' FROM nodes WHERE nodes.id = nps_tilemill_point_view.osm_id) AS nps_carto,
+   nps_tilemill_point_view.z_order
+ FROM
+   nps_tilemill_point_view
+     JOIN nodes ON nps_tilemill_point_view.osm_id = nodes.id 
+ ORDER BY
+   z_order desc
+) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="nps_places_roads_and_trails"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[test_places_pgs]]></Parameter>
+       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[the_geom]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[nps_render_line]]></Parameter>
+       <Parameter name="host"><![CDATA[10.147.153.193]]></Parameter>
+       <Parameter name="key_field"><![CDATA[osm_id]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[postgres]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[(
+SELECT
+   nps_render_line.osm_id,
+   nps_render_line.name,
+   nps_render_line.superclass as superclass,
+   nps_render_line.class as class,
+   lower(nps_render_line.type) as new_type,
+   lower(nps_render_line.v1_type) as type,
+   tags->'access' as "access",
+   tags->'oneway' as "one_way",
+   tags->'surface' as "surface",
+   tags->'nps:carto' as "nps_carto",
+   CASE 
+     WHEN z(!scale_denominator!) >= 8
+       THEN the_geom
+     ELSE NULL
+   END AS the_geom,
+   CASE 
+     WHEN tags ? 'bridge' THEN 'bridge' 
+     WHEN tags ? 'tunnel' THEN 'tunnel' 
+     WHEN tags ? 'embankment' THEN 'embankment'
+     WHEN tags ? 'cutting' THEN 'cutting'
+     WHEN tags ? 'ford' THEN 'ford'
+   ELSE
+     null
+   END AS structure,
+   nps_render_line.z_order,
+   nps_render_line.unit_code,
+   render_park_polys.minzoompoly
+ FROM
+   nps_render_line
+     LEFT JOIN render_park_polys ON 
+      lower(render_park_polys.unit_code) = lower(nps_render_line.unit_code::text)
+ WHERE
+   nps_render_line.type IS NOT NULL
+) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

@@ -1,0 +1,203 @@
+_prefs: 
+  disabled: []
+  inspector: nps_poi
+  mapid: nps.nps-places-data-test
+  rev: s-55a93bbe
+  saveCenter: true
+attribution: National Park Service
+center: 
+  - -107.608
+  - 38.4775
+  - 11
+description: Data from the NPS Places Test Database
+Layer: 
+  - id: nps_places_polygons
+    Datasource: 
+      dbname: test_places_pgs
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: the_geom
+      geometry_table: nps_render_polygon
+      host: 10.147.153.193
+      key_field: osm_id
+      key_field_as_attribute: ''
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (
+          SELECT
+            nps_render_polygon.osm_id,
+            nps_render_polygon.name,
+            nps_render_polygon.superclass AS "superclass",
+            nps_render_polygon.class AS "class",
+            lower(nps_render_polygon.type) AS "new_type",
+            nps_render_polygon.v1_type AS "type",
+            nps_render_polygon.tags->'access' AS "access",
+            nps_render_polygon.tags,
+            nps_render_polygon.the_geom,
+            nps_render_polygon.z_order,
+            nps_render_polygon.unit_code,
+            -- todo, this nps_carto function doesn't support relations
+            CASE WHEN nps_render_polygon.osm_id > 0 THEN
+            (
+              SELECT (tags::json)->>'nps:carto'
+              FROM ways
+              WHERE ways.id = nps_render_polygon.osm_id
+            ) ELSE (
+              SELECT (tags::json)->>'nps:carto'
+              FROM relations
+              WHERE relations.id = nps_render_polygon.osm_id * -1
+            ) END AS nps_carto,
+            (SELECT minzoompoly FROM render_park_polys WHERE lower(nps_render_polygon.unit_code) = lower(render_park_polys.unit_code::text) LIMIT 1) AS "minzoompoly"
+          FROM
+            nps_render_polygon
+          WHERE
+            nps_render_polygon.type IS NOT NULL AND
+            z(!scale_denominator!) >= 13
+        
+        ) as data
+      type: postgis
+      user: postgres
+    description: Buildings and Parking lots in Places
+    fields: 
+      access: Value of the access tag
+      class: Class for the Polygon
+      minzoompoly: the min zoom at which to show this park
+      name: Name of the Polygon
+      new_type: Type for the Polygon
+      nps_carto: String
+      osm_id: Number
+      superclass: Superclass for the Polygon
+      type: Old Type for the Polygon
+      unit_code: unit_code of the containing park
+      z_order: order in which to display the polygon
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: nps_places_poi
+    Datasource: 
+      dbname: test_places_pgs
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: way
+      geometry_table: nps_tilemill_point_view
+      host: 10.147.153.193
+      key_field: osm_id
+      key_field_as_attribute: ''
+      max_size: 512
+      password: ''
+      port: 5432
+      srid: ''
+      table: |-
+        (SELECT
+           nps_tilemill_point_view.osm_id,
+           nps_tilemill_point_view.way,
+           nps_tilemill_point_view.name,
+           nps_tilemill_point_view.superclass,
+           nps_tilemill_point_view.class,
+           lower(nps_tilemill_point_view.type) as type,
+           nodes.tags->'access' as "access",
+           nps_tilemill_point_view.v1_type as "FCategory",
+           nodes.tags,
+           nps_tilemill_point_view.minzoompoly,
+           nps_tilemill_point_view.unit_code,
+            (SELECT (tags::json)->>'nps:carto' FROM nodes WHERE nodes.id = nps_tilemill_point_view.osm_id) AS nps_carto,
+           nps_tilemill_point_view.z_order
+         FROM
+           nps_tilemill_point_view
+             JOIN nodes ON nps_tilemill_point_view.osm_id = nodes.id 
+         ORDER BY
+           z_order desc
+        ) as data
+      type: postgis
+      user: postgres
+    description: POIs from the NPS Places Database
+    fields: 
+      access: Value of the access tag
+      class: Class for this POI
+      FCategory: Version 1 type for this POI
+      minzoompoly: Min zoom in which the park containing this point is displayed
+      name: Name of the POI
+      nps_carto: String
+      osm_id: Primary Key
+      superclass: Superclass for this POI
+      type: Type for this POI
+      unit_code: Unit Code of the park containing the point
+      z_order: The order in which the features are displayed
+    properties: 
+      "buffer-size": 48
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+  - id: nps_places_roads_and_trails
+    Datasource: 
+      dbname: test_places_pgs
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: the_geom
+      geometry_table: nps_render_line
+      host: 10.147.153.193
+      key_field: osm_id
+      key_field_as_attribute: ''
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (
+        SELECT
+           nps_render_line.osm_id,
+           nps_render_line.name,
+           nps_render_line.superclass as superclass,
+           nps_render_line.class as class,
+           lower(nps_render_line.type) as new_type,
+           lower(nps_render_line.v1_type) as type,
+           tags->'access' as "access",
+           tags->'oneway' as "one_way",
+           tags->'surface' as "surface",
+           tags->'nps:carto' as "nps_carto",
+           CASE 
+             WHEN z(!scale_denominator!) >= 8
+               THEN the_geom
+             ELSE NULL
+           END AS the_geom,
+           CASE 
+             WHEN tags ? 'bridge' THEN 'bridge' 
+             WHEN tags ? 'tunnel' THEN 'tunnel' 
+             WHEN tags ? 'embankment' THEN 'embankment'
+             WHEN tags ? 'cutting' THEN 'cutting'
+             WHEN tags ? 'ford' THEN 'ford'
+           ELSE
+             null
+           END AS structure,
+           nps_render_line.z_order,
+           nps_render_line.unit_code,
+           render_park_polys.minzoompoly
+         FROM
+           nps_render_line
+             LEFT JOIN render_park_polys ON 
+              lower(render_park_polys.unit_code) = lower(nps_render_line.unit_code::text)
+         WHERE
+           nps_render_line.type IS NOT NULL
+        ) as data
+      type: postgis
+      user: postgres
+    description: roads and trails from Places
+    fields: 
+      access: Value of the access tag
+      class: Class for the Line
+      minzoompoly: The min zoom that this park has a polygon
+      name: The name of the line
+      new_type: Type for the Line
+      nps_carto: String
+      one_way: Describes if the line is one way (yes/no/-1/null)
+      osm_id: The id for the feature
+      structure: Selection from the nps/structure box
+      superclass: Superclass for the Line
+      surface: String
+      type: Old Type for the Line
+      unit_code: Unit code of the containing park
+      z_order: order in which it display this line
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 14
+minzoom: 6
+name: "Places: Automated Data Test"
