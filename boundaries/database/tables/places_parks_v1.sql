@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW "parks_v1" AS
+CREATE OR REPLACE VIEW "places_parks_v1" AS
  SELECT parks_v2.cartodb_id,
     parks_poly_v2.the_geom,
     parks_v2.unit_area AS area,
