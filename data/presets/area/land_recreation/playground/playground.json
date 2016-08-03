@@ -1,12 +1,12 @@
 {
-  "name": "Ridge",
-  "path": "Natural_Feature--Ridge--Ridge",
+  "name": "Playground",
+  "path": "Land_Recreation--Playground--Playground",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,16 +15,11 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "ridge"
+    "leisure": "playground"
   },
   "terms": [
-    "crest",
-    "cuesta",
-    "escarpment",
-    "hogback",
-    "lae",
-    "spur",
-    "ridge",
-    "rim"
+    "play area",
+    "playpark",
+    "playground"
   ]
 }

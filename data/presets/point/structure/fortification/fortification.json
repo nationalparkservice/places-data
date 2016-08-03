@@ -1,16 +1,16 @@
 {
   "name": "Fortification",
-  "path": "Miscellaneous--Structure--Fortification",
+  "path": "Structure--Fortification--Fortification",
   "fields": [
     "name",
     "nps/unitcode",
     "site_type"
   ],
   "geometry": [
-    "area"
+    "point"
   ],
   "layerIndex": 10,
-  "defaultOrder": 3,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,

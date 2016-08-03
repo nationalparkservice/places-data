@@ -1,12 +1,12 @@
 {
-  "name": "Canyon",
-  "path": "Natural_Line--Valley--Canyon",
+  "name": "Ridge",
+  "path": "Natural_Feature--Cliff--Ridge",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "line"
+    "point"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,9 +15,16 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "canyon"
+    "natural": "ridge"
   },
   "terms": [
-    "canyon"
+    "crest",
+    "cuesta",
+    "escarpment",
+    "hogback",
+    "lae",
+    "spur",
+    "ridge",
+    "rim"
   ]
 }

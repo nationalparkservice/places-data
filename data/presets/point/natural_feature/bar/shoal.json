@@ -1,6 +1,6 @@
 {
-  "name": "Shoal (Bar)",
-  "path": "Natural_Feature--Bar--Shoal_(Bar)",
+  "name": "Shoal",
+  "path": "Natural_Feature--Bar--Shoal",
   "fields": [
     "name",
     "nps/unitcode",

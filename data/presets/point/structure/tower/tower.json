@@ -1,6 +1,6 @@
 {
   "name": "Tower",
-  "path": "Miscellaneous--Structure--Tower",
+  "path": "Structure--Tower--Tower",
   "fields": [
     "name",
     "nps/unitcode",

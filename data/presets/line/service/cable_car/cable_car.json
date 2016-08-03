@@ -1,0 +1,31 @@
+{
+  "name": "Cable Car",
+  "path": "Service--Cable_Car--Cable_Car",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "operator",
+    "opening_hours",
+    "fee"
+  ],
+  "geometry": [
+    "line"
+  ],
+  "layerIndex": 10,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "aerialway": "cable_car"
+  },
+  "terms": [
+    "lift",
+    "gondola",
+    "tram",
+    "aerial",
+    "cable",
+    "car"
+  ]
+}

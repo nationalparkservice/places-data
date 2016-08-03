@@ -26,31 +26,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "building/building/building": {
-      "name": "Building",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "layerIndex": 70,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "*"
-      },
-      "terms": [
-        "structure",
-        "building"
-      ],
-      "searchable": true
-    },
     "building/building/building under construction": {
       "name": "Building Under Construction",
       "fields": [
@@ -77,6 +52,31 @@ iD.data.npmapPresets = {
         "construction zone",
         "building",
         "building under construction"
+      ],
+      "searchable": true
+    },
+    "building/building/building": {
+      "name": "Building",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "building",
+      "maki": "maki",
+      "layerIndex": 70,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "*"
+      },
+      "terms": [
+        "structure",
+        "building"
       ],
       "searchable": true
     },
@@ -1221,6 +1221,29 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "land recreation/playground/playground": {
+      "name": "Playground",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "area",
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "leisure": "playground"
+      },
+      "terms": [
+        "play area",
+        "playpark",
+        "playground"
+      ],
+      "searchable": true
+    },
     "land recreation/sports field/athletic field": {
       "name": "Athletic Field",
       "fields": [
@@ -1898,28 +1921,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "land recreation/playground/playground": {
-      "name": "Playground",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 60,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "leisure": "playground"
-      },
-      "terms": [
-        "play area",
-        "playpark",
-        "playground"
-      ],
-      "searchable": true
-    },
     "land recreation/trail/motorized trail": {
       "name": "Motorized Trail",
       "fields": [
@@ -2172,63 +2173,76 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/structure/fortification": {
-      "name": "Fortification",
+    "miscellaneous/construction/construction zone": {
+      "name": "Construction Zone",
       "fields": [
         "name",
-        "nps/unitcode",
-        "site_type"
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "area"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "construction"
+      },
+      "terms": [
+        "construction",
+        "zone",
+        "construction area",
+        "under construction"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/garden/garden": {
+      "name": "Garden",
+      "fields": [
+        "name",
+        "nps/unitcode"
       ],
       "geometry": [
         "area",
         "point"
       ],
       "layerIndex": 10,
-      "defaultOrder": 3,
+      "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "historic": "archaeological_site",
-        "site_type": "fortification"
+        "leisure": "garden"
       },
       "terms": [
-        "fort",
-        "earthworks",
-        "hill fort",
-        "trench",
-        "fortification"
+        "arboretum"
       ],
       "searchable": true
     },
-    "miscellaneous/structure/tower": {
-      "name": "Tower",
+    "miscellaneous/pedestrian area/pedestrian area": {
+      "name": "Pedestrian Area",
       "fields": [
         "name",
-        "nps/unitcode",
-        "operator",
-        "tower/type"
+        "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "man_made": "tower"
+        "highway": "pedestrian",
+        "area": "yes"
       },
       "terms": [
-        "castle",
-        "clock tower",
-        "fire tower",
-        "lookout tower",
-        "water tower",
-        "tower",
-        "overlook"
+        "pedestrian",
+        "area",
+        "walking",
+        "plaza"
       ],
       "searchable": true
     },
-    "miscellaneous/structure/windmill": {
-      "name": "Windmill",
+    "miscellaneous/agricultural/farm": {
+      "name": "Farm",
       "fields": [
         "name",
         "nps/unitcode",
@@ -2241,12 +2255,11 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "man_made": "windmill"
+        "place": "farm"
       },
       "terms": [
-        "wind turbine",
-        "windpump",
-        "windmill"
+        "agriculture",
+        "crops"
       ],
       "searchable": true
     },
@@ -2416,27 +2429,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "flagpole"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/garden/garden": {
-      "name": "Garden",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "leisure": "garden"
-      },
-      "terms": [
-        "arboretum",
-        "garden"
       ],
       "searchable": true
     },
@@ -2977,6 +2969,34 @@ iD.data.npmapPresets = {
         "float landing",
         "float plane",
         "airport"
+      ],
+      "searchable": true
+    },
+    "service/cable car/cable car": {
+      "name": "Cable Car",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "opening_hours",
+        "fee"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aerialway": "cable_car"
+      },
+      "terms": [
+        "lift",
+        "gondola",
+        "tram",
+        "aerial",
+        "cable",
+        "car"
       ],
       "searchable": true
     },
@@ -4143,6 +4163,33 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "structure/fortification/fortification": {
+      "name": "Fortification",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "site_type"
+      ],
+      "geometry": [
+        "area",
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": 3,
+      "matchScore": 1,
+      "tags": {
+        "historic": "archaeological_site",
+        "site_type": "fortification"
+      },
+      "terms": [
+        "fort",
+        "earthworks",
+        "hill fort",
+        "trench",
+        "fortification"
+      ],
+      "searchable": true
+    },
     "structure/recreation/boat dock": {
       "name": "Boat Dock",
       "fields": [
@@ -4163,6 +4210,57 @@ iD.data.npmapPresets = {
         "boat",
         "dock",
         "pier"
+      ],
+      "searchable": true
+    },
+    "structure/tower/tower": {
+      "name": "Tower",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "tower/type"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "tower"
+      },
+      "terms": [
+        "castle",
+        "clock tower",
+        "fire tower",
+        "lookout tower",
+        "water tower",
+        "tower",
+        "overlook"
+      ],
+      "searchable": true
+    },
+    "structure/windmill/windmill": {
+      "name": "Windmill",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "man_made": "windmill"
+      },
+      "terms": [
+        "wind turbine",
+        "windpump",
+        "windmill"
       ],
       "searchable": true
     },
@@ -4214,14 +4312,74 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "natural line/valley/canyon": {
+    "natural feature/cliff/cliff": {
+      "name": "Cliff",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "height"
+      ],
+      "geometry": [
+        "line",
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "cliff"
+      },
+      "terms": [
+        "bluff",
+        "crag",
+        "head",
+        "headland",
+        "nose",
+        "palisades",
+        "precipice",
+        "promontory",
+        "rimrock",
+        "slope",
+        "rim"
+      ],
+      "searchable": true
+    },
+    "natural feature/cliff/ridge": {
+      "name": "Ridge",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "ridge"
+      },
+      "terms": [
+        "crest",
+        "cuesta",
+        "escarpment",
+        "hogback",
+        "lae",
+        "spur",
+        "ridge",
+        "rim"
+      ],
+      "searchable": true
+    },
+    "natural feature/valley/canyon": {
       "name": "Canyon",
       "fields": [
         "name",
         "nps/unitcode"
       ],
       "geometry": [
-        "line"
+        "line",
+        "point"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4231,6 +4389,1186 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "canyon"
+      ],
+      "searchable": true
+    },
+    "natural feature/valley/valley": {
+      "name": "Valley",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "valley"
+      },
+      "terms": [
+        "barranca",
+        "chasm",
+        "glen",
+        "gorge",
+        "gulch",
+        "hollow",
+        "ravine",
+        "valley",
+        "canyon",
+        "cove",
+        "draw",
+        "gulf"
+      ],
+      "searchable": true
+    },
+    "natural feature/arroyo/arroyo": {
+      "name": "Arroyo",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "drain",
+        "intermittent": "*"
+      },
+      "terms": [
+        "coulee",
+        "draw",
+        "gully",
+        "wash",
+        "arroyo"
+      ],
+      "searchable": true
+    },
+    "natural feature/bar/reef": {
+      "name": "Reef",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "reef"
+      },
+      "terms": [
+        "reef",
+        "bar",
+        "ledge",
+        "sandbar",
+        "shoal",
+        "spit"
+      ],
+      "searchable": true
+    },
+    "natural feature/bar/shoal": {
+      "name": "Shoal",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "tidal"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "shoal"
+      },
+      "terms": [
+        "shoal",
+        "bar",
+        "ledge",
+        "reef",
+        "sandbar",
+        "spit"
+      ],
+      "searchable": true
+    },
+    "natural feature/basin/basin": {
+      "name": "Basin",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "basin"
+      },
+      "terms": [
+        "cirque",
+        "hole",
+        "sink",
+        "sinkhole",
+        "basin"
+      ],
+      "searchable": true
+    },
+    "natural feature/bay/bay": {
+      "name": "Bay",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "bay"
+      },
+      "terms": [
+        "arm",
+        "bight",
+        "cove",
+        "estuary",
+        "gulf",
+        "inlet",
+        "sound",
+        "bay"
+      ],
+      "searchable": true
+    },
+    "natural feature/beach/beach": {
+      "name": "Beach",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "beach"
+      },
+      "terms": [
+        "coast",
+        "shore",
+        "strand",
+        "beach"
+      ],
+      "searchable": true
+    },
+    "natural feature/cape/cape": {
+      "name": "Cape",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "cape"
+      },
+      "terms": [
+        "lea",
+        "neck",
+        "peninsula",
+        "point",
+        "cape"
+      ],
+      "searchable": true
+    },
+    "natural feature/cave/cave entrance": {
+      "name": "Cave Entrance",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "cave_entrance"
+      },
+      "terms": [
+        "cave",
+        "cavern",
+        "grotto"
+      ],
+      "searchable": true
+    },
+    "natural feature/desert/desert": {
+      "name": "Desert",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "desert"
+      },
+      "terms": [
+        "desert"
+      ],
+      "searchable": true
+    },
+    "natural feature/dune/dune": {
+      "name": "Dune",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "dune"
+      },
+      "terms": [
+        "sand dune",
+        "dune"
+      ],
+      "searchable": true
+    },
+    "natural feature/forest/forest": {
+      "name": "Forest",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "leaf_type",
+        "leaf_cycle",
+        "crop"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "park",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "forest"
+      },
+      "terms": [
+        "jungle",
+        "forest",
+        "wood",
+        "park"
+      ],
+      "searchable": true
+    },
+    "natural feature/forest/woods": {
+      "name": "Woods",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "leaf_type",
+        "leaf_cycle",
+        "crop"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "park2",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "wood"
+      },
+      "terms": [
+        "forest",
+        "wood",
+        "park",
+        "jungle"
+      ],
+      "searchable": true
+    },
+    "natural feature/glacier/glacier": {
+      "name": "Glacier",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "surface",
+        "direction"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "glacier"
+      },
+      "terms": [
+        "icefield",
+        "ice patch",
+        "snow patch",
+        "glacier"
+      ],
+      "searchable": true
+    },
+    "natural feature/grove/grove": {
+      "name": "Grove",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grove"
+      },
+      "terms": [
+        "orchard",
+        "trees"
+      ],
+      "searchable": true
+    },
+    "natural feature/grove/tree": {
+      "name": "Tree",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "tree"
+      },
+      "terms": [
+        "stump",
+        "tree"
+      ],
+      "searchable": true
+    },
+    "natural feature/harbor/harbor": {
+      "name": "Harbor",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "harbor",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "harbour": "*"
+      },
+      "terms": [
+        "harbour",
+        "harbor",
+        "marina"
+      ],
+      "searchable": true
+    },
+    "natural feature/island/island": {
+      "name": "Island",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "island"
+      },
+      "terms": [
+        "archipelago",
+        "atoll",
+        "cay",
+        "hammock",
+        "hummock",
+        "isla",
+        "isle",
+        "islet",
+        "key",
+        "moku",
+        "island",
+        "rock"
+      ],
+      "searchable": true
+    },
+    "natural feature/isthmus/isthmus": {
+      "name": "Isthmus",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "isthmus"
+      },
+      "terms": [
+        "tombolo",
+        "isthmus"
+      ],
+      "searchable": true
+    },
+    "natural feature/lake/lake": {
+      "name": "Lake",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "water",
+        "water": "lake"
+      },
+      "terms": [
+        "backwater",
+        "lac",
+        "lagoon",
+        "laguna",
+        "lakelet",
+        "loch",
+        "mere",
+        "pond",
+        "resaca",
+        "waterhole",
+        "lake",
+        "pool"
+      ],
+      "searchable": true
+    },
+    "natural feature/lava/lava": {
+      "name": "Lava",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "lava"
+      },
+      "terms": [
+        "jumble",
+        "kepula",
+        "lava bed",
+        "lava flow",
+        "pyroclastic flow",
+        "lava"
+      ],
+      "searchable": true
+    },
+    "natural feature/natural feature/natural feature": {
+      "name": "Natural Feature",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "*"
+      },
+      "terms": [
+        "generic",
+        "natural"
+      ],
+      "searchable": true
+    },
+    "natural feature/pass/mountain pass (saddle %2f gap)": {
+      "name": "Mountain Pass (Saddle / Gap)",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "ele",
+        "direction"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "saddle"
+      },
+      "terms": [
+        "mountain pass",
+        "saddle",
+        "gap",
+        "col",
+        "notch",
+        "pass",
+        "water gap",
+        "wind gap"
+      ],
+      "searchable": true
+    },
+    "natural feature/peak/peak": {
+      "name": "Peak",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "ele"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "triangle",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "peak"
+      },
+      "terms": [
+        "summit",
+        "acme",
+        "ahu",
+        "aiguille",
+        "alp",
+        "berg",
+        "bald",
+        "butte",
+        "cerro",
+        "climax",
+        "colina",
+        "cone",
+        "crown",
+        "cumbre",
+        "dome",
+        "hill",
+        "horn",
+        "knob",
+        "knoll",
+        "mauna",
+        "mesita",
+        "mound",
+        "mount",
+        "mountain",
+        "puu",
+        "sugarloaf",
+        "tip",
+        "top",
+        "peak",
+        "head",
+        "mesa",
+        "rock",
+        "sugarload",
+        "table",
+        "crest",
+        "pinnacle"
+      ],
+      "searchable": true
+    },
+    "natural feature/plain/grassland": {
+      "name": "Grassland",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grassland"
+      },
+      "terms": [
+        "shrubland",
+        "grassland",
+        "plain",
+        "highland",
+        "kula",
+        "upland"
+      ],
+      "searchable": true
+    },
+    "natural feature/plain/plain": {
+      "name": "Plain",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grassland",
+        "grassland_type": "plain"
+      },
+      "terms": [
+        "highland",
+        "kula",
+        "meadow",
+        "upland"
+      ],
+      "searchable": true
+    },
+    "natural feature/plain/prairie": {
+      "name": "Prairie",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "grassland",
+        "grassland": "prairie"
+      },
+      "terms": [
+        "savanna",
+        "steppe",
+        "prarie",
+        "grassland"
+      ],
+      "searchable": true
+    },
+    "natural feature/plateau/plateau": {
+      "name": "Plateau",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "landform",
+        "landform": "plateau"
+      },
+      "terms": [
+        "mesa",
+        "table",
+        "tableland",
+        "plateau"
+      ],
+      "searchable": true
+    },
+    "natural feature/rapids/rapids": {
+      "name": "Rapids",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "whitewater",
+        "width",
+        "rapid_grade"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "rapids"
+      },
+      "terms": [
+        "riffle",
+        "ripple",
+        "rapids"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/arch": {
+      "name": "Arch",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "arch"
+      },
+      "terms": [
+        "bridge",
+        "land bridge",
+        "natural bridge",
+        "sea arch",
+        "window",
+        "arch"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/pillar": {
+      "name": "Pillar",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "rock",
+        "rock_type": "pillar"
+      },
+      "terms": [
+        "chimney",
+        "monument",
+        "pinnacle",
+        "pohaku",
+        "rock tower"
+      ],
+      "searchable": true
+    },
+    "natural feature/rock formation/rock formation": {
+      "name": "Rock Formation",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "rock"
+      },
+      "terms": [
+        "rock",
+        "formation",
+        "fin",
+        "fold",
+        "hoodoo",
+        "nipple",
+        "slickrock",
+        "slide",
+        "spire",
+        "throne",
+        "wall",
+        "rock formation"
+      ],
+      "searchable": true
+    },
+    "natural feature/sea/sea": {
+      "name": "Sea",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "place": "sea"
+      },
+      "terms": [
+        "gulf",
+        "ocean",
+        "sea"
+      ],
+      "searchable": true
+    },
+    "natural feature/spring/spring": {
+      "name": "Spring",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "drinking_water"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "spring-black",
+      "maki": "npmap-symbol-library",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "spring"
+      },
+      "terms": [
+        "seep",
+        "spring"
+      ],
+      "searchable": true
+    },
+    "natural feature/strait/strait (channel)": {
+      "name": "Strait (Channel)",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "strait"
+      },
+      "terms": [
+        "strait",
+        "channel",
+        "passage",
+        "reach",
+        "thoroughfare",
+        "throughfare"
+      ],
+      "searchable": true
+    },
+    "natural feature/stream/stream": {
+      "name": "Stream",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "stream"
+      },
+      "terms": [
+        "beck",
+        "branch",
+        "brook",
+        "burn",
+        "course",
+        "creek",
+        "current",
+        "drift",
+        "flood",
+        "flowline",
+        "freshet",
+        "race",
+        "rill",
+        "rindle",
+        "rivulet",
+        "run",
+        "runnel",
+        "rush",
+        "spate",
+        "spritz",
+        "surge",
+        "tide",
+        "torrent",
+        "tributary",
+        "watercourse",
+        "flow"
+      ],
+      "searchable": true
+    },
+    "natural feature/swamp/swamp": {
+      "name": "Swamp",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "wetland",
+        "wetland": "swamp"
+      },
+      "terms": [
+        "bog",
+        "cienega",
+        "marais",
+        "marsh",
+        "mire",
+        "pocosin",
+        "swamp",
+        "wetland"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/fumarole": {
+      "name": "Fumarole",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "fumarole"
+      },
+      "terms": [
+        "steam",
+        "vent",
+        "volcanic gas",
+        "thermal",
+        "fumarole",
+        "geological"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/geyser": {
+      "name": "Geyser",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "geyser"
+      },
+      "terms": [
+        "gusher",
+        "spout",
+        "thermal geyser",
+        "hot spring",
+        "thermal spring",
+        "geyser"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/hot spring": {
+      "name": "Hot Spring",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "hot_spring"
+      },
+      "terms": [
+        "hot",
+        "spring",
+        "thermal spring",
+        "water",
+        "geological"
+      ],
+      "searchable": true
+    },
+    "natural feature/thermal/mud pot": {
+      "name": "Mud Pot",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "mud"
+      },
+      "terms": [
+        "mud",
+        "mud flow",
+        "mudflow",
+        "thermal pool",
+        "fumarole"
+      ],
+      "searchable": true
+    },
+    "natural feature/volcano/volcano": {
+      "name": "Volcano",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "status",
+        "ele",
+        "type"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "triangle",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "volcano"
+      },
+      "terms": [
+        "caldera",
+        "cinder cone",
+        "composite",
+        "composite volcano",
+        "crater",
+        "shield",
+        "shield volcano",
+        "volcano"
+      ],
+      "searchable": true
+    },
+    "natural feature/waterfall/waterfall": {
+      "name": "Waterfall",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "water",
+      "maki": "maki",
+      "layerIndex": 15,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "waterway": "waterfall"
+      },
+      "terms": [
+        "falls",
+        "cascade",
+        "cataract",
+        "waterfall"
+      ],
+      "searchable": true
+    },
+    "natural feature/wetland/wetland": {
+      "name": "Wetland",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "wetland",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "wetland"
+      },
+      "terms": [
+        "bayou",
+        "bogland",
+        "fen",
+        "fenland",
+        "morass",
+        "muskeg",
+        "quagmire",
+        "slough",
+        "wetland"
       ],
       "searchable": true
     },
@@ -4275,7 +5613,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "four-wheel-drive-road-black",
       "maki": "npmap-symbol-library",
-      "layerIndex": 15,
+      "layerIndex": 28,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4291,6 +5629,40 @@ iD.data.npmapPresets = {
         "high clearance",
         "road",
         "four-wheel drive road"
+      ],
+      "searchable": true
+    },
+    "road/highway/highway link": {
+      "name": "Highway Link",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "nps/trailuse",
+        "nps/structure"
+      ],
+      "geometry": [
+        "line"
+      ],
+      "icon": "highway-motorway-link",
+      "maki": "maki",
+      "layerIndex": 94,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "motorway_link"
+      },
+      "terms": [
+        "freeway ramp",
+        "highway ramp",
+        "off ramp",
+        "on ramp",
+        "ramp",
+        "highway"
       ],
       "searchable": true
     },
@@ -4326,40 +5698,6 @@ iD.data.npmapPresets = {
         "interstate",
         "interstate highway",
         "road",
-        "highway"
-      ],
-      "searchable": true
-    },
-    "road/highway/highway link": {
-      "name": "Highway Link",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "surface",
-        "width",
-        "maxspeed",
-        "oneway",
-        "nps/trailuse",
-        "nps/structure"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "icon": "highway-motorway-link",
-      "maki": "maki",
-      "layerIndex": 94,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "motorway_link"
-      },
-      "terms": [
-        "freeway ramp",
-        "highway ramp",
-        "off ramp",
-        "on ramp",
-        "ramp",
         "highway"
       ],
       "searchable": true
@@ -4646,7 +5984,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-secondary-link",
       "maki": "maki",
-      "layerIndex": 45,
+      "layerIndex": 43,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4715,7 +6053,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-service",
       "maki": "maki",
-      "layerIndex": 20,
+      "layerIndex": 29,
       "defaultOrder": 7,
       "matchScore": 1,
       "tags": {
@@ -4746,7 +6084,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-service",
       "maki": "maki",
-      "layerIndex": 20,
+      "layerIndex": 29,
       "defaultOrder": 8,
       "matchScore": 1,
       "tags": {
@@ -4783,7 +6121,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-tertiary-link",
       "maki": "maki",
-      "layerIndex": 35,
+      "layerIndex": 33,
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
@@ -4852,7 +6190,7 @@ iD.data.npmapPresets = {
       ],
       "icon": "highway-track",
       "maki": "maki",
-      "layerIndex": 30,
+      "layerIndex": 27,
       "defaultOrder": null,
       "matchScore": 1.03,
       "tags": {
@@ -5601,7 +6939,8 @@ iD.data.npmapPresets = {
         "animal trail",
         "human use (social)",
         "non-human use (animal)",
-        "trail"
+        "trail",
+        "hiker / pedestrian"
       ],
       "searchable": true
     },
@@ -6088,33 +7427,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "information/information/information": {
-      "name": "Information",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "information-black",
-      "maki": "npmap-symbol-library",
-      "layerIndex": 80,
-      "defaultOrder": 11,
-      "matchScore": 1,
-      "tags": {
-        "tourism": "information"
-      },
-      "terms": [
-        "tourist information",
-        "visitor information",
-        "information"
-      ],
-      "searchable": true
-    },
     "information/information/information board": {
       "name": "Information Board",
       "fields": [
@@ -6169,6 +7481,33 @@ iD.data.npmapPresets = {
         "map",
         "information",
         "information map"
+      ],
+      "searchable": true
+    },
+    "information/information/information": {
+      "name": "Information",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "information-black",
+      "maki": "npmap-symbol-library",
+      "layerIndex": 80,
+      "defaultOrder": 11,
+      "matchScore": 1,
+      "tags": {
+        "tourism": "information"
+      },
+      "terms": [
+        "tourist information",
+        "visitor information",
+        "information"
       ],
       "searchable": true
     },
@@ -6509,1265 +7848,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "natural feature/arroyo/arroyo": {
-      "name": "Arroyo",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "drain",
-        "intermittent": "*"
-      },
-      "terms": [
-        "coulee",
-        "draw",
-        "gully",
-        "wash",
-        "arroyo"
-      ],
-      "searchable": true
-    },
-    "natural feature/bar/reef (bar)": {
-      "name": "Reef (Bar)",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "reef"
-      },
-      "terms": [
-        "reef",
-        "bar",
-        "ledge",
-        "sandbar",
-        "shoal",
-        "spit"
-      ],
-      "searchable": true
-    },
-    "natural feature/bar/shoal (bar)": {
-      "name": "Shoal (Bar)",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "tidal"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "shoal"
-      },
-      "terms": [
-        "shoal",
-        "bar",
-        "ledge",
-        "reef",
-        "sandbar",
-        "spit"
-      ],
-      "searchable": true
-    },
-    "natural feature/basin/basin": {
-      "name": "Basin",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "landuse": "basin"
-      },
-      "terms": [
-        "cirque",
-        "hole",
-        "sink",
-        "sinkhole",
-        "basin"
-      ],
-      "searchable": true
-    },
-    "natural feature/bay/bay": {
-      "name": "Bay",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "bay"
-      },
-      "terms": [
-        "arm",
-        "bight",
-        "cove",
-        "estuary",
-        "gulf",
-        "inlet",
-        "sound",
-        "bay"
-      ],
-      "searchable": true
-    },
-    "natural feature/beach/beach": {
-      "name": "Beach",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "beach"
-      },
-      "terms": [
-        "coast",
-        "shore",
-        "strand",
-        "beach"
-      ],
-      "searchable": true
-    },
-    "natural feature/cape/cape": {
-      "name": "Cape",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "cape"
-      },
-      "terms": [
-        "lea",
-        "neck",
-        "peninsula",
-        "point",
-        "cape"
-      ],
-      "searchable": true
-    },
-    "natural feature/cave/cave entrance": {
-      "name": "Cave Entrance",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "cave_entrance"
-      },
-      "terms": [
-        "cave",
-        "cavern",
-        "grotto"
-      ],
-      "searchable": true
-    },
-    "natural feature/cliff/cliff": {
-      "name": "Cliff",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "height"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "cliff"
-      },
-      "terms": [
-        "bluff",
-        "crag",
-        "head",
-        "headland",
-        "nose",
-        "palisades",
-        "precipice",
-        "promontory",
-        "rimrock",
-        "slope",
-        "cliff",
-        "rim"
-      ],
-      "searchable": true
-    },
-    "natural feature/desert/desert": {
-      "name": "Desert",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "desert"
-      },
-      "terms": [
-        "desert"
-      ],
-      "searchable": true
-    },
-    "natural feature/dune/dune": {
-      "name": "Dune",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "dune"
-      },
-      "terms": [
-        "sand dune",
-        "dune"
-      ],
-      "searchable": true
-    },
-    "natural feature/forest/forest": {
-      "name": "Forest",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "leaf_type",
-        "leaf_cycle",
-        "crop"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "park",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "landuse": "forest"
-      },
-      "terms": [
-        "jungle",
-        "forest",
-        "wood",
-        "park"
-      ],
-      "searchable": true
-    },
-    "natural feature/forest/woods": {
-      "name": "Woods",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "leaf_type",
-        "leaf_cycle",
-        "crop"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "park2",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "wood"
-      },
-      "terms": [
-        "forest",
-        "wood",
-        "park",
-        "jungle"
-      ],
-      "searchable": true
-    },
-    "natural feature/glacier/glacier": {
-      "name": "Glacier",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "surface",
-        "direction"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "glacier"
-      },
-      "terms": [
-        "icefield",
-        "ice patch",
-        "snow patch",
-        "glacier"
-      ],
-      "searchable": true
-    },
-    "natural feature/grove/grove": {
-      "name": "Grove",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grove"
-      },
-      "terms": [
-        "orchard",
-        "trees"
-      ],
-      "searchable": true
-    },
-    "natural feature/grove/tree": {
-      "name": "Tree",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "tree"
-      },
-      "terms": [
-        "stump",
-        "tree"
-      ],
-      "searchable": true
-    },
-    "natural feature/harbor/harbor": {
-      "name": "Harbor",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "harbor",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "harbour": "*"
-      },
-      "terms": [
-        "harbour",
-        "harbor",
-        "marina"
-      ],
-      "searchable": true
-    },
-    "natural feature/island/island": {
-      "name": "Island",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "island"
-      },
-      "terms": [
-        "archipelago",
-        "atoll",
-        "cay",
-        "hammock",
-        "hummock",
-        "isla",
-        "isle",
-        "islet",
-        "key",
-        "moku",
-        "island",
-        "rock"
-      ],
-      "searchable": true
-    },
-    "natural feature/isthmus/isthmus": {
-      "name": "Isthmus",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "isthmus"
-      },
-      "terms": [
-        "tombolo",
-        "isthmus"
-      ],
-      "searchable": true
-    },
-    "natural feature/lake/lake": {
-      "name": "Lake",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "water",
-        "water": "lake"
-      },
-      "terms": [
-        "backwater",
-        "lac",
-        "lagoon",
-        "laguna",
-        "lakelet",
-        "loch",
-        "mere",
-        "pond",
-        "resaca",
-        "waterhole",
-        "lake",
-        "pool"
-      ],
-      "searchable": true
-    },
-    "natural feature/lava/lava": {
-      "name": "Lava",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "lava"
-      },
-      "terms": [
-        "jumble",
-        "kepula",
-        "lava bed",
-        "lava flow",
-        "pyroclastic flow",
-        "lava"
-      ],
-      "searchable": true
-    },
-    "natural feature/natural feature/natural feature": {
-      "name": "Natural Feature",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "*"
-      },
-      "terms": [
-        "generic",
-        "natural"
-      ],
-      "searchable": true
-    },
-    "natural feature/pass/mountain pass (saddle %2f gap)": {
-      "name": "Mountain Pass (Saddle / Gap)",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "ele",
-        "direction"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "saddle"
-      },
-      "terms": [
-        "mountain pass",
-        "saddle",
-        "gap",
-        "col",
-        "notch",
-        "pass",
-        "water gap",
-        "wind gap"
-      ],
-      "searchable": true
-    },
-    "natural feature/peak/peak": {
-      "name": "Peak",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "ele"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "triangle",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "peak"
-      },
-      "terms": [
-        "summit",
-        "acme",
-        "ahu",
-        "aiguille",
-        "alp",
-        "berg",
-        "bald",
-        "butte",
-        "cerro",
-        "climax",
-        "colina",
-        "cone",
-        "crown",
-        "cumbre",
-        "dome",
-        "hill",
-        "horn",
-        "knob",
-        "knoll",
-        "mauna",
-        "mesita",
-        "mound",
-        "mount",
-        "mountain",
-        "puu",
-        "sugarloaf",
-        "tip",
-        "top",
-        "peak",
-        "head",
-        "mesa",
-        "rock",
-        "sugarload",
-        "table",
-        "crest",
-        "pinnacle"
-      ],
-      "searchable": true
-    },
-    "natural feature/plain/grassland": {
-      "name": "Grassland",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grassland"
-      },
-      "terms": [
-        "shrubland",
-        "grassland",
-        "plain",
-        "highland",
-        "kula",
-        "upland"
-      ],
-      "searchable": true
-    },
-    "natural feature/plain/plain": {
-      "name": "Plain",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grassland",
-        "grassland_type": "plain"
-      },
-      "terms": [
-        "highland",
-        "kula",
-        "meadow",
-        "upland"
-      ],
-      "searchable": true
-    },
-    "natural feature/plain/prairie": {
-      "name": "Prairie",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "grassland",
-        "grassland": "prarie"
-      },
-      "terms": [
-        "savanna",
-        "steppe",
-        "prarie",
-        "grassland"
-      ],
-      "searchable": true
-    },
-    "natural feature/plateau/plateau": {
-      "name": "Plateau",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "landform",
-        "landform": "plateau"
-      },
-      "terms": [
-        "mesa",
-        "table",
-        "tableland",
-        "plateau"
-      ],
-      "searchable": true
-    },
-    "natural feature/rapids/rapids": {
-      "name": "Rapids",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "whitewater",
-        "width",
-        "rapid_grade"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "rapids"
-      },
-      "terms": [
-        "riffle",
-        "ripple",
-        "rapids"
-      ],
-      "searchable": true
-    },
-    "natural feature/ridge/ridge": {
-      "name": "Ridge",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "ridge"
-      },
-      "terms": [
-        "crest",
-        "cuesta",
-        "escarpment",
-        "hogback",
-        "lae",
-        "spur",
-        "ridge",
-        "rim"
-      ],
-      "searchable": true
-    },
-    "natural feature/rock formation/arch": {
-      "name": "Arch",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "arch"
-      },
-      "terms": [
-        "bridge",
-        "land bridge",
-        "natural bridge",
-        "sea arch",
-        "window",
-        "arch"
-      ],
-      "searchable": true
-    },
-    "natural feature/rock formation/pillar": {
-      "name": "Pillar",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "rock",
-        "rock_type": "pillar"
-      },
-      "terms": [
-        "chimney",
-        "monument",
-        "pinnacle",
-        "pohaku",
-        "rock tower"
-      ],
-      "searchable": true
-    },
-    "natural feature/rock formation/rock formation": {
-      "name": "Rock Formation",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "rock"
-      },
-      "terms": [
-        "rock",
-        "formation",
-        "fin",
-        "fold",
-        "hoodoo",
-        "nipple",
-        "slickrock",
-        "slide",
-        "spire",
-        "throne",
-        "wall",
-        "rock formation"
-      ],
-      "searchable": true
-    },
-    "natural feature/sea/sea": {
-      "name": "Sea",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "place": "sea"
-      },
-      "terms": [
-        "gulf",
-        "ocean",
-        "sea"
-      ],
-      "searchable": true
-    },
-    "natural feature/spring/spring": {
-      "name": "Spring",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "drinking_water"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "spring-black",
-      "maki": "npmap-symbol-library",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "spring"
-      },
-      "terms": [
-        "seep",
-        "spring"
-      ],
-      "searchable": true
-    },
-    "natural feature/strait/strait (channel)": {
-      "name": "Strait (Channel)",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "strait"
-      },
-      "terms": [
-        "strait",
-        "channel",
-        "passage",
-        "reach",
-        "thoroughfare",
-        "throughfare"
-      ],
-      "searchable": true
-    },
-    "natural feature/stream/stream": {
-      "name": "Stream",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "stream"
-      },
-      "terms": [
-        "beck",
-        "branch",
-        "brook",
-        "burn",
-        "course",
-        "creek",
-        "current",
-        "drift",
-        "flood",
-        "flowline",
-        "freshet",
-        "race",
-        "rill",
-        "rindle",
-        "rivulet",
-        "run",
-        "runnel",
-        "rush",
-        "spate",
-        "spritz",
-        "surge",
-        "tide",
-        "torrent",
-        "tributary",
-        "watercourse",
-        "flow"
-      ],
-      "searchable": true
-    },
-    "natural feature/swamp/swamp": {
-      "name": "Swamp",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "wetland",
-        "wetland": "swamp"
-      },
-      "terms": [
-        "bog",
-        "cienega",
-        "marais",
-        "marsh",
-        "mire",
-        "pocosin",
-        "swamp",
-        "wetland"
-      ],
-      "searchable": true
-    },
-    "natural feature/thermal/fumarole": {
-      "name": "Fumarole",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "fumarole"
-      },
-      "terms": [
-        "steam",
-        "vent",
-        "volcanic gas",
-        "thermal",
-        "fumarole",
-        "geological"
-      ],
-      "searchable": true
-    },
-    "natural feature/thermal/geyser": {
-      "name": "Geyser",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "geyser"
-      },
-      "terms": [
-        "gusher",
-        "spout",
-        "thermal geyser",
-        "hot spring",
-        "thermal spring",
-        "geyser"
-      ],
-      "searchable": true
-    },
-    "natural feature/thermal/hot spring": {
-      "name": "Hot Spring",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "hot_spring"
-      },
-      "terms": [
-        "hot",
-        "spring",
-        "thermal spring",
-        "water",
-        "geological"
-      ],
-      "searchable": true
-    },
-    "natural feature/thermal/mud pot": {
-      "name": "Mud Pot",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "mud"
-      },
-      "terms": [
-        "mud",
-        "mud flow",
-        "mudflow",
-        "thermal pool",
-        "fumarole"
-      ],
-      "searchable": true
-    },
-    "natural feature/valley/canyon": {
-      "name": "Canyon",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "canyon"
-      },
-      "terms": [
-        "canyon"
-      ],
-      "searchable": true
-    },
-    "natural feature/valley/valley": {
-      "name": "Valley",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "valley"
-      },
-      "terms": [
-        "barranca",
-        "chasm",
-        "glen",
-        "gorge",
-        "gulch",
-        "hollow",
-        "ravine",
-        "valley",
-        "canyon",
-        "cove",
-        "draw",
-        "gulf"
-      ],
-      "searchable": true
-    },
-    "natural feature/volcano/volcano": {
-      "name": "Volcano",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "status",
-        "ele",
-        "type"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "triangle",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "volcano"
-      },
-      "terms": [
-        "caldera",
-        "cinder cone",
-        "composite",
-        "composite volcano",
-        "crater",
-        "shield",
-        "shield volcano",
-        "volcano"
-      ],
-      "searchable": true
-    },
-    "natural feature/waterfall/waterfall": {
-      "name": "Waterfall",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "water",
-      "maki": "maki",
-      "layerIndex": 15,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "waterway": "waterfall"
-      },
-      "terms": [
-        "falls",
-        "cascade",
-        "cataract",
-        "waterfall"
-      ],
-      "searchable": true
-    },
-    "natural feature/wetland/wetland": {
-      "name": "Wetland",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "wetland",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "wetland"
-      },
-      "terms": [
-        "bayou",
-        "bogland",
-        "fen",
-        "fenland",
-        "morass",
-        "muskeg",
-        "quagmire",
-        "slough",
-        "wetland"
-      ],
-      "searchable": true
-    },
     "road feature/bridge/bridge": {
       "name": "Bridge",
       "fields": [
@@ -7982,6 +8062,28 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "water recreation/boat/aquatic invasive species decontamination station": {
+      "name": "Aquatic Invasive Species Decontamination Station",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "boat_wash",
+        "type": "aquatic_invasive"
+      },
+      "terms": [
+        "decontamination",
+        "decontamination station"
+      ],
+      "searchable": true
+    },
     "water recreation/boat/boat dock": {
       "name": "Boat Dock",
       "fields": [
@@ -8122,29 +8224,6 @@ iD.data.npmapPresets = {
         "sailing area",
         "sail area",
         "sailing"
-      ],
-      "searchable": true
-    },
-    "water recreation/boat/zebra mussel decontamination station": {
-      "name": "Zebra Mussel Decontamination Station",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "boat_wash",
-        "type": "zebra_mussel"
-      },
-      "terms": [
-        "decontamination",
-        "decontamination station",
-        "zebra mussel decontamination station"
       ],
       "searchable": true
     },
@@ -8678,20 +8757,6 @@ iD.data.npmapPresets = {
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library"
     },
-    "category-area-miscellaneous": {
-      "geometry": "area",
-      "displayName": "Miscellaneous",
-      "members": [
-        "miscellaneous/structure/fortification"
-      ]
-    },
-    "category-point-miscellaneous": {
-      "geometry": "point",
-      "displayName": "Miscellaneous",
-      "members": [
-        "miscellaneous/structure/fortification"
-      ]
-    },
     "category-area-parking": {
       "geometry": "area",
       "displayName": "Parking",
@@ -8730,7 +8795,15 @@ iD.data.npmapPresets = {
       "geometry": "area",
       "displayName": "Structure",
       "members": [
+        "structure/fortification/fortification",
         "structure/recreation/boat dock"
+      ]
+    },
+    "category-point-structure": {
+      "geometry": "point",
+      "displayName": "Structure",
+      "members": [
+        "structure/fortification/fortification"
       ]
     },
     "category-line-road": {
@@ -8812,10 +8885,9 @@ iD.data.npmapPresets = {
   "defaults": {
     "area": [
       "building/building/building footprint",
+      "category-area-structure",
       "category-area-land recreation",
-      "parking/parking/parking lot",
-      "miscellaneous/structure/fortification",
-      "structure/recreation/boat dock"
+      "parking/parking/parking lot"
     ],
     "point": [
       "information/visitor center/visitor center",
@@ -8828,7 +8900,7 @@ iD.data.npmapPresets = {
       "accommodation/restroom/restroom",
       "category-point-building",
       "category-point-land recreation",
-      "miscellaneous/structure/fortification",
+      "structure/fortification/fortification",
       "category-point-information",
       "category-point-service",
       "category-point-water recreation",

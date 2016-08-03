@@ -1,12 +1,12 @@
 {
-  "name": "Garden",
-  "path": "Miscellaneous--Garden--Garden",
+  "name": "Construction Zone",
+  "path": "Miscellaneous--Construction--Construction_Zone",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,9 +15,12 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "leisure": "garden"
+    "landuse": "construction"
   },
   "terms": [
-    "arboretum"
+    "construction",
+    "zone",
+    "construction area",
+    "under construction"
   ]
 }

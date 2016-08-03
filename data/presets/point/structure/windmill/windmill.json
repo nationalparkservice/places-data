@@ -1,9 +1,10 @@
 {
-  "name": "Garden",
-  "path": "Miscellaneous--Garden--Garden",
+  "name": "Windmill",
+  "path": "Structure--Windmill--Windmill",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator"
   ],
   "geometry": [
     "point"
@@ -15,9 +16,11 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "leisure": "garden"
+    "man_made": "windmill"
   },
   "terms": [
-    "arboretum"
+    "wind turbine",
+    "windpump",
+    "windmill"
   ]
 }

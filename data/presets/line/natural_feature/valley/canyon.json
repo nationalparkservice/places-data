@@ -1,12 +1,12 @@
 {
-  "name": "Reef (Bar)",
-  "path": "Natural_Feature--Bar--Reef_(Bar)",
+  "name": "Canyon",
+  "path": "Natural_Feature--Valley--Canyon",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "line"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,14 +15,9 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "reef"
+    "natural": "canyon"
   },
   "terms": [
-    "reef",
-    "bar",
-    "ledge",
-    "sandbar",
-    "shoal",
-    "spit"
+    "canyon"
   ]
 }

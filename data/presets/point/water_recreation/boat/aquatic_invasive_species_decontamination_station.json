@@ -1,6 +1,6 @@
 {
-  "name": "Zebra Mussel Decontamination Station",
-  "path": "Water_Recreation--Boat--Zebra_Mussel_Decontamination_Station",
+  "name": "Aquatic Invasive Species Decontamination Station",
+  "path": "Water_Recreation--Boat--Aquatic_Invasive_Species_Decontamination_Station",
   "fields": [
     "name",
     "nps/unitcode"
@@ -16,11 +16,10 @@
   "inEditor": true,
   "tags": {
     "amenity": "boat_wash",
-    "type": "zebra_mussel"
+    "type": "aquatic_invasive"
   },
   "terms": [
     "decontamination",
-    "decontamination station",
-    "zebra mussel decontamination station"
+    "decontamination station"
   ]
 }

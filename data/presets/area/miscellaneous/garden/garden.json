@@ -6,7 +6,7 @@
     "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,

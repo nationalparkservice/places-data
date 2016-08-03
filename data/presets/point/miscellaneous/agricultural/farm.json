@@ -1,9 +1,10 @@
 {
-  "name": "Garden",
-  "path": "Miscellaneous--Garden--Garden",
+  "name": "Farm",
+  "path": "Miscellaneous--Agricultural--Farm",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator"
   ],
   "geometry": [
     "point"
@@ -15,9 +16,10 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "leisure": "garden"
+    "place": "farm"
   },
   "terms": [
-    "arboretum"
+    "agriculture",
+    "crops"
   ]
 }

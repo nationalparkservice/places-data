@@ -1,12 +1,12 @@
 {
-  "name": "Garden",
-  "path": "Miscellaneous--Garden--Garden",
+  "name": "Pedestrian Area",
+  "path": "Miscellaneous--Pedestrian_Area--Pedestrian_Area",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,9 +15,13 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "leisure": "garden"
+    "highway": "pedestrian",
+    "area": "yes"
   },
   "terms": [
-    "arboretum"
+    "pedestrian",
+    "area",
+    "walking",
+    "plaza"
   ]
 }

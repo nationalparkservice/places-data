@@ -1,10 +1,9 @@
 {
-  "name": "Windmill",
-  "path": "Miscellaneous--Structure--Windmill",
+  "name": "Reef",
+  "path": "Natural_Feature--Bar--Reef",
   "fields": [
     "name",
-    "nps/unitcode",
-    "operator"
+    "nps/unitcode"
   ],
   "geometry": [
     "point"
@@ -16,11 +15,14 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "man_made": "windmill"
+    "natural": "reef"
   },
   "terms": [
-    "wind turbine",
-    "windpump",
-    "windmill"
+    "reef",
+    "bar",
+    "ledge",
+    "sandbar",
+    "shoal",
+    "spit"
   ]
 }
