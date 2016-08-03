@@ -4163,33 +4163,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "structure/fortification/fortification": {
-      "name": "Fortification",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "site_type"
-      ],
-      "geometry": [
-        "area",
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": 3,
-      "matchScore": 1,
-      "tags": {
-        "historic": "archaeological_site",
-        "site_type": "fortification"
-      },
-      "terms": [
-        "fort",
-        "earthworks",
-        "hill fort",
-        "trench",
-        "fortification"
-      ],
-      "searchable": true
-    },
     "structure/recreation/boat dock": {
       "name": "Boat Dock",
       "fields": [
@@ -4210,6 +4183,33 @@ iD.data.npmapPresets = {
         "boat",
         "dock",
         "pier"
+      ],
+      "searchable": true
+    },
+    "structure/fortification/fortification": {
+      "name": "Fortification",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "site_type"
+      ],
+      "geometry": [
+        "point",
+        "area"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "historic": "archaeological_site",
+        "site_type": "fortification"
+      },
+      "terms": [
+        "fort",
+        "earthworks",
+        "hill fort",
+        "trench",
+        "fortification"
       ],
       "searchable": true
     },
@@ -8795,15 +8795,7 @@ iD.data.npmapPresets = {
       "geometry": "area",
       "displayName": "Structure",
       "members": [
-        "structure/fortification/fortification",
         "structure/recreation/boat dock"
-      ]
-    },
-    "category-point-structure": {
-      "geometry": "point",
-      "displayName": "Structure",
-      "members": [
-        "structure/fortification/fortification"
       ]
     },
     "category-line-road": {
@@ -8885,9 +8877,9 @@ iD.data.npmapPresets = {
   "defaults": {
     "area": [
       "building/building/building footprint",
-      "category-area-structure",
       "category-area-land recreation",
-      "parking/parking/parking lot"
+      "parking/parking/parking lot",
+      "structure/recreation/boat dock"
     ],
     "point": [
       "information/visitor center/visitor center",
@@ -8900,7 +8892,6 @@ iD.data.npmapPresets = {
       "accommodation/restroom/restroom",
       "category-point-building",
       "category-point-land recreation",
-      "structure/fortification/fortification",
       "category-point-information",
       "category-point-service",
       "category-point-water recreation",
