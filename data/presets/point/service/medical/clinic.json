@@ -1,29 +1,28 @@
 {
-  "name": "Cabin",
-  "path": "Building--Cabin--Cabin",
+  "name": "Clinic",
+  "path": "Service--Medical--Clinic",
   "fields": [
     "name",
     "nps/unitcode",
-    "address",
-    "levels"
+    "operator",
+    "address"
   ],
   "geometry": [
     "point"
   ],
-  "icon": "building",
-  "maki": "maki",
-  "layerIndex": 70,
+  "layerIndex": 10,
   "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "building": "cabin"
+    "amenity": "clinic"
   },
   "terms": [
-    "cottage",
-    "log cabin",
-    "cabin"
+    "first aid",
+    "emergency",
+    "medical",
+    "health"
   ]
 }

@@ -3,12 +3,11 @@
   "path": "Natural_Feature--Glacier--Glacier",
   "fields": [
     "name",
-    "nps/unitcode",
-    "surface",
-    "direction"
+    "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "point",
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -22,7 +21,6 @@
   "terms": [
     "icefield",
     "ice patch",
-    "snow patch",
-    "glacier"
+    "snow patch"
   ]
 }

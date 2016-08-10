@@ -1,12 +1,13 @@
 {
-  "name": "Cemetery / Graveyard",
-  "path": "Miscellaneous--Cemetery--Cemetery_/_Graveyard",
+  "name": "Gate",
+  "path": "Miscellaneous--Barrier--Gate",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "area"
+    "point",
+    "vertex"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,10 +16,10 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "landuse": "cemetery"
+    "barrier": "gate"
   },
   "terms": [
-    "cemetery",
-    "graveyard"
+    "entry way",
+    "gate"
   ]
 }

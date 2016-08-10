@@ -1,6 +1,6 @@
 {
   "name": "Fence",
-  "path": "Miscellaneous--Fence--Fence",
+  "path": "Miscellaneous--Barrier--Fence",
   "fields": [
     "name",
     "nps/unitcode"

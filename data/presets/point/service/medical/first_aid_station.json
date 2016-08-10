@@ -1,6 +1,6 @@
 {
   "name": "First Aid Station",
-  "path": "Service--Support--First_Aid_Station",
+  "path": "Service--Medical--First_Aid_Station",
   "fields": [
     "name",
     "nps/unitcode",
@@ -26,7 +26,6 @@
     "first aid",
     "medical",
     "medical clinic",
-    "emergency",
-    "first aid station"
+    "emergency"
   ]
 }

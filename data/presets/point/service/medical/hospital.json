@@ -1,6 +1,6 @@
 {
   "name": "Hospital",
-  "path": "Service--Support--Hospital",
+  "path": "Service--Medical--Hospital",
   "fields": [
     "name",
     "nps/unitcode",
@@ -35,7 +35,6 @@
     "surgery",
     "ward",
     "emergency",
-    "hospital",
     "clinic"
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "name": "Cabin",
+  "path": "Building--Building--Cabin",
+  "fields": [
+    "name",
+    "nps/unitcode",
+    "address",
+    "levels"
+  ],
+  "geometry": [
+    "point"
+  ],
+  "icon": "building",
+  "maki": "maki",
+  "layerIndex": 70,
+  "defaultOrder": null,
+  "matchScore": 1,
+  "inCarto": true,
+  "inGuide": true,
+  "inEditor": true,
+  "tags": {
+    "building": "cabin"
+  },
+  "terms": [
+    "cottage",
+    "log cabin",
+    "cabin"
+  ]
+}

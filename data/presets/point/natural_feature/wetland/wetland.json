@@ -6,7 +6,8 @@
     "nps/unitcode"
   ],
   "geometry": [
-    "point"
+    "point",
+    "area"
   ],
   "icon": "wetland",
   "maki": "maki",

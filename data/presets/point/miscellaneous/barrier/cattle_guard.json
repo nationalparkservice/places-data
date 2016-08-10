@@ -1,12 +1,13 @@
 {
-  "name": "Canyon",
-  "path": "Natural_Feature--Valley--Canyon",
+  "name": "Cattle Guard",
+  "path": "Miscellaneous--Barrier--Cattle_Guard",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "line"
+    "point",
+    "vertex"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,9 +16,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "natural": "canyon"
-  },
-  "terms": [
-    "canyon"
-  ]
+    "barrier": "cattle_grid"
+  }
 }

@@ -108,6 +108,32 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "building/building/cabin": {
+      "name": "Cabin",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "address",
+        "levels"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "building",
+      "maki": "maki",
+      "layerIndex": 70,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "building": "cabin"
+      },
+      "terms": [
+        "cottage",
+        "log cabin",
+        "cabin"
+      ],
+      "searchable": true
+    },
     "building/building/public building": {
       "name": "Public Building",
       "fields": [
@@ -243,32 +269,6 @@ iD.data.npmapPresets = {
         "pen",
         "stall",
         "stable"
-      ],
-      "searchable": true
-    },
-    "building/cabin/cabin": {
-      "name": "Cabin",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "address",
-        "levels"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "building",
-      "maki": "maki",
-      "layerIndex": 70,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "building": "cabin"
-      },
-      "terms": [
-        "cottage",
-        "log cabin",
-        "cabin"
       ],
       "searchable": true
     },
@@ -2120,59 +2120,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/cemetery/cemetery %2f graveyard": {
-      "name": "Cemetery / Graveyard",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "area",
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "landuse": "cemetery"
-      },
-      "terms": [
-        "cemetery",
-        "graveyard"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/cemetery/grave": {
-      "name": "Grave",
-      "fields": [
-        "memo",
-        "nps/unitcoderial",
-        "subject/name",
-        "subject/species",
-        "subject/birth",
-        "subject/death",
-        "religion"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "cemetery",
-      "maki": "maki",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "cemetery": "grave"
-      },
-      "terms": [
-        "burial",
-        "burial site",
-        "headstone",
-        "tomb",
-        "grave"
-      ],
-      "searchable": true
-    },
     "miscellaneous/construction/construction zone": {
       "name": "Construction Zone",
       "fields": [
@@ -2307,6 +2254,74 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "miscellaneous/barrier/cattle guard": {
+      "name": "Cattle Guard",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "cattle_grid"
+      },
+      "searchable": true
+    },
+    "miscellaneous/barrier/fence": {
+      "name": "Fence",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "fence"
+      },
+      "terms": [
+        "barricade",
+        "barrier",
+        "enclosure",
+        "fencing",
+        "palisade",
+        "railing",
+        "stockade",
+        "gate"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/barrier/gate": {
+      "name": "Gate",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "gate"
+      },
+      "terms": [
+        "entry way",
+        "gate"
+      ],
+      "searchable": true
+    },
     "miscellaneous/bench/bench": {
       "name": "Bench",
       "fields": [
@@ -2357,6 +2372,61 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "miscellaneous/cemetery/cemetery %2f graveyard": {
+      "name": "Cemetery / Graveyard",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "area"
+      ],
+      "icon": "cemetery",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "landuse": "cemetery"
+      },
+      "terms": [
+        "cemetery",
+        "graveyard"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/cemetery/grave": {
+      "name": "Grave",
+      "fields": [
+        "memo",
+        "nps/unitcoderial",
+        "subject/name",
+        "subject/species",
+        "subject/birth",
+        "subject/death",
+        "religion"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "cemetery",
+      "maki": "maki",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "cemetery": "grave"
+      },
+      "terms": [
+        "burial",
+        "burial site",
+        "headstone",
+        "tomb",
+        "grave"
+      ],
+      "searchable": true
+    },
     "miscellaneous/dam/dam": {
       "name": "Dam",
       "fields": [
@@ -2382,34 +2452,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/fence/fence": {
-      "name": "Fence",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "fence"
-      },
-      "terms": [
-        "barricade",
-        "barrier",
-        "enclosure",
-        "fencing",
-        "palisade",
-        "railing",
-        "stockade",
-        "gate"
-      ],
-      "searchable": true
-    },
     "miscellaneous/flag pole/flag pole": {
       "name": "Flag Pole",
       "fields": [
@@ -2429,28 +2471,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "flagpole"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/gate/gate": {
-      "name": "Gate",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "gate"
-      },
-      "terms": [
-        "entry way",
-        "gate"
       ],
       "searchable": true
     },
@@ -2911,6 +2931,29 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/airport/helipad": {
+      "name": "Helipad",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator"
+      ],
+      "geometry": [
+        "point",
+        "area"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "aeroway": "helipad"
+      },
+      "terms": [
+        "helicopter",
+        "landing"
+      ],
+      "searchable": true
+    },
     "service/airport/landing strip": {
       "name": "Landing Strip",
       "fields": [
@@ -3350,6 +3393,96 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/medical/clinic": {
+      "name": "Clinic",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "clinic"
+      },
+      "terms": [
+        "first aid",
+        "emergency",
+        "medical",
+        "health"
+      ],
+      "searchable": true
+    },
+    "service/medical/first aid station": {
+      "name": "First Aid Station",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "first-aid-black",
+      "maki": "npmap-symbol-library",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "first_aid"
+      },
+      "terms": [
+        "clinic",
+        "first aid",
+        "medical",
+        "medical clinic",
+        "emergency"
+      ],
+      "searchable": true
+    },
+    "service/medical/hospital": {
+      "name": "Hospital",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "emergency"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "icon": "hospital-black",
+      "maki": "npmap-symbol-library",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "hospital"
+      },
+      "terms": [
+        "doctor",
+        "emergency room",
+        "health service",
+        "hospital grounds",
+        "institution",
+        "infirmary",
+        "medical",
+        "sick",
+        "surgery",
+        "ward",
+        "emergency",
+        "clinic"
+      ],
+      "searchable": true
+    },
     "service/parking/electric vehicle parking": {
       "name": "Electric Vehicle Parking",
       "fields": [
@@ -3745,73 +3878,6 @@ iD.data.npmapPresets = {
         "fire department",
         "emergency",
         "fire station"
-      ],
-      "searchable": true
-    },
-    "service/support/first aid station": {
-      "name": "First Aid Station",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "first-aid-black",
-      "maki": "npmap-symbol-library",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "first_aid"
-      },
-      "terms": [
-        "clinic",
-        "first aid",
-        "medical",
-        "medical clinic",
-        "emergency",
-        "first aid station"
-      ],
-      "searchable": true
-    },
-    "service/support/hospital": {
-      "name": "Hospital",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "opening_hours",
-        "emergency"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "icon": "hospital-black",
-      "maki": "npmap-symbol-library",
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "hospital"
-      },
-      "terms": [
-        "doctor",
-        "emergency room",
-        "health service",
-        "hospital grounds",
-        "institution",
-        "infirmary",
-        "medical",
-        "sick",
-        "surgery",
-        "ward",
-        "emergency",
-        "hospital",
-        "clinic"
       ],
       "searchable": true
     },
@@ -4371,58 +4437,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "natural feature/valley/canyon": {
-      "name": "Canyon",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "line",
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "canyon"
-      },
-      "terms": [
-        "canyon"
-      ],
-      "searchable": true
-    },
-    "natural feature/valley/valley": {
-      "name": "Valley",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "natural": "valley"
-      },
-      "terms": [
-        "barranca",
-        "chasm",
-        "glen",
-        "gorge",
-        "gulch",
-        "hollow",
-        "ravine",
-        "valley",
-        "canyon",
-        "cove",
-        "draw",
-        "gulf"
-      ],
-      "searchable": true
-    },
     "natural feature/arroyo/arroyo": {
       "name": "Arroyo",
       "fields": [
@@ -4457,7 +4471,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4483,7 +4498,8 @@ iD.data.npmapPresets = {
         "tidal"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4508,7 +4524,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4560,7 +4577,8 @@ iD.data.npmapPresets = {
         "surface"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4629,7 +4647,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4649,7 +4668,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4673,7 +4693,8 @@ iD.data.npmapPresets = {
         "crop"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "icon": "park",
       "maki": "maki",
@@ -4701,7 +4722,8 @@ iD.data.npmapPresets = {
         "crop"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "icon": "park2",
       "maki": "maki",
@@ -4723,12 +4745,11 @@ iD.data.npmapPresets = {
       "name": "Glacier",
       "fields": [
         "name",
-        "nps/unitcode",
-        "surface",
-        "direction"
+        "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -4739,8 +4760,7 @@ iD.data.npmapPresets = {
       "terms": [
         "icefield",
         "ice patch",
-        "snow patch",
-        "glacier"
+        "snow patch"
       ],
       "searchable": true
     },
@@ -4751,7 +4771,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -5038,7 +5059,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -5063,7 +5085,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -5087,7 +5110,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -5111,7 +5135,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -5213,7 +5238,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -5364,7 +5390,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "icon": "water",
       "maki": "maki",
@@ -5485,6 +5512,59 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "natural feature/valley/canyon": {
+      "name": "Canyon",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "line"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "canyon"
+      },
+      "terms": [
+        "canyon"
+      ],
+      "searchable": true
+    },
+    "natural feature/valley/valley": {
+      "name": "Valley",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "area"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "natural": "valley"
+      },
+      "terms": [
+        "barranca",
+        "chasm",
+        "glen",
+        "gorge",
+        "gulch",
+        "hollow",
+        "ravine",
+        "valley",
+        "canyon",
+        "cove",
+        "draw",
+        "gulf"
+      ],
+      "searchable": true
+    },
     "natural feature/volcano/volcano": {
       "name": "Volcano",
       "fields": [
@@ -5549,7 +5629,8 @@ iD.data.npmapPresets = {
         "nps/unitcode"
       ],
       "geometry": [
-        "point"
+        "point",
+        "area"
       ],
       "icon": "wetland",
       "maki": "maki",

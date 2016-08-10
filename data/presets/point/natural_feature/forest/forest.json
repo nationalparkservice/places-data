@@ -9,7 +9,8 @@
     "crop"
   ],
   "geometry": [
-    "point"
+    "point",
+    "area"
   ],
   "icon": "park",
   "maki": "maki",

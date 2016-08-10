@@ -1,13 +1,14 @@
 {
-  "name": "Gate",
-  "path": "Miscellaneous--Gate--Gate",
+  "name": "Helipad",
+  "path": "Service--Airport--Helipad",
   "fields": [
     "name",
-    "nps/unitcode"
+    "nps/unitcode",
+    "operator"
   ],
   "geometry": [
     "point",
-    "vertex"
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -16,10 +17,10 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "barrier": "gate"
+    "aeroway": "helipad"
   },
   "terms": [
-    "entry way",
-    "gate"
+    "helicopter",
+    "landing"
   ]
 }
