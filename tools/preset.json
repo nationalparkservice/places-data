@@ -84,11 +84,11 @@
             "default": 0
         },
         "path": {
-          "desciption": "A unique identifier for this preset that contains the category, subcategory, and the tag name",
+          "description": "A unique identifier for this preset that contains the category, subcategory, and the tag name",
           "type": "string"
         },
         "gisTags": {
-          "desciption": "Tags used to connect Places with GIS",
+          "description": "Tags used to connect Places with GIS",
           "type": "object",
           "additionalProperties": true
         }
