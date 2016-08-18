@@ -1,15 +1,13 @@
 {
-  "name": "Restroom",
-  "path": "Accommodation--Restroom--Restroom",
+  "name": "Flush Toilet",
+  "path": "Accommodation--Restroom--Flush_Toilet",
   "fields": [
     "name",
     "nps/unitcode",
     "operator",
     "address",
     "opening_hours",
-    "toilets/disposal",
     "gender",
-    "indoor",
     "fee",
     "access"
   ],
@@ -20,15 +18,17 @@
   "icon": "restrooms-black",
   "maki": "npmap-symbol-library",
   "layerIndex": 10,
-  "defaultOrder": -1,
+  "defaultOrder": null,
   "matchScore": 1,
   "inCarto": true,
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "amenity": "toilets"
+    "amenity": "toilet",
+    "toilets:disposal": "flush"
   },
   "terms": [
+    "restroom",
     "bathroom",
     "latrine",
     "lavatory",
@@ -36,9 +36,6 @@
     "privy",
     "toilet",
     "water closet",
-    "head",
-    "restroom",
-    "toilets",
-    "wc"
+    "head"
   ]
 }

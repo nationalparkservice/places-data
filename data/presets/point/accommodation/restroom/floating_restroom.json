@@ -1,6 +1,6 @@
 {
   "name": "Floating Restroom",
-  "path": "Accommodation--Floating_Restroom--Floating_Restroom",
+  "path": "Accommodation--Restroom--Floating_Restroom",
   "fields": [
     "name",
     "nps/unitcode",
@@ -30,7 +30,6 @@
   },
   "terms": [
     "restoom",
-    "latrine",
-    "floating restroom"
+    "latrine"
   ]
 }

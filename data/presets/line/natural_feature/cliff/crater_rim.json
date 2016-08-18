@@ -1,12 +1,12 @@
 {
-  "name": "Garden",
-  "path": "Miscellaneous--Garden--Garden",
+  "name": "Crater Rim",
+  "path": "Natural_Feature--Cliff--Crater_Rim",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
-    "area"
+    "line"
   ],
   "layerIndex": 10,
   "defaultOrder": null,
@@ -15,9 +15,12 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "leisure": "garden"
+    "natural": "cliff",
+    "geological": "volcanic_caldera_rim"
   },
   "terms": [
-    "arboretum"
+    "cliff",
+    "rim",
+    "volcano"
   ]
 }

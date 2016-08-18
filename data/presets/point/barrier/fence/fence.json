@@ -1,12 +1,13 @@
 {
-  "name": "Gate",
-  "path": "Miscellaneous--Barrier--Gate",
+  "name": "Fence",
+  "path": "Barrier--Fence--Fence",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
     "point",
+    "line",
     "vertex"
   ],
   "layerIndex": 10,
@@ -16,10 +17,16 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "barrier": "gate"
+    "barrier": "fence"
   },
   "terms": [
-    "entry way",
-    "gate"
+    "barricade",
+    "barrier",
+    "enclosure",
+    "fencing",
+    "gate",
+    "palisade",
+    "railing",
+    "stockade"
   ]
 }

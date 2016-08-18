@@ -1,6 +1,6 @@
 {
   "name": "Parking Lot",
-  "path": "Parking--Parking--Parking_Lot",
+  "path": "Service--Parking--Parking_Lot",
   "fields": [
     "name",
     "nps/unitcode",
@@ -14,8 +14,6 @@
   "geometry": [
     "area"
   ],
-  "icon": "parking-black",
-  "maki": "npmap-symbol-library",
   "layerIndex": 10,
   "defaultOrder": 2,
   "matchScore": 1,

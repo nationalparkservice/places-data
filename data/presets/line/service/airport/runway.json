@@ -9,7 +9,8 @@
     "width"
   ],
   "geometry": [
-    "line"
+    "line",
+    "area"
   ],
   "layerIndex": 10,
   "defaultOrder": null,

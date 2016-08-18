@@ -1,12 +1,13 @@
 {
-  "name": "Cattle Guard",
-  "path": "Miscellaneous--Barrier--Cattle_Guard",
+  "name": "Gate",
+  "path": "Barrier--Gate--Gate",
   "fields": [
     "name",
     "nps/unitcode"
   ],
   "geometry": [
     "point",
+    "line",
     "vertex"
   ],
   "layerIndex": 10,
@@ -16,6 +17,10 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "barrier": "cattle_grid"
-  }
+    "barrier": "gate"
+  },
+  "terms": [
+    "entry way",
+    "gate"
+  ]
 }

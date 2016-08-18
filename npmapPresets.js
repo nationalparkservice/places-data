@@ -2143,27 +2143,6 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "miscellaneous/garden/garden": {
-      "name": "Garden",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "area",
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "leisure": "garden"
-      },
-      "terms": [
-        "arboretum"
-      ],
-      "searchable": true
-    },
     "miscellaneous/pedestrian area/pedestrian area": {
       "name": "Pedestrian Area",
       "fields": [
@@ -2251,74 +2230,6 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "totem"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/barrier/cattle guard": {
-      "name": "Cattle Guard",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "cattle_grid"
-      },
-      "searchable": true
-    },
-    "miscellaneous/barrier/fence": {
-      "name": "Fence",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "fence"
-      },
-      "terms": [
-        "barricade",
-        "barrier",
-        "enclosure",
-        "fencing",
-        "palisade",
-        "railing",
-        "stockade",
-        "gate"
-      ],
-      "searchable": true
-    },
-    "miscellaneous/barrier/gate": {
-      "name": "Gate",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "gate"
-      },
-      "terms": [
-        "entry way",
-        "gate"
       ],
       "searchable": true
     },
@@ -2471,6 +2382,27 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "flagpole"
+      ],
+      "searchable": true
+    },
+    "miscellaneous/garden/garden": {
+      "name": "Garden",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "area"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "leisure": "garden"
+      },
+      "terms": [
+        "arboretum"
       ],
       "searchable": true
     },
@@ -2808,7 +2740,7 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "parking/parking/parking lot": {
+    "service/parking/parking lot": {
       "name": "Parking Lot",
       "fields": [
         "name",
@@ -2821,10 +2753,9 @@ iD.data.npmapPresets = {
         "nps/trailuse"
       ],
       "geometry": [
-        "area"
+        "area",
+        "point"
       ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library",
       "layerIndex": 10,
       "defaultOrder": 2,
       "matchScore": 1,
@@ -2842,6 +2773,67 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
+    "service/parking/electric vehicle parking": {
+      "name": "Electric Vehicle Parking",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "parking",
+        "capacity:charging": "*"
+      },
+      "terms": [
+        "electric",
+        "electric car",
+        "electric vehicle",
+        "car charging",
+        "charging",
+        "parking lot",
+        "vehicle charging",
+        "parking",
+        "car",
+        "vehicle",
+        "electric vehicle parking"
+      ],
+      "searchable": true
+    },
+    "service/parking/roadside pullout": {
+      "name": "Roadside Pullout",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address"
+      ],
+      "geometry": [
+        "point"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "highway": "rest_area"
+      },
+      "terms": [
+        "passing place",
+        "pullout",
+        "pull off",
+        "pull-off",
+        "roadside pull off",
+        "roadside pull-off",
+        "roadside turnout",
+        "turnout",
+        "roadside pullout"
+      ],
+      "searchable": true
+    },
     "service/airport/runway": {
       "name": "Runway",
       "fields": [
@@ -2852,8 +2844,8 @@ iD.data.npmapPresets = {
         "width"
       ],
       "geometry": [
-        "area",
-        "line"
+        "line",
+        "area"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -3404,6 +3396,8 @@ iD.data.npmapPresets = {
       "geometry": [
         "point"
       ],
+      "icon": "first-aid-black",
+      "maki": "npmap-symbol-library",
       "layerIndex": 10,
       "defaultOrder": null,
       "matchScore": 1,
@@ -3480,102 +3474,6 @@ iD.data.npmapPresets = {
         "ward",
         "emergency",
         "clinic"
-      ],
-      "searchable": true
-    },
-    "service/parking/electric vehicle parking": {
-      "name": "Electric Vehicle Parking",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "parking",
-        "capacity:charging": "*"
-      },
-      "terms": [
-        "electric",
-        "electric car",
-        "electric vehicle",
-        "car charging",
-        "charging",
-        "parking lot",
-        "vehicle charging",
-        "parking",
-        "car",
-        "vehicle",
-        "electric vehicle parking"
-      ],
-      "searchable": true
-    },
-    "service/parking/parking lot": {
-      "name": "Parking Lot",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address",
-        "capacity",
-        "maxstay",
-        "fee",
-        "nps/trailuse"
-      ],
-      "geometry": [
-        "point",
-        "vertex"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library",
-      "layerIndex": 60,
-      "defaultOrder": -3,
-      "matchScore": 1,
-      "tags": {
-        "amenity": "parking"
-      },
-      "terms": [
-        "parking",
-        "lot",
-        "car park",
-        "car parking",
-        "carpark",
-        "vehicle parking",
-        "parking lot"
-      ],
-      "searchable": true
-    },
-    "service/parking/roadside pullout": {
-      "name": "Roadside Pullout",
-      "fields": [
-        "name",
-        "nps/unitcode",
-        "operator",
-        "address"
-      ],
-      "geometry": [
-        "point"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "highway": "rest_area"
-      },
-      "terms": [
-        "passing place",
-        "pullout",
-        "pull off",
-        "pull-off",
-        "roadside pull off",
-        "roadside pull-off",
-        "roadside turnout",
-        "turnout",
-        "roadside pullout"
       ],
       "searchable": true
     },
@@ -4330,8 +4228,8 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "barrier/fence/fence": {
-      "name": "Fence",
+    "natural feature/cliff/crater rim": {
+      "name": "Crater Rim",
       "fields": [
         "name",
         "nps/unitcode"
@@ -4343,38 +4241,13 @@ iD.data.npmapPresets = {
       "defaultOrder": null,
       "matchScore": 1,
       "tags": {
-        "barrier": "fence"
+        "natural": "cliff",
+        "geological": "volcanic_caldera_rim"
       },
       "terms": [
-        "barricade",
-        "barrier",
-        "enclosure",
-        "fencing",
-        "palisade",
-        "railing",
-        "stockade",
-        "fence"
-      ],
-      "searchable": true
-    },
-    "barrier/gate/gate": {
-      "name": "Gate",
-      "fields": [
-        "name",
-        "nps/unitcode"
-      ],
-      "geometry": [
-        "line"
-      ],
-      "layerIndex": 10,
-      "defaultOrder": null,
-      "matchScore": 1,
-      "tags": {
-        "barrier": "gate"
-      },
-      "terms": [
-        "entry way",
-        "gate"
+        "cliff",
+        "rim",
+        "volcano"
       ],
       "searchable": true
     },
@@ -4386,8 +4259,8 @@ iD.data.npmapPresets = {
         "height"
       ],
       "geometry": [
-        "line",
-        "point"
+        "point",
+        "line"
       ],
       "layerIndex": 10,
       "defaultOrder": null,
@@ -7174,7 +7047,7 @@ iD.data.npmapPresets = {
       ],
       "searchable": true
     },
-    "accommodation/floating restroom/floating restroom": {
+    "accommodation/restroom/floating restroom": {
       "name": "Floating Restroom",
       "fields": [
         "name",
@@ -7202,8 +7075,45 @@ iD.data.npmapPresets = {
       },
       "terms": [
         "restoom",
+        "latrine"
+      ],
+      "searchable": true
+    },
+    "accommodation/restroom/flush toilet": {
+      "name": "Flush Toilet",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "gender",
+        "fee",
+        "access"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "toilet",
+        "toilets:disposal": "flush"
+      },
+      "terms": [
+        "restroom",
+        "bathroom",
         "latrine",
-        "floating restroom"
+        "lavatory",
+        "outhouse",
+        "privy",
+        "toilet",
+        "water closet",
+        "head"
       ],
       "searchable": true
     },
@@ -7234,6 +7144,46 @@ iD.data.npmapPresets = {
         "amenity": "toilets"
       },
       "terms": [
+        "bathroom",
+        "latrine",
+        "lavatory",
+        "outhouse",
+        "privy",
+        "toilet",
+        "water closet",
+        "head",
+        "restroom",
+        "toilets",
+        "wc"
+      ],
+      "searchable": true
+    },
+    "accommodation/restroom/vault toilet": {
+      "name": "Vault Toilet",
+      "fields": [
+        "name",
+        "nps/unitcode",
+        "operator",
+        "address",
+        "opening_hours",
+        "gender",
+        "fee",
+        "access"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "icon": "restrooms-black",
+      "maki": "npmap-symbol-library",
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "amenity": "toilet",
+        "toilets:disposal": "pitlatrine"
+      },
+      "terms": [
         "restroom",
         "bathroom",
         "latrine",
@@ -7241,10 +7191,79 @@ iD.data.npmapPresets = {
         "outhouse",
         "privy",
         "toilet",
-        "toilets",
         "water closet",
-        "wc",
-        "head"
+        "head",
+        "pit toilet"
+      ],
+      "searchable": true
+    },
+    "barrier/fence/fence": {
+      "name": "Fence",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "line",
+        "vertex"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "fence"
+      },
+      "terms": [
+        "barricade",
+        "barrier",
+        "enclosure",
+        "fencing",
+        "gate",
+        "palisade",
+        "railing",
+        "stockade"
+      ],
+      "searchable": true
+    },
+    "barrier/gate/cattle guard": {
+      "name": "Cattle Guard",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "vertex"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "cattle_grid"
+      },
+      "searchable": true
+    },
+    "barrier/gate/gate": {
+      "name": "Gate",
+      "fields": [
+        "name",
+        "nps/unitcode"
+      ],
+      "geometry": [
+        "point",
+        "line",
+        "vertex"
+      ],
+      "layerIndex": 10,
+      "defaultOrder": null,
+      "matchScore": 1,
+      "tags": {
+        "barrier": "gate"
+      },
+      "terms": [
+        "entry way",
+        "gate"
       ],
       "searchable": true
     },
@@ -8838,19 +8857,18 @@ iD.data.npmapPresets = {
       "icon": "trailhead-black",
       "maki": "npmap-symbol-library"
     },
-    "category-area-parking": {
+    "category-area-service": {
       "geometry": "area",
-      "displayName": "Parking",
+      "displayName": "Service",
       "members": [
-        "parking/parking/parking lot"
-      ],
-      "icon": "parking-black",
-      "maki": "npmap-symbol-library"
+        "service/parking/parking lot"
+      ]
     },
     "category-point-service": {
       "geometry": "point",
       "displayName": "Service",
       "members": [
+        "service/parking/parking lot",
         "service/food/food service",
         "service/shopping/store",
         "service/shopping/bookstore",
@@ -8861,15 +8879,6 @@ iD.data.npmapPresets = {
         "service/waste/litter receptacle"
       ],
       "icon": "entrance-station-black",
-      "maki": "npmap-symbol-library"
-    },
-    "category-vertex-service": {
-      "geometry": "vertex",
-      "displayName": "Service",
-      "members": [
-        "service/parking/parking lot"
-      ],
-      "icon": "parking-black",
       "maki": "npmap-symbol-library"
     },
     "category-area-structure": {
@@ -8959,7 +8968,7 @@ iD.data.npmapPresets = {
     "area": [
       "building/building/building footprint",
       "category-area-land recreation",
-      "parking/parking/parking lot",
+      "service/parking/parking lot",
       "structure/recreation/boat dock"
     ],
     "point": [
@@ -8968,19 +8977,17 @@ iD.data.npmapPresets = {
       "land recreation/camping/campground",
       "locality/region/locale",
       "land recreation/trail/trailhead",
-      "service/parking/parking lot",
       "service/support/ranger station",
       "accommodation/restroom/restroom",
       "category-point-building",
+      "category-point-service",
       "category-point-land recreation",
       "category-point-information",
-      "category-point-service",
       "category-point-water recreation",
       "information/information/information"
     ],
     "vertex": [
       "land recreation/trail/trailhead",
-      "service/parking/parking lot",
       "accommodation/restroom/restroom"
     ],
     "line": [

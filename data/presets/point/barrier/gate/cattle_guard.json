@@ -1,6 +1,6 @@
 {
-  "name": "Fence",
-  "path": "Miscellaneous--Barrier--Fence",
+  "name": "Cattle Guard",
+  "path": "Barrier--Gate--Cattle_Guard",
   "fields": [
     "name",
     "nps/unitcode"
@@ -16,16 +16,6 @@
   "inGuide": true,
   "inEditor": true,
   "tags": {
-    "barrier": "fence"
-  },
-  "terms": [
-    "barricade",
-    "barrier",
-    "enclosure",
-    "fencing",
-    "palisade",
-    "railing",
-    "stockade",
-    "gate"
-  ]
+    "barrier": "cattle_grid"
+  }
 }
