@@ -4,10 +4,10 @@
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[National Park Service]]></Parameter>
-  <Parameter name="center">-122.4591,38.1626,9</Parameter>
+  <Parameter name="center">-105.5237,40.4804,6</Parameter>
   <Parameter name="description"><![CDATA[Boundaries of the National Parks]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_boundaries_point","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_boundaries_polygon","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_fill":"Boolean","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_boundaries_line","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"nps_places_boundaries_point","description":"Points for places boundaries","fields":{"label_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_point":"Boolean","show_label":"Boolean","label_long":"Boolean","label_center":"Boolean","ldir":"String","ldir_enforce":"Boolean","label_wrap_width":"Number","label_small":"Boolean"}},{"id":"nps_places_boundaries_polygon","description":"NPS park polygons","fields":{"unit_id":"Number","unit_code":"String","unit_name":"String","show_fill":"Boolean","show_border":"Boolean","show_tintband":"Boolean"}},{"id":"nps_places_boundaries_line","description":"Line geometry for parks","fields":{"unit_id":"Number","unit_code":"String","label_name_short":"String","label_name_long":"String","show_line":"Boolean","show_label":"Boolean","label_long":"Boolean","render":"Boolean"}}]}]]></Parameter>
   <Parameter name="maxzoom">14</Parameter>
   <Parameter name="minzoom">4</Parameter>
   <Parameter name="name"><![CDATA[NPS Places Boundaries v2]]></Parameter>
@@ -55,7 +55,8 @@ FROM     "parks_label" JOIN "parks" ON
            "parks_label"."unit_id" = "parks_poly"."unit_id"
 WHERE    
           "parks_label"."geom_label" && !bbox! AND
-          "parks_label"."geom_label" IS NOT NULL
+          "parks_label"."geom_label" IS NOT NULL AND
+          "parks_label"."pt_render" != false
 ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
@@ -177,15 +178,18 @@ SELECT    "parks_label"."unit_id",
             END
            ELSE
             null
-          END as "geom_line"
+          END as "geom_line",
+          "parks_line"."pt_render" as render
  FROM     "geom_line_simp"
  JOIN     "parks" ON "parks"."unit_id" = "geom_line_simp"."unit_id" 
  JOIN     "parks_label" ON "parks_label"."unit_id" = "geom_line_simp"."unit_id"
  JOIN     "parks_poly" ON "parks_poly"."unit_id" = "geom_line_simp"."unit_id"
+ JOIN     "parks_line" ON "parks_line"."unit_id" = "geom_line_simp"."unit_id"
  WHERE    "geom_line_simp"."geom_line" && !bbox! AND
           "parks_poly"."min_zoom_poly" > z(!scale_denominator!) AND
           "geom_line_simp"."geom_line" IS NOT NULL AND
-          "parks_poly"."simp_type" = 'line'
+          "parks_poly"."simp_type" = 'line' AND
+          "parks_line"."pt_render" != false
  ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>

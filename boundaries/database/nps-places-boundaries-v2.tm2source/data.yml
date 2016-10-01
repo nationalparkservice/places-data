@@ -6,9 +6,9 @@ _prefs:
   saveCenter: true
 attribution: National Park Service
 center: 
-  - -122.4591
-  - 38.1626
-  - 9
+  - -105.5237
+  - 40.4804
+  - 6
 description: Boundaries of the National Parks
 Layer: 
   - id: nps_places_boundaries_point
@@ -50,7 +50,8 @@ Layer:
                    "parks_label"."unit_id" = "parks_poly"."unit_id"
         WHERE    
                   "parks_label"."geom_label" && !bbox! AND
-                  "parks_label"."geom_label" IS NOT NULL
+                  "parks_label"."geom_label" IS NOT NULL AND
+                  "parks_label"."pt_render" != false
         ORDER BY "parks"."unit_area" DESC) as data
       type: postgis
       user: postgres
@@ -190,15 +191,18 @@ Layer:
                     END
                    ELSE
                     null
-                  END as "geom_line"
+                  END as "geom_line",
+                  "parks_line"."pt_render" as render
          FROM     "geom_line_simp"
          JOIN     "parks" ON "parks"."unit_id" = "geom_line_simp"."unit_id" 
          JOIN     "parks_label" ON "parks_label"."unit_id" = "geom_line_simp"."unit_id"
          JOIN     "parks_poly" ON "parks_poly"."unit_id" = "geom_line_simp"."unit_id"
+         JOIN     "parks_line" ON "parks_line"."unit_id" = "geom_line_simp"."unit_id"
          WHERE    "geom_line_simp"."geom_line" && !bbox! AND
                   "parks_poly"."min_zoom_poly" > z(!scale_denominator!) AND
                   "geom_line_simp"."geom_line" IS NOT NULL AND
-                  "parks_poly"."simp_type" = 'line'
+                  "parks_poly"."simp_type" = 'line' AND
+                  "parks_line"."pt_render" != false
          ORDER BY "parks"."unit_area" DESC) as data
       type: postgis
       user: postgres
@@ -207,6 +211,7 @@ Layer:
       label_long: Boolean
       label_name_long: String
       label_name_short: String
+      render: Boolean
       show_label: Boolean
       show_line: Boolean
       unit_code: String

@@ -1,0 +1,44 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: true
+attribution: ''
+center: 
+  - -83.0951
+  - 35.2097
+  - 4
+description: ''
+Layer: 
+  - id: data
+    Datasource: 
+      dbname: places_pgs
+      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      geometry_field: the_geom
+      geometry_table: nps_render_point
+      host: 10.147.153.193
+      key_field: osm_id
+      key_field_as_attribute: ''
+      max_size: 512
+      password: postgres
+      port: 5432
+      srid: ''
+      table: |-
+        (
+          SELECT osm_id, the_geom, name 
+          FROM nps_render_point 
+          WHERE unit_code = 'grsm'
+        ) as data
+      type: postgis
+      user: postgres
+    description: ''
+    fields: 
+      name: String
+      osm_id: Number
+    properties: 
+      "buffer-size": 0
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 4
+minzoom: 2
+name: ''

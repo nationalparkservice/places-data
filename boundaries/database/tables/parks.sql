@@ -24,7 +24,6 @@ CREATE TABLE parks
   date_created date,
   last_updated date,
   data_source text,
-  nps_official boolean,
   CONSTRAINT parks_pkey PRIMARY KEY (unit_id)
 )
 WITH (
@@ -59,7 +58,6 @@ SELECT
   date_created ::date,
   last_updated::date,
   data_source::text
-  --nps_official::boolean
 FROM boundaries
 
 CREATE INDEX parks_geom_point_idx ON parks USING GIST (geom_point);
