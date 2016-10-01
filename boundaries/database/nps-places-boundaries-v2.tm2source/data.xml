@@ -51,12 +51,15 @@ SELECT   "parks_label"."label_id",
          "parks_label"."geom_label"
 FROM     "parks_label" JOIN "parks" ON
            "parks_label"."unit_id" = "parks"."unit_id"
-         LEFT JOIN "parks_poly" ON
+         LEFT OUTER JOIN "parks_poly" ON
            "parks_label"."unit_id" = "parks_poly"."unit_id"
+         LEFT OUTER JOIN "parks_point" ON
+           "parks_label"."unit_id" = "parks_point"."unit_id" 
 WHERE    
           "parks_label"."geom_label" && !bbox! AND
           "parks_label"."geom_label" IS NOT NULL AND
-          "parks_label"."pt_render" != false
+          "parks_label"."pt_render" != false AND
+          "parks_point"."pt_render" != false
 ORDER BY "parks"."unit_area" DESC) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
